@@ -1,0 +1,35 @@
+{
+  "products": 11,
+  "meshes": 6,
+  "walls": 3,
+  "wall_volumes_m3": [
+    4.5,
+    4.5,
+    3.0
+  ],
+  "floor_counts": {
+    "Piano terra": 4,
+    "Piano primo": 2
+  },
+  "quality_pass": 2,
+  "quality_fail": 1,
+  "missing_code_global_id": "2u50pW$4j3HxUq8q8UdE9C",
+  "revision": {
+    "added": [
+      "1mFpKMXNjRheaTSbqisWzw"
+    ],
+    "removed": [
+      "2u50pW$4j3HxUq8q8UdE9C"
+    ],
+    "changed": [
+      "3xCZU1$HbDZgoec6JcBxEt",
+      "1qaCAGFf95buYmo8QtuZPw"
+    ],
+    "unchanged_count": 8
+  },
+  "coordinate_offset_metres": [
+    650000.0,
+    4860000.0,
+    0.0
+  ]
+}
