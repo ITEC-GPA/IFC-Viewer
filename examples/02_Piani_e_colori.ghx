@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">45a4c4c4-0e20-4390-8bc0-26bdf8526dd8</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">1766b38b-d50b-4971-b98c-20070dcde509</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639261776318093739</item>
+            <item name="Date" type_name="gh_date" type_code="8">639263947637817982</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ff57b31-d335-44be-9b4b-57cd6a96dc2f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4158081c-6efa-4539-ac4e-d0518b7ba131</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">02 | PIANI, COLORI E BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">855e61e9-1114-4f4e-865d-e6b69a5b0919</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca2d4294-e075-42d8-aea6-b599adba3e90</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5e23d92-4e9d-4abc-9044-a329e1723eff</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a7c6b26-fbd0-456b-a687-afb6b8851ee5</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">0e6ef8a8-2b0b-41c5-a4d1-ec321fabb524</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f103d392-3d35-4643-9bed-b97137ce74ee</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a3cdc7b6-e67a-4bcd-a7e6-c8105f9c9087</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">35fb7044-20ba-4f15-8c8a-5e5b1b177342</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6bccfcff-06b9-40ef-b810-13394d93527e</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">63b3a86c-9066-44cf-b78d-8de5c7975cbd</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">06b74080-0e8a-4edc-8f58-c128aaf6c390</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dc2b2940-b861-4470-9083-297509f6f730</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4c75a54-650b-4a2b-86f2-ea11c9adaa7c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">18cc8991-b531-4662-81ef-998ec942b984</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">275ae582-c9a1-4283-ba9f-2bf4ce1867f3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3fe4420-499c-47de-9919-f840142e4cc0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">49525871-203e-45ed-aefe-cd46309cf2a8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">48e7ba87-8581-4cc8-9fd4-5714e80991ea</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e6ef8a8-2b0b-41c5-a4d1-ec321fabb524</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f103d392-3d35-4643-9bed-b97137ce74ee</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6bccfcff-06b9-40ef-b810-13394d93527e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">63b3a86c-9066-44cf-b78d-8de5c7975cbd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1ca13f40-ea47-49c3-b5f3-98e60fdc1776</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1148c9c5-027d-409b-850a-e879a886bca5</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ok</item>
                   </items>
@@ -488,11 +488,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e774b5f-06e5-445d-a334-d467b34c213a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2ad662ed-7e2a-477c-9e4e-874ce31b67f6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b4c75a54-650b-4a2b-86f2-ea11c9adaa7c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">18cc8991-b531-4662-81ef-998ec942b984</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">18c4ac3a-09fa-4d04-91ad-0821e782d27b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">56f6a303-bc7b-494b-b2bc-e1945eedea9a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -554,7 +554,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d2833475-1c1b-4045-9a70-eb1a50593437</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0ccaac43-3f32-46ee-902d-07e5db65c8e9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +597,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b2805d6-5b74-4cd3-82f5-1ad3292611f0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9256c8f9-ece0-47dd-a706-f1fda69c83e8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -640,7 +640,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e254c4a4-34bb-41c0-9de5-4d3b1254d450</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e17c3fdd-0839-462f-b94a-cecbe8aff6fe</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +683,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e6d16f20-0f44-427b-90d9-0d6615b0cea2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1f19a25a-315d-4998-b2d2-03e0a89821c3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +706,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b5b5e8ff-3698-4b62-8ac5-da9160e76c36</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">073eb6fc-019a-4e68-b7e9-ef20e4ede836</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +729,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b410bc8-87da-4ec9-bc06-297260bb55ad</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8212ac67-d279-4ce6-b791-a844a8813245</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,7 +761,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4a6d4ce4-d04d-4bf4-a867-f7260cbc4b75</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7921f93-b51e-4bc8-b42a-fcda15791fd8</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -809,7 +809,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2f677f83-ceaf-466a-904d-abca0bf3020d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b70380dd-9e68-4ab1-ae28-a4987aa30e7e</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">RAGGRUPPA E COLORA PER</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -859,7 +859,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Raggruppa per classe, piano, materiale o qualsiasi parametro. Ogni gruppo ha un ramo.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">37b64778-e134-4a2c-b659-ad5bf4406c44</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dadd25dd-a137-40be-b0ea-3cd2ffd0c216</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Group By</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Group</item>
                   </items>
@@ -882,11 +882,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">67418722-dbdd-4d82-babb-599d8fb9433e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fbcd0251-e9ab-48b6-960b-68289470a8a3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e6d16f20-0f44-427b-90d9-0d6615b0cea2</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1f19a25a-315d-4998-b2d2-03e0a89821c3</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -905,11 +905,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">086078ba-c9b5-4343-af58-e73888480c27</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cfe61049-9e05-4625-bf69-2599df2cc21b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2f677f83-ceaf-466a-904d-abca0bf3020d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b70380dd-9e68-4ab1-ae28-a4987aa30e7e</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -950,7 +950,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi per ramo {gruppo}.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a0383354-e841-4b82-a87c-e0efe0cb441b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f444e3f2-020c-4c6d-85da-436bcbfbf117</item>
                         <item name="Name" type_name="gh_string" type_code="10">Groups</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -973,7 +973,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valore del parametro per gruppo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f5701407-24bf-4163-bf1d-82351668412a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ad9fe08d-3545-4ba3-b99a-e809c279bd43</item>
                         <item name="Name" type_name="gh_string" type_code="10">Labels</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -996,7 +996,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Numero oggetti per gruppo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a20e9d69-3e8a-48b8-ad1f-a65c7ea5cac8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c59994a-fa1c-4428-a330-5c2a8eb37153</item>
                         <item name="Name" type_name="gh_string" type_code="10">Counts</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1019,7 +1019,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">False identifica il gruppo delle chiavi assenti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">81e6a1e6-f217-4230-88ec-f41cd031150a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4125bf6a-7d0d-414f-b9b2-ff2f83b61f7e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key exists</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1051,7 +1051,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">76b54cf3-400b-4a31-a42c-83aa103574e4</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8aaad4e5-ebc7-4c11-aabb-e0270d53454e</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Group By</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1099,12 +1099,12 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b3a6622-a66f-4891-9f72-05b65c318ec3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">352ad6f9-1e63-4026-a62b-c3ea85f18196</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PIANI | un ramo per etichetta</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">f5701407-24bf-4163-bf1d-82351668412a</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ad9fe08d-3545-4ba3-b99a-e809c279bd43</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1148,12 +1148,12 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f7335ea-306b-47d2-9e3e-0376f115d953</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">165a5f76-210d-46a0-890e-d403d641c5d5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">OGGETTI PER PIANO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">a20e9d69-3e8a-48b8-ad1f-a65c7ea5cac8</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">7c59994a-fa1c-4428-a330-5c2a8eb37153</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1199,7 +1199,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Colori categoriali deterministici per un parametro. Collegare Geometry e Colors a Custom Preview.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a4020292-8c57-4445-89cc-eb9b117e915d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f7e566b3-cf1c-45ad-8158-9c60d4b379e2</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Color By</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Colors</item>
                   </items>
@@ -1222,11 +1222,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dfd2e874-3895-4735-9dad-6d4eddd1bb1e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ec20abc9-8f90-45ae-93b3-d91f72798dd6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e6d16f20-0f44-427b-90d9-0d6615b0cea2</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1f19a25a-315d-4998-b2d2-03e0a89821c3</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1245,11 +1245,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">61468be7-58f2-4fe0-8726-b702bd2f67cd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f7d5252-4b42-4641-93d9-6fcb21b89bad</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2f677f83-ceaf-466a-904d-abca0bf3020d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b70380dd-9e68-4ab1-ae28-a4987aa30e7e</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1289,7 +1289,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Stesso offset usato nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3fa94d2-fc81-491b-9941-4e67abfe931a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4ec29ad2-d792-4dd2-b440-24c812966255</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1336,7 +1336,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino, rami {oggetto}.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a0397c83-aca3-490b-a25d-c5607e21ae3c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e42ebed-3917-4a60-96cf-7be886c0f942</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1359,7 +1359,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colori allineati alla geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6d9e5aab-cf4b-4fcf-868c-ac179519d197</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">42fcbc35-d160-408b-87f9-b4fdf7064073</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1382,7 +1382,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori distinti; chiave assente separata dai valori presenti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">58a55b24-875f-409f-895d-0b8ff28a47aa</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d8b8a886-9ec1-4ae5-9677-4dc35efbf5ed</item>
                         <item name="Name" type_name="gh_string" type_code="10">Legend</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1405,7 +1405,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colori della legenda.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">08c5f771-bd80-48bc-a107-711f7d925413</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a67aa8fc-76a3-47f6-b424-cb96eeeeb375</item>
                         <item name="Name" type_name="gh_string" type_code="10">Legend colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">LC</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1428,7 +1428,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti per categoria, inclusi quelli senza mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dfec1677-105c-4e60-8e20-f3ab8e14a97f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5a57f94f-8730-4a24-9558-782c2107fc0e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Counts</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1451,7 +1451,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">False identifica la categoria delle chiavi assenti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ec119d5b-ffa5-4af9-aa85-a7362d633ccb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">41b7d784-5d08-41ea-8eba-6f35aac3cd97</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key exists</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1483,7 +1483,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c3a29501-837b-4656-95a5-d7569a95f436</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ab1b9a35-4a2d-44f5-a380-83a7a785d932</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Color By</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1532,7 +1532,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">86a8dd34-075f-4944-8f85-ba865c1a96da</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">53db8e54-1c80-4775-8dae-07b01de06205</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">COLORI PER PIANO</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -1556,11 +1556,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">57b80ef0-0be6-47d0-aaad-5aa42806f080</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7061d976-fba5-45f9-a036-10b93247e6fb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a0397c83-aca3-490b-a25d-c5607e21ae3c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">0e42ebed-3917-4a60-96cf-7be886c0f942</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1579,11 +1579,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">42b2258f-b450-4f31-bf93-ef0046a57fd7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">22a52501-410c-4811-99fe-126ca035672a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6d9e5aab-cf4b-4fcf-868c-ac179519d197</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">42fcbc35-d160-408b-87f9-b4fdf7064073</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1642,7 +1642,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8c014e9-0903-4d43-af52-bc80f5d56cff</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">02d3f6a3-06dc-4788-8dfb-0afbf7337be8</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1690,12 +1690,12 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">08a2e828-e814-4bf6-99e6-26b8d9a0a06b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a6842c5b-6805-4723-ad90-0f9827fbe9da</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">LEGENDA | stesso ordine dei colori C</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">58a55b24-875f-409f-895d-0b8ff28a47aa</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">d8b8a886-9ec1-4ae5-9677-4dc35efbf5ed</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1741,7 +1741,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Bake su layer Radice::Modello::ClasseIFC e tutti i parametri negli User Text. Un record Undo per operazione.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8625db85-4884-41a9-8e27-ae4d79a0cbd3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">334dd785-c962-41e4-829b-601056d58505</item>
                     <item name="Name" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Bake</item>
                   </items>
@@ -1764,12 +1764,12 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da IFC Elements o Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4efb4f3e-02fe-41b7-8ab1-bb3712a2daa2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">358c0bf7-f88d-4d4c-814c-de127216142e</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a0383354-e841-4b82-a87c-e0efe0cb441b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f444e3f2-020c-4c6d-85da-436bcbfbf117</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1788,11 +1788,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button: agisce solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">84817e35-4ce5-46e0-b3ea-f0ee57b27e51</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">495851f1-1ccf-4866-be27-2f7570237d5f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Bake</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">405ca671-abb0-461b-8cee-3a176aca1eba</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">00f8aa32-a024-478b-ad5f-f511e14a2053</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1831,7 +1831,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Layer radice.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">10dde6d3-a30a-4945-84d6-c352eb55902b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">93f385dc-b32b-4d41-95e2-c0e156d14bb4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Root layer</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1874,7 +1874,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">True aggiorna gli oggetti precedentemente creati da questo componente, stessa sorgente e GlobalId. False crea copie.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c8a1ee4a-008d-4095-b5e7-ab4afa04b45f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef0ab803-0cb5-464b-a61f-1e53cc3ec17b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Update</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1916,7 +1916,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Stesso offset usato nella visualizzazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cd0c043d-5d93-4ef7-9ed6-a5a3a0433360</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">da72bf5f-7996-4c3b-9f62-b5bb75faf652</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1963,7 +1963,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID Rhino dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a94812c6-cd0b-42c1-a7c9-870679d5544a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">222a5d96-bd99-4c7c-94c0-7204e254323c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Object IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1985,7 +1985,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Risultato dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8cf677a5-16ae-4f05-98d4-ce8c3bf81f1a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d0297e0d-4493-42cd-a4fe-8fbe20740e80</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2017,7 +2017,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ec66f80-bd7d-4a02-bb0f-6857efa8976a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ba25df24-22ce-4b5b-be20-1c2c6b069e19</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2067,7 +2067,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">405ca671-abb0-461b-8cee-3a176aca1eba</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">00f8aa32-a024-478b-ad5f-f511e14a2053</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2101,12 +2101,12 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b8eabb7-57c2-4035-90ef-628d6548dfb3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e2a395a9-ceaa-4cb4-99aa-e92b4982c528</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">BAKE | layer Esempio_02::sorgente::IfcClass</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">8cf677a5-16ae-4f05-98d4-ce8c3bf81f1a</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">d0297e0d-4493-42cd-a4fe-8fbe20740e80</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2152,7 +2152,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Rilegge geometrie e User Text degli oggetti IFC gia presenti nel documento Rhino. Premere Refresh dopo modifiche al documento.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e6b852f2-929b-429f-9c55-fd9b80179aff</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f3b28cc-abfa-4516-b06b-6598100c0b32</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Read Baked</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Baked</item>
                   </items>
@@ -2175,11 +2175,11 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID Rhino (es. uscita Bake). Vuoto = tutti gli oggetti marcati IFCViewer.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">006a3560-0cf6-469d-8787-7efa903c10a4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0eddb6b9-06c0-4b48-9fa8-11cc29536a2e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rhino object IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a94812c6-cd0b-42c1-a7c9-870679d5544a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">222a5d96-bd99-4c7c-94c0-7204e254323c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2198,7 +2198,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per radice salvata nel bake; vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2bf87907-0e92-48cc-81d0-97023b85aa06</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f3c1095-84d4-4d7b-af22-7ff363b8397c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Root</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2241,7 +2241,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Button per ricalcolare dopo modifiche in Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">11528933-a149-4400-a77c-8395f91f4591</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fbef62f0-6455-4ea0-95aa-735e750cf021</item>
                         <item name="Name" type_name="gh_string" type_code="10">Refresh</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2284,7 +2284,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID degli oggetti trovati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c307a2c8-1227-475d-8d7a-cbf02c6b54ab</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9a3d1897-312e-40bb-8194-160cb00b4715</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rhino IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2307,7 +2307,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle coordinate correnti Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a0dfb99a-8251-4fb6-8994-62f0eff193db</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dcbd1add-7fdb-4075-8a06-0cd895f45fe9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2330,7 +2330,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">User Text per ramo {oggetto}.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e0ac0545-4227-4ac9-b773-917586a45298</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d1c86b01-2e7f-48d4-933c-2694dc934ca1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2353,7 +2353,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5d9f41c-ed95-41e6-8a55-5c8dc5ea484f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">093425dc-6bee-4d6f-a4d3-3d3ddd18a284</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2376,7 +2376,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadati IFC salvati nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6205c734-f379-4de1-906b-3344f82f47dc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a849f0c0-9829-4c7e-8321-23a33351b4c0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Metadata JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2399,7 +2399,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID assenti, non mesh, non IFCViewer o fuori dalla radice richiesta.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cf7bde1e-7c7c-42a9-8223-740ccd915052</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">687e05c2-96f6-4b04-be4a-c89d29bd2ecd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Not found</item>
                         <item name="NickName" type_name="gh_string" type_code="10">MISS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2431,7 +2431,7 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1155908d-4cc8-401a-8aef-b489f768630e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8db94768-e44b-4f5f-9a6c-39e9a7be75ba</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Read Baked</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2479,12 +2479,12 @@ BAKE crea 6 mesh con tutti i parametri e layer per classe IFC. I colori per pian
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb0a7874-7cd3-42ca-9c47-23f702129488</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c7be5cda-b1e6-4627-8e49-5d467b1417e9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">GUID RHINO DEGLI OGGETTI CREATI</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">c307a2c8-1227-475d-8d7a-cbf02c6b54ab</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">9a3d1897-312e-40bb-8194-160cb00b4715</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

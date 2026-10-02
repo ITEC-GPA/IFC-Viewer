@@ -1,0 +1,164 @@
+[
+  {
+    "component": "Bake IFC",
+    "guid": "f2c6c624-8665-49fb-be2b-b904676dd197",
+    "examples": [
+      "02_Piani_e_colori.gh",
+      "05_Origine_locale_export.gh",
+      "08_Bake_e_rilettura.gh"
+    ]
+  },
+  {
+    "component": "IFC Color By",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880008",
+    "examples": [
+      "02_Piani_e_colori.gh"
+    ]
+  },
+  {
+    "component": "IFC Compare Revisions",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb88000e",
+    "examples": [
+      "04_Confronto_revisioni.gh"
+    ]
+  },
+  {
+    "component": "IFC Export 3DM",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb88000c",
+    "examples": [
+      "05_Origine_locale_export.gh"
+    ]
+  },
+  {
+    "component": "IFC Export CSV",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb88000b",
+    "examples": [
+      "01_Abaco_pareti.gh",
+      "03_Controllo_parametri.gh",
+      "04_Confronto_revisioni.gh",
+      "07_Filtri_numerici.gh"
+    ]
+  },
+  {
+    "component": "IFC Filter Property",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880004",
+    "examples": [
+      "01_Abaco_pareti.gh",
+      "02_Piani_e_colori.gh",
+      "03_Controllo_parametri.gh",
+      "05_Origine_locale_export.gh",
+      "07_Filtri_numerici.gh",
+      "08_Bake_e_rilettura.gh"
+    ]
+  },
+  {
+    "component": "IFC Geometry Metrics",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880009",
+    "examples": [
+      "01_Abaco_pareti.gh",
+      "05_Origine_locale_export.gh",
+      "07_Filtri_numerici.gh"
+    ]
+  },
+  {
+    "component": "IFC Group By",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880006",
+    "examples": [
+      "02_Piani_e_colori.gh"
+    ]
+  },
+  {
+    "component": "IFC Elements",
+    "guid": "82f1c699-571b-4181-88c6-43a8fa6291ab",
+    "examples": [
+      "01_Abaco_pareti.gh",
+      "03_Controllo_parametri.gh",
+      "04_Confronto_revisioni.gh",
+      "05_Origine_locale_export.gh",
+      "06_Esplora_modello.gh",
+      "07_Filtri_numerici.gh",
+      "08_Bake_e_rilettura.gh"
+    ]
+  },
+  {
+    "component": "IFC Model Info",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880001",
+    "examples": [
+      "06_Esplora_modello.gh"
+    ]
+  },
+  {
+    "component": "IFC Local Origin",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb88000f",
+    "examples": [
+      "05_Origine_locale_export.gh"
+    ]
+  },
+  {
+    "component": "IFC Property Keys",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880002",
+    "examples": [
+      "06_Esplora_modello.gh"
+    ]
+  },
+  {
+    "component": "IFC Property Value",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880003",
+    "examples": [
+      "01_Abaco_pareti.gh",
+      "06_Esplora_modello.gh",
+      "07_Filtri_numerici.gh"
+    ]
+  },
+  {
+    "component": "IFC Read Baked",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb88000d",
+    "examples": [
+      "02_Piani_e_colori.gh",
+      "08_Bake_e_rilettura.gh"
+    ]
+  },
+  {
+    "component": "Read IFC",
+    "guid": "ea039ff7-706e-49ef-9848-e28006ddc782",
+    "examples": [
+      "01_Abaco_pareti.gh",
+      "02_Piani_e_colori.gh",
+      "03_Controllo_parametri.gh",
+      "04_Confronto_revisioni.gh",
+      "05_Origine_locale_export.gh",
+      "06_Esplora_modello.gh",
+      "07_Filtri_numerici.gh",
+      "08_Bake_e_rilettura.gh"
+    ]
+  },
+  {
+    "component": "Save IFC Archive",
+    "guid": "f7a083cd-6e4b-4568-accd-623c698afbe8",
+    "examples": [
+      "05_Origine_locale_export.gh"
+    ]
+  },
+  {
+    "component": "IFC Select IDs",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880005",
+    "examples": [
+      "06_Esplora_modello.gh"
+    ]
+  },
+  {
+    "component": "IFC Sort",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb880007",
+    "examples": [
+      "01_Abaco_pareti.gh",
+      "07_Filtri_numerici.gh"
+    ]
+  },
+  {
+    "component": "IFC Check Data",
+    "guid": "e2b93e81-4253-4bb4-918a-5129bb88000a",
+    "examples": [
+      "03_Controllo_parametri.gh"
+    ]
+  }
+]

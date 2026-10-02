@@ -23,6 +23,8 @@ internal static class ExampleDefinitions
     private const string Fire = "IFC.Property.Pset_WallCommon.FireRating";
     private const string Code = "IFC.Property.Progetto.Codice";
     private const string Floor = "IFC.Container.name";
+    private const string IndexKey = "IFC.Property.Tutorial.Indice";
+    private const string EnabledKey = "IFC.Property.Tutorial.Selezionabile";
     private static string Root;
     private static string OutputRoot;
     private static Action<bool, string> Check;
@@ -81,6 +83,11 @@ internal static class ExampleDefinitions
         var proxy = Instances.ComponentServer.ObjectProxies.First(p => p.Desc.Name == "Custom Preview");
         var preview = Tool(doc, (GH_Component)proxy.CreateInstance(), geometry, x, y, name);
         preview.Params.Input[1].AddSource(colors); preview.Hidden = false;
+    }
+    private static GH_Component Native(GH_Document doc, string name, IGH_Param input, int x, int y)
+    {
+        var proxy = Instances.ComponentServer.ObjectProxies.First(p => p.Desc.Name == name && p.Desc.Category != "IFC Viewer");
+        return Tool(doc, (GH_Component)proxy.CreateInstance(), input, x, y);
     }
     private static void FixedPreview(GH_Document doc, IGH_Param elements, Color color, int x, int y, string name)
     {
@@ -205,7 +212,97 @@ internal static class ExampleDefinitions
         return doc;
     }
 
+    private static GH_Document Explore()
+    {
+        var doc = new GH_Document();
+        Header(doc, "06 | ESPLORA MODELLO, CHIAVI E IDENTIFICATIVI", "Read IFC -> Model Info per schema, unita e conteggi; Property Keys per trovare le chiavi esatte; Select IDs per isolare un oggetto.\nModello incorporato: IFC4, 11 record e 6 mesh. Il pannello ID contiene un GlobalId valido e ID_NON_PRESENTE per mostrare gli ID non trovati.\nCambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consulta valore, presenza e JSON dell'oggetto selezionato.");
+        var read = Reader(doc, "tutorial_A");
+        var info = Tool(doc, new ModelInfoComponent(), read.Params.Output[0], 660, 345);
+        Out(doc, "SCHEMA", info.Params.Output[1], 870, 170, 240, 75);
+        Out(doc, "PRODOTTI / RECORD", info.Params.Output[2], 1140, 170, 250, 75);
+        Out(doc, "MESH", info.Params.Output[3], 1420, 170, 240, 75);
+        Out(doc, "SCALA LUNGHEZZE IFC -> METRI", info.Params.Output[4], 1690, 170, 350, 75);
+        Out(doc, "CLASSI", info.Params.Output[5], 890, 300, 480, 195);
+        Out(doc, "CONTEGGI PER CLASSE", info.Params.Output[6], 1410, 300, 430, 195);
+        var keys = Tool(doc, new PropertyKeysComponent(), read.Params.Output[1], 660, 685);
+        var search = Panel(doc, "CERCA NEL NOME DELLA CHIAVE", "FireRating", 30, 535, 485, 65);
+        keys.Params.Input[1].AddSource(search);
+        Out(doc, "CHIAVI ESATTE | copia una chiave sotto", keys.Params.Output[0], 890, 585, 680, 155);
+        Out(doc, "OCCORRENZE | stessa riga della chiave", keys.Params.Output[1], 1620, 585, 420, 155);
+        var model = IfcModel.Load(Path.Combine(Root, "examples", "tutorial_A.ifcdata.zip"));
+        var wall = model.Elements.First(e => e.Name.StartsWith("Parete 1"));
+        var ids = Tool(doc, new SelectIdsComponent(), read.Params.Output[1], 660, 1020);
+        var request = Panel(doc, "ID | GlobalId, #STEP-ID oppure IFC.Key", wall.GlobalId + "\nID_NON_PRESENTE", 30, 855, 520, 105);
+        ids.Params.Input[1].AddSource(request);
+        Out(doc, "ID NON TROVATI | esempio intenzionale", ids.Params.Output[2], 890, 875, 630, 80);
+        var inspect = Tool(doc, new InspectIfcComponent(), ids.Params.Output[0], 1090, 1120);
+        Preview(doc, inspect.Params.Output[0], inspect.Params.Output[7], 1470, 1120, "SOLO OGGETTO SELEZIONATO");
+        var value = Tool(doc, new PropertyValueComponent(), ids.Params.Output[0], 660, 1450);
+        var key = Panel(doc, "PARAMETRO | incolla una chiave da Property Keys", Fire, 30, 1270, 530, 70);
+        value.Params.Input[1].AddSource(key);
+        Out(doc, "VALORE EFFETTIVO", value.Params.Output[0], 890, 1355, 450, 95);
+        Out(doc, "PRESENTE | distingue assente da valore vuoto", value.Params.Output[1], 1380, 1355, 560, 95);
+        Out(doc, "JSON COMPLETO | doppio clic per consultare", inspect.Params.Output[6], 890, 1500, 1050, 125);
+        return doc;
+    }
+    private static GH_Document NumericFilters()
+    {
+        var doc = new GH_Document();
+        Header(doc, "07 | FILTRI NUMERICI, BOOLEANI E COMPONENTI NATIVI", "Pareti -> Sort numerico per Tutorial.Indice -> filtro >= soglia -> filtro Selezionabile=true -> preview, somma dei volumi e CSV.\nGli indici sono 2, 10, 1: Sort numerico produce 1, 2, 10. Con soglia 2 sono selezionate due pareti e il volume totale e 9 m3.\nSposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con indice 1 e un valore presente, non un parametro mancante.");
+        var read = Reader(doc, "tutorial_numeri");
+        var walls = Tool(doc, new InspectIfcComponent(), read.Params.Output[1], 650, 345, "SOLO IfcWall");
+        ToolTests.SetText(walls, 1, "IfcWall");
+        var sort = Tool(doc, new SortElementsComponent(), walls.Params.Output[1], 1030, 345, "NUMERIC = TRUE");
+        ToolTests.SetText(sort, 1, IndexKey); ToolTests.SetBool(sort, 2, true);
+        var values = Tool(doc, new PropertyValueComponent(), sort.Params.Output[0], 1440, 345, "INDICI ORDINATI");
+        ToolTests.SetText(values, 1, IndexKey);
+        Out(doc, "NUMERI | 1, 2, 10", values.Params.Output[2], 1650, 260, 400, 140);
+        var key = Panel(doc, "CHIAVE NUMERICA", IndexKey, 30, 525, 510, 65);
+        var slider = Place(doc, new GH_NumberSlider(), 110, 695);
+        slider.NickName = "SOGLIA INDICE"; slider.Slider.Type = Grasshopper.GUI.Base.GH_SliderAccuracy.Integer;
+        slider.Slider.Minimum = 0; slider.Slider.Maximum = 12; slider.SetSliderValue(2);
+        var threshold = Filter(doc, sort.Params.Output[0], IndexKey, "2", 650, 715);
+        threshold.NickName = "SOGLIA >="; ToolTests.SetText(threshold, 2, ">=");
+        threshold.Params.Input[1].AddSource(key); threshold.Params.Input[3].AddSource(slider);
+        var enabled = Filter(doc, threshold.Params.Output[0], EnabledKey, "true", 1040, 715);
+        enabled.NickName = "SELEZIONABILE";
+        var flag = Panel(doc, "CHIAVE BOOLEANA | confronto testuale true", EnabledKey, 760, 500, 630, 65);
+        enabled.Params.Input[1].AddSource(flag);
+        FixedPreview(doc, enabled.Params.Output[0], Color.SteelBlue, 1500, 715, "PARETI FILTRATE");
+        var metrics = Tool(doc, new GeometryMetricsComponent(), enabled.Params.Output[0], 650, 1080);
+        var sum = Native(doc, "Mass Addition", metrics.Params.Output[1], 1030, 1080);
+        Out(doc, "TOTALE VOLUMI | m3", sum.Params.Output[0], 1260, 995, 570, 130);
+        var csv = Csv(doc, enabled.Params.Output[0], "07_filtro_numerico", 850, 1440);
+        var columns = (GH_Panel)csv.Params.Input[1].Sources.Single();
+        columns.UserText = string.Join("\n", new[] { "IFC.GlobalId", "IFC.Name", IndexKey, EnabledKey });
+        return doc;
+    }
+    private static GH_Document BakeAndRead()
+    {
+        var doc = new GH_Document();
+        Header(doc, "08 | BAKE E RILETTURA DEGLI ATTRIBUTI RHINO", "Read IFC -> oggetti con mesh -> Bake IFC -> Read Baked: premi BAKE e consulta GUID Rhino, chiavi, valori e JSON.\nAttesi: 6 mesh, layer Esempio_08::sorgente::IfcClass, tutti i parametri in User Text. UPDATE e True: un secondo bake aggiorna gli stessi oggetti.\nSe modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC originale del bake. Salva il documento .3dm per conservare gli oggetti.");
+        var read = Reader(doc, "tutorial_A");
+        var filter = Filter(doc, read.Params.Output[1], "IFC.GeometryStatus", "ok", 650, 345);
+        var inspect = Tool(doc, new InspectIfcComponent(), filter.Params.Output[0], 1030, 345);
+        Preview(doc, inspect.Params.Output[0], inspect.Params.Output[7], 1430, 345, "ANTEPRIMA PRIMA DEL BAKE");
+        Note(doc, "DOPO IL BAKE", "Disattiva Custom Preview per vedere solo gli oggetti Rhino. Gli attributi si trovano in Proprieta > Testo utente attributo.", 1640, 245, 450, 130);
+        var bake = Tool(doc, new BakeIfcComponent(), filter.Params.Output[0], 650, 740);
+        ToolTests.SetText(bake, 2, "Esempio_08"); Button(doc, bake, 1, "BAKE", 410, 790);
+        var baked = Tool(doc, new ReadBakedComponent(), bake.Params.Output[0], 1080, 740);
+        ToolTests.SetText(baked, 1, "Esempio_08"); Button(doc, baked, 2, "REFRESH", 900, 870);
+        var length = Native(doc, "List Length", baked.Params.Output[0], 1490, 740);
+        Out(doc, "OGGETTI RHINO | 0 prima, 6 dopo BAKE", length.Params.Output[0], 1670, 660, 450, 105);
+        Out(doc, "REPORT BAKE", bake.Params.Output[1], 30, 505, 540, 130);
+        Out(doc, "GUID RHINO | diversi dai GlobalId IFC", baked.Params.Output[0], 30, 1040, 610, 180);
+        Out(doc, "CHIAVI USER TEXT | un ramo per oggetto", baked.Params.Output[2], 690, 1040, 680, 245);
+        Out(doc, "VALORI | righe allineate alle chiavi", baked.Params.Output[3], 1410, 1040, 700, 245);
+        Out(doc, "METADATI IFC ORIGINALI | JSON", baked.Params.Output[4], 690, 1340, 1420, 165);
+        return doc;
+    }
+
     private static T Find<T>(GH_Document doc) where T : GH_Component { return doc.Objects.OfType<T>().Single(); }
+    private static GH_Component FindNative(GH_Document doc, string name) { return doc.Objects.OfType<GH_Component>().Single(c => c.Name == name); }
+    private static double[] Numbers(GH_Component c, int output) { return c.Params.Output[output].VolatileData.AllData(true).Cast<GH_Number>().Select(x => x.Value).ToArray(); }
     private static string[] Text(GH_Component c, int output) { return c.Params.Output[output].VolatileData.AllData(true).Cast<GH_String>().Select(x => x.Value).ToArray(); }
     private static IfcElement[] Elements(GH_Component c, int output)
     { return c.Params.Output[output].VolatileData.AllData(true).Cast<GH_ObjectWrapper>().Select(x => (IfcElement)x.Value).ToArray(); }
@@ -252,11 +349,54 @@ internal static class ExampleDefinitions
             var bounds = BoundingBox.Empty; foreach (var mesh in meshes) bounds.Union(mesh.GetBoundingBox(true));
             Check(meshes.Length == 6 && Math.Abs(bounds.Center.X) < 0.01 && Math.Abs(bounds.Center.Y) < 0.01 && Math.Abs(bounds.Max.Z - 6200) < 0.01, "05 | preview centrata e quota 6200 mm");
         }
+        if (number == 6)
+        {
+            var info = Find<ModelInfoComponent>(doc);
+            Check(Text(info, 1).Single() == "IFC4" && ((GH_Integer)info.Params.Output[2].VolatileData.AllData(true).Single()).Value == 11 && ((GH_Integer)info.Params.Output[3].VolatileData.AllData(true).Single()).Value == 6, "06 | info: IFC4, 11 record, 6 mesh");
+            Check(Math.Abs(Numbers(info, 4).Single() - 0.001) < 1e-12, "06 | scala mm IFC -> metri");
+            var keys = Find<PropertyKeysComponent>(doc); var found = Text(keys, 0);
+            int fireIndex = Array.IndexOf(found, Fire);
+            Check(fireIndex >= 0 && keys.Params.Output[1].VolatileData.AllData(true).Cast<GH_Integer>().ElementAt(fireIndex).Value == 3, "06 | scoperta FireRating con tre occorrenze");
+            var ids = Find<SelectIdsComponent>(doc);
+            Check(Elements(ids, 0).Single().Name.StartsWith("Parete 1") && Text(ids, 2).SequenceEqual(new[] { "ID_NON_PRESENTE" }) && Text(ids, 3).Length == 0, "06 | selezione ID e report identificativo assente");
+            Check(Text(Find<PropertyValueComponent>(doc), 0).Single() == "REI 60" && Text(Find<InspectIfcComponent>(doc), 6).Single().Contains("property_graph"), "06 | attributo e JSON della parete selezionata");
+        }
+        if (number == 7)
+        {
+            Check(Numbers(Find<PropertyValueComponent>(doc), 2).SequenceEqual(new[] { 1.0, 2.0, 10.0 }), "07 | ordine numerico 1, 2, 10");
+            var selected = doc.Objects.OfType<FilterPropertyComponent>().Single(c => c.NickName == "SELEZIONABILE");
+            Check(Elements(selected, 0).Length == 2 && Math.Abs(Numbers(FindNative(doc, "Mass Addition"), 0).Single() - 9) < 1e-5, "07 | filtri AND: due pareti, somma nativa 9 m3");
+        }
+        if (number == 8)
+        {
+            Check(Elements(Find<FilterPropertyComponent>(doc), 0).Length == 6, "08 | sei elementi pronti per il bake");
+            Check(Find<ReadBakedComponent>(doc).Params.Output[0].VolatileDataCount == 0, "08 | rilettura vuota prima del bake");
+        }
     }
     private static void Disconnect(GH_Component c, int index) { c.Params.Input[index].RemoveAllSources(); }
     private static void Exercise(GH_Document doc, RhinoDoc rhino, int number)
     {
-        if (number == 1 || number == 3 || number == 4)
+        if (number == 6)
+        {
+            var ids = Find<SelectIdsComponent>(doc); var wall = Elements(ids, 0).Single();
+            Disconnect(ids, 1); ToolTests.SetText(ids, 1, "#" + wall.StepId); doc.NewSolution(true);
+            Check(Elements(ids, 0).Single().GlobalId == wall.GlobalId && Text(ids, 2).Length == 0, "06 | selezione alternativa tramite STEP-ID");
+            ToolTests.SetText(ids, 1, wall.Key); doc.NewSolution(true);
+            Check(Elements(ids, 0).Single().GlobalId == wall.GlobalId, "06 | selezione alternativa tramite IFC.Key");
+            NoErrors(doc, "Interazione 06");
+        }
+        if (number == 7)
+        {
+            var slider = doc.Objects.OfType<GH_NumberSlider>().Single();
+            var selected = doc.Objects.OfType<FilterPropertyComponent>().Single(c => c.NickName == "SELEZIONABILE");
+            slider.SetSliderValue(10); slider.ExpireSolution(false); doc.NewSolution(true);
+            Check(Elements(selected, 0).Length == 1 && Math.Abs(Numbers(FindNative(doc, "Mass Addition"), 0).Single() - 4.5) < 1e-5, "07 | slider 10 aggiorna selezione e somma a 4.5 m3");
+            slider.SetSliderValue(0); slider.ExpireSolution(false); doc.NewSolution(true);
+            Check(Elements(selected, 0).Length == 2 && Elements(selected, 1).Single().Name == "Parete P1", "07 | il secondo filtro esclude esplicitamente il valore false");
+            slider.SetSliderValue(2); slider.ExpireSolution(false); doc.NewSolution(true);
+            NoErrors(doc, "Interazione 07");
+        }
+        if (number == 1 || number == 3 || number == 4 || number == 7)
         {
             var csv = Find<ExportCsvComponent>(doc); string path = Path.Combine(OutputRoot, "esempio_0" + number + ".csv");
             Disconnect(csv, 2); Disconnect(csv, 3); ToolTests.SetText(csv, 2, path); ToolTests.SetBool(csv, 3, true);
@@ -288,6 +428,24 @@ internal static class ExampleDefinitions
             string archive = Text(save, 0).Single();
             Check(IfcModel.Load(archive).Elements.Count == 11, "05 | archivio conserva tutti gli 11 record");
         }
+        if (number == 8)
+        {
+            var bake = Find<BakeIfcComponent>(doc); var baked = Find<ReadBakedComponent>(doc);
+            Disconnect(bake, 1); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true);
+            var ids = Text(bake, 0);
+            Check(ids.Length == 6 && rhino.Objects.Count == 6 && Text(baked, 0).Length == 6, "08 | bake, GUID e rilettura dei sei oggetti");
+            Check(Text(baked, 2).Contains(Fire) && Text(baked, 3).Contains("REI 60") && Text(baked, 4).Length == 6, "08 | User Text e JSON visibili nei pannelli");
+            Check(((GH_Integer)FindNative(doc, "List Length").Params.Output[0].VolatileData.AllData(true).Single()).Value == 6, "08 | conteggio nativo dei GUID");
+            ToolTests.SetBool(bake, 1, false); doc.NewSolution(true); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true);
+            Check(rhino.Objects.Count == 6 && Text(bake, 0).SequenceEqual(ids), "08 | secondo bake aggiorna senza duplicati");
+            var obj = rhino.Objects.FindId(new Guid(ids[0])); var attributes = obj.Attributes.Duplicate();
+            attributes.SetUserString("Verifica.Utente", "Controllato");
+            Check(rhino.Objects.ModifyAttributes(obj.Id, attributes, true), "08 | modifica User Text nel documento di prova");
+            Disconnect(baked, 2); ToolTests.SetBool(baked, 2, true); doc.NewSolution(true);
+            var keys = Text(baked, 2); var values = Text(baked, 3); int at = Array.IndexOf(keys, "Verifica.Utente");
+            Check(at >= 0 && values[at] == "Controllato", "08 | Refresh rilegge i dati modificati in Rhino");
+            NoErrors(doc, "Interazione 08");
+        }
     }
     private static void Snapshot(GH_Document doc, string name, int height)
     {
@@ -304,8 +462,9 @@ internal static class ExampleDefinitions
     {
         Root = root; Check = check; Expected = JObject.Parse(File.ReadAllText(Path.Combine(root, "examples", "scenari.json")));
         OutputRoot = Path.Combine(root, "test-output", "examples-" + Guid.NewGuid().ToString("N")); Directory.CreateDirectory(OutputRoot);
-        var names = new[] { "01_Abaco_pareti", "02_Piani_e_colori", "03_Controllo_parametri", "04_Confronto_revisioni", "05_Origine_locale_export" };
-        Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin };
+        var names = new[] { "01_Abaco_pareti", "02_Piani_e_colori", "03_Controllo_parametri", "04_Confronto_revisioni", "05_Origine_locale_export", "06_Esplora_modello", "07_Filtri_numerici", "08_Bake_e_rilettura" };
+        Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin, Explore, NumericFilters, BakeAndRead };
+        var coverage = new Dictionary<string, HashSet<string>>();
         GH_Document.EnableSolutions = true;
         for (int i = 0; i < factories.Length; i++)
         using (var rhino = RhinoDoc.CreateHeadless(null))
@@ -318,7 +477,7 @@ internal static class ExampleDefinitions
                 Check(rhino.Objects.Count == 0 && doc.Objects.OfType<ExportCsvComponent>().All(c => Text(c, 0).Single() == ""), names[i] + " | nessun bake/export all'apertura");
                 foreach (string extension in new[] { ".gh", ".ghx" })
                 { var archive = new GH_Archive(); Check(archive.AppendObject(doc, "Definition") && archive.WriteToFile(Path.ChangeExtension(file, extension), true, false), names[i] + " | salvato " + extension); }
-                Snapshot(doc, names[i], i == 4 ? 1080 : 960);
+                Snapshot(doc, names[i], i >= 4 ? 1130 : 960);
             }
             var io = new GH_DocumentIO(); Check(io.Open(file), names[i] + " | riaperto da disco");
             using (var reopened = io.Document)
@@ -326,9 +485,25 @@ internal static class ExampleDefinitions
                 reopened.Enabled = true; reopened.NewSolution(true); NoErrors(reopened, "Riapertura " + names[i]); Verify(reopened, i + 1);
                 Check(reopened.Objects.OfType<ReadIfcComponent>().All(c => c.Params.Output[1].VolatileDataCount == 11), names[i] + " | modelli incorporati recuperati");
                 Check(rhino.Objects.Count == 0, names[i] + " | riapertura senza bake");
+                foreach (var component in reopened.Objects.OfType<IfcComponent>())
+                {
+                    HashSet<string> files;
+                    if (!coverage.TryGetValue(component.GetType().FullName, out files))
+                    { files = new HashSet<string>(); coverage.Add(component.GetType().FullName, files); }
+                    files.Add(names[i] + ".gh");
+                }
                 Exercise(reopened, rhino, i + 1);
             }
         }
+        var expectedTypes = typeof(IfcComponent).Assembly.GetTypes().Where(t => !t.IsAbstract && typeof(IfcComponent).IsAssignableFrom(t)).ToArray();
+        Check(expectedTypes.Length == 19 && new HashSet<string>(expectedTypes.Select(t => t.FullName)).SetEquals(coverage.Keys), "Copertura: tutti i 19 componenti nei file GH riaperti");
+        var manifest = new JArray();
+        foreach (var type in expectedTypes.OrderBy(t => t.Name))
+        {
+            var component = (GH_Component)Activator.CreateInstance(type);
+            manifest.Add(new JObject(new JProperty("component", component.Name), new JProperty("guid", component.ComponentGuid.ToString()), new JProperty("examples", new JArray(coverage[type.FullName].OrderBy(x => x)))));
+        }
+        File.WriteAllText(Path.Combine(root, "examples", "componenti-esempi.json"), manifest.ToString());
         File.WriteAllText(Path.Combine(root, "test-output", "last-examples-output.txt"), OutputRoot);
         Console.WriteLine("EXAMPLES_OUTPUT=" + OutputRoot);
     }

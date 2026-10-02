@@ -2,6 +2,8 @@
 
 Tutti i componenti si trovano nella scheda **IFC Viewer** di Grasshopper. La definizione `IFC_Viewer.gh` li contiene gia collegati in cinque aree. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
 
+La raccolta di **[otto esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 19 componenti all'esempio consigliato.
+
 ## Leggere e visualizzare
 
 | Componente | Input principali | Output / utilizzo |

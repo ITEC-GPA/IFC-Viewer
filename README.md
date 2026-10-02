@@ -18,7 +18,7 @@ Sul computer su cui e stato creato il progetto il runtime Python e gia preparato
 
 ## Componenti
 
-Sono disponibili anche **[cinque esempi guidati](examples/ESEMPI.md)**, ciascuno in un file `.gh` autonomo con modello incorporato: [abaco pareti](examples/01_Abaco_pareti.gh), [piani/colori/bake](examples/02_Piani_e_colori.gh), [controllo parametri](examples/03_Controllo_parametri.gh), [confronto revisioni](examples/04_Confronto_revisioni.gh) e [origine locale/export](examples/05_Origine_locale_export.gh). I modelli IFC sorgente e le copie `.ghx` sono nella cartella `examples`.
+Sono disponibili **[otto esempi guidati](examples/ESEMPI.md)** che coprono tutti i 19 componenti, ciascuno in un file `.gh` autonomo con modello incorporato: [abaco pareti](examples/01_Abaco_pareti.gh), [piani/colori/bake](examples/02_Piani_e_colori.gh), [controllo parametri](examples/03_Controllo_parametri.gh), [confronto revisioni](examples/04_Confronto_revisioni.gh), [origine locale/export](examples/05_Origine_locale_export.gh), [esplorazione e ID](examples/06_Esplora_modello.gh), [filtri numerici con slider](examples/07_Filtri_numerici.gh) e [bake/rilettura attributi](examples/08_Bake_e_rilettura.gh). I modelli IFC sorgente e le copie `.ghx` sono nella cartella `examples`. Per iniziare usa **06**; per portare gli oggetti in Rhino con layer e attributi usa **08**.
 
 | Componente | Funzione |
 | --- | --- |

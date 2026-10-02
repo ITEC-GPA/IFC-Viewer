@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">48577072-2dff-400b-bd49-c022db66c67e</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">77511f58-b495-4b43-b4ed-88f083758784</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639263947531351924</item>
+            <item name="Date" type_name="gh_date" type_code="8">639263947663413001</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -69,9 +69,9 @@
         </chunk>
         <chunk name="GHALibraries">
           <items count="1">
-            <item name="Count" type_name="gh_int32" type_code="3">2</item>
+            <item name="Count" type_name="gh_int32" type_code="3">3</item>
           </items>
-          <chunks count="2">
+          <chunks count="3">
             <chunk name="Library" index="0">
               <items count="4">
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
@@ -81,6 +81,14 @@
               </items>
             </chunk>
             <chunk name="Library" index="1">
+              <items count="4">
+                <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
+                <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
+                <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+              </items>
+            </chunk>
+            <chunk name="Library" index="2">
               <items count="6">
                 <item name="AssemblyFullName" type_name="gh_string" type_code="10">IfcViewer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
                 <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
@@ -94,9 +102,9 @@
         </chunk>
         <chunk name="DefinitionObjects">
           <items count="1">
-            <item name="ObjectCount" type_name="gh_int32" type_code="3">27</item>
+            <item name="ObjectCount" type_name="gh_int32" type_code="3">26</item>
           </items>
-          <chunks count="27">
+          <chunks count="26">
             <chunk name="Object" index="0">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
@@ -106,15 +114,15 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">56ca3493-c5a9-4406-998a-597cd7b2081c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4eeed8e7-e62e-491b-8751-d5ca430c2bc6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">01 | ABACO PARETI</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">08 | BAKE E RILETTURA DEGLI ATTRIBUTI RHINO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">Leggi -&gt; filtra IfcWall -&gt; ordina -&gt; leggi proprieta e misure -&gt; esporta CSV.
-Modello gia incorporato: 3 pareti, volume totale 12 m3. Il CSV contiene attributi IFC, mentre le misure sono mostrate nei pannelli.
-Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; Overwrite inizialmente False.</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">Read IFC -&gt; oggetti con mesh -&gt; Bake IFC -&gt; Read Baked: premi BAKE e consulta GUID Rhino, chiavi, valori e JSON.
+Attesi: 6 mesh, layer Esempio_08::sorgente::IfcClass, tutti i parametri in User Text. UPDATE e True: un secondo bake aggiorna gli stessi oggetti.
+Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC originale del bake. Salva il documento .3dm per conservare gli oggetti.</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
@@ -161,7 +169,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">faef2ae7-aaad-4e2b-9372-df209b0e8413</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f0e16c6-e150-43d8-b25b-3f611f1916aa</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +193,12 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7cbbf00b-070c-4c51-86dc-64a7bc50fdb7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dd2e2e1c-dee2-4af6-b407-9094701a3853</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a7c53202-0fc1-4fb7-9a1d-60491936ec29</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ae30ab75-31d9-451f-be47-5110516d13b9</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +217,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">36d2a929-616e-40b2-81a4-d94f0e01d6b0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dd109eda-9ce8-4f1a-93c4-1ea240cb669e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d7b4db7a-83c2-4e55-8865-2494488607f3</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">57ade2e3-a025-49e2-9d92-cd5071f53213</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +261,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ae7f72a-019d-4178-a655-5f92ebe32d22</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c25356ab-b012-482a-ac87-11d09deac1ea</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +284,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1953a708-a369-4cf6-a534-b20c9d01d59e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d947f89-2d66-49bd-a0a8-ee1d185e2896</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +307,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">17b1962f-73cb-4fdb-a95c-ffde233cd361</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e8ff702-c393-4797-b96a-61ca66a4afce</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +339,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1c6a6e11-81db-4ec3-aa4c-2ac16c90a28b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6283fa35-af59-4262-91b1-a1ea290c1459</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +387,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a7c53202-0fc1-4fb7-9a1d-60491936ec29</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ae30ab75-31d9-451f-be47-5110516d13b9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +437,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7b4db7a-83c2-4e55-8865-2494488607f3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">57ade2e3-a025-49e2-9d92-cd5071f53213</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,9 +473,9 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b27e082b-dc78-4a96-b994-8f9eaef1c6b8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6d04993e-9640-44f5-b5d0-bbd93880878e</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IfcWall</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">ok</item>
                   </items>
                   <chunks count="9">
                     <chunk name="Attributes">
@@ -488,11 +496,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3d6f6c1-82ba-46d7-8a8a-fd63ffb63921</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5981d3db-721d-4577-945a-0c85253c9a12</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1953a708-a369-4cf6-a534-b20c9d01d59e</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8d947f89-2d66-49bd-a0a8-ee1d185e2896</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +519,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1df09c67-cada-4921-bcb4-dab2d9481c0e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">29c0b1c7-c29c-40eb-bea3-088f6e2b4525</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -542,7 +550,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                                 <chunk name="Item" index="0">
                                   <items count="2">
                                     <item name="null_string" type_name="gh_bool" type_code="1">false</item>
-                                    <item name="string" type_name="gh_string" type_code="10">IFC.Class</item>
+                                    <item name="string" type_name="gh_string" type_code="10">IFC.GeometryStatus</item>
                                   </items>
                                 </chunk>
                               </chunks>
@@ -554,7 +562,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ee5c9003-567f-42ec-a7c0-043ffc21d0d3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8c738b36-6184-41ce-b7a4-cdae325716e4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +605,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d47a5954-6b52-4824-afca-046dd004432a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">08e2ba9c-b6e8-4eb6-a2e0-29bd19e655a9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -628,7 +636,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                                 <chunk name="Item" index="0">
                                   <items count="2">
                                     <item name="null_string" type_name="gh_bool" type_code="1">false</item>
-                                    <item name="string" type_name="gh_string" type_code="10">IfcWall</item>
+                                    <item name="string" type_name="gh_string" type_code="10">ok</item>
                                   </items>
                                 </chunk>
                               </chunks>
@@ -640,7 +648,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0c8daf33-2678-412b-a935-5a1505b8242d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8e0223e-5e03-4254-8386-11e62b5b1908</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +691,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">31caf921-9d09-4ed5-a437-52c2800109ee</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4cdee03b-b4ec-4ee1-a555-cf8925169d17</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +714,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">27e26f1d-f7e8-4451-af0f-42a0573460ee</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">caf2447c-2201-4313-b538-f82b12d9f7a9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +737,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">13ef92a2-eeb9-4a4f-9696-9d24747a15cc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8e7f6d4b-bf40-44f2-8a0d-444a9da4a631</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,13 +769,13 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dc29b792-dd86-492e-90bb-29014af6a0f7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">837264b6-8637-409b-ab76-c14caa55bc32</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">IfcWall</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">ok</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
@@ -802,262 +810,6 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
             </chunk>
             <chunk name="Object" index="7">
               <items count="3">
-                <item name="GUID" type_name="gh_guid" type_code="9">e2b93e81-4253-4bb4-918a-5129bb880007</item>
-                <item name="Lib" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
-                <item name="Name" type_name="gh_string" type_code="10">IFC Sort</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="5">
-                    <item name="Description" type_name="gh_string" type_code="10">Ordina stabilmente gli oggetti per un parametro, come testo o numero. Valori assenti/non numerici in fondo.</item>
-                    <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7c126e3-3cd2-402f-8e6c-830fe2c80461</item>
-                    <item name="Name" type_name="gh_string" type_code="10">IFC Sort</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IFC Sort</item>
-                  </items>
-                  <chunks count="6">
-                    <chunk name="Attributes">
-                      <items count="2">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>0</X>
-                          <Y>0</Y>
-                          <W>150</W>
-                          <H>20</H>
-                        </item>
-                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1020</X>
-                          <Y>345</Y>
-                        </item>
-                      </items>
-                    </chunk>
-                    <chunk name="param_input" index="0">
-                      <items count="8">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">05541923-73ef-4789-8a53-17afa895be52</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Elements</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">E</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">31caf921-9d09-4ed5-a437-52c2800109ee</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_input" index="1">
-                      <items count="6">
-                        <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ba3bb16e-5ad8-444c-9bb0-8adc5b02510b</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Key</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">K</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="2">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                        <chunk name="PersistentData">
-                          <items count="1">
-                            <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                          </items>
-                          <chunks count="1">
-                            <chunk name="Branch" index="0">
-                              <items count="2">
-                                <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
-                              </items>
-                              <chunks count="1">
-                                <chunk name="Item" index="0">
-                                  <items count="2">
-                                    <item name="null_string" type_name="gh_bool" type_code="1">false</item>
-                                    <item name="string" type_name="gh_string" type_code="10">IFC.Name</item>
-                                  </items>
-                                </chunk>
-                              </chunks>
-                            </chunk>
-                          </chunks>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_input" index="2">
-                      <items count="6">
-                        <item name="Description" type_name="gh_string" type_code="10">Ordinamento numerico nelle unita originarie.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e068803e-574f-409b-83b9-ec9858afb7d9</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Numeric</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">N</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="2">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                        <chunk name="PersistentData">
-                          <items count="1">
-                            <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                          </items>
-                          <chunks count="1">
-                            <chunk name="Branch" index="0">
-                              <items count="2">
-                                <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
-                              </items>
-                              <chunks count="1">
-                                <chunk name="Item" index="0">
-                                  <items count="1">
-                                    <item name="boolean" type_name="gh_bool" type_code="1">false</item>
-                                  </items>
-                                </chunk>
-                              </chunks>
-                            </chunk>
-                          </chunks>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_input" index="3">
-                      <items count="6">
-                        <item name="Description" type_name="gh_string" type_code="10">Ordine decrescente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6b49d91a-5889-4383-a579-198e66023b95</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Descending</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">D</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="2">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                        <chunk name="PersistentData">
-                          <items count="1">
-                            <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                          </items>
-                          <chunks count="1">
-                            <chunk name="Branch" index="0">
-                              <items count="2">
-                                <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
-                              </items>
-                              <chunks count="1">
-                                <chunk name="Item" index="0">
-                                  <items count="1">
-                                    <item name="boolean" type_name="gh_bool" type_code="1">false</item>
-                                  </items>
-                                </chunk>
-                              </chunks>
-                            </chunk>
-                          </chunks>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_output" index="0">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Elementi ordinati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Elements</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">E</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="8">
-              <items count="2">
-                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
-                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="8">
-                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">becc9b61-4e62-4721-b5cc-4ec7855ca90c</item>
-                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IFC Sort</item>
-                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">IFC Sort</item>
-                  </items>
-                  <chunks count="2">
-                    <chunk name="Attributes">
-                      <items count="4">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>905</X>
-                          <Y>250</Y>
-                          <W>250</W>
-                          <H>48</H>
-                        </item>
-                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                    </chunk>
-                    <chunk name="PanelProperties">
-                      <items count="7">
-                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
-                          <ARGB>255;235;242;247</ARGB>
-                        </item>
-                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
-                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Multiline" type_name="gh_bool" type_code="1">true</item>
-                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
-                      </items>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="9">
-              <items count="3">
                 <item name="GUID" type_name="gh_guid" type_code="9">82f1c699-571b-4181-88c6-43a8fa6291ab</item>
                 <item name="Lib" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
@@ -1067,7 +819,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e689128a-1bed-4015-a829-73fcebbf9a5d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">00a3180f-b8f5-4014-90fd-445fb27d4ab9</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Data</item>
                   </items>
@@ -1081,7 +833,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1400</X>
+                          <X>1030</X>
                           <Y>345</Y>
                         </item>
                       </items>
@@ -1090,11 +842,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a5300543-0487-4b80-a530-84d0d140b1ef</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">92c9db45-8d94-4395-ba97-617e08e0bb19</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4cdee03b-b4ec-4ee1-a555-cf8925169d17</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1114,7 +866,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">73ff93e4-38df-4ea0-91c3-014f17f53331</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8fbbae06-0b6a-4310-8d93-aadec51146d8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1136,7 +888,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d5892498-cfff-4d27-b235-9a402be06750</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3bd6df4-4bf6-411a-be9a-f44c8bcd6414</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1179,7 +931,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">71c1cec5-769d-4c85-ae8a-39c6f5b53205</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1265d9c-3055-4512-b139-abec4180d6f5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1226,7 +978,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">444bd9f6-8643-456e-985d-49c436bfb578</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8be2979c-25e8-4577-9f47-7d25e40ee575</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1249,7 +1001,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a155bd2f-7698-4081-bff2-34f724c38006</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1ca15fb-522f-410c-9c32-3589e72d54e6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1272,7 +1024,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0ba7d596-16f2-4d61-b7a5-c37a46ea0e1a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0ca30a81-d146-44fe-8790-3891390c6a4e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1295,7 +1047,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">24781a8c-5df3-46e3-873e-7ccf874d8082</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">888cecbe-9c5d-483f-b449-2fdf5a1da220</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1318,7 +1070,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb53322b-f16f-453f-8102-331c909b0a8c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">99d7057d-cd3b-410d-a2a1-c274f9956ad1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1341,7 +1093,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f196d646-2511-48c6-8720-55e2488420ca</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4ef89076-eaed-4139-8e2a-ae0a8bf3c669</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1364,7 +1116,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8a2da21f-7963-4d3d-83c3-0f0fa25bbab1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">94693b76-db7a-40be-9a4c-9721fbd6c4e5</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1387,7 +1139,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3a992b6-6c03-46c2-a9ea-628aa6db1b5b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe3830f8-ed36-401c-b915-2eae253ad9e0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1410,7 +1162,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="10">
+            <chunk name="Object" index="8">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
                 <item name="Name" type_name="gh_string" type_code="10">Panel</item>
@@ -1419,7 +1171,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb424949-26b2-4de4-8f1d-fb82c158db65</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ba36cdb-df90-40fd-ba98-90c31e8c88c5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1431,7 +1183,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="Attributes">
                       <items count="4">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>1285</X>
+                          <X>915</X>
                           <Y>250</Y>
                           <W>250</W>
                           <H>48</H>
@@ -1458,7 +1210,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="11">
+            <chunk name="Object" index="9">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">537b0419-bbc2-4ff4-bf08-afe526367b2c</item>
                 <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
@@ -1468,9 +1220,9 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e5a3fa4d-e674-42fb-bd84-c931b36c3af1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa5c68ec-f852-402a-85ca-4b85bdcd13f9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">PARETI</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">ANTEPRIMA PRIMA DEL BAKE</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
                   </items>
                   <chunks count="3">
@@ -1483,7 +1235,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1790</X>
+                          <X>1430</X>
                           <Y>345</Y>
                         </item>
                       </items>
@@ -1492,11 +1244,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9786016b-7f5d-49ab-ac2c-3fda71a8669d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c28c7251-439c-4172-8d86-dad70c65d980</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">444bd9f6-8643-456e-985d-49c436bfb578</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8be2979c-25e8-4577-9f47-7d25e40ee575</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1515,11 +1267,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a2f3997c-f41e-4678-af62-cf8e0b1bfa54</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d6e34284-e404-45be-bf5c-eb5d6bbe2a3f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d3a992b6-6c03-46c2-a9ea-628aa6db1b5b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">fe3830f8-ed36-401c-b915-2eae253ad9e0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1569,7 +1321,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="12">
+            <chunk name="Object" index="10">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
                 <item name="Name" type_name="gh_string" type_code="10">Panel</item>
@@ -1578,19 +1330,19 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b117a51e-d6ec-4826-a035-5e2e5e511b8b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c619d22-2930-43f1-8327-02e411a48109</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">PARETI</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">ANTEPRIMA PRIMA DEL BAKE</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
                       <items count="4">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>1675</X>
+                          <X>1315</X>
                           <Y>250</Y>
                           <W>250</W>
                           <H>48</H>
@@ -1617,7 +1369,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="13">
+            <chunk name="Object" index="11">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
                 <item name="Name" type_name="gh_string" type_code="10">Panel</item>
@@ -1626,22 +1378,22 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2ec6c226-ce17-4420-ae29-2989e5a4cdda</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8f91d675-1688-41d4-9114-cdb21a9b8b7e</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">PARAMETRO | chiave modificabile</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">DOPO IL BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">IFC.Property.Pset_WallCommon.FireRating</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">Disattiva Custom Preview per vedere solo gli oggetti Rhino. Gli attributi si trovano in Proprieta &gt; Testo utente attributo.</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
                       <items count="4">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>30</X>
-                          <Y>530</Y>
-                          <W>500</W>
-                          <H>65</H>
+                          <X>1640</X>
+                          <Y>245</Y>
+                          <W>450</W>
+                          <H>130</H>
                         </item>
                         <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
@@ -1655,7 +1407,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                         </item>
                         <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
                         <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Multiline" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Multiline" type_name="gh_bool" type_code="1">true</item>
                         <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
                         <item name="Stream" type_name="gh_bool" type_code="1">false</item>
                         <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
@@ -1665,22 +1417,22 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="14">
+            <chunk name="Object" index="12">
               <items count="3">
-                <item name="GUID" type_name="gh_guid" type_code="9">e2b93e81-4253-4bb4-918a-5129bb880003</item>
+                <item name="GUID" type_name="gh_guid" type_code="9">f2c6c624-8665-49fb-be2b-b904676dd197</item>
                 <item name="Lib" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
-                <item name="Name" type_name="gh_string" type_code="10">IFC Property Value</item>
+                <item name="Name" type_name="gh_string" type_code="10">Bake IFC</item>
               </items>
               <chunks count="1">
                 <chunk name="Container">
                   <items count="5">
-                    <item name="Description" type_name="gh_string" type_code="10">Estrae un parametro per ogni oggetto mantenendo allineamento e valori mancanti.</item>
+                    <item name="Description" type_name="gh_string" type_code="10">Bake su layer Radice::Modello::ClasseIFC e tutti i parametri negli User Text. Un record Undo per operazione.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c3116095-dcf9-4dd3-a46d-9be9fafafda5</item>
-                    <item name="Name" type_name="gh_string" type_code="10">IFC Property Value</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IFC Value</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">184d8af4-e854-498b-8142-fb78d2a3340a</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Bake IFC</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">IFC Bake</item>
                   </items>
-                  <chunks count="7">
+                  <chunks count="8">
                     <chunk name="Attributes">
                       <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
@@ -1691,19 +1443,20 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
                           <X>650</X>
-                          <Y>670</Y>
+                          <Y>740</Y>
                         </item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
-                      <items count="8">
+                      <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">27e2f599-8ef1-4be7-9581-b7f3f80e8bb8</item>
+                        <item name="Description" type_name="gh_string" type_code="10">Oggetti da IFC Elements o Read IFC.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b608414-43c6-4d1e-bcc9-082d89d9aaac</item>
+                        <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4cdee03b-b4ec-4ee1-a555-cf8925169d17</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1721,13 +1474,55 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     </chunk>
                     <chunk name="param_input" index="1">
                       <items count="7">
-                        <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dd3af3f9-b1c6-4814-bf72-aa4eb9546cbd</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Key</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">K</item>
+                        <item name="Description" type_name="gh_string" type_code="10">Button: agisce solo sul passaggio False -&gt; True.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b48bf28b-3b96-4dfd-af86-e3c441c2c10b</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Bake</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2ec6c226-ce17-4420-ae29-2989e5a4cdda</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8d5ec323-e835-4590-948f-d55681629924</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
+                      </items>
+                      <chunks count="2">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                        <chunk name="PersistentData">
+                          <items count="1">
+                            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                          </items>
+                          <chunks count="1">
+                            <chunk name="Branch" index="0">
+                              <items count="2">
+                                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+                              </items>
+                              <chunks count="1">
+                                <chunk name="Item" index="0">
+                                  <items count="1">
+                                    <item name="boolean" type_name="gh_bool" type_code="1">false</item>
+                                  </items>
+                                </chunk>
+                              </chunks>
+                            </chunk>
+                          </chunks>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                    <chunk name="param_input" index="2">
+                      <items count="6">
+                        <item name="Description" type_name="gh_string" type_code="10">Layer radice.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">467ba8ca-2b7a-4de9-a854-caa00971e160</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Root layer</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">L</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
@@ -1754,7 +1549,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                                 <chunk name="Item" index="0">
                                   <items count="2">
                                     <item name="null_string" type_name="gh_bool" type_code="1">false</item>
-                                    <item name="string" type_name="gh_string" type_code="10">IFC.Name</item>
+                                    <item name="string" type_name="gh_string" type_code="10">Esempio_08</item>
                                   </items>
                                 </chunk>
                               </chunks>
@@ -1763,257 +1558,52 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                         </chunk>
                       </chunks>
                     </chunk>
-                    <chunk name="param_output" index="0">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Valore testuale; stringa vuota se assente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">50e89644-9733-4f41-aded-0ee6f752961b</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Values</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">V</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_output" index="1">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">True se la chiave esiste; un valore null resta presente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">05ecd1d4-6885-43bd-9587-91dd8efebafb</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Found</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">F</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_output" index="2">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Numeri nelle unita IFC originali; NaN se assente/non numerico.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d6ba8025-bb58-4c2f-8f0b-99729695945b</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Numbers</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">N</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_output" index="3">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Maschera dei valori numerici finiti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">194a18b0-5000-4a3e-a661-952a2615b93e</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Is numeric</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">NUM</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="15">
-              <items count="2">
-                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
-                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="8">
-                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0269a999-d353-4ae7-bb60-3cde1ace2082</item>
-                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IFC Property Value</item>
-                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">IFC Value</item>
-                  </items>
-                  <chunks count="2">
-                    <chunk name="Attributes">
-                      <items count="4">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>535</X>
-                          <Y>575</Y>
-                          <W>250</W>
-                          <H>48</H>
-                        </item>
-                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                    </chunk>
-                    <chunk name="PanelProperties">
-                      <items count="7">
-                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
-                          <ARGB>255;235;242;247</ARGB>
-                        </item>
-                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
-                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Multiline" type_name="gh_bool" type_code="1">true</item>
-                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
-                      </items>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="16">
-              <items count="2">
-                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
-                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="9">
-                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">809450c8-93d0-40be-90d4-cdfd22326dee</item>
-                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">RESISTENZA AL FUOCO | ordine dei nomi</item>
-                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">50e89644-9733-4f41-aded-0ee6f752961b</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                    <item name="UserText" type_name="gh_string" type_code="10"></item>
-                  </items>
-                  <chunks count="2">
-                    <chunk name="Attributes">
-                      <items count="4">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>850</X>
-                          <Y>600</Y>
-                          <W>450</W>
-                          <H>145</H>
-                        </item>
-                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                    </chunk>
-                    <chunk name="PanelProperties">
-                      <items count="7">
-                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
-                          <ARGB>255;236;246;224</ARGB>
-                        </item>
-                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
-                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Multiline" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
-                      </items>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="17">
-              <items count="3">
-                <item name="GUID" type_name="gh_guid" type_code="9">e2b93e81-4253-4bb4-918a-5129bb880009</item>
-                <item name="Lib" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
-                <item name="Name" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="5">
-                    <item name="Description" type_name="gh_string" type_code="10">Area e volume delle mesh in SI; non sostituiscono i Quantity Set IFC. Volume NaN per mesh non chiuse/orientate.</item>
-                    <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">da5d563b-cfde-4968-a174-ffc8c5ef9beb</item>
-                    <item name="Name" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IFC Metrics</item>
-                  </items>
-                  <chunks count="9">
-                    <chunk name="Attributes">
-                      <items count="2">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>0</X>
-                          <Y>0</Y>
-                          <W>150</W>
-                          <H>20</H>
-                        </item>
-                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1450</X>
-                          <Y>670</Y>
-                        </item>
-                      </items>
-                    </chunk>
-                    <chunk name="param_input" index="0">
-                      <items count="8">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9d0430fc-5b33-4464-8b39-e6457cd5ee37</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Elements</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">E</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_input" index="1">
+                    <chunk name="param_input" index="3">
                       <items count="6">
-                        <item name="Description" type_name="gh_string" type_code="10">Offset per box/centri visualizzati in Rhino; non modifica le misure.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa515c79-9a18-427e-a21a-63b8b23b157e</item>
+                        <item name="Description" type_name="gh_string" type_code="10">True aggiorna gli oggetti precedentemente creati da questo componente, stessa sorgente e GlobalId. False crea copie.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">678fe285-df12-42de-b447-5e47f2ca560b</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Update</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">U</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                      <chunks count="2">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                        <chunk name="PersistentData">
+                          <items count="1">
+                            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                          </items>
+                          <chunks count="1">
+                            <chunk name="Branch" index="0">
+                              <items count="2">
+                                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+                              </items>
+                              <chunks count="1">
+                                <chunk name="Item" index="0">
+                                  <items count="1">
+                                    <item name="boolean" type_name="gh_bool" type_code="1">true</item>
+                                  </items>
+                                </chunk>
+                              </chunks>
+                            </chunk>
+                          </chunks>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                    <chunk name="param_input" index="4">
+                      <items count="6">
+                        <item name="Description" type_name="gh_string" type_code="10">Stesso offset usato nella visualizzazione.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b83faf96-fcea-4976-8d76-1f4d720505de</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2059,10 +1649,10 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_output" index="0">
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Superficie totale della mesh in metri quadrati; NaN senza mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1ec03d4-489c-44e4-aaab-0c138c88e68a</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Area m2</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">A</item>
+                        <item name="Description" type_name="gh_string" type_code="10">GUID Rhino dell'ultima operazione.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">87626fc3-85e9-479d-824c-1412ec1cb032</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Object IDs</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                       </items>
@@ -2080,104 +1670,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       </chunks>
                     </chunk>
                     <chunk name="param_output" index="1">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Volume assoluto in metri cubi per mesh chiusa/orientata; altrimenti NaN.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ac13fb43-709d-44c2-856e-9cf8d85a58c8</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Volume m3</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">V</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_output" index="2">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">True se e stato calcolato un volume.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e950fd5-a9f0-4031-bf59-549027ada60f</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Has volume</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">OK</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_output" index="3">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">2</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Dimensioni XYZ del bounding box nelle coordinate originali, metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7ab9afaa-24d1-4909-a443-395041320f13</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Dimensions metres</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">D</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_output" index="4">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">2</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b51bd939-494e-4263-b552-3efc500a14ec</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Boxes</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">B</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_output" index="5">
-                      <items count="7">
-                        <item name="Access" type_name="gh_int32" type_code="3">2</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Centri dei box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9df5f2c4-7af2-4866-9b64-29551de8d2a2</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Centers</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">C</item>
+                      <items count="6">
+                        <item name="Description" type_name="gh_string" type_code="10">Risultato dell'ultima operazione.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e9302ff2-0f28-40d4-8603-0855c926940c</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Report</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                       </items>
@@ -2198,7 +1695,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="18">
+            <chunk name="Object" index="13">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
                 <item name="Name" type_name="gh_string" type_code="10">Panel</item>
@@ -2207,20 +1704,20 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6c24b4b2-7d89-48b9-ab26-743c0fd931d9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8eef7e60-d0a9-4c20-a6e9-1e4c5e584959</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">IFC Metrics</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">IFC Bake</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
                       <items count="4">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>1335</X>
-                          <Y>575</Y>
+                          <X>535</X>
+                          <Y>645</Y>
                           <W>250</W>
                           <H>48</H>
                         </item>
@@ -2246,120 +1743,58 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="19">
+            <chunk name="Object" index="14">
               <items count="2">
-                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
-                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+                <item name="GUID" type_name="gh_guid" type_code="9">a8b97322-2d53-47cd-905e-b932c3ccd74e</item>
+                <item name="Name" type_name="gh_string" type_code="10">Button</item>
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="9">
-                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">21ca2eb0-f23e-4dee-bb59-eb3b05605c00</item>
-                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">VOLUMI GEOMETRICI | m3</item>
+                  <items count="8">
+                    <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
+                    <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
+                    <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d5ec323-e835-4590-948f-d55681629924</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Button</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ac13fb43-709d-44c2-856e-9cf8d85a58c8</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                    <item name="UserText" type_name="gh_string" type_code="10"></item>
+                    <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="2">
+                  <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="4">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>1650</X>
-                          <Y>600</Y>
-                          <W>350</W>
-                          <H>145</H>
+                          <X>0</X>
+                          <Y>0</Y>
+                          <W>103</W>
+                          <H>22</H>
                         </item>
-                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                    </chunk>
-                    <chunk name="PanelProperties">
-                      <items count="7">
-                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
-                          <ARGB>255;236;246;224</ARGB>
+                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
+                          <X>410</X>
+                          <Y>790</Y>
                         </item>
-                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
-                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Multiline" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
                       </items>
                     </chunk>
                   </chunks>
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="20">
-              <items count="2">
-                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
-                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="9">
-                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">92ec31be-c8ab-4d30-9a15-656ea0c92c15</item>
-                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">PARETI ORDINATE</item>
-                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                    <item name="UserText" type_name="gh_string" type_code="10"></item>
-                  </items>
-                  <chunks count="2">
-                    <chunk name="Attributes">
-                      <items count="4">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>30</X>
-                          <Y>735</Y>
-                          <W>600</W>
-                          <H>165</H>
-                        </item>
-                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
-                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                    </chunk>
-                    <chunk name="PanelProperties">
-                      <items count="7">
-                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
-                          <ARGB>255;236;246;224</ARGB>
-                        </item>
-                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
-                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Multiline" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
-                      </items>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="21">
+            <chunk name="Object" index="15">
               <items count="3">
-                <item name="GUID" type_name="gh_guid" type_code="9">e2b93e81-4253-4bb4-918a-5129bb88000b</item>
+                <item name="GUID" type_name="gh_guid" type_code="9">e2b93e81-4253-4bb4-918a-5129bb88000d</item>
                 <item name="Lib" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
-                <item name="Name" type_name="gh_string" type_code="10">IFC Export CSV</item>
+                <item name="Name" type_name="gh_string" type_code="10">IFC Read Baked</item>
               </items>
               <chunks count="1">
                 <chunk name="Container">
                   <items count="5">
-                    <item name="Description" type_name="gh_string" type_code="10">Esporta un abaco UTF-8 con un oggetto per riga e parametri per colonna. Scrittura solo su fronte False -&gt; True.</item>
+                    <item name="Description" type_name="gh_string" type_code="10">Rilegge geometrie e User Text degli oggetti IFC gia presenti nel documento Rhino. Premere Refresh dopo modifiche al documento.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3faa16c6-85f2-46fc-81fa-1c5c4e2b3c99</item>
-                    <item name="Name" type_name="gh_string" type_code="10">IFC Export CSV</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IFC CSV</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c071f1f0-68c0-489a-b592-86befc3ead3a</item>
+                    <item name="Name" type_name="gh_string" type_code="10">IFC Read Baked</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">IFC Baked</item>
                   </items>
-                  <chunks count="9">
+                  <chunks count="10">
                     <chunk name="Attributes">
                       <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
@@ -2369,21 +1804,20 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>850</X>
-                          <Y>1110</Y>
+                          <X>1080</X>
+                          <Y>740</Y>
                         </item>
                       </items>
                     </chunk>
                     <chunk name="param_input" index="0">
-                      <items count="9">
+                      <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1972aa9f-b112-4f31-af17-52f30638fa95</item>
-                        <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Elements</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">E</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                        <item name="Description" type_name="gh_string" type_code="10">GUID Rhino (es. uscita Bake). Vuoto = tutti gli oggetti marcati IFCViewer.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c772d661-80df-46c2-b0c4-17dba26a2a5b</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Rhino object IDs</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">ID</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">87626fc3-85e9-479d-824c-1412ec1cb032</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2400,144 +1834,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       </chunks>
                     </chunk>
                     <chunk name="param_input" index="1">
-                      <items count="9">
-                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Description" type_name="gh_string" type_code="10">Colonne in ordine. Vuoto = tutte le chiavi tranne MetadataJSON.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca29bab2-b2c7-4365-b697-a4ac576ed1dd</item>
-                        <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Keys</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">K</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9e8aef0c-75aa-4689-b8a3-b5b132dcd244</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_input" index="2">
-                      <items count="7">
-                        <item name="Description" type_name="gh_string" type_code="10">Percorso .csv.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c62f508f-67b9-4699-9ce2-4a28f44435fa</item>
-                        <item name="Name" type_name="gh_string" type_code="10">File</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">F</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">19ceeac2-e5bc-408d-94ac-b97ff1336fde</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                      </items>
-                      <chunks count="1">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_input" index="3">
-                      <items count="7">
-                        <item name="Description" type_name="gh_string" type_code="10">Collegare un Button.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bd23664f-ed78-43d7-876f-ecadd40479c7</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Write</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">W</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">324b657a-c4b5-483c-8a4e-59eb402e2d0c</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                      </items>
-                      <chunks count="2">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                        <chunk name="PersistentData">
-                          <items count="1">
-                            <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                          </items>
-                          <chunks count="1">
-                            <chunk name="Branch" index="0">
-                              <items count="2">
-                                <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
-                              </items>
-                              <chunks count="1">
-                                <chunk name="Item" index="0">
-                                  <items count="1">
-                                    <item name="boolean" type_name="gh_bool" type_code="1">false</item>
-                                  </items>
-                                </chunk>
-                              </chunks>
-                            </chunk>
-                          </chunks>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_input" index="4">
                       <items count="6">
-                        <item name="Description" type_name="gh_string" type_code="10">Permette la sostituzione atomica di un file esistente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32e34195-8034-4569-a39c-5fa61e1e445b</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">O</item>
-                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                      </items>
-                      <chunks count="2">
-                        <chunk name="Attributes">
-                          <items count="1">
-                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                              <X>0</X>
-                              <Y>0</Y>
-                              <W>150</W>
-                              <H>20</H>
-                            </item>
-                          </items>
-                        </chunk>
-                        <chunk name="PersistentData">
-                          <items count="1">
-                            <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                          </items>
-                          <chunks count="1">
-                            <chunk name="Branch" index="0">
-                              <items count="2">
-                                <item name="Count" type_name="gh_int32" type_code="3">1</item>
-                                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
-                              </items>
-                              <chunks count="1">
-                                <chunk name="Item" index="0">
-                                  <items count="1">
-                                    <item name="boolean" type_name="gh_bool" type_code="1">false</item>
-                                  </items>
-                                </chunk>
-                              </chunks>
-                            </chunk>
-                          </chunks>
-                        </chunk>
-                      </chunks>
-                    </chunk>
-                    <chunk name="param_input" index="5">
-                      <items count="6">
-                        <item name="Description" type_name="gh_string" type_code="10">Separatore: ; (predefinito), virgola o tab.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">36456ce9-9c65-4f57-8195-6488bcb3dd57</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Delimiter</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">D</item>
+                        <item name="Description" type_name="gh_string" type_code="10">Filtro per radice salvata nel bake; vuoto = tutte.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d8c6e46f-dfa1-4800-bd58-8ab945bd5f96</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Root</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                       </items>
@@ -2566,7 +1867,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                                 <chunk name="Item" index="0">
                                   <items count="2">
                                     <item name="null_string" type_name="gh_bool" type_code="1">false</item>
-                                    <item name="string" type_name="gh_string" type_code="10">;</item>
+                                    <item name="string" type_name="gh_string" type_code="10">Esempio_08</item>
                                   </items>
                                 </chunk>
                               </chunks>
@@ -2575,14 +1876,15 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                         </chunk>
                       </chunks>
                     </chunk>
-                    <chunk name="param_input" index="6">
-                      <items count="6">
-                        <item name="Description" type_name="gh_string" type_code="10">Prefissa con apostrofo celle che iniziano con = + - @, per leggerle come testo in Excel.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9cd22a24-b359-4d91-9e27-9397baaec824</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Excel safe</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">S</item>
+                    <chunk name="param_input" index="2">
+                      <items count="7">
+                        <item name="Description" type_name="gh_string" type_code="10">Button per ricalcolare dopo modifiche in Rhino.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4b49103a-9b0e-41c0-8c34-4772172058d6</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Refresh</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c3a3113a-b785-42ce-a062-65628b948beb</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
                         <chunk name="Attributes">
@@ -2608,7 +1910,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                               <chunks count="1">
                                 <chunk name="Item" index="0">
                                   <items count="1">
-                                    <item name="boolean" type_name="gh_bool" type_code="1">true</item>
+                                    <item name="boolean" type_name="gh_bool" type_code="1">false</item>
                                   </items>
                                 </chunk>
                               </chunks>
@@ -2618,11 +1920,127 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       </chunks>
                     </chunk>
                     <chunk name="param_output" index="0">
-                      <items count="6">
-                        <item name="Description" type_name="gh_string" type_code="10">Percorso dell'ultimo salvataggio riuscito.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bda59b7a-f1ca-44d3-b35f-09e8107b735c</item>
-                        <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
-                        <item name="NickName" type_name="gh_string" type_code="10">F</item>
+                      <items count="7">
+                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Description" type_name="gh_string" type_code="10">GUID degli oggetti trovati.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4b19e534-108f-4d3a-bae4-5fc9d976313d</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Rhino IDs</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">ID</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                      <chunks count="1">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                    <chunk name="param_output" index="1">
+                      <items count="7">
+                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Description" type_name="gh_string" type_code="10">Mesh nelle coordinate correnti Rhino.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d85d6ef7-f39c-4db9-9dd9-82b0ae5a01e3</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">G</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                      <chunks count="1">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                    <chunk name="param_output" index="2">
+                      <items count="7">
+                        <item name="Access" type_name="gh_int32" type_code="3">2</item>
+                        <item name="Description" type_name="gh_string" type_code="10">User Text per ramo {oggetto}.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a35300c4-d4eb-4973-8b6a-b5e160e724de</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Keys</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">K</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                      <chunks count="1">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                    <chunk name="param_output" index="3">
+                      <items count="7">
+                        <item name="Access" type_name="gh_int32" type_code="3">2</item>
+                        <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">363cf236-ab5c-4356-900e-ed61f68b28cf</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Values</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">V</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                      <chunks count="1">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                    <chunk name="param_output" index="4">
+                      <items count="7">
+                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Description" type_name="gh_string" type_code="10">Metadati IFC salvati nel bake.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef745ba5-e50b-45f4-88ae-0d099c2fb436</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Metadata JSON</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">J</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                      <chunks count="1">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                    <chunk name="param_output" index="5">
+                      <items count="7">
+                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Description" type_name="gh_string" type_code="10">GUID assenti, non mesh, non IFCViewer o fuori dalla radice richiesta.</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9cafa742-014e-4e1c-8213-fa7e8c3f704b</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Not found</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">MISS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                       </items>
@@ -2643,7 +2061,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="22">
+            <chunk name="Object" index="16">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
                 <item name="Name" type_name="gh_string" type_code="10">Panel</item>
@@ -2652,20 +2070,20 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b2aa57c7-29e1-4df4-bc2a-08612a701cf3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e314337-6af7-4561-b200-fb947562eb36</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">IFC Export CSV</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">IFC Read Baked</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">IFC CSV</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">IFC Baked</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
                       <items count="4">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>735</X>
-                          <Y>1015</Y>
+                          <X>965</X>
+                          <Y>645</Y>
                           <W>250</W>
                           <H>48</H>
                         </item>
@@ -2691,7 +2109,122 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 </chunk>
               </chunks>
             </chunk>
-            <chunk name="Object" index="23">
+            <chunk name="Object" index="17">
+              <items count="2">
+                <item name="GUID" type_name="gh_guid" type_code="9">a8b97322-2d53-47cd-905e-b932c3ccd74e</item>
+                <item name="Name" type_name="gh_string" type_code="10">Button</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Container">
+                  <items count="8">
+                    <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
+                    <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
+                    <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c3a3113a-b785-42ce-a062-65628b948beb</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Button</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">REFRESH</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                    <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                  </items>
+                  <chunks count="1">
+                    <chunk name="Attributes">
+                      <items count="2">
+                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                          <X>0</X>
+                          <Y>0</Y>
+                          <W>103</W>
+                          <H>22</H>
+                        </item>
+                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
+                          <X>900</X>
+                          <Y>870</Y>
+                        </item>
+                      </items>
+                    </chunk>
+                  </chunks>
+                </chunk>
+              </chunks>
+            </chunk>
+            <chunk name="Object" index="18">
+              <items count="2">
+                <item name="GUID" type_name="gh_guid" type_code="9">1817fd29-20ae-4503-b542-f0fb651e67d7</item>
+                <item name="Name" type_name="gh_string" type_code="10">List Length</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Container">
+                  <items count="5">
+                    <item name="Description" type_name="gh_string" type_code="10">Measure the length of a list.</item>
+                    <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f8afa5b8-6f9f-4706-9b09-36a33c548061</item>
+                    <item name="Name" type_name="gh_string" type_code="10">List Length</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">Lng</item>
+                  </items>
+                  <chunks count="3">
+                    <chunk name="Attributes">
+                      <items count="2">
+                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                          <X>0</X>
+                          <Y>0</Y>
+                          <W>150</W>
+                          <H>20</H>
+                        </item>
+                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
+                          <X>1490</X>
+                          <Y>740</Y>
+                        </item>
+                      </items>
+                    </chunk>
+                    <chunk name="param_input" index="0">
+                      <items count="8">
+                        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Description" type_name="gh_string" type_code="10">Base list</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1454063e-ce59-4f49-bec7-1af7a26d365d</item>
+                        <item name="Name" type_name="gh_string" type_code="10">List</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">L</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4b19e534-108f-4d3a-bae4-5fc9d976313d</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
+                      </items>
+                      <chunks count="1">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                    <chunk name="param_output" index="0">
+                      <items count="6">
+                        <item name="Description" type_name="gh_string" type_code="10">Number of items in L</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1b28e0cf-c053-4612-8ced-a59250a1d5db</item>
+                        <item name="Name" type_name="gh_string" type_code="10">Length</item>
+                        <item name="NickName" type_name="gh_string" type_code="10">L</item>
+                        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                      <chunks count="1">
+                        <chunk name="Attributes">
+                          <items count="1">
+                            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                              <X>0</X>
+                              <Y>0</Y>
+                              <W>150</W>
+                              <H>20</H>
+                            </item>
+                          </items>
+                        </chunk>
+                      </chunks>
+                    </chunk>
+                  </chunks>
+                </chunk>
+              </chunks>
+            </chunk>
+            <chunk name="Object" index="19">
               <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
                 <item name="Name" type_name="gh_string" type_code="10">Panel</item>
@@ -2700,27 +2233,22 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e8aef0c-75aa-4689-b8a3-b5b132dcd244</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">501798b9-c950-4baf-84e5-edb238f86c96</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">COLONNE CSV | una chiave per riga</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">List Length</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">IFC.GlobalId
-IFC.Name
-IFC.Class
-IFC.Container.name
-IFC.Property.Progetto.Codice
-IFC.Property.Pset_WallCommon.FireRating</item>
+                    <item name="UserText" type_name="gh_string" type_code="10">Lng</item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
                       <items count="4">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>250</X>
-                          <Y>960</Y>
-                          <W>460</W>
-                          <H>155</H>
+                          <X>1375</X>
+                          <Y>645</Y>
+                          <W>250</W>
+                          <H>48</H>
                         </item>
                         <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
@@ -2731,6 +2259,202 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                       <items count="7">
                         <item name="Colour" type_name="gh_drawing_color" type_code="36">
                           <ARGB>255;235;242;247</ARGB>
+                        </item>
+                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
+                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
+                        <item name="Multiline" type_name="gh_bool" type_code="1">true</item>
+                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
+                      </items>
+                    </chunk>
+                  </chunks>
+                </chunk>
+              </chunks>
+            </chunk>
+            <chunk name="Object" index="20">
+              <items count="2">
+                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
+                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Container">
+                  <items count="9">
+                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3490bb09-d710-46f8-ab4b-2f3847037f97</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">OGGETTI RHINO | 0 prima, 6 dopo BAKE</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">1b28e0cf-c053-4612-8ced-a59250a1d5db</item>
+                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
+                    <item name="UserText" type_name="gh_string" type_code="10"></item>
+                  </items>
+                  <chunks count="2">
+                    <chunk name="Attributes">
+                      <items count="4">
+                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                          <X>1670</X>
+                          <Y>660</Y>
+                          <W>450</W>
+                          <H>105</H>
+                        </item>
+                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
+                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
+                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                    </chunk>
+                    <chunk name="PanelProperties">
+                      <items count="7">
+                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
+                          <ARGB>255;236;246;224</ARGB>
+                        </item>
+                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
+                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
+                        <item name="Multiline" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
+                      </items>
+                    </chunk>
+                  </chunks>
+                </chunk>
+              </chunks>
+            </chunk>
+            <chunk name="Object" index="21">
+              <items count="2">
+                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
+                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Container">
+                  <items count="9">
+                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ead1f1ca-980d-48d6-bd4a-4780629fb100</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">REPORT BAKE</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">e9302ff2-0f28-40d4-8603-0855c926940c</item>
+                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
+                    <item name="UserText" type_name="gh_string" type_code="10"></item>
+                  </items>
+                  <chunks count="2">
+                    <chunk name="Attributes">
+                      <items count="4">
+                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                          <X>30</X>
+                          <Y>505</Y>
+                          <W>540</W>
+                          <H>130</H>
+                        </item>
+                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
+                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
+                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                    </chunk>
+                    <chunk name="PanelProperties">
+                      <items count="7">
+                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
+                          <ARGB>255;236;246;224</ARGB>
+                        </item>
+                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
+                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
+                        <item name="Multiline" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
+                      </items>
+                    </chunk>
+                  </chunks>
+                </chunk>
+              </chunks>
+            </chunk>
+            <chunk name="Object" index="22">
+              <items count="2">
+                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
+                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Container">
+                  <items count="9">
+                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e7135367-69b2-4936-9224-59902611f9c5</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">GUID RHINO | diversi dai GlobalId IFC</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">4b19e534-108f-4d3a-bae4-5fc9d976313d</item>
+                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
+                    <item name="UserText" type_name="gh_string" type_code="10"></item>
+                  </items>
+                  <chunks count="2">
+                    <chunk name="Attributes">
+                      <items count="4">
+                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                          <X>30</X>
+                          <Y>1040</Y>
+                          <W>610</W>
+                          <H>180</H>
+                        </item>
+                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
+                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
+                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                    </chunk>
+                    <chunk name="PanelProperties">
+                      <items count="7">
+                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
+                          <ARGB>255;236;246;224</ARGB>
+                        </item>
+                        <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
+                        <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
+                        <item name="Multiline" type_name="gh_bool" type_code="1">false</item>
+                        <item name="SpecialCodes" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Stream" type_name="gh_bool" type_code="1">false</item>
+                        <item name="Wrap" type_name="gh_bool" type_code="1">true</item>
+                      </items>
+                    </chunk>
+                  </chunks>
+                </chunk>
+              </chunks>
+            </chunk>
+            <chunk name="Object" index="23">
+              <items count="2">
+                <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
+                <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Container">
+                  <items count="9">
+                    <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c80b6048-9d63-4b54-a884-56afed3562a5</item>
+                    <item name="Name" type_name="gh_string" type_code="10">Panel</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">CHIAVI USER TEXT | un ramo per oggetto</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+                    <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">a35300c4-d4eb-4973-8b6a-b5e160e724de</item>
+                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
+                    <item name="UserText" type_name="gh_string" type_code="10"></item>
+                  </items>
+                  <chunks count="2">
+                    <chunk name="Attributes">
+                      <items count="4">
+                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+                          <X>690</X>
+                          <Y>1040</Y>
+                          <W>680</W>
+                          <H>245</H>
+                        </item>
+                        <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
+                        <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
+                        <item name="MarginTop" type_name="gh_int32" type_code="3">0</item>
+                      </items>
+                    </chunk>
+                    <chunk name="PanelProperties">
+                      <items count="7">
+                        <item name="Colour" type_name="gh_drawing_color" type_code="36">
+                          <ARGB>255;236;246;224</ARGB>
                         </item>
                         <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
                         <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
@@ -2751,24 +2475,25 @@ IFC.Property.Pset_WallCommon.FireRating</item>
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="8">
+                  <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">19ceeac2-e5bc-408d-94ac-b97ff1336fde</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">98d111de-db3a-405e-a2f9-86ab45d91b1d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">DESTINAZIONE CSV | modificabile</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">VALORI | righe allineate alle chiavi</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                    <item name="UserText" type_name="gh_string" type_code="10">C:\Users\g.pacini\Documents\Repository\IFC Viewer\exports\01_abaco_pareti.csv</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">363cf236-ab5c-4356-900e-ed61f68b28cf</item>
+                    <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
+                    <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
                   <chunks count="2">
                     <chunk name="Attributes">
                       <items count="4">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>250</X>
-                          <Y>1170</Y>
-                          <W>510</W>
-                          <H>65</H>
+                          <X>1410</X>
+                          <Y>1040</Y>
+                          <W>700</W>
+                          <H>245</H>
                         </item>
                         <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>
@@ -2778,7 +2503,7 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                     <chunk name="PanelProperties">
                       <items count="7">
                         <item name="Colour" type_name="gh_drawing_color" type_code="36">
-                          <ARGB>255;235;242;247</ARGB>
+                          <ARGB>255;236;246;224</ARGB>
                         </item>
                         <item name="DrawIndices" type_name="gh_bool" type_code="1">true</item>
                         <item name="DrawPaths" type_name="gh_bool" type_code="1">true</item>
@@ -2794,42 +2519,6 @@ IFC.Property.Pset_WallCommon.FireRating</item>
             </chunk>
             <chunk name="Object" index="25">
               <items count="2">
-                <item name="GUID" type_name="gh_guid" type_code="9">a8b97322-2d53-47cd-905e-b932c3ccd74e</item>
-                <item name="Name" type_name="gh_string" type_code="10">Button</item>
-              </items>
-              <chunks count="1">
-                <chunk name="Container">
-                  <items count="8">
-                    <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
-                    <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
-                    <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">324b657a-c4b5-483c-8a4e-59eb402e2d0c</item>
-                    <item name="Name" type_name="gh_string" type_code="10">Button</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">WRITE CSV</item>
-                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                    <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
-                  </items>
-                  <chunks count="1">
-                    <chunk name="Attributes">
-                      <items count="2">
-                        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>0</X>
-                          <Y>0</Y>
-                          <W>103</W>
-                          <H>22</H>
-                        </item>
-                        <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>770</X>
-                          <Y>1220</Y>
-                        </item>
-                      </items>
-                    </chunk>
-                  </chunks>
-                </chunk>
-              </chunks>
-            </chunk>
-            <chunk name="Object" index="26">
-              <items count="2">
                 <item name="GUID" type_name="gh_guid" type_code="9">59e0b89a-e487-49f8-bab8-b5bab16be14c</item>
                 <item name="Name" type_name="gh_string" type_code="10">Panel</item>
               </items>
@@ -2837,12 +2526,12 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f7f27ec-63f1-43a1-b5f4-349699c45ab5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">29bfa29e-5af4-4e5c-8388-092093594783</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="NickName" type_name="gh_string" type_code="10">FILE SALVATO | vuoto finche non premi WRITE</item>
+                    <item name="NickName" type_name="gh_string" type_code="10">METADATI IFC ORIGINALI | JSON</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">bda59b7a-f1ca-44d3-b35f-09e8107b735c</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ef745ba5-e50b-45f4-88ae-0d099c2fb436</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2850,10 +2539,10 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                     <chunk name="Attributes">
                       <items count="4">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
-                          <X>1050</X>
-                          <Y>1060</Y>
-                          <W>650</W>
-                          <H>95</H>
+                          <X>690</X>
+                          <Y>1340</Y>
+                          <W>1420</W>
+                          <H>165</H>
                         </item>
                         <item name="MarginLeft" type_name="gh_int32" type_code="3">0</item>
                         <item name="MarginRight" type_name="gh_int32" type_code="3">0</item>

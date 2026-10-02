@@ -26,4 +26,8 @@ assert quality[0][CODE] == "" and quality[0][FIRE] == "REI 120"
 changed = rows(4)
 assert {row["IFC.GlobalId"] for row in changed} == set(EXPECTED["revision"]["changed"])
 assert next(row for row in changed if row["IFC.Class"] == "IfcWall")[FIRE] == "REI 90"
-print("PASS: CSV degli esempi 01, 03, 04: righe, selezioni, celle mancanti e valori effettivi.")
+numeric = rows(7)
+assert len(numeric) == 2
+assert [float(row["IFC.Property.Tutorial.Indice"]) for row in numeric] == [2.0, 10.0]
+assert all(row["IFC.Property.Tutorial.Selezionabile"] == "true" for row in numeric)
+print("PASS: CSV degli esempi 01, 03, 04, 07: righe, selezioni, celle mancanti, numeri e booleani.")
