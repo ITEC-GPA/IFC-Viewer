@@ -86,7 +86,7 @@ internal static class ExampleDefinitions
     }
     private static GH_Component Native(GH_Document doc, string name, IGH_Param input, int x, int y)
     {
-        var proxy = Instances.ComponentServer.ObjectProxies.First(p => p.Desc.Name == name && p.Desc.Category != "IFC Viewer");
+        var proxy = Instances.ComponentServer.ObjectProxies.First(p => p.Desc.Name == name && p.Desc.Category != "Meerkat");
         return Tool(doc, (GH_Component)proxy.CreateInstance(), input, x, y);
     }
     private static void FixedPreview(GH_Document doc, IGH_Param elements, Color color, int x, int y, string name)
@@ -373,15 +373,16 @@ internal static class ExampleDefinitions
             Check(Find<ReadBakedComponent>(doc).Params.Output[0].VolatileDataCount == 0, "08 | rilettura vuota prima del bake");
         }
     }
+    private static int ActiveObjectCount(RhinoDoc rhino) { return rhino.Objects.GetObjectList(Rhino.DocObjects.ObjectType.AnyObject).Count(o => !o.IsDeleted); }
     private static void Disconnect(GH_Component c, int index) { c.Params.Input[index].RemoveAllSources(); }
     private static void Exercise(GH_Document doc, RhinoDoc rhino, int number)
     {
         if (number == 6)
         {
             var ids = Find<SelectIdsComponent>(doc); var wall = Elements(ids, 0).Single();
-            Disconnect(ids, 1); ToolTests.SetText(ids, 1, "#" + wall.StepId); doc.NewSolution(true);
+            Disconnect(ids, 1); ToolTests.SetText(ids, 1, "#" + wall.StepId); doc.NewSolution(true, GH_SolutionMode.Silent);
             Check(Elements(ids, 0).Single().GlobalId == wall.GlobalId && Text(ids, 2).Length == 0, "06 | selezione alternativa tramite STEP-ID");
-            ToolTests.SetText(ids, 1, wall.Key); doc.NewSolution(true);
+            ToolTests.SetText(ids, 1, wall.Key); doc.NewSolution(true, GH_SolutionMode.Silent);
             Check(Elements(ids, 0).Single().GlobalId == wall.GlobalId, "06 | selezione alternativa tramite IFC.Key");
             NoErrors(doc, "Interazione 06");
         }
@@ -389,33 +390,33 @@ internal static class ExampleDefinitions
         {
             var slider = doc.Objects.OfType<GH_NumberSlider>().Single();
             var selected = doc.Objects.OfType<FilterPropertyComponent>().Single(c => c.NickName == "SELEZIONABILE");
-            slider.SetSliderValue(10); slider.ExpireSolution(false); doc.NewSolution(true);
+            slider.SetSliderValue(10); slider.ExpireSolution(false); doc.NewSolution(true, GH_SolutionMode.Silent);
             Check(Elements(selected, 0).Length == 1 && Math.Abs(Numbers(FindNative(doc, "Mass Addition"), 0).Single() - 4.5) < 1e-5, "07 | slider 10 aggiorna selezione e somma a 4.5 m3");
-            slider.SetSliderValue(0); slider.ExpireSolution(false); doc.NewSolution(true);
+            slider.SetSliderValue(0); slider.ExpireSolution(false); doc.NewSolution(true, GH_SolutionMode.Silent);
             Check(Elements(selected, 0).Length == 2 && Elements(selected, 1).Single().Name == "Parete P1", "07 | il secondo filtro esclude esplicitamente il valore false");
-            slider.SetSliderValue(2); slider.ExpireSolution(false); doc.NewSolution(true);
+            slider.SetSliderValue(2); slider.ExpireSolution(false); doc.NewSolution(true, GH_SolutionMode.Silent);
             NoErrors(doc, "Interazione 07");
         }
         if (number == 1 || number == 3 || number == 4 || number == 7)
         {
             var csv = Find<ExportCsvComponent>(doc); string path = Path.Combine(OutputRoot, "esempio_0" + number + ".csv");
             Disconnect(csv, 2); Disconnect(csv, 3); ToolTests.SetText(csv, 2, path); ToolTests.SetBool(csv, 3, true);
-            doc.NewSolution(true); NoErrors(doc, "WRITE CSV " + number);
+            doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "WRITE CSV " + number);
             Check(File.Exists(path) && Text(csv, 0).Single() == path, "0" + number + " | pulsante CSV collegato alla selezione");
         }
         if (number == 2)
         {
-            var bake = Find<BakeIfcComponent>(doc); Disconnect(bake, 1); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true);
+            var bake = Find<BakeIfcComponent>(doc); Disconnect(bake, 1); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true, GH_SolutionMode.Silent);
             NoErrors(doc, "BAKE 02");
-            Check(rhino.Objects.Count == 6 && Find<ReadBakedComponent>(doc).Params.Output[0].VolatileDataCount == 6, "02 | bake di entrambi i rami e rilettura dei 6 GUID");
+            Check(ActiveObjectCount(rhino) == 6 && Find<ReadBakedComponent>(doc).Params.Output[0].VolatileDataCount == 6, "02 | bake di entrambi i rami e rilettura dei 6 GUID");
             Check(rhino.Objects.GetObjectList(Rhino.DocObjects.ObjectType.Mesh).All(o => o.Attributes.GetUserString("IFC.MetadataJSON") != null && rhino.Layers[o.Attributes.LayerIndex].FullPath.EndsWith("::" + o.Attributes.GetUserString("IFC.Class"))), "02 | layer per classe e metadati conservati");
         }
         if (number == 5)
         {
             var export = Find<Export3dmComponent>(doc); string path = Path.Combine(OutputRoot, "esempio_05.3dm");
             Disconnect(export, 1); Disconnect(export, 2); ToolTests.SetText(export, 1, path); ToolTests.SetBool(export, 2, true);
-            doc.NewSolution(true); NoErrors(doc, "EXPORT 05");
-            Check(rhino.Objects.Count == 0, "05 | export non aggiunge oggetti al documento attivo");
+            doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "EXPORT 05");
+            Check(ActiveObjectCount(rhino) == 0, "05 | export non aggiunge oggetti al documento attivo");
             using (var file = Rhino.FileIO.File3dm.Read(path))
             {
                 var bounds = BoundingBox.Empty;
@@ -424,24 +425,24 @@ internal static class ExampleDefinitions
                 Check(file.Objects.Where(o => o != null).All(o => o.Attributes.GetUserString("IFC.MetadataJSON") != null), "05 | attributi IFC nel 3DM");
             }
             var save = Find<SaveIfcComponent>(doc); Disconnect(save, 1); Disconnect(save, 2);
-            ToolTests.SetText(save, 1, OutputRoot); ToolTests.SetBool(save, 2, true); doc.NewSolution(true); NoErrors(doc, "ARCHIVE 05");
+            ToolTests.SetText(save, 1, OutputRoot); ToolTests.SetBool(save, 2, true); doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "ARCHIVE 05");
             string archive = Text(save, 0).Single();
             Check(IfcModel.Load(archive).Elements.Count == 11, "05 | archivio conserva tutti gli 11 record");
         }
         if (number == 8)
         {
             var bake = Find<BakeIfcComponent>(doc); var baked = Find<ReadBakedComponent>(doc);
-            Disconnect(bake, 1); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true);
+            Disconnect(bake, 1); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true, GH_SolutionMode.Silent);
             var ids = Text(bake, 0);
-            Check(ids.Length == 6 && rhino.Objects.Count == 6 && Text(baked, 0).Length == 6, "08 | bake, GUID e rilettura dei sei oggetti");
+            Check(ids.Length == 6 && ActiveObjectCount(rhino) == 6 && Text(baked, 0).Length == 6, "08 | bake, GUID e rilettura dei sei oggetti");
             Check(Text(baked, 2).Contains(Fire) && Text(baked, 3).Contains("REI 60") && Text(baked, 4).Length == 6, "08 | User Text e JSON visibili nei pannelli");
             Check(((GH_Integer)FindNative(doc, "List Length").Params.Output[0].VolatileData.AllData(true).Single()).Value == 6, "08 | conteggio nativo dei GUID");
-            ToolTests.SetBool(bake, 1, false); doc.NewSolution(true); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true);
-            Check(rhino.Objects.Count == 6 && Text(bake, 0).SequenceEqual(ids), "08 | secondo bake aggiorna senza duplicati");
+            ToolTests.SetBool(bake, 1, false); doc.NewSolution(true, GH_SolutionMode.Silent); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(ActiveObjectCount(rhino) == 6 && Text(bake, 0).SequenceEqual(ids), "08 | secondo bake aggiorna senza duplicati");
             var obj = rhino.Objects.FindId(new Guid(ids[0])); var attributes = obj.Attributes.Duplicate();
             attributes.SetUserString("Verifica.Utente", "Controllato");
             Check(rhino.Objects.ModifyAttributes(obj.Id, attributes, true), "08 | modifica User Text nel documento di prova");
-            Disconnect(baked, 2); ToolTests.SetBool(baked, 2, true); doc.NewSolution(true);
+            Disconnect(baked, 2); ToolTests.SetBool(baked, 2, true); doc.NewSolution(true, GH_SolutionMode.Silent);
             var keys = Text(baked, 2); var values = Text(baked, 3); int at = Array.IndexOf(keys, "Verifica.Utente");
             Check(at >= 0 && values[at] == "Controllato", "08 | Refresh rilegge i dati modificati in Rhino");
             NoErrors(doc, "Interazione 08");
@@ -466,15 +467,16 @@ internal static class ExampleDefinitions
         Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin, Explore, NumericFilters, BakeAndRead };
         var coverage = new Dictionary<string, HashSet<string>>();
         GH_Document.EnableSolutions = true;
-        for (int i = 0; i < factories.Length; i++)
         using (var rhino = RhinoDoc.CreateHeadless(null))
         {
             RhinoDoc.ActiveDoc = rhino; rhino.ModelUnitSystem = UnitSystem.Millimeters;
+          for (int i = 0; i < factories.Length; i++)
+          {
             string file = Path.Combine(root, "examples", names[i] + ".gh");
             using (var doc = factories[i]())
             {
-                doc.Enabled = true; doc.NewSolution(true); NoErrors(doc, names[i]); Verify(doc, i + 1);
-                Check(rhino.Objects.Count == 0 && doc.Objects.OfType<ExportCsvComponent>().All(c => Text(c, 0).Single() == ""), names[i] + " | nessun bake/export all'apertura");
+                doc.AssociateWithRhinoDocument(); doc.Enabled = true; doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, names[i]); Verify(doc, i + 1);
+                Check(ActiveObjectCount(rhino) == 0 && doc.Objects.OfType<ExportCsvComponent>().All(c => Text(c, 0).Single() == ""), names[i] + " | nessun bake/export all'apertura");
                 foreach (string extension in new[] { ".gh", ".ghx" })
                 { var archive = new GH_Archive(); Check(archive.AppendObject(doc, "Definition") && archive.WriteToFile(Path.ChangeExtension(file, extension), true, false), names[i] + " | salvato " + extension); }
                 Snapshot(doc, names[i], i >= 4 ? 1130 : 960);
@@ -482,9 +484,9 @@ internal static class ExampleDefinitions
             var io = new GH_DocumentIO(); Check(io.Open(file), names[i] + " | riaperto da disco");
             using (var reopened = io.Document)
             {
-                reopened.Enabled = true; reopened.NewSolution(true); NoErrors(reopened, "Riapertura " + names[i]); Verify(reopened, i + 1);
+                reopened.AssociateWithRhinoDocument(); reopened.Enabled = true; reopened.NewSolution(true, GH_SolutionMode.Silent); NoErrors(reopened, "Riapertura " + names[i]); Verify(reopened, i + 1);
                 Check(reopened.Objects.OfType<ReadIfcComponent>().All(c => c.Params.Output[1].VolatileDataCount == 11), names[i] + " | modelli incorporati recuperati");
-                Check(rhino.Objects.Count == 0, names[i] + " | riapertura senza bake");
+                Check(ActiveObjectCount(rhino) == 0, names[i] + " | riapertura senza bake");
                 foreach (var component in reopened.Objects.OfType<IfcComponent>())
                 {
                     HashSet<string> files;
@@ -494,6 +496,12 @@ internal static class ExampleDefinitions
                 }
                 Exercise(reopened, rhino, i + 1);
             }
+            // Only this test's scratch document is touched. Keep its lifetime
+            // stable so every GH definition solves in a live Rhino context.
+            foreach (var obj in rhino.Objects.GetObjectList(Rhino.DocObjects.ObjectType.AnyObject).ToArray())
+                Check(rhino.Objects.Delete(obj.Id, true), "Scratch document object cleared");
+          }
+          BrandTests.Legacy(Root, Check);
         }
         var expectedTypes = typeof(IfcComponent).Assembly.GetTypes().Where(t => !t.IsAbstract && typeof(IfcComponent).IsAssignableFrom(t)).ToArray();
         Check(expectedTypes.Length == 19 && new HashSet<string>(expectedTypes.Select(t => t.FullName)).SetEquals(coverage.Keys), "Copertura: tutti i 19 componenti nei file GH riaperti");

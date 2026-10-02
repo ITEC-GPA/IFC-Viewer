@@ -1,0 +1,6 @@
+{
+  "name": "meerkat-assets",
+  "private": true,
+  "scripts": { "brand": "node generate-brand.cjs" },
+  "dependencies": { "sharp": "^0.34.0" }
+}

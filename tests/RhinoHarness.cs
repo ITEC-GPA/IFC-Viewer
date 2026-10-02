@@ -30,7 +30,8 @@ internal static class Bootstrap
         AppDomain.CurrentDomain.AssemblyResolve += delegate(object sender, ResolveEventArgs e)
         {
             string name = new AssemblyName(e.Name).Name;
-            foreach (string dir in new[] { Path.Combine(Root, "dist"), rhino, @"C:\Program Files\Rhino 8\Plug-ins\Grasshopper" })
+            string pluginDirectory = System.Environment.GetEnvironmentVariable("MEERKAT_PLUGIN_DIR") ?? Path.Combine(Root, "bin");
+            foreach (string dir in new[] { pluginDirectory, rhino, @"C:\Program Files\Rhino 8\Plug-ins\Grasshopper" })
                 foreach (string extension in new[] { ".dll", ".gha" })
                 {
                     string file = Path.Combine(dir, name + extension);
@@ -65,6 +66,12 @@ internal static class RhinoHarness
             string archivePath = Path.Combine(Root, "examples", "demo.ifcdata.zip");
             var model = IfcModel.Load(archivePath);
             Check(Instances.ComponentServer.FindAssembly(new Guid("D1313D48-9B86-4F54-886C-B19E419E9FD2")) != null, "Plugin discovered through Grasshopper library registration");
+            BrandTests.Run(Root, Check);
+            if (mode == "distribution")
+            {
+                BrandTests.Distribution(Check);
+                return;
+            }
             if (mode == "examples")
             {
                 ExampleDefinitions.Generate(Root, Check);
@@ -106,6 +113,7 @@ internal static class RhinoHarness
                     Check(stored.Attributes.GetUserString("IFC.MetadataJSON") != null, ".3dm preserves all IFC metadata");
                 }
                 ToolTests.Run(model, doc, Root, Check);
+                BrandTests.Legacy(Root, Check);
             }
         }
     }
@@ -125,8 +133,8 @@ internal static class RhinoHarness
         using (var definition = new GH_Document())
         {
             definition.Enabled = true;
-            Panel(definition, "IFC VIEWER | Rhino 8 / Windows", "1. Modifica il percorso IFC e premi READ.\n2. Filtra le classi IFC e consulta attributi/valori.\n3. Premi BAKE per creare mesh con User Text.\n4. Salva .gh e .3dm; SAVE esporta l'archivio completo.\nIl modello dimostrativo e gia incorporato nel .gh.", 30, 20, 600, 145);
-            var reader = Place(definition, new ReadIfcComponent(), 400, 270);
+            Panel(definition, "MEERKAT | Rhino 8 / Windows", "1. Modifica il percorso IFC e premi READ.\n2. Filtra le classi IFC e consulta attributi/valori.\n3. Premi BAKE per creare mesh con User Text.\n4. Salva .gh e .3dm; SAVE esporta l'archivio completo.\nIl modello dimostrativo e gia incorporato nel .gh.", 30, 20, 600, 145);
+            var reader = new ReadIfcComponent();
             // Embed without evaluating a Grasshopper solution or changing the
             // active Rhino document during artifact generation.
             var chunk = new GH_LooseChunk("Read IFC");
@@ -135,6 +143,7 @@ internal static class RhinoHarness
             chunk.SetInt32("ModelCount", 1);
             chunk.SetByteArray("Archive0", File.ReadAllBytes(model.ArchivePath));
             reader.Read(chunk);
+            Place(definition, reader, 400, 270);
             var pathPanel = Panel(definition, "FILE IFC (un percorso per riga)", Path.Combine(Root, "examples", "demo.ifc"), 30, 220, 290, 80);
             reader.Params.Input[0].AddSource(pathPanel);
             var read = Place(definition, new GH_ButtonObject(), 160, 340); read.NickName = "READ"; reader.Params.Input[1].AddSource(read);
@@ -166,21 +175,31 @@ internal static class RhinoHarness
             }
             ToolboxDefinition.Add(definition, reader, inspect, bake, model, Root);
             GH_Document.EnableSolutions = true;
-            definition.NewSolution(false);
+            definition.AssociateWithRhinoDocument();
+            definition.Enabled = true;
+            definition.NewSolution(true, GH_SolutionMode.Silent);
+            if (reader.Params.Output[1].VolatileDataCount != 8)
+            {
+                Console.WriteLine("Definition state: " + definition.SolutionState + "; enabled=" + definition.Enabled + "; global=" + GH_Document.EnableSolutions);
+                Console.WriteLine("Read outputs=" + reader.Params.Output[1].VolatileDataCount + "; phase=" + reader.Phase + "; message=" + reader.Message);
+                foreach (var component in definition.Objects.OfType<GH_Component>())
+                    foreach (var message in component.RuntimeMessages(GH_RuntimeMessageLevel.Error).Concat(component.RuntimeMessages(GH_RuntimeMessageLevel.Warning)))
+                        Console.WriteLine(component.Name + ": " + message);
+            }
             Check(reader.Params.Output[1].VolatileDataCount == 8, "Grasshopper Read emits embedded elements");
             Check(inspect.Params.Output[0].VolatileDataCount == 4, "Grasshopper preview emits 4 meshes");
             Check(inspect.Params.Output[0].VolatileData.PathCount == 8, "Grasshopper preserves empty branches for metadata-only objects");
             Check(!definition.Objects.OfType<GH_Component>().Any(c => c.RuntimeMessages(GH_RuntimeMessageLevel.Error).Count > 0), "Grasshopper solution has no component errors");
             Check(definition.Objects.OfType<IfcComponent>().Count() == 19, "Definition includes all 19 IFC components");
             classes.UserText = "IfcWall";
-            definition.NewSolution(true);
+            definition.NewSolution(true, GH_SolutionMode.Silent);
             Check(inspect.Params.Output[1].VolatileDataCount == 2 && inspect.Params.Output[0].VolatileDataCount == 2, "Grasshopper class filter selects only walls");
             classes.UserText = "";
-            definition.NewSolution(true);
+            definition.NewSolution(true, GH_SolutionMode.Silent);
             var archive = new GH_Archive();
             Check(archive.AppendObject(definition, "Definition"), "Serialize Grasshopper definition");
-            Check(archive.WriteToFile(Path.Combine(Root, "IFC_Viewer.gh"), true, false), "Write IFC_Viewer.gh");
-            Check(archive.WriteToFile(Path.Combine(Root, "IFC_Viewer.ghx"), true, false), "Write inspectable IFC_Viewer.ghx");
+            Check(archive.WriteToFile(Path.Combine(Root, "Meerkat.gh"), true, false), "Write Meerkat.gh");
+            Check(archive.WriteToFile(Path.Combine(Root, "Meerkat.ghx"), true, false), "Write inspectable Meerkat.ghx");
             // Independently restore the component's embedded archive, without
             // the external IFC or Python worker being consulted.
             var savedChunk = new GH_LooseChunk("Embedded"); reader.Write(savedChunk);
@@ -188,11 +207,11 @@ internal static class RhinoHarness
             var verifyChunk = new GH_LooseChunk("Verify"); restored.Write(verifyChunk);
             Check(verifyChunk.GetInt32("ModelCount") == 1 && verifyChunk.GetByteArray("Archive0").SequenceEqual(File.ReadAllBytes(model.ArchivePath)), "Grasshopper embeds and restores the complete source archive");
             var io = new GH_DocumentIO();
-            Check(io.Open(Path.Combine(Root, "IFC_Viewer.gh")), "Reopen complete Grasshopper definition");
+            Check(io.Open(Path.Combine(Root, "Meerkat.gh")), "Reopen complete Grasshopper definition");
             using (var reopened = io.Document)
             {
                 reopened.Enabled = true;
-                reopened.NewSolution(true);
+                reopened.NewSolution(true, GH_SolutionMode.Silent);
                 var reopenedReader = reopened.Objects.OfType<ReadIfcComponent>().Single();
                 foreach (var component in reopened.Objects.OfType<GH_Component>())
                     foreach (var error in component.RuntimeMessages(GH_RuntimeMessageLevel.Error)) Console.WriteLine(component.Name + ": " + error);

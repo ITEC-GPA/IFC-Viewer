@@ -5,3 +5,7 @@ __pycache__/
 test-output/
 exports/
 *.pdb
+bin/
+obj/
+Meerkat_Pacchetto.zip
+node_modules/

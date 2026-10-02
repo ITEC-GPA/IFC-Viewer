@@ -1,6 +1,6 @@
 # Otto esempi Grasshopper IFC — tutti i 19 componenti
 
-Apri i file `.gh` in **Rhino 8 / Grasshopper su Windows**, dopo aver eseguito `Setup.cmd` dalla cartella principale e riavviato Rhino. Il plugin IFC Viewer deve essere caricato. I modelli sono gia incorporati: per provare gli esempi non occorre premere READ, ne avere Python in esecuzione. Sono disponibili anche le copie `.ghx` leggibili come XML.
+Apri i file `.gh` in **Rhino 8 / Grasshopper su Windows**, dopo aver eseguito `Setup.cmd` dalla cartella principale e riavviato Rhino. Il plugin Meerkat deve essere caricato. I modelli sono gia incorporati: per provare gli esempi non occorre premere READ, ne avere Python in esecuzione. Sono disponibili anche le copie `.ghx` leggibili come XML.
 
 Apri un esempio alla volta e usa Zoom Extents nella viewport Rhino. I pannelli azzurri spiegano il flusso o contengono input modificabili; quelli verdi mostrano i risultati. I componenti Custom Preview gestiscono i colori; gli altri componenti geometrici hanno la preview disattivata per evitare sovrapposizioni.
 
@@ -139,11 +139,11 @@ File: [08_Bake_e_rilettura.gh](08_Bake_e_rilettura.gh)
 4. Aggiungi o modifica un attributo User Text in Rhino e premi **REFRESH**: Read Baked rilegge il dato corrente. `IFC.MetadataJSON` conserva il record originale del bake; una modifica manuale a un singolo User Text non riscrive quel JSON.
 5. Salva il documento Rhino `.3dm` per conservare geometrie, layer e attributi. Per vedere solo gli oggetti Rhino disattiva il componente Custom Preview dopo il bake.
 
-All'apertura il conteggio e zero in un documento vuoto. Se contiene gia oggetti IFC Viewer con radice `Esempio_08`, Read Baked puo mostrarli prima di premere BAKE: senza ID usa il filtro Root. I campi IFC vengono aggiornati dal modello al nuovo bake, quindi salva separatamente eventuali annotazioni che devi conservare.
+All'apertura il conteggio e zero in un documento vuoto. Se contiene gia oggetti Meerkat con radice `Esempio_08`, Read Baked puo mostrarli prima di premere BAKE: senza ID usa il filtro Root. I campi IFC vengono aggiornati dal modello al nuovo bake, quindi salva separatamente eventuali annotazioni che devi conservare.
 
 ## Dove trovare ciascun componente
 
-| Componente IFC Viewer | Esempio consigliato |
+| Componente Meerkat | Esempio consigliato |
 | --- | --- |
 | Read IFC | 06 |
 | IFC Model Info | 06 |

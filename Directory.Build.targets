@@ -1,0 +1,8 @@
+<Project>
+  <Target Name="MeerkatCleanModuleBins" BeforeTargets="PrepareForBuild" Condition="'$(DesignTimeBuild)' != 'true'">
+    <Exec Command="powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;$(MeerkatRoot)tools\Build-Layout.ps1&quot; -CleanModules" />
+  </Target>
+  <Target Name="MeerkatDistribution" AfterTargets="Build" Condition="'$(MSBuildProjectName)' == 'Meerkat' and '$(DesignTimeBuild)' != 'true'">
+    <Exec Command="powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;$(MeerkatRoot)tools\Sync-Distribution.ps1&quot; -PluginPath &quot;$(TargetPath)&quot;" />
+  </Target>
+</Project>

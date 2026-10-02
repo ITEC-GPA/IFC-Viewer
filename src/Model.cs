@@ -141,7 +141,7 @@ namespace IfcViewer
                     var info = Grasshopper.Instances.ComponentServer.FindAssembly(new Guid("D1313D48-9B86-4F54-886C-B19E419E9FD2"));
                     if (info != null) location = info.Location;
                 }
-                if (string.IsNullOrEmpty(location)) throw new InvalidOperationException("Percorso plugin sconosciuto. Caricare IFC Viewer dalla cartella dist.");
+                if (string.IsNullOrEmpty(location)) throw new InvalidOperationException("Percorso plugin sconosciuto. Caricare Meerkat dalla cartella bin.");
                 return Path.GetDirectoryName(location);
             }
         }
@@ -153,7 +153,17 @@ namespace IfcViewer
                 string path = (string)JObject.Parse(File.ReadAllText(config))["python"];
                 if (!string.IsNullOrEmpty(path)) return Path.GetFullPath(Path.Combine(PluginDirectory, path));
             }
-            return Path.GetFullPath(Path.Combine(PluginDirectory, "..", ".venv", "Scripts", "python.exe"));
+            string local = Path.Combine(PluginDirectory, ".venv", "Scripts", "python.exe");
+            if (File.Exists(local)) return local;
+            // Development checkout may reuse its existing runtime. A relocated
+            // distribution creates its own runtime beside Meerkat.gha.
+            string project = Path.GetFullPath(Path.Combine(PluginDirectory, ".."));
+            if (File.Exists(Path.Combine(project, "src", "Meerkat.csproj")))
+            {
+                string development = Path.Combine(project, ".venv", "Scripts", "python.exe");
+                if (File.Exists(development)) return development;
+            }
+            return local;
         }
         // CommandLineToArgvW compatible quoting; no shell is involved.
         internal static string Quote(string arg)
@@ -174,8 +184,8 @@ namespace IfcViewer
             if (!File.Exists(input)) throw new FileNotFoundException("File IFC non trovato", input);
             if (input.EndsWith(".ifcdata.zip", StringComparison.OrdinalIgnoreCase)) return IfcModel.Load(input);
             string python = PythonPath();
-            if (!File.Exists(python)) throw new FileNotFoundException("Runtime IFC mancante. Eseguire Setup.cmd nella cartella del progetto.", python);
-            string cache = Path.Combine(Path.GetTempPath(), "IfcViewer", Guid.NewGuid().ToString("N"));
+            if (!File.Exists(python)) throw new FileNotFoundException("Runtime IFC mancante. Eseguire Setup.cmd nella cartella di Meerkat.", python);
+            string cache = Path.Combine(Path.GetTempPath(), "Meerkat", Guid.NewGuid().ToString("N"));
             Directory.CreateDirectory(cache);
             string archive = Path.Combine(cache, "model.ifcdata.zip");
             var start = new ProcessStartInfo(python, Quote(Path.Combine(PluginDirectory, "ifc_reader.py")) + " " + Quote(input) + " " + Quote(archive))
@@ -235,7 +245,7 @@ namespace IfcViewer
                     if (obj.Attributes.GetUserString("IFCViewer.Root") == root && key != null && !existing.ContainsKey(key)) existing.Add(key, obj);
                 }
             }
-            uint undo = doc.BeginUndoRecord("IFC Viewer Bake");
+            uint undo = doc.BeginUndoRecord("Meerkat Bake");
             try
             {
                 foreach (var item in unique)

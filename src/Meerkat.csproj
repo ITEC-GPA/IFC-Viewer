@@ -2,12 +2,16 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <AssemblyName>IfcViewer</AssemblyName>
+    <AssemblyName>Meerkat</AssemblyName>
     <TargetExt>.gha</TargetExt>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
     <RhinoDir Condition="'$(RhinoDir)' == ''">C:\Program Files\Rhino 8</RhinoDir>
   </PropertyGroup>
   <ItemGroup>
+    <EmbeddedResource Include="..\Assets\Icons\png\*.png"><LogicalName>Meerkat.Icons.%(Filename)%(Extension)</LogicalName></EmbeddedResource>
+    <EmbeddedResource Include="..\Assets\Brand\icon-24.png"><LogicalName>Meerkat.Icons.Meerkat.png</LogicalName></EmbeddedResource>
     <Reference Include="RhinoCommon"><HintPath>$(RhinoDir)\System\RhinoCommon.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="Grasshopper"><HintPath>$(RhinoDir)\Plug-ins\Grasshopper\Grasshopper.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="GH_IO"><HintPath>$(RhinoDir)\Plug-ins\Grasshopper\GH_IO.dll</HintPath><Private>false</Private></Reference>

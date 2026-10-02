@@ -1,6 +1,6 @@
-# IFC Viewer — catalogo dei 19 componenti
+# Meerkat — catalogo dei 19 componenti
 
-Tutti i componenti si trovano nella scheda **IFC Viewer** di Grasshopper. La definizione `IFC_Viewer.gh` li contiene gia collegati in cinque aree. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
+Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` li contiene gia collegati in cinque aree. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
 
 La raccolta di **[otto esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 19 componenti all'esempio consigliato.
 
@@ -24,7 +24,7 @@ I rami `{i}` identificano gli oggetti della lista corrente. Gli oggetti senza me
 
 **Local Origin** supporta `XY center` (mantiene Z), `center` e `min`. L'offset proposto non viene applicato automaticamente: collega lo stesso vettore a IFC Elements/Color By e Bake/Export 3DM. Per una federazione calcolalo sull'insieme dei modelli, cosi tutti ricevono la stessa traslazione. Non modifica l'IFC sorgente e non applica conversioni GIS.
 
-**Read Baked** usa i GUID Rhino dell'uscita Bake, non i GlobalId IFC. Se IDs e vuoto legge tutti gli oggetti marcati da IFC Viewer, con eventuale filtro Root. Dopo modifiche effettuate in Rhino premi Refresh. Il componente legge il documento attivo, quindi funziona anche dopo aver riaperto solo il `.3dm`; non ricostruisce un archivio IFC o oggetti Elements da riutilizzare nei filtri IFC. Le mesh lette si trovano nelle coordinate correnti Rhino; il JSON descrive i dati originali del bake.
+**Read Baked** usa i GUID Rhino dell'uscita Bake, non i GlobalId IFC. Se IDs e vuoto legge tutti gli oggetti marcati da Meerkat, con eventuale filtro Root. Dopo modifiche effettuate in Rhino premi Refresh. Il componente legge il documento attivo, quindi funziona anche dopo aver riaperto solo il `.3dm`; non ricostruisce un archivio IFC o oggetti Elements da riutilizzare nei filtri IFC. Le mesh lette si trovano nelle coordinate correnti Rhino; il JSON descrive i dati originali del bake.
 
 ## Cercare, filtrare e organizzare
 

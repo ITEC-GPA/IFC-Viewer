@@ -33,7 +33,7 @@ internal static class ToolTests
     private static bool[] Bools(GH_Component c, int index) { return c.Params.Output[index].VolatileData.AllData(true).Cast<GH_Boolean>().Select(g => g.Value).ToArray(); }
     private static void Solve(GH_Document doc, GH_Component component, Action<bool, string> check)
     {
-        doc.NewSolution(true);
+        doc.NewSolution(true, GH_SolutionMode.Silent);
         var errors = component.RuntimeMessages(GH_RuntimeMessageLevel.Error);
         check(errors.Count == 0, component.Name + " solves: " + string.Join("; ", errors));
     }
@@ -121,9 +121,9 @@ internal static class ToolTests
             check(csvBytes.Take(3).SequenceEqual(new byte[] { 239, 187, 191 }) && File.ReadAllText(csvPath).Contains("'=HYPERLINK"), "CSV preserves UTF-8 and neutralizes spreadsheet formulas");
             DateTime csvTime = File.GetLastWriteTimeUtc(csvPath); Solve(doc, csv, check);
             check(File.GetLastWriteTimeUtc(csvPath) == csvTime, "Held CSV Write=True does not write again");
-            SetBool(csv, 3, false); doc.NewSolution(true); SetBool(csv, 3, true); doc.NewSolution(true);
+            SetBool(csv, 3, false); doc.NewSolution(true, GH_SolutionMode.Silent); SetBool(csv, 3, true); doc.NewSolution(true, GH_SolutionMode.Silent);
             check(csv.RuntimeMessages(GH_RuntimeMessageLevel.Error).Count == 1 && File.ReadAllBytes(csvPath).SequenceEqual(csvBytes), "CSV refuses overwrite and leaves the existing file intact");
-            SetBool(csv, 3, false); doc.NewSolution(true);
+            SetBool(csv, 3, false); doc.NewSolution(true, GH_SolutionMode.Silent);
             var export = Add(doc, new Export3dmComponent(), model.Elements);
             export.Params.Input[0].AddSource(group.Params.Output[0]);
             string exportPath = Path.Combine(output, "selected.3dm"); SetText(export, 1, exportPath); SetBool(export, 2, true);

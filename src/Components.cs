@@ -13,34 +13,21 @@ using Rhino.Geometry;
 
 namespace IfcViewer
 {
-    public class IfcViewerInfo : GH_AssemblyInfo
+    public class MeerkatInfo : GH_AssemblyInfo
     {
-        public override string Name { get { return "IFC Viewer"; } }
+        public override string Name { get { return "Meerkat"; } }
         public override string Description { get { return "IFC geometry, BIM attributes, archives and attributed bake."; } }
         public override Guid Id { get { return new Guid("D1313D48-9B86-4F54-886C-B19E419E9FD2"); } }
-        public override string AuthorName { get { return "IFC Viewer"; } }
+        public override string AuthorName { get { return "Meerkat"; } }
         public override string AuthorContact { get { return ""; } }
-        public override Bitmap Icon { get { return ComponentIcon("IFC"); } }
-        internal static Bitmap ComponentIcon(string label)
-        {
-            var icon = new Bitmap(24, 24);
-            using (var g = Graphics.FromImage(icon))
-            using (var font = new Font("Arial", 7, FontStyle.Bold))
-            {
-                g.Clear(Color.FromArgb(26, 62, 83));
-                g.DrawRectangle(Pens.Turquoise, 1, 1, 21, 21);
-                g.DrawString(label, font, Brushes.White, 2, 7);
-            }
-            return icon;
-        }
+        public override Bitmap Icon { get { return BrandIcons.Get("Meerkat"); } }
     }
 
     public abstract class IfcComponent : GH_Component
     {
-        private readonly string _iconLabel;
         protected IfcComponent(string name, string nick, string description, string panel, string icon)
-            : base(name, nick, description, "IFC Viewer", panel) { _iconLabel = icon; }
-        protected override Bitmap Icon { get { return IfcViewerInfo.ComponentIcon(_iconLabel ?? "IFC"); } }
+            : base(name, nick, description, "Meerkat", panel) { }
+        protected override Bitmap Icon { get { return BrandIcons.Get(GetType().Name); } }
         internal static T Unwrap<T>(object value) where T : class
         {
             var wrapper = value as GH_ObjectWrapper;
@@ -110,7 +97,7 @@ namespace IfcViewer
                 int count = reader.GetInt32("ModelCount");
                 for (int i = 0; i < count; i++)
                 {
-                    string folder = Path.Combine(Path.GetTempPath(), "IfcViewer", Guid.NewGuid().ToString("N"));
+                    string folder = Path.Combine(Path.GetTempPath(), "Meerkat", Guid.NewGuid().ToString("N"));
                     Directory.CreateDirectory(folder);
                     string path = Path.Combine(folder, "embedded.ifcdata.zip");
                     File.WriteAllBytes(path, reader.GetByteArray("Archive" + i));

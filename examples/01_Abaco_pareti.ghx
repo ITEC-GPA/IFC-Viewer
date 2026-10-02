@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">48577072-2dff-400b-bd49-c022db66c67e</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">8bf8121c-7bb8-423b-8a3e-b0ee21c950be</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639263947531351924</item>
+            <item name="Date" type_name="gh_date" type_code="8">639265544116952065</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>15</X>
-                  <Y>15</Y>
+                  <X>12</X>
+                  <Y>12</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.5</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -82,11 +82,11 @@
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">IfcViewer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
                 <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
-                <item name="Author" type_name="gh_string" type_code="10">IFC Viewer</item>
+                <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
-                <item name="Name" type_name="gh_string" type_code="10">IFC Viewer</item>
+                <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Version" type_name="gh_string" type_code="10"></item>
               </items>
             </chunk>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">56ca3493-c5a9-4406-998a-597cd7b2081c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7bf1f0c-af88-4fcd-860b-d7d738d14626</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">01 | ABACO PARETI</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">faef2ae7-aaad-4e2b-9372-df209b0e8413</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">903a774c-088e-42e5-b0b0-9c14cf81117e</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7cbbf00b-070c-4c51-86dc-64a7bc50fdb7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e454ede8-f8ae-45d7-b213-a6d690b78b63</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a7c53202-0fc1-4fb7-9a1d-60491936ec29</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">59274afd-252b-49f2-b2df-ec4ad53c238a</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">36d2a929-616e-40b2-81a4-d94f0e01d6b0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e3a8e9db-c7df-4cd7-9a62-b1cac55300d4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d7b4db7a-83c2-4e55-8865-2494488607f3</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e0cf5cf1-4bad-4975-a78f-8487c54fe84c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ae7f72a-019d-4178-a655-5f92ebe32d22</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0be7ae5f-6762-43d1-975e-3ac0474a8830</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1953a708-a369-4cf6-a534-b20c9d01d59e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f68803a8-f36b-4f64-9b37-25ac3dddb5cf</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">17b1962f-73cb-4fdb-a95c-ffde233cd361</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3cf6f7a3-24dc-43fe-8277-23a7ce622a46</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1c6a6e11-81db-4ec3-aa4c-2ac16c90a28b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1ebcc0e7-7c5f-4cd1-921d-ec3dbc3efdc4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a7c53202-0fc1-4fb7-9a1d-60491936ec29</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">59274afd-252b-49f2-b2df-ec4ad53c238a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7b4db7a-83c2-4e55-8865-2494488607f3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e0cf5cf1-4bad-4975-a78f-8487c54fe84c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b27e082b-dc78-4a96-b994-8f9eaef1c6b8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">527d3dda-223b-4c49-a013-2eb0f9115431</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IfcWall</item>
                   </items>
@@ -488,11 +488,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3d6f6c1-82ba-46d7-8a8a-fd63ffb63921</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5a93719f-6e28-49ad-839f-3a7dce8c4502</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1953a708-a369-4cf6-a534-b20c9d01d59e</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f68803a8-f36b-4f64-9b37-25ac3dddb5cf</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1df09c67-cada-4921-bcb4-dab2d9481c0e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">981c4648-d210-4d93-8712-11a91388169e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -554,7 +554,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ee5c9003-567f-42ec-a7c0-043ffc21d0d3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a340dc32-d784-4a36-94ba-8ec8559db3fa</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +597,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d47a5954-6b52-4824-afca-046dd004432a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">99cea68e-a924-444e-b7d4-de661c65454c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -640,7 +640,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0c8daf33-2678-412b-a935-5a1505b8242d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d637ffc2-2b15-4b51-b50d-6ae3f7c28f27</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +683,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">31caf921-9d09-4ed5-a437-52c2800109ee</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dae099af-a9e4-4437-bab1-56c982705ebd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +706,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">27e26f1d-f7e8-4451-af0f-42a0573460ee</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6a3dc54a-d6a1-4ea1-a810-8306416b6180</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +729,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">13ef92a2-eeb9-4a4f-9696-9d24747a15cc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a5470a03-47e7-4f99-88c4-400ad9dbf2ec</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,7 +761,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dc29b792-dd86-492e-90bb-29014af6a0f7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e66d2f37-259e-42d1-b7c1-6eeeeb49db33</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -811,7 +811,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Ordina stabilmente gli oggetti per un parametro, come testo o numero. Valori assenti/non numerici in fondo.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7c126e3-3cd2-402f-8e6c-830fe2c80461</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">867f67f1-d54b-4b7e-b3c0-569c2401f7d1</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Sort</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Sort</item>
                   </items>
@@ -834,11 +834,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">05541923-73ef-4789-8a53-17afa895be52</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c50de4c9-31f2-4798-b760-80729b22d751</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">31caf921-9d09-4ed5-a437-52c2800109ee</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">dae099af-a9e4-4437-bab1-56c982705ebd</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -857,7 +857,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ba3bb16e-5ad8-444c-9bb0-8adc5b02510b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7022728a-2f06-46ca-a00e-4b7da9f5dd1b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -900,7 +900,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ordinamento numerico nelle unita originarie.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e068803e-574f-409b-83b9-ec9858afb7d9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9625a792-e7e7-4d4d-89cd-db33e7822655</item>
                         <item name="Name" type_name="gh_string" type_code="10">Numeric</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -942,7 +942,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ordine decrescente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6b49d91a-5889-4383-a579-198e66023b95</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">446bd74a-303a-4f07-89c9-160f87972f27</item>
                         <item name="Name" type_name="gh_string" type_code="10">Descending</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -985,7 +985,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi ordinati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e0fac90e-993e-4478-9af2-560e0e08207c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1017,7 +1017,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">becc9b61-4e62-4721-b5cc-4ec7855ca90c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c9c1001c-1726-4b4c-9af7-043080e5e3a5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Sort</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1067,7 +1067,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e689128a-1bed-4015-a829-73fcebbf9a5d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2521b39a-8b37-46f5-9005-88183a0caf25</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Data</item>
                   </items>
@@ -1090,11 +1090,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a5300543-0487-4b80-a530-84d0d140b1ef</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0c15f76c-bd13-4645-a905-d1c66ab09af3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e0fac90e-993e-4478-9af2-560e0e08207c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1114,7 +1114,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">73ff93e4-38df-4ea0-91c3-014f17f53331</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5181aa3e-1119-4c26-942d-0bc3ebeef063</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1136,7 +1136,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d5892498-cfff-4d27-b235-9a402be06750</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6185295e-9fba-4e2f-9e80-b87da7538eb9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1179,7 +1179,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">71c1cec5-769d-4c85-ae8a-39c6f5b53205</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f22ec49a-9509-444f-b049-cbd9fe0944bf</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1226,7 +1226,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">444bd9f6-8643-456e-985d-49c436bfb578</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f1f3901b-8ea2-4d75-9422-af2e3cfa474c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1249,7 +1249,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a155bd2f-7698-4081-bff2-34f724c38006</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f50fbf1c-40fa-467b-818d-7518b5dd3b33</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1272,7 +1272,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0ba7d596-16f2-4d61-b7a5-c37a46ea0e1a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">077bb394-b7f7-4880-97f9-5c0bd2ffd3f8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1295,7 +1295,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">24781a8c-5df3-46e3-873e-7ccf874d8082</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d6522fb8-5b4b-4f0a-bfe6-eae6a8866008</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1318,7 +1318,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb53322b-f16f-453f-8102-331c909b0a8c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">43f9700b-789c-4947-81a8-e8f8be1b80dc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1341,7 +1341,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f196d646-2511-48c6-8720-55e2488420ca</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">767b5679-d510-4e7c-8f78-09b54f77882c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1364,7 +1364,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8a2da21f-7963-4d3d-83c3-0f0fa25bbab1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5e39908c-d6f2-4d82-b851-193c264c9fe7</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1387,7 +1387,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3a992b6-6c03-46c2-a9ea-628aa6db1b5b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0c095048-1672-4564-91f2-547aff89bf7d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1419,7 +1419,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb424949-26b2-4de4-8f1d-fb82c158db65</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">96f8d973-008d-44a6-93cd-20029b1a8e87</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1468,7 +1468,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e5a3fa4d-e674-42fb-bd84-c931b36c3af1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f84b2d71-4e3b-4256-b610-91c4e0d9e628</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PARETI</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -1492,11 +1492,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9786016b-7f5d-49ab-ac2c-3fda71a8669d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2fcd3a70-605b-40b0-bc54-4fc62a0c728d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">444bd9f6-8643-456e-985d-49c436bfb578</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f1f3901b-8ea2-4d75-9422-af2e3cfa474c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1515,11 +1515,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a2f3997c-f41e-4678-af62-cf8e0b1bfa54</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b05ea5e7-84db-4075-9ec8-33b1aa6af114</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d3a992b6-6c03-46c2-a9ea-628aa6db1b5b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">0c095048-1672-4564-91f2-547aff89bf7d</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1578,7 +1578,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b117a51e-d6ec-4826-a035-5e2e5e511b8b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">99bded27-7656-45ff-a71d-fc79d9fc94af</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1626,7 +1626,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2ec6c226-ce17-4420-ae29-2989e5a4cdda</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">489e7584-a9f3-494f-a263-0fd367463a7b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PARAMETRO | chiave modificabile</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1676,7 +1676,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Estrae un parametro per ogni oggetto mantenendo allineamento e valori mancanti.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c3116095-dcf9-4dd3-a46d-9be9fafafda5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">73334ccc-4cc3-4aca-9801-0283bc2c7471</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Property Value</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Value</item>
                   </items>
@@ -1699,11 +1699,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">27e2f599-8ef1-4be7-9581-b7f3f80e8bb8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">56b9658e-7784-4dff-a7a3-8bda6c7a2734</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e0fac90e-993e-4478-9af2-560e0e08207c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1722,11 +1722,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dd3af3f9-b1c6-4814-bf72-aa4eb9546cbd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0fab7e95-0426-461f-a1ec-73cc43a128c1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2ec6c226-ce17-4420-ae29-2989e5a4cdda</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">489e7584-a9f3-494f-a263-0fd367463a7b</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1767,7 +1767,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valore testuale; stringa vuota se assente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">50e89644-9733-4f41-aded-0ee6f752961b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">de889ad0-ce94-4f9e-a84c-1a58dd53b637</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1790,7 +1790,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">True se la chiave esiste; un valore null resta presente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">05ecd1d4-6885-43bd-9587-91dd8efebafb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">41cfc484-9ce4-4d15-91d5-ecc0c935ef86</item>
                         <item name="Name" type_name="gh_string" type_code="10">Found</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1813,7 +1813,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Numeri nelle unita IFC originali; NaN se assente/non numerico.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d6ba8025-bb58-4c2f-8f0b-99729695945b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca216f9d-6c59-483c-90eb-74d70c2dc2ff</item>
                         <item name="Name" type_name="gh_string" type_code="10">Numbers</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1836,7 +1836,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera dei valori numerici finiti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">194a18b0-5000-4a3e-a661-952a2615b93e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a77bdc3c-67ca-4de9-b9eb-550ddd7603b9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Is numeric</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NUM</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1868,7 +1868,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0269a999-d353-4ae7-bb60-3cde1ace2082</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7168d0a-061d-428b-812d-e9be9010ef2c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Property Value</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1916,12 +1916,12 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">809450c8-93d0-40be-90d4-cdfd22326dee</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cf3403e5-6974-4338-bef1-500716273488</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">RESISTENZA AL FUOCO | ordine dei nomi</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">50e89644-9733-4f41-aded-0ee6f752961b</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">de889ad0-ce94-4f9e-a84c-1a58dd53b637</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1967,7 +1967,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Area e volume delle mesh in SI; non sostituiscono i Quantity Set IFC. Volume NaN per mesh non chiuse/orientate.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">da5d563b-cfde-4968-a174-ffc8c5ef9beb</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5170d41d-979c-4294-abdb-e4646cfa3237</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Metrics</item>
                   </items>
@@ -1990,11 +1990,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9d0430fc-5b33-4464-8b39-e6457cd5ee37</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2945f6c3-77fe-4c99-9b65-ebbc363c8c66</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e0fac90e-993e-4478-9af2-560e0e08207c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2013,7 +2013,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Offset per box/centri visualizzati in Rhino; non modifica le misure.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa515c79-9a18-427e-a21a-63b8b23b157e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">09651c63-6e23-49e8-a1a5-3eaf021b5494</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2060,7 +2060,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Superficie totale della mesh in metri quadrati; NaN senza mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1ec03d4-489c-44e4-aaab-0c138c88e68a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9898c1e4-2c8c-4eb6-aff6-760fc184db0f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Area m2</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2083,7 +2083,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Volume assoluto in metri cubi per mesh chiusa/orientata; altrimenti NaN.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ac13fb43-709d-44c2-856e-9cf8d85a58c8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b42e1fa-dc44-49a6-9f00-03f47ec74719</item>
                         <item name="Name" type_name="gh_string" type_code="10">Volume m3</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2106,7 +2106,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">True se e stato calcolato un volume.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e950fd5-a9f0-4031-bf59-549027ada60f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf3fa908-c68e-4ed7-8107-8a66c88887cf</item>
                         <item name="Name" type_name="gh_string" type_code="10">Has volume</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OK</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2129,7 +2129,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Dimensioni XYZ del bounding box nelle coordinate originali, metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7ab9afaa-24d1-4909-a443-395041320f13</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b172e40-1759-4d62-aab2-03fada5598eb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Dimensions metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2152,7 +2152,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b51bd939-494e-4263-b552-3efc500a14ec</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">355ae6df-4ebc-4329-bc4e-4dbc148eab0d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Boxes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2175,7 +2175,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Centri dei box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9df5f2c4-7af2-4866-9b64-29551de8d2a2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d29b1d88-407c-4636-a3e2-bff8ecf2dd98</item>
                         <item name="Name" type_name="gh_string" type_code="10">Centers</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2207,7 +2207,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6c24b4b2-7d89-48b9-ab26-743c0fd931d9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">923a2dd5-86a3-4716-a978-8e833a3471c8</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2255,12 +2255,12 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">21ca2eb0-f23e-4dee-bb59-eb3b05605c00</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5d255ae6-92a5-4d8e-b41b-694587dd4de0</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">VOLUMI GEOMETRICI | m3</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ac13fb43-709d-44c2-856e-9cf8d85a58c8</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">9b42e1fa-dc44-49a6-9f00-03f47ec74719</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2304,12 +2304,12 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">92ec31be-c8ab-4d30-9a15-656ea0c92c15</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3af55b57-cc67-4b95-9d37-ec515c879988</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PARETI ORDINATE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">e0fac90e-993e-4478-9af2-560e0e08207c</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2355,7 +2355,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Esporta un abaco UTF-8 con un oggetto per riga e parametri per colonna. Scrittura solo su fronte False -&gt; True.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3faa16c6-85f2-46fc-81fa-1c5c4e2b3c99</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">38d5a82b-78f5-4311-a559-71728bba903d</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Export CSV</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC CSV</item>
                   </items>
@@ -2378,12 +2378,12 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1972aa9f-b112-4f31-af17-52f30638fa95</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a4f2696b-9423-4bfe-8326-e5334787e8de</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b7f7c712-0e61-46fe-bcb0-8993c45ef7cf</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e0fac90e-993e-4478-9af2-560e0e08207c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2403,12 +2403,12 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colonne in ordine. Vuoto = tutte le chiavi tranne MetadataJSON.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca29bab2-b2c7-4365-b697-a4ac576ed1dd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c1a4af43-ff36-4937-98a4-23881f10881e</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9e8aef0c-75aa-4689-b8a3-b5b132dcd244</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6e98e430-533f-49f9-ac58-ac491b10596b</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2427,11 +2427,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Percorso .csv.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c62f508f-67b9-4699-9ce2-4a28f44435fa</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7fc28037-d94f-4305-af63-eff3191ed696</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">19ceeac2-e5bc-408d-94ac-b97ff1336fde</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">582d0f5e-911e-48fa-90da-3e465bef5939</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2450,11 +2450,11 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bd23664f-ed78-43d7-876f-ecadd40479c7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ee8ea220-9567-45aa-92f0-3576e22814f1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">324b657a-c4b5-483c-8a4e-59eb402e2d0c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ff38000a-68fd-405c-9b5c-d7ce2eb1a4f1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2493,7 +2493,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Permette la sostituzione atomica di un file esistente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32e34195-8034-4569-a39c-5fa61e1e445b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">877d95ec-7cf0-4550-8a12-3d79ef1fa380</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2535,7 +2535,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="5">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Separatore: ; (predefinito), virgola o tab.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">36456ce9-9c65-4f57-8195-6488bcb3dd57</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">922af8b5-0fdd-4511-b8f8-54ed82ed7491</item>
                         <item name="Name" type_name="gh_string" type_code="10">Delimiter</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2578,7 +2578,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_input" index="6">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Prefissa con apostrofo celle che iniziano con = + - @, per leggerle come testo in Excel.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9cd22a24-b359-4d91-9e27-9397baaec824</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d1bbaa7e-a72d-450d-919c-a83b943df8dd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Excel safe</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2620,7 +2620,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Percorso dell'ultimo salvataggio riuscito.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bda59b7a-f1ca-44d3-b35f-09e8107b735c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">89a20b94-b737-4710-8f62-cb70e3279ff0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2652,7 +2652,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b2aa57c7-29e1-4df4-bc2a-08612a701cf3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bc213bef-5ce6-419e-b416-cfedfbfd44e0</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Export CSV</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2700,7 +2700,7 @@ Modifica il percorso solo per usare un altro IFC. WRITE CSV salva su richiesta; 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e8aef0c-75aa-4689-b8a3-b5b132dcd244</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6e98e430-533f-49f9-ac58-ac491b10596b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">COLONNE CSV | una chiave per riga</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2753,7 +2753,7 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">19ceeac2-e5bc-408d-94ac-b97ff1336fde</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">582d0f5e-911e-48fa-90da-3e465bef5939</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DESTINAZIONE CSV | modificabile</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2803,7 +2803,7 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">324b657a-c4b5-483c-8a4e-59eb402e2d0c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ff38000a-68fd-405c-9b5c-d7ce2eb1a4f1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE CSV</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2837,12 +2837,12 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f7f27ec-63f1-43a1-b5f4-349699c45ab5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e9bcc03-0927-4a2b-bcdf-26a9f1e6edf4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE SALVATO | vuoto finche non premi WRITE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">bda59b7a-f1ca-44d3-b35f-09e8107b735c</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">89a20b94-b737-4710-8f62-cb70e3279ff0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

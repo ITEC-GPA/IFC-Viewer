@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">ee55e758-6a3f-4628-9580-271ec4ad56af</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">93e26893-7674-4946-b282-3faf6506c6cf</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639263947649237575</item>
+            <item name="Date" type_name="gh_date" type_code="8">639265544146184386</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>15</X>
-                  <Y>15</Y>
+                  <X>12</X>
+                  <Y>12</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.5</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -82,11 +82,11 @@
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">IfcViewer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
                 <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
-                <item name="Author" type_name="gh_string" type_code="10">IFC Viewer</item>
+                <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
-                <item name="Name" type_name="gh_string" type_code="10">IFC Viewer</item>
+                <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Version" type_name="gh_string" type_code="10"></item>
               </items>
             </chunk>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">65a6322d-4c6c-49ad-9b2e-408893f54d13</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">088092f5-b6d6-4cc8-8837-0871870a8c98</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">05 | ORIGINE LOCALE, EXPORT 3DM E ARCHIVIO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7727989e-4221-4aa9-a364-256af1a447d2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2d7cf983-3d5a-409a-b6e0-1c05b29bf74a</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e7489e2b-cb0c-4436-9ff4-9153ded71aa1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">61d182e3-f86a-4316-8ae2-29595e0e052f</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">38996688-c032-4161-898d-7c656fdc7942</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">0dcb1d16-ec70-423f-91e7-6d1d84699feb</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">acd643d3-82ae-4dd3-9ecf-ec1cf4ffd064</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3808855-77cc-451b-bda1-b0fa88b889ca</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">cda53253-99a1-48cb-a6f4-1c78593961ae</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ee82f11a-03ba-472b-9010-58ae7447d69c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5b6b6695-0316-4f0c-bc2d-686d9a33419c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">91df8ddf-abaf-46ea-b574-a845a50ad70d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ce11ee91-aa4d-4969-a6b5-8cbf326fc1b1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">714b86c4-893f-4ba6-af7a-97e44857eb98</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f2216890-27db-44f0-ba21-d361ae4a2202</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">333a374d-3668-4fed-8fd2-71de94eed3f9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b879b1f1-4cf6-437b-8ad9-ec68c1e39f80</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f839662a-652d-46ec-b9a4-a1b89ff7d35e</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">38996688-c032-4161-898d-7c656fdc7942</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0dcb1d16-ec70-423f-91e7-6d1d84699feb</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cda53253-99a1-48cb-a6f4-1c78593961ae</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ee82f11a-03ba-472b-9010-58ae7447d69c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ed9c7ebe-7cd0-42d6-95bf-c99eaa079ff1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">19bc5a66-8fc8-4c74-b937-06336e3b2f22</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ok</item>
                   </items>
@@ -488,11 +488,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">737cab93-069e-4b75-91af-df103e283f93</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e34eec6-bedc-4fdd-b4b5-352c94279203</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ce11ee91-aa4d-4969-a6b5-8cbf326fc1b1</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">714b86c4-893f-4ba6-af7a-97e44857eb98</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c2f9a001-bbcf-49d2-9766-9e39d89dc706</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cedcad13-0dad-4bec-b647-a43264029dda</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -554,7 +554,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">03192c21-2e7c-4f94-a37f-e767cebe449a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c807d516-9f6d-4f03-90c2-b11e3687d0fe</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +597,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c98663f8-6e6c-407f-8b8a-8e9e77fa323b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dad04217-9280-43b4-a622-2721b2a149f1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -640,7 +640,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5ed7fe9-9467-4782-bf2b-355a0f783c2b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5c617693-b0f1-4809-b32d-523a9c0dbf1f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +683,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e2fef241-80d9-48ca-8d5a-e5b54ee5ee90</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb027a18-26c8-4646-89a4-155aa41e56a1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +706,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">72ec0c9b-4f65-4bc9-9c33-16d072c60b41</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">95da1496-e63c-44cb-9d08-048b073ad0e0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +729,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">66db768e-ad4a-4072-a19f-67b151499627</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">10537cd5-cc7e-4ca9-9216-72742fe2fdc4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,7 +761,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">038161e2-821c-482b-81fa-71563289ee0f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d56659e4-7f53-4285-90a5-068bb9da9fba</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -811,7 +811,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Calcola un offset comune in metri per avvicinare un modello/federazione all'origine. Collegarlo sia alla preview sia al bake/export.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a97bc4c9-9f0f-427b-8edd-06537f4749d7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">12c5b666-fc95-4555-af25-d8922929656d</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Local Origin</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Origin</item>
                   </items>
@@ -834,11 +834,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">965586a1-ac40-4018-9e7c-b52dfa4639b8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f54f7fc4-86c3-47a3-bcfa-ed9274dbc69f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e2fef241-80d9-48ca-8d5a-e5b54ee5ee90</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bb027a18-26c8-4646-89a4-155aa41e56a1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -857,7 +857,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">XY center (mantiene quote Z), center, min.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c140752-6516-4347-b9b5-1c631235ce5b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">94d8ef7d-75b1-4307-9b36-49ded8b8e017</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mode</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -900,7 +900,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione da applicare a IFC Elements/Color By/Bake/Export 3DM.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bd651f1c-fe1e-4045-8993-c4d44b957b8c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">53eec8cb-5477-4974-9a18-5fe5a1e50fac</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -922,7 +922,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Punto originale che diventa l'origine, in metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4eedf065-e77c-4f16-ab48-a04653a8a280</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e4299f14-dd0b-40e4-9efc-432fa0f48c5f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Original origin metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -954,7 +954,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">97ad2f81-76f1-4bc8-8283-6b19d5925e58</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7006f568-7f07-47cf-9267-ae0a927a7467</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Local Origin</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1002,12 +1002,12 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6c3bef8e-9ae7-4444-987f-523c4d53882f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4b74f942-ea1b-40e6-a395-d4e3076d2b93</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">OFFSET XY | metri</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">bd651f1c-fe1e-4045-8993-c4d44b957b8c</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">53eec8cb-5477-4974-9a18-5fe5a1e50fac</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1053,7 +1053,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">550a4fd2-74e6-4d98-8f53-57b09f04333a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2260384a-84c9-4798-aec0-14fdfe048736</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Data</item>
                   </items>
@@ -1076,11 +1076,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">efd8ce65-39c7-421d-b9ec-4ed6ada7c212</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d4ef8ac4-1753-4413-8473-1f09cbf817ce</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e2fef241-80d9-48ca-8d5a-e5b54ee5ee90</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bb027a18-26c8-4646-89a4-155aa41e56a1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1100,7 +1100,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f024c089-c374-4370-b666-1b26d14c0610</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d9483ac6-d612-4e83-9037-6ae18069efd9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1122,7 +1122,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">532f2bb5-0776-4a1f-a315-9f3ff2195aed</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">63acf6c7-2eca-4426-bbda-f2535638b0a9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1165,11 +1165,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">83d2c0cb-c961-4a3a-adf0-cb24267c04ed</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3a253308-d266-4ce5-b9c2-b801df97ccd9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bd651f1c-fe1e-4045-8993-c4d44b957b8c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">53eec8cb-5477-4974-9a18-5fe5a1e50fac</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1213,7 +1213,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cf041f9b-157f-459c-8f9e-fcd417a24285</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">683c4afc-05c9-42bb-8ed4-765f936e2185</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1236,7 +1236,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">08792b02-a859-45a7-a326-05258dad83dd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7fb37f61-34c1-4149-9f22-94c4d07ae353</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1259,7 +1259,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cec2c6f1-7034-4152-843f-039b204715c1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9605a968-aeeb-44fa-a451-5a4ae0297865</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1282,7 +1282,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eee5a27e-e493-4bce-8715-0bd6bd55b86b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">30dd505d-2470-45ba-89a3-dcd1236ea1a0</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1305,7 +1305,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">26fb8417-ec7a-41c6-9f65-40606c035cd3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c93e784c-a972-487f-ad8a-db118314f44e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1328,7 +1328,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c29a77ac-4263-4c62-8a9f-692d740078ca</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3a19e02d-5e54-48a0-bca0-2d8788a0a8a7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1351,7 +1351,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8799c31-e7bc-49cb-a3da-bdc6d44124a0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4ef2467-ad31-4b47-9d22-c57c365e1c60</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1374,7 +1374,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">16edb53c-a06f-4605-888a-05f146877be9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">182854b4-f04a-42e1-a306-7e71e343bda0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1406,7 +1406,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4102820a-7642-43a5-b856-a35ecb8eee11</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3321cafa-f18b-40ec-89b3-9d94a9ded7f1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1455,7 +1455,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ad7fd321-005a-447f-8e6f-313d0c287cfa</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9137a583-b930-4cac-bd19-6093f5210030</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PREVIEW LOCALE</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -1479,11 +1479,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">524bfee5-ad47-4baf-b484-1976d03fed6c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4b252799-5efd-41b2-92a4-afde624ec030</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">cf041f9b-157f-459c-8f9e-fcd417a24285</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">683c4afc-05c9-42bb-8ed4-765f936e2185</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1502,11 +1502,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7d853e5c-b422-40df-a9e1-a045e0d90cd0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a4d69bbb-dc54-4bfe-8584-5144d280c31d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">16edb53c-a06f-4605-888a-05f146877be9</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">182854b4-f04a-42e1-a306-7e71e343bda0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1565,7 +1565,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a86f18e3-b2c3-48ce-94e0-f9f927f13638</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9c69b6f2-4ac0-4ad8-934b-91f1d769aa02</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1615,7 +1615,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Area e volume delle mesh in SI; non sostituiscono i Quantity Set IFC. Volume NaN per mesh non chiuse/orientate.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3bc13b38-c73b-4c32-89b0-b67f2a5131c5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">192954e7-6784-4d08-b075-8a89f6800999</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Metrics</item>
                   </items>
@@ -1638,11 +1638,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f17d70a7-8612-4168-b54e-36146389cc83</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d421b86c-41f5-4412-9119-2a4f867722eb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e2fef241-80d9-48ca-8d5a-e5b54ee5ee90</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bb027a18-26c8-4646-89a4-155aa41e56a1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1661,11 +1661,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Offset per box/centri visualizzati in Rhino; non modifica le misure.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5c74d5e0-6b88-4640-a690-fbba0fed13ed</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">963432e7-fdfa-4ed8-b36a-a5f977f427b3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bd651f1c-fe1e-4045-8993-c4d44b957b8c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">53eec8cb-5477-4974-9a18-5fe5a1e50fac</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1709,7 +1709,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Superficie totale della mesh in metri quadrati; NaN senza mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c7e3e1ca-7602-4188-b3bd-d4fac66e6eaa</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">82f4aaa1-1ec0-4624-a423-6b6011f9be6a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Area m2</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1732,7 +1732,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Volume assoluto in metri cubi per mesh chiusa/orientata; altrimenti NaN.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2d156a31-9e8d-49d2-b6ea-c9cc1a66f70a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">000f9822-9a69-4e15-881f-fe7bf385b9b3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Volume m3</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1755,7 +1755,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">True se e stato calcolato un volume.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b489e4fa-4a87-4719-bf96-65b3b9073cab</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3cfc5083-b744-4926-a835-a3c832767fad</item>
                         <item name="Name" type_name="gh_string" type_code="10">Has volume</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OK</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1778,7 +1778,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Dimensioni XYZ del bounding box nelle coordinate originali, metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">44a6a1f9-1e2a-4391-94c4-4c026cf04549</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0c9c27dd-b844-48ed-a615-9bdfd8a745e7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Dimensions metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1801,7 +1801,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dca73623-8104-43e4-a244-131b2dc68d8a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6897f13e-2ee2-4dfb-99f5-08c9aa37d499</item>
                         <item name="Name" type_name="gh_string" type_code="10">Boxes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1824,7 +1824,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Centri dei box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">db97bbe9-86bf-4711-a386-7c42ac184b48</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32254551-7717-4abc-b24e-27932e396987</item>
                         <item name="Name" type_name="gh_string" type_code="10">Centers</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1856,7 +1856,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ac86932-4745-4990-b967-ad31d9d23204</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c079235f-e312-4c9f-b704-a1c7543f2804</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1904,12 +1904,12 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2520744d-27ca-4b8c-88ad-bff1644d3d28</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">41bbc5cd-7fa4-4a54-be19-2dad60fe377b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CENTRI NELLE UNITA RHINO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">db97bbe9-86bf-4711-a386-7c42ac184b48</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">32254551-7717-4abc-b24e-27932e396987</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1955,7 +1955,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Esporta gli elementi in un nuovo .3dm con layer e User Text, senza aggiungere oggetti al documento attivo.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e017b15a-ca13-48ef-8726-9a4938e0de9c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">701b64df-2eac-4b7a-884a-12996650bfce</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Export 3DM</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC 3DM</item>
                   </items>
@@ -1978,12 +1978,12 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f88eaf9-59e6-4aba-b92c-9b7a0abc53aa</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c839df7-82fd-42cc-ab11-33a084b30c1f</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e2fef241-80d9-48ca-8d5a-e5b54ee5ee90</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bb027a18-26c8-4646-89a4-155aa41e56a1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2002,11 +2002,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Percorso .3dm.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fce61e2f-b0dc-4ddd-a6bb-1dc9fecc4491</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b06aeabb-0670-4fe3-8253-9dd506e2d09e</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">11bc7fba-b266-4914-9c38-805ffef4bea8</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">0a01a167-bd53-49a5-8be7-2209fd2f46dd</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2025,11 +2025,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a96a5a7f-4ef1-4c86-aa3f-e63e80bb485e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e3b2708-3171-4e45-be7b-3956367362df</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2752fd87-34bf-4f7a-8914-48041d527463</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">fae621ea-42fd-402f-aea0-6a8f85371c5f</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2068,7 +2068,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Sostituisce il file esistente solo se True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5c8cf8ca-2d32-4973-b4e3-ff4b758c80af</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">38a2adb9-6507-4ea5-a6cc-2a83e565ea24</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2110,11 +2110,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="4">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Stesso offset della preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">99985832-e0e0-407b-95a7-469b030666e5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">44a8646c-eb00-438a-86b5-8f3b3da31ed4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">XYZ</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bd651f1c-fe1e-4045-8993-c4d44b957b8c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">53eec8cb-5477-4974-9a18-5fe5a1e50fac</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2157,7 +2157,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="5">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Layer radice.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">46657ebf-32d7-49e9-bccf-5f6143a0b5ec</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4c446d6-be44-443f-b732-553f762475a7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Root layer</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2200,7 +2200,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">File creato.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d276245-c054-4941-9065-5cbff2b146c9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0167d998-9bff-4542-95c3-a6075a4b535b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2222,7 +2222,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti senza mesh non esportati; conservarli nell'archivio IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6902c875-3b22-4639-9baa-62a062843162</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">efd96243-2766-4fe8-a3e8-435793049c39</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2254,7 +2254,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">527b9920-d673-42b7-8d18-957e6511ad53</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">93904441-7526-4952-b3f5-ffa5184c5344</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Export 3DM</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2302,7 +2302,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">11bc7fba-b266-4914-9c38-805ffef4bea8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a01a167-bd53-49a5-8be7-2209fd2f46dd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DESTINAZIONE 3DM</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2352,7 +2352,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2752fd87-34bf-4f7a-8914-48041d527463</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fae621ea-42fd-402f-aea0-6a8f85371c5f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE 3DM</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2386,12 +2386,12 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b58dbdb-77b9-42fa-9f1f-344d193fc2e7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">364889f7-fc33-4237-91d8-9139095220d4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT EXPORT 3DM</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">6902c875-3b22-4639-9baa-62a062843162</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">efd96243-2766-4fe8-a3e8-435793049c39</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2437,7 +2437,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Bake su layer Radice::Modello::ClasseIFC e tutti i parametri negli User Text. Un record Undo per operazione.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">16cfaf3f-10c4-4692-9000-d28132e28670</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b2a1c501-2402-4e13-93fa-671636fabbb3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Bake</item>
                   </items>
@@ -2460,12 +2460,12 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da IFC Elements o Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b9db935a-a658-474b-bd53-0d7a5c9029ba</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b962be8e-2606-497f-b973-0dd68632319e</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e2fef241-80d9-48ca-8d5a-e5b54ee5ee90</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bb027a18-26c8-4646-89a4-155aa41e56a1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2484,11 +2484,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button: agisce solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bbc0336b-9841-4226-bcb2-3900d4159834</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5653bc66-9310-4d63-ad75-f1acf3f98c5a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Bake</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8480ca0a-674b-4d21-9042-42a17fb5b3c0</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2408749a-67a3-48c5-95eb-447cbdfd6bfe</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2527,7 +2527,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Layer radice.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">24e20e29-26e5-48be-8efb-21905af4d34e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d2a8d908-00b8-4ca1-8399-d12166af278c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Root layer</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2570,7 +2570,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">True aggiorna gli oggetti precedentemente creati da questo componente, stessa sorgente e GlobalId. False crea copie.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">90d4bed0-a788-4965-91d0-310b888a53df</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0b494241-43d7-4d19-a80d-5e38229e7b80</item>
                         <item name="Name" type_name="gh_string" type_code="10">Update</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2612,11 +2612,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="4">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Stesso offset usato nella visualizzazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c9bc8215-def1-42ae-892d-b0388316d5d7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5912fe4-a9dc-4d17-a65a-c155d5134ddb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bd651f1c-fe1e-4045-8993-c4d44b957b8c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">53eec8cb-5477-4974-9a18-5fe5a1e50fac</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2660,7 +2660,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID Rhino dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d8962c8-0153-4543-9c2c-c9e22e0111e7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e6a7fe38-28dd-4505-8702-a6acfaa42ab8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Object IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2682,7 +2682,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Risultato dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">43637ed4-3859-4b23-8d11-3a5510108144</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">51a3a13e-737f-4031-aeb5-f430f67f8e5a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2714,7 +2714,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e691c9f8-2b39-41dc-8810-954812efbe18</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bc9da6c9-75c0-4676-afa2-4a9353375c77</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2764,7 +2764,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8480ca0a-674b-4d21-9042-42a17fb5b3c0</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2408749a-67a3-48c5-95eb-447cbdfd6bfe</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2800,7 +2800,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Salva archivi .ifcdata.zip con IFC originale, tutte le entita, attributi e mesh. Riapribili con Read IFC senza Python.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">88ad9228-0951-4000-8268-539b7a0d063c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">839e7db0-822e-4453-a562-e411d8579c23</item>
                     <item name="Name" type_name="gh_string" type_code="10">Save IFC Archive</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Save</item>
                   </items>
@@ -2823,12 +2823,12 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">35877a75-a5cf-4227-8e69-4f1de2f0cb96</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fb055a65-222a-4269-8910-6f3a3536d155</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5b6b6695-0316-4f0c-bc2d-686d9a33419c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">91df8ddf-abaf-46ea-b574-a845a50ad70d</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2847,11 +2847,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Cartella in cui salvare gli archivi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1a059ee7-2b71-41e4-b0df-e076b9420a8c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">58b74d0f-e0b2-4cc8-956b-cdc4b56b8704</item>
                         <item name="Name" type_name="gh_string" type_code="10">Directory</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b25a4a73-bf77-4159-be40-74760b30177b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">392c076c-aefe-40b9-8657-50cb32ca04d6</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2870,11 +2870,11 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button: salva sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">99985d7d-0a94-4bab-9f61-595395e35a5c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4604e09b-10d7-40c0-9251-4641bb504036</item>
                         <item name="Name" type_name="gh_string" type_code="10">Save</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">cb57bed2-56fc-4ba5-9075-3c2130a1c5b6</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c3c5484d-8079-4351-a48b-c2db152b0da5</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2913,7 +2913,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Consente di sovrascrivere un archivio esistente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ace11815-806a-4187-9d0a-4e9c51351e45</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e45c395f-ade4-404e-b188-0c4bc35660d5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2956,7 +2956,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi degli archivi salvati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">04fef80c-8a0f-41ae-9079-0c5e26ca84f5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">72ef2473-1dbe-4ebb-9468-59eab58fc0ce</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2988,7 +2988,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb1f07e4-ddf6-4911-9fcf-7308282704a1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe98b65c-dff2-48ec-89a5-e1ecf8014eba</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Save IFC Archive</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3036,7 +3036,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b25a4a73-bf77-4159-be40-74760b30177b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">392c076c-aefe-40b9-8657-50cb32ca04d6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CARTELLA ARCHIVIO IFC COMPLETO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3086,7 +3086,7 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb57bed2-56fc-4ba5-9075-3c2130a1c5b6</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c3c5484d-8079-4351-a48b-c2db152b0da5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SAVE ARCHIVE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3120,12 +3120,12 @@ Il cambio origine e una traslazione del modello per Rhino; non effettua trasform
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3aa741d7-0442-46d9-9345-400972f70470</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">99ee1598-68f1-4960-8452-b3151fb0a0c5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ARCHIVIO SALVATO | coordinate originali</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">04fef80c-8a0f-41ae-9079-0c5e26ca84f5</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">72ef2473-1dbe-4ebb-9468-59eab58fc0ce</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

@@ -1,0 +1,154 @@
+[
+  {
+    "key": "ReadIfcComponent",
+    "name": "Read IFC",
+    "family": "Lettura",
+    "color": "#267E87",
+    "png": "png/ReadIfcComponent.png",
+    "svg": "svg/ReadIfcComponent.svg"
+  },
+  {
+    "key": "ModelInfoComponent",
+    "name": "IFC Model Info",
+    "family": "Lettura",
+    "color": "#267E87",
+    "png": "png/ModelInfoComponent.png",
+    "svg": "svg/ModelInfoComponent.svg"
+  },
+  {
+    "key": "InspectIfcComponent",
+    "name": "IFC Elements",
+    "family": "Lettura",
+    "color": "#267E87",
+    "png": "png/InspectIfcComponent.png",
+    "svg": "svg/InspectIfcComponent.svg"
+  },
+  {
+    "key": "ReadBakedComponent",
+    "name": "IFC Read Baked",
+    "family": "Lettura",
+    "color": "#267E87",
+    "png": "png/ReadBakedComponent.png",
+    "svg": "svg/ReadBakedComponent.svg"
+  },
+  {
+    "key": "PropertyKeysComponent",
+    "name": "IFC Property Keys",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/PropertyKeysComponent.png",
+    "svg": "svg/PropertyKeysComponent.svg"
+  },
+  {
+    "key": "PropertyValueComponent",
+    "name": "IFC Property Value",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/PropertyValueComponent.png",
+    "svg": "svg/PropertyValueComponent.svg"
+  },
+  {
+    "key": "FilterPropertyComponent",
+    "name": "IFC Filter Property",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/FilterPropertyComponent.png",
+    "svg": "svg/FilterPropertyComponent.svg"
+  },
+  {
+    "key": "SelectIdsComponent",
+    "name": "IFC Select IDs",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/SelectIdsComponent.png",
+    "svg": "svg/SelectIdsComponent.svg"
+  },
+  {
+    "key": "GroupByComponent",
+    "name": "IFC Group By",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/GroupByComponent.png",
+    "svg": "svg/GroupByComponent.svg"
+  },
+  {
+    "key": "SortElementsComponent",
+    "name": "IFC Sort",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/SortElementsComponent.png",
+    "svg": "svg/SortElementsComponent.svg"
+  },
+  {
+    "key": "ColorByComponent",
+    "name": "IFC Color By",
+    "family": "Vista",
+    "color": "#356AAF",
+    "png": "png/ColorByComponent.png",
+    "svg": "svg/ColorByComponent.svg"
+  },
+  {
+    "key": "GeometryMetricsComponent",
+    "name": "IFC Geometry Metrics",
+    "family": "Vista",
+    "color": "#356AAF",
+    "png": "png/GeometryMetricsComponent.png",
+    "svg": "svg/GeometryMetricsComponent.svg"
+  },
+  {
+    "key": "OriginComponent",
+    "name": "IFC Local Origin",
+    "family": "Vista",
+    "color": "#356AAF",
+    "png": "png/OriginComponent.png",
+    "svg": "svg/OriginComponent.svg"
+  },
+  {
+    "key": "ValidateElementsComponent",
+    "name": "IFC Check Data",
+    "family": "Controlli",
+    "color": "#6757AE",
+    "png": "png/ValidateElementsComponent.png",
+    "svg": "svg/ValidateElementsComponent.svg"
+  },
+  {
+    "key": "CompareRevisionsComponent",
+    "name": "IFC Compare Revisions",
+    "family": "Controlli",
+    "color": "#6757AE",
+    "png": "png/CompareRevisionsComponent.png",
+    "svg": "svg/CompareRevisionsComponent.svg"
+  },
+  {
+    "key": "BakeIfcComponent",
+    "name": "Bake IFC",
+    "family": "Salvataggio",
+    "color": "#39805A",
+    "png": "png/BakeIfcComponent.png",
+    "svg": "svg/BakeIfcComponent.svg"
+  },
+  {
+    "key": "SaveIfcComponent",
+    "name": "Save IFC Archive",
+    "family": "Salvataggio",
+    "color": "#39805A",
+    "png": "png/SaveIfcComponent.png",
+    "svg": "svg/SaveIfcComponent.svg"
+  },
+  {
+    "key": "ExportCsvComponent",
+    "name": "IFC Export CSV",
+    "family": "Salvataggio",
+    "color": "#39805A",
+    "png": "png/ExportCsvComponent.png",
+    "svg": "svg/ExportCsvComponent.svg"
+  },
+  {
+    "key": "Export3dmComponent",
+    "name": "IFC Export 3DM",
+    "family": "Salvataggio",
+    "color": "#39805A",
+    "png": "png/Export3dmComponent.png",
+    "svg": "svg/Export3dmComponent.svg"
+  }
+]
