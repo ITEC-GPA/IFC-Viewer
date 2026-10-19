@@ -4,9 +4,10 @@ $projectRoot = $PSScriptRoot
 $rhinoDir = 'C:\Program Files\Rhino 8'
 $compiler = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
 $outputPath = Join-Path $projectRoot 'build'
+$pluginDirectory = if ($env:MEERKAT_PLUGIN_DIR) { $env:MEERKAT_PLUGIN_DIR } else { Join-Path $projectRoot 'bin' }
 New-Item -ItemType Directory -Path $outputPath -Force | Out-Null
 $refs = @(
-    "$projectRoot\bin\Meerkat.gha", "$rhinoDir\System\RhinoCommon.dll",
+    "$pluginDirectory\Meerkat.gha", "$rhinoDir\System\RhinoCommon.dll",
     "$rhinoDir\System\Newtonsoft.Json.dll", "$rhinoDir\Plug-ins\Grasshopper\Grasshopper.dll",
     "$rhinoDir\Plug-ins\Grasshopper\GH_IO.dll", 'System.Drawing.dll', 'System.Windows.Forms.dll'
 )

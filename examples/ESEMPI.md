@@ -1,6 +1,6 @@
-# Otto esempi Grasshopper IFC — tutti i 19 componenti
+# Nove esempi Grasshopper IFC — tutti i 22 componenti
 
-Apri i file `.gh` in **Rhino 8 / Grasshopper su Windows**, dopo aver eseguito `Setup.cmd` dalla cartella principale e riavviato Rhino. Il plugin Meerkat deve essere caricato. I modelli sono gia incorporati: per provare gli esempi non occorre premere READ, ne avere Python in esecuzione. Sono disponibili anche le copie `.ghx` leggibili come XML.
+Apri i file `.gh` in **Rhino 8 / Grasshopper su Windows**, dopo aver eseguito `Setup.cmd` dalla cartella principale e riavviato Rhino. Il plugin Meerkat deve essere caricato. I modelli sono gia incorporati: per provare gli esempi non occorre premere READ, ne avere Python in esecuzione per consultarli; la scrittura di nuovi IFC richiede il runtime Python. Sono disponibili anche le copie `.ghx` leggibili come XML.
 
 Apri un esempio alla volta e usa Zoom Extents nella viewport Rhino. I pannelli azzurri spiegano il flusso o contengono input modificabili; quelli verdi mostrano i risultati. I componenti Custom Preview gestiscono i colori; gli altri componenti geometrici hanno la preview disattivata per evitare sovrapposizioni.
 
@@ -14,6 +14,9 @@ Apri un esempio alla volta e usa Zoom Extents nella viewport Rhino. I pannelli a
 | [06 — Esplora modello](06_Esplora_modello.gh) | Schema/unita, scoperta parametri e selezione per ID | 11 record, 6 mesh; 1 parete selezionata |
 | [07 — Filtri numerici](07_Filtri_numerici.gh) | Slider, filtri AND, ordinamento numerico e somma volumi | 2 pareti, 9 m3 |
 | [08 — Bake e rilettura](08_Bake_e_rilettura.gh) | User Text, aggiornamento senza duplicati e Refresh | 6 oggetti dopo BAKE |
+| [09 — Modifica dati IFC](09_Modifica_dati_IFC.gh) | Modificare Description e FireRating ed esportare il modello completo | 6 richieste su 3 pareti; nessuna scrittura all'apertura |
+
+**09:** cambia i valori nei pannelli, imposta una destinazione `.ifc` diversa dal sorgente e premi WRITE IFC. Il file conserva tutti gli 11 oggetti del modello, con descrizione e FireRating modificati solo sulle tre pareti. Il report mostra prima/dopo e hash dei file; per vedere il nuovo modello collegare il percorso salvato a Read IFC e premere READ. I parametri On type restano False: abilitarli modifica il tipo condiviso e puo coinvolgere istanze fuori dalla selezione. Serve il runtime Python per scrivere.
 
 Per iniziare dai dati usa **06**. Per il flusso che porta gli IFC in Rhino con layer e tutti i parametri usa **08**.
 
@@ -171,4 +174,4 @@ La copertura completa, verificata sui `.gh` riaperti dal disco, e registrata in 
 
 Sono inclusi `tutorial_A.ifc`, `tutorial_B.ifc`, `tutorial_coordinate_grandi.ifc`, `tutorial_numeri.ifc` e i corrispondenti archivi `.ifcdata.zip`. Sono modelli sintetici didattici: due piani, pareti, solai, un pilastro e record senza geometria. Le modifiche della revisione B e le proprieta dell'esempio numerico sono scritte negli IFC sorgente.
 
-`Build-Examples.ps1`, dalla cartella principale, rigenera i modelli con IfcOpenShell e le otto definizioni con il runtime Rhino. Richiede l'ambiente Python del progetto, Rhino 8 e una licenza disponibile. Il generatore riapre ogni `.gh` e verifica conteggi, parametri, confronto, selezione per ID, interazione dello slider, bake/update/Refresh, CSV, 3DM e archivio in documenti di prova. I file consegnati sono salvati prima di attivare i pulsanti nei test. `tests/check_examples.py` controlla inoltre le righe CSV con il parser CSV di Python.
+`Build-Examples.ps1`, dalla cartella principale, rigenera i modelli con IfcOpenShell e le nove definizioni con il runtime Rhino. Richiede l'ambiente Python del progetto, Rhino 8 e una licenza disponibile. Il generatore riapre ogni `.gh` e verifica conteggi, parametri, confronto, selezione per ID, interazione dello slider, bake/update/Refresh, CSV, 3DM e archivio in documenti di prova. I file consegnati sono salvati prima di attivare i pulsanti nei test. `tests/check_examples.py` controlla inoltre le righe CSV con il parser CSV di Python.

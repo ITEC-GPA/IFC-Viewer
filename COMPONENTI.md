@@ -1,10 +1,28 @@
-# Meerkat — catalogo dei 19 componenti
+# Meerkat — catalogo dei 22 componenti
 
-Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` li contiene gia collegati in cinque aree. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
+Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` contiene i 19 componenti di lettura, analisi e bake; il file `09_Modifica_dati_IFC.gh` illustra i tre nuovi componenti di modifica. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
 
-La raccolta di **[otto esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 19 componenti all'esempio consigliato.
+La raccolta di **[nove esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 22 componenti all'esempio consigliato.
 
-## Leggere e visualizzare
+## Modificare dati ed esportare IFC
+
+| Componente | Input principali | Output / utilizzo |
+| --- | --- | --- |
+| **IFC Set Attribute** | Elements, Attribute, Values, On type, Clear | Richieste per Name, Description o Tag; anteprima. Un valore per tutti gli elementi oppure esattamente un valore per elemento. |
+| **IFC Set Property** | Elements, Property Set, Property, Values, Value type, On type, Clear | Creazione/modifica di IfcPropertySingleValue. Auto mantiene il tipo esistente o usa il template standard; nuove proprieta custom sono IfcLabel. |
+| **IFC Write File** | Model, Changes, File, Write, Overwrite | Esporta il modello completo in un nuovo `.ifc`; percorso e report JSON prima/dopo. Riunire Changes con Merge oppure collegare piu sorgenti all'input. |
+
+`On type=False` crea/modifica la proprieta dell'istanza, isolando Pset condivisi e creando un override se il valore era ereditato. `On type=True` cambia il **tipo condiviso**: tutte le sue istanze ereditano il nuovo valore, salvo override locali. Il report indica quante istanze usano quel tipo; non duplica il tipo e non ne cambia l'assegnazione.
+
+Il writer usa l'IFC originale contenuto nell'archivio: funziona anche dopo aver rimosso il file sorgente esterno. Conserva GlobalId, classi, relazioni e geometrie. Non esporta la sola selezione: applica le richieste selezionate al modello intero. Un solo modello per writer; richieste provenienti da altre sorgenti/versioni sono rifiutate. Conflitti sullo stesso campo bloccano tutto il batch. Il modello in Grasshopper rimane invariato; ricarica il nuovo IFC per analizzarlo o applicare ulteriori modifiche.
+
+Numeri con punto decimale, booleani `true`/`false`, misure nelle **unita IFC della proprieta** (o del progetto se manca un'unita esplicita). Nessuna conversione dalle unita Rhino. `Clear=True` imposta null senza cancellare la proprieta. Zero, false e testo vuoto sono distinti da null. Quantita Qto, proprieta enumerate/composte e cambi di tipo di una proprieta esistente sono rifiutati.
+
+WRITE agisce su False -> True. Il sorgente non e sovrascrivibile nemmeno con Overwrite; la destinazione viene pubblicata solo dopo la riapertura e il controllo di nuovi errori di schema. Gli errori preesistenti vengono conteggiati nel report: questa e una verifica di schema, non una validazione completa delle regole EXPRESS, di una MVD o dei requisiti informativi di commessa. In caso di errore il file destinazione esistente rimane intatto.
+
+Esempio completo: **[09 — Modifica dati IFC](examples/09_Modifica_dati_IFC.gh)**. API di riferimento: [IfcOpenShell property editing](https://docs.ifcopenshell.org/autoapi/ifcopenshell/api/pset/edit_pset/index.html); implementazione verificata con la versione 0.8.3 installata nel progetto.
+
+## Lettura e visualizzazione
 
 | Componente | Input principali | Output / utilizzo |
 | --- | --- | --- |

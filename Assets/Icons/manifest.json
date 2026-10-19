@@ -1,5 +1,29 @@
 [
   {
+    "key": "SetAttributeComponent",
+    "name": "IFC Set Attribute",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/SetAttributeComponent.png",
+    "svg": "svg/SetAttributeComponent.svg"
+  },
+  {
+    "key": "SetPropertyComponent",
+    "name": "IFC Set Property",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/SetPropertyComponent.png",
+    "svg": "svg/SetPropertyComponent.svg"
+  },
+  {
+    "key": "WriteIfcComponent",
+    "name": "IFC Write File",
+    "family": "Modifica",
+    "color": "#39805A",
+    "png": "png/WriteIfcComponent.png",
+    "svg": "svg/WriteIfcComponent.svg"
+  },
+  {
     "key": "ReadIfcComponent",
     "name": "Read IFC",
     "family": "Lettura",

@@ -373,10 +373,51 @@ internal static class ExampleDefinitions
             Check(Find<ReadBakedComponent>(doc).Params.Output[0].VolatileDataCount == 0, "08 | rilettura vuota prima del bake");
         }
     }
+    private static GH_Document EditData()
+    {
+        var doc = new GH_Document();
+        Header(doc, "09 | MODIFICA DATI IFC", "Read -> seleziona pareti -> prepara attributi e proprieta -> WRITE IFC. Il modello originale non cambia.\nModifica i pannelli e scegli un NUOVO percorso .ifc. On type=False limita le modifiche alle istanze selezionate.\nWRITE salva il modello completo con le modifiche. Per ispezionare il risultato, apri il percorso salvato con Read IFC.");
+        var read = Reader(doc, "tutorial_A");
+        var walls = Filter(doc, read.Params.Output[1], "IFC.Class", "IfcWall", 650, 345);
+        var attr = Tool(doc, new SetAttributeComponent(), walls.Params.Output[0], 1100, 345);
+        ToolTests.SetText(attr, 1, "Description");
+        attr.Params.Input[2].AddSource(Panel(doc, "NUOVA DESCRIZIONE", "Verificato con Meerkat", 720, 480, 430, 65));
+        var property = Tool(doc, new SetPropertyComponent(), walls.Params.Output[0], 1100, 790);
+        property.Params.Input[1].AddSource(Panel(doc, "PROPERTY SET", "Pset_WallCommon", 30, 620, 380, 65));
+        property.Params.Input[2].AddSource(Panel(doc, "PROPRIETA", "FireRating", 30, 745, 380, 65));
+        property.Params.Input[3].AddSource(Panel(doc, "NUOVO VALORE", "REI 90", 30, 870, 380, 65));
+        var writer = Tool(doc, new WriteIfcComponent(), read.Params.Output[0], 1560, 790);
+        writer.Params.Input[1].AddSource(attr.Params.Output[0]); writer.Params.Input[1].AddSource(property.Params.Output[0]);
+        writer.Params.Input[2].AddSource(Panel(doc, "NUOVO FILE IFC | cambia destinazione", Path.Combine(Root, "exports", "tutorial_modificato.ifc"), 720, 1030, 650, 65));
+        Button(doc, writer, 3, "WRITE IFC", 1330, 1120);
+        Out(doc, "ANTEPRIMA MODIFICHE", writer.Params.Output[2], 1730, 280, 540, 260);
+        Out(doc, "FILE SCRITTO", writer.Params.Output[0], 1730, 670, 540, 80);
+        Out(doc, "REPORT PRIMA/DOPO", writer.Params.Output[1], 1730, 840, 540, 290);
+        return doc;
+    }
     private static int ActiveObjectCount(RhinoDoc rhino) { return rhino.Objects.GetObjectList(Rhino.DocObjects.ObjectType.AnyObject).Count(o => !o.IsDeleted); }
     private static void Disconnect(GH_Component c, int index) { c.Params.Input[index].RemoveAllSources(); }
     private static void Exercise(GH_Document doc, RhinoDoc rhino, int number)
     {
+        if (number == 9)
+        {
+            var writer = Find<WriteIfcComponent>(doc); var property = Find<SetPropertyComponent>(doc);
+            Check(Text(writer, 0).Single() == "" && writer.Params.Output[2].VolatileDataCount == 6, "09 | sei richieste in anteprima senza scrittura automatica");
+            string file = Path.Combine(OutputRoot, "esempio_09.ifc");
+            Disconnect(writer, 2); Disconnect(writer, 3); ToolTests.SetText(writer, 2, file); ToolTests.SetBool(writer, 3, true);
+            doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "WRITE IFC 09");
+            Check(File.Exists(file) && Text(writer, 0).Single() == file, "09 | pulsante scrive un nuovo IFC");
+            var updated = Engine.Read(file);
+            Check(updated.Elements.Count == 11 && updated.Elements.Where(e => e.IfcClass == "IfcWall").All(e => e.UserText()[Fire] == "REI 90" && (string)e.Record["attributes"]["Description"] == "Verificato con Meerkat"), "09 | IFC riletto: modello intero, attributi e proprieta aggiornati");
+            DateTime timestamp = File.GetLastWriteTimeUtc(file); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(File.GetLastWriteTimeUtc(file) == timestamp, "09 | Write mantenuto True non riscrive");
+            ToolTests.SetBool(writer, 3, false); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(Text(writer, 1).Single().Contains("source_sha256"), "09 | report conservato dopo rilascio pulsante");
+            Disconnect(property, 3); ToolTests.SetText(property, 3, "REI 30"); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(Text(writer, 0).Single() == "" && File.GetLastWriteTimeUtc(file) == timestamp, "09 | modifica input invalida il risultato senza riscrivere");
+            ToolTests.SetText(property, 3, "REI 30", "REI 60"); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(property.RuntimeMessages(GH_RuntimeMessageLevel.Error).Count == 1 && property.Params.Output[0].VolatileDataCount == 0, "09 | liste valori disallineate rifiutate");
+        }
         if (number == 6)
         {
             var ids = Find<SelectIdsComponent>(doc); var wall = Elements(ids, 0).Single();
@@ -463,8 +504,8 @@ internal static class ExampleDefinitions
     {
         Root = root; Check = check; Expected = JObject.Parse(File.ReadAllText(Path.Combine(root, "examples", "scenari.json")));
         OutputRoot = Path.Combine(root, "test-output", "examples-" + Guid.NewGuid().ToString("N")); Directory.CreateDirectory(OutputRoot);
-        var names = new[] { "01_Abaco_pareti", "02_Piani_e_colori", "03_Controllo_parametri", "04_Confronto_revisioni", "05_Origine_locale_export", "06_Esplora_modello", "07_Filtri_numerici", "08_Bake_e_rilettura" };
-        Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin, Explore, NumericFilters, BakeAndRead };
+        var names = new[] { "01_Abaco_pareti", "02_Piani_e_colori", "03_Controllo_parametri", "04_Confronto_revisioni", "05_Origine_locale_export", "06_Esplora_modello", "07_Filtri_numerici", "08_Bake_e_rilettura", "09_Modifica_dati_IFC" };
+        Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin, Explore, NumericFilters, BakeAndRead, EditData };
         var coverage = new Dictionary<string, HashSet<string>>();
         GH_Document.EnableSolutions = true;
         using (var rhino = RhinoDoc.CreateHeadless(null))
@@ -504,7 +545,7 @@ internal static class ExampleDefinitions
           BrandTests.Legacy(Root, Check);
         }
         var expectedTypes = typeof(IfcComponent).Assembly.GetTypes().Where(t => !t.IsAbstract && typeof(IfcComponent).IsAssignableFrom(t)).ToArray();
-        Check(expectedTypes.Length == 19 && new HashSet<string>(expectedTypes.Select(t => t.FullName)).SetEquals(coverage.Keys), "Copertura: tutti i 19 componenti nei file GH riaperti");
+        Check(new HashSet<string>(expectedTypes.Select(t => t.FullName)).SetEquals(coverage.Keys), "Copertura: tutti i componenti nei file GH riaperti");
         var manifest = new JArray();
         foreach (var type in expectedTypes.OrderBy(t => t.Name))
         {

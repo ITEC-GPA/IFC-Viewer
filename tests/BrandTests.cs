@@ -30,7 +30,7 @@ internal static class BrandTests
             using (var sha = SHA256.Create())
             { icon.Save(stream, System.Drawing.Imaging.ImageFormat.Png); hashes.Add(Convert.ToBase64String(sha.ComputeHash(stream.ToArray()))); }
         }
-        check(types.Length == 19 && hashes.Count == 19 && assembly.GetManifestResourceNames().Count(n => n.StartsWith("Meerkat.Icons.")) == 20, "19 distinct component icons plus plugin logo embedded");
+        check(types.Length >= 22 && hashes.Count == types.Length && assembly.GetManifestResourceNames().Count(n => n.StartsWith("Meerkat.Icons.")) == types.Length + 1, "Distinct icons for every component plus plugin logo embedded");
     }
 
     internal static void Legacy(string root, Action<bool, string> check)

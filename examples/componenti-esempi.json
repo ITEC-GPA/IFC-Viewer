@@ -48,7 +48,8 @@
       "03_Controllo_parametri.gh",
       "05_Origine_locale_export.gh",
       "07_Filtri_numerici.gh",
-      "08_Bake_e_rilettura.gh"
+      "08_Bake_e_rilettura.gh",
+      "09_Modifica_dati_IFC.gh"
     ]
   },
   {
@@ -129,7 +130,8 @@
       "05_Origine_locale_export.gh",
       "06_Esplora_modello.gh",
       "07_Filtri_numerici.gh",
-      "08_Bake_e_rilettura.gh"
+      "08_Bake_e_rilettura.gh",
+      "09_Modifica_dati_IFC.gh"
     ]
   },
   {
@@ -147,6 +149,20 @@
     ]
   },
   {
+    "component": "IFC Set Attribute",
+    "guid": "beeb272d-1ce2-461c-9771-e9366a837c01",
+    "examples": [
+      "09_Modifica_dati_IFC.gh"
+    ]
+  },
+  {
+    "component": "IFC Set Property",
+    "guid": "beeb272d-1ce2-461c-9771-e9366a837c02",
+    "examples": [
+      "09_Modifica_dati_IFC.gh"
+    ]
+  },
+  {
     "component": "IFC Sort",
     "guid": "e2b93e81-4253-4bb4-918a-5129bb880007",
     "examples": [
@@ -159,6 +175,13 @@
     "guid": "e2b93e81-4253-4bb4-918a-5129bb88000a",
     "examples": [
       "03_Controllo_parametri.gh"
+    ]
+  },
+  {
+    "component": "IFC Write File",
+    "guid": "beeb272d-1ce2-461c-9771-e9366a837c03",
+    "examples": [
+      "09_Modifica_dati_IFC.gh"
     ]
   }
 ]

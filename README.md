@@ -2,7 +2,7 @@
 
 ![Meerkat](Assets/Brand/logo.png)
 
-Progetto per **Rhino 8 / Grasshopper 1, Windows x64**, con **19 componenti**, definizione `.gh` gia collegata e un modello IFC di esempio incorporato. Compilato e verificato con Rhino 8.35. Non richiede Geometry Gym, VisualARQ o altri plugin BIM. Il motore di lettura e IfcOpenShell 0.8.3, installato in un ambiente Python locale al progetto.
+Progetto per **Rhino 8 / Grasshopper 1, Windows x64**, con **22 componenti**, definizione `.gh` gia collegata e un modello IFC di esempio incorporato. Compilato e verificato con Rhino 8.35. Non richiede Geometry Gym, VisualARQ o altri plugin BIM. Il motore di lettura e IfcOpenShell 0.8.3, installato in un ambiente Python locale al progetto.
 
 ## Avvio
 
@@ -14,13 +14,15 @@ Progetto per **Rhino 8 / Grasshopper 1, Windows x64**, con **19 componenti**, de
 6. Salva il `.gh` per incorporare i dati caricati. Imposta **CARTELLA ARCHIVI** e premi **SAVE** per creare gli archivi completi `.ifcdata.zip`.
 7. Riduci lo zoom per vedere le sezioni a destra e in basso: interrogazione, raggruppamento, colori, misure, controlli, revisioni ed esportazioni CSV/3DM. I pulsanti di scrittura sono inizialmente disattivati.
 
-Meerkat e il nuovo nome di IFC Viewer. Il file e ora `bin/Meerkat.gha`, la scheda Grasshopper e **Meerkat**. I GUID del plugin e dei 19 componenti restano invariati, cosi le vecchie definizioni sono compatibili. Il setup migra il vecchio `IFCViewer.ghlink` diretto al `dist` dello stesso progetto; non caricare le due assembly contemporaneamente. I marcatori interni `IFCViewer.Key`/`IFCViewer.Root` e il namespace tecnico sono conservati per la compatibilita dei dati esistenti.
+Meerkat e il nuovo nome di IFC Viewer. Il file e ora `bin/Meerkat.gha`, la scheda Grasshopper e **Meerkat**. I GUID del plugin e dei 22 componenti restano invariati, cosi le vecchie definizioni sono compatibili. Il setup migra il vecchio `IFCViewer.ghlink` diretto al `dist` dello stesso progetto; non caricare le due assembly contemporaneamente. I marcatori interni `IFCViewer.Key`/`IFCViewer.Root` e il namespace tecnico sono conservati per la compatibilita dei dati esistenti.
 
 Sul computer su cui e stato creato il progetto il runtime Python e gia preparato. `Setup.cmd` puo essere rieseguito: controlla le dipendenze e registra il plugin. Su un altro computer serve Python x64; lo script seleziona Python 3.9 tramite il launcher `py`. Per scegliere un altro interprete compatibile con la wheel IfcOpenShell: `powershell -ExecutionPolicy Bypass -File Setup.ps1 -Python "C:\percorso\python.exe"`. La versione verificata qui e Python 3.9.13 x64.
 
 ## Componenti
 
-Sono disponibili **[otto esempi guidati](examples/ESEMPI.md)** che coprono tutti i 19 componenti, ciascuno in un file `.gh` autonomo con modello incorporato: [abaco pareti](examples/01_Abaco_pareti.gh), [piani/colori/bake](examples/02_Piani_e_colori.gh), [controllo parametri](examples/03_Controllo_parametri.gh), [confronto revisioni](examples/04_Confronto_revisioni.gh), [origine locale/export](examples/05_Origine_locale_export.gh), [esplorazione e ID](examples/06_Esplora_modello.gh), [filtri numerici con slider](examples/07_Filtri_numerici.gh) e [bake/rilettura attributi](examples/08_Bake_e_rilettura.gh). I modelli IFC sorgente e le copie `.ghx` sono nella cartella `examples`. Per iniziare usa **06**; per portare gli oggetti in Rhino con layer e attributi usa **08**.
+**Modifica IFC:** i componenti **IFC Set Attribute**, **IFC Set Property** e **IFC Write File** aggiornano dati di istanza o di tipo e producono un nuovo IFC. Apri [09_Modifica_dati_IFC.gh](examples/09_Modifica_dati_IFC.gh): seleziona gli oggetti, prepara le modifiche, scegli la destinazione e premi WRITE. Dettagli, unita e limiti nel [catalogo](COMPONENTI.md). L'originale e protetto; la scrittura richiede Python/IfcOpenShell anche quando il modello e incorporato nel GH.
+
+Sono disponibili **[nove esempi guidati](examples/ESEMPI.md)** che coprono tutti i 22 componenti, ciascuno in un file `.gh` autonomo con modello incorporato: [abaco pareti](examples/01_Abaco_pareti.gh), [piani/colori/bake](examples/02_Piani_e_colori.gh), [controllo parametri](examples/03_Controllo_parametri.gh), [confronto revisioni](examples/04_Confronto_revisioni.gh), [origine locale/export](examples/05_Origine_locale_export.gh), [esplorazione e ID](examples/06_Esplora_modello.gh), [filtri numerici con slider](examples/07_Filtri_numerici.gh) e [bake/rilettura attributi](examples/08_Bake_e_rilettura.gh). I modelli IFC sorgente e le copie `.ghx` sono nella cartella `examples`. Per iniziare usa **06**; per portare gli oggetti in Rhino con layer e attributi usa **08**.
 
 | Componente | Funzione |
 | --- | --- |
@@ -101,18 +103,20 @@ Gli archivi temporanei di lettura si trovano in `%TEMP%\Meerkat`. Non eliminarli
 - La lettura usa fino a 8 thread del motore. READ e sincrono e puo occupare Grasshopper su file grandi; gli archivi incorporati aumentano la dimensione del `.gh`. Non e stato misurato un limite pratico su modelli di grandi dimensioni.
 - Le geometrie non supportate o mancanti vengono segnalate nel report, mantenendo gli attributi. Rappresentazioni solo 2D/curve senza facce non vengono sottoposte a bake.
 - Sono mostrati colori per classe; non vengono ricostruiti texture, shader o materiali render IFC. I relativi dati originali rimangono conservati.
-- Non e un editor o un esportatore IFC: non rigenera un IFC dalle mesh modificate. Il salvataggio contiene il file sorgente originale.
+- **IFC Write File** esporta un nuovo IFC con attributi e Property Set modificati. Il comando Save IFC Archive conserva invece il sorgente caricato. Le modifiche geometriche delle mesh non sono ancora trasferite nell'IFC.
 - Build destinata a Rhino 8 su Windows. Non verificata con Rhino 7 o macOS.
 
 ## Sviluppo e verifiche
 
-`Build.ps1` compila `bin/Meerkat.gha` con il compilatore .NET Framework di Windows e le librerie Rhino locali. Incorpora logo e 19 icone e raccoglie in **bin** worker, installer, documentazione, otto esempi e asset. Il progetto IDE/.NET SDK e `src/Meerkat.csproj`: `Directory.Build.props/targets` centralizzano anche questa compilazione nella stessa bin; i file intermedi sono in `build/obj/<progetto>`. Per usare un'altra installazione: `Build.ps1 -RhinoDir "C:\Program Files\Rhino 8"`.
+Con Rhino aperto il plugin puo essere bloccato. Per preparare una versione separata usa `Build.ps1 -DistributionDirectory "<root>\build\pending\bin"` e `Package.ps1 -DistributionDirectory "<root>\build\pending\bin"`. La build normale continua a usare la bin principale. Non registrare entrambe le versioni: dopo aver chiuso Rhino, ricompila normalmente oppure aggiorna il percorso di installazione.
+
+`Build.ps1` compila `bin/Meerkat.gha` con il compilatore .NET Framework di Windows e le librerie Rhino locali. Incorpora logo e 22 icone e raccoglie in **bin** worker, installer, documentazione, nove esempi e asset. Il progetto IDE/.NET SDK e `src/Meerkat.csproj`: `Directory.Build.props/targets` centralizzano anche questa compilazione nella stessa bin; i file intermedi sono in `build/obj/<progetto>`. Per usare un'altra installazione: `Build.ps1 -RhinoDir "C:\Program Files\Rhino 8"`.
 
 Prima della compilazione vengono eliminate le `bin` residue dei moduli sotto la root. Sono esclusi la bin principale, runtime/dipendenze (`.venv`, `node_modules`, `packages`), `.git`, `build`, dati di test/esportazione e repository annidati. Non vengono attraversati collegamenti o junction; un collegamento dentro una bin da cancellare blocca la pulizia. La procedura controlla i percorsi assoluti prima della cancellazione.
 
 **Distribuzione:** consegna l'intera cartella `bin`, oppure esegui `Package.ps1` per creare `Meerkat_Pacchetto.zip` dai soli file elencati e verificati nel manifest `bin/distribution.json`. Sorgenti, build, credenziali, configurazione locale `runtime.json` e runtime Python installati non entrano nello ZIP. Il setup installa IfcOpenShell sul computer di destinazione. Se aggiorni esempi o documentazione, ricompila per aggiornare bin prima di creare il pacchetto. `bin` e un output generato e ignorato da Git.
 
-**Identita:** [logo e varianti](Assets/Brand/README.md), [tavola](Assets/Brand/identity.png), [catalogo delle 19 icone](Assets/Icons/catalog.html). Gli SVG e PNG sono versionati; la build non richiede Node.js. Per rigenerare gli asset: `npm install --prefix tools`, poi `node tools/generate-brand.cjs`.
+**Identita:** [logo e varianti](Assets/Brand/README.md), [tavola](Assets/Brand/identity.png), [catalogo delle 22 icone](Assets/Icons/catalog.html). Gli SVG e PNG sono versionati; la build non richiede Node.js. Per rigenerare gli asset: `npm install --prefix tools`, poi `node tools/generate-brand.cjs`.
 
 ```powershell
 .\Build.ps1
@@ -124,8 +128,8 @@ Prima della compilazione vengono eliminate le `bin` residue dei moduli sotto la 
 .\Package.ps1
 ```
 
-I test Python creano IFC2x3, IFC4 e IFC4x3 e verificano IFCZIP, integrita originale, tutte le entita, unita/placement, precedenza delle proprieta, unita esplicite e input invalido. Il test Rhino avvia un processo separato senza interfaccia, verifica bake/update/federazione e riapertura `.3dm`, quindi genera e riapre la definizione `.gh` con tutti i 19 componenti. Verifica anche filtri, raggruppamenti, ordinamento numerico, metriche SI, mesh aperte, esportazioni CSV/3DM, prevenzione delle riscritture e confronto revisioni con STEP-ID rinumerati. Usa una licenza Rhino disponibile. Le prove sono su modelli di test creati nel progetto; manca ancora una prova su un tuo IFC reale.
+I test Python creano IFC2x3, IFC4 e IFC4x3 e verificano IFCZIP, integrita originale, tutte le entita, unita/placement, precedenza delle proprieta, unita esplicite e input invalido. Il test Rhino avvia un processo separato senza interfaccia, verifica bake/update/federazione e riapertura `.3dm`, quindi genera e riapre la definizione `.gh` con i 19 componenti di lettura, analisi e bake. Verifica anche filtri, raggruppamenti, ordinamento numerico, metriche SI, mesh aperte, esportazioni CSV/3DM, prevenzione delle riscritture e confronto revisioni con STEP-ID rinumerati. Usa una licenza Rhino disponibile. Le prove sono su modelli di test creati nel progetto; manca ancora una prova su un tuo IFC reale.
 
-`-All` esegue in processi separati la suite completa e gli otto esempi, controllando anche nomi/categorie, risorse icona e apertura di un `.gh` originale IFC Viewer. `Test-BuildLayout.ps1` esercita la pulizia in una copia di prova, comprese junction e dipendenze da preservare. `Test-Distribution.ps1` copia i soli file della distribuzione in una cartella separata, installa li Python/IfcOpenShell e verifica la lettura di un IFC usando il plugin spostato; richiede accesso ai pacchetti Python. Gli output restano in `test-output`.
+`-All` esegue in processi separati la suite completa e gli nove esempi, controllando anche nomi/categorie, risorse icona e apertura di un `.gh` originale IFC Viewer. `Test-BuildLayout.ps1` esercita la pulizia in una copia di prova, comprese junction e dipendenze da preservare. `Test-Distribution.ps1` copia i soli file della distribuzione in una cartella separata, installa li Python/IfcOpenShell e verifica la lettura di un IFC usando il plugin spostato; richiede accesso ai pacchetti Python. Gli output restano in `test-output`.
 
 Riferimenti tecnici: [geometria IfcOpenShell](https://docs.ifcopenshell.org/ifcopenshell-python/geometry_processing.html), [proprieta e tipi IFC](https://docs.ifcopenshell.org/ifcopenshell-python/code_examples.html), [Grasshopper SDK](https://developer.rhino3d.com/api/grasshopper/), [documenti Rhino senza interfaccia](https://developer.rhino3d.com/guides/rhinocommon/code-driven-file-io/).
