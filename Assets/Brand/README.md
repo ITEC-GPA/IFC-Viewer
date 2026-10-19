@@ -8,7 +8,7 @@ Suricato in posizione di vedetta, costruito con facce triangolari. Riprende il l
 - `icon-16.png` fino a `icon-512.png`: otto risoluzioni; il plugin usa 24 px.
 - `meerkat.ico`: icona Windows multirisoluzione, da 16 a 256 px.
 - `identity.svg` / `identity.png`: tavola con logo chiaro/scuro e tutte le icone.
-- `../Icons/catalog.html`: catalogo consultabile offline, con ricerca, SVG e PNG dei 22 componenti.
+- `../Icons/catalog.html`: catalogo consultabile offline, con ricerca, SVG e PNG dei 23 componenti.
 
 Palette: petrolio `#12666B`, ambra `#E6AA4D`, scuro `#183A42`, chiaro `#F5F3ED`. Le famiglie dei componenti hanno colori distinti: lettura petrolio, parametri ambra, vista blu, controlli viola, salvataggio verde. Ogni icona ha un pittogramma dedicato, senza sigle sovrapposte.
 

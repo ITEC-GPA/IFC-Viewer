@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">58d41b5c-a6e4-4ee0-b399-9e8ad33dd4c9</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">e1f909ca-a8c9-42c8-8313-40216b69c715</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280212756505219</item>
+            <item name="Date" type_name="gh_date" type_code="8">639280217298702745</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -114,7 +114,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5e72b297-8f41-4629-b422-2d7be33dcddd</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ce516416-f896-4efa-8553-dfb88ee37437</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">07 | FILTRI NUMERICI, BOOLEANI E COMPONENTI NATIVI</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -169,7 +169,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">11594af8-3afe-4d59-bebe-a9364b382f50</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1c87e14e-2f5e-429b-b7b2-8896b675a4e5</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -193,12 +193,12 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">70087c5d-b8e9-4f9a-828f-4b34a69f4b7a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6e1b1ba8-6fc7-4e36-a090-558847aae607</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">653b62dd-e5f3-415c-9776-9f7f5b2eb9c7</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">adb23c5a-1aa6-4d2e-8ee9-dd28d4f59634</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -217,11 +217,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d20d0c16-2a13-43a0-badf-8ad01a57b707</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c7714e11-5898-495a-bfa5-901e613807df</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bd0eb041-c827-4c87-b66c-6f900650f485</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">68286bc3-352c-4974-9463-f578e2c8d0cd</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -261,7 +261,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">96294334-718c-437a-9007-c4f588acf1cc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">67d543b2-78bb-491c-89de-f3df551c55bb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -284,7 +284,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">86eb7053-66ea-4cb0-aec6-6d253cf623e6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb2b69c3-fb89-4bde-8ab6-a6b000a3e8ea</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -307,7 +307,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">373ec109-a012-4ad0-b2d1-603198f401ec</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1de8194d-19d8-4ff3-ac91-7b3f3fd33a3e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -339,7 +339,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a44babc2-9c41-42ae-89ed-c0b25315077c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f1c32c69-4fef-46db-9a2b-61bec8e8246e</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -387,7 +387,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">653b62dd-e5f3-415c-9776-9f7f5b2eb9c7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">adb23c5a-1aa6-4d2e-8ee9-dd28d4f59634</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -437,7 +437,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bd0eb041-c827-4c87-b66c-6f900650f485</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">68286bc3-352c-4974-9463-f578e2c8d0cd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -473,7 +473,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b1773153-a07c-422c-bc89-5e31a0a04fe8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b01009eb-7ca0-4678-9b15-9f50a98ed19f</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SOLO IfcWall</item>
                   </items>
@@ -496,11 +496,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8380405-efb0-4361-817f-c045fb364713</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">00da14f2-06cb-43dc-aa5c-2aa6ea72ecd8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">86eb7053-66ea-4cb0-aec6-6d253cf623e6</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">eb2b69c3-fb89-4bde-8ab6-a6b000a3e8ea</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -520,7 +520,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4a6d99c0-60db-4cf2-8b92-b84187de94a2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d82d48fb-53d1-4491-8d3c-f643d5fe92ed</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -563,7 +563,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">524be6ba-ecb2-421d-81d1-cd767620c398</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">103b0518-b920-48fd-8dc0-987ddd1eb1cf</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -606,7 +606,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b187ccaf-0c48-4bbe-b7ad-52f447a09e09</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">701dbb5a-5415-4c0e-9dc3-1f993e287362</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -653,7 +653,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b278b802-939d-4ec7-936b-514fde2053ff</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9d15df1f-6470-426b-9ac4-6cfef2b93a3d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -676,7 +676,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6d19fe59-4c73-4384-8a7d-51b31e9c5d5b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">206b47ca-1892-4f16-a84d-6e86ae8bbd84</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -699,7 +699,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">58b6591a-202e-4775-b9a0-96ac0a07d7e8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">46830f11-26d3-445c-a1ee-135d971d5eb9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -722,7 +722,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2240a97a-31aa-4c0c-a937-e658cf6befdd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">39e068e2-e1b8-41cc-aba4-752474362f5d</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -745,7 +745,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">74a807c7-9e53-4e6e-b0dd-c41114f787fd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4b0806b-08c7-468c-a1a4-81d6a286d726</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -768,7 +768,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">428bb00d-ee11-4ab3-8678-05480b572e7c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cbea96a1-e089-4955-9454-eed0ffc29ec1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -791,7 +791,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c44eb5a-2110-46e2-b6e3-60098b7b6463</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">456abf58-206d-4ff6-a26d-9bd1555f5d7b</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -814,7 +814,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">df070611-8115-4ab2-b459-d08a57bd33cf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a10012a7-9d77-42d8-ad2b-715344a5931d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -846,7 +846,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c6048beb-1f1b-4cc4-9551-7cdc5aef231c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8765756e-9bcb-4d75-8776-309aceefed3c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -896,7 +896,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Ordina stabilmente gli oggetti per un parametro, come testo o numero. Valori assenti/non numerici in fondo.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d47d5cd0-3000-4389-82fd-40e188c96eec</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6526a521-523c-440e-995e-3b676ce022a3</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Sort</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUMERIC = TRUE</item>
                   </items>
@@ -919,11 +919,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">33f13510-cb0d-4f98-9d9f-5f50d7707fb3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2261d41a-eb19-4d29-9477-288fe4d27e59</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6d19fe59-4c73-4384-8a7d-51b31e9c5d5b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">206b47ca-1892-4f16-a84d-6e86ae8bbd84</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -942,7 +942,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb3a8aaa-a9be-400c-a361-b285ecb95dc9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4ecb259b-0340-44bd-8bbb-30f91d89735f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -985,7 +985,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ordinamento numerico nelle unita originarie.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c175998-4320-4857-b708-7d8663b757b9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3ac36090-251c-47a2-9132-e890749f2f48</item>
                         <item name="Name" type_name="gh_string" type_code="10">Numeric</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1027,7 +1027,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ordine decrescente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c66cbba8-049d-4a77-8339-154e37475639</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9fe92476-bb01-447e-afeb-93dee074acc0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Descending</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1070,7 +1070,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi ordinati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6b186a44-d45d-4584-8245-ecd2da153ec6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e84f480-d7cf-45ed-a5ba-bb54cb4185b3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1102,7 +1102,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e6323361-4b9d-4f8c-8eec-a562da5f8882</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">78b2c62c-5a3a-4f05-9edb-3a8beb460b8a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Sort</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1152,7 +1152,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Estrae un parametro per ogni oggetto mantenendo allineamento e valori mancanti.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">29e85646-b714-458a-a62a-11158c62b4ef</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ea318685-06fe-457c-9d03-c71c629bd541</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Property Value</item>
                     <item name="NickName" type_name="gh_string" type_code="10">INDICI ORDINATI</item>
                   </items>
@@ -1175,11 +1175,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">96673d7c-d399-4e94-b540-87b5db680691</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">acbb419c-0306-41eb-9c0f-7861c3a38950</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6b186a44-d45d-4584-8245-ecd2da153ec6</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1e84f480-d7cf-45ed-a5ba-bb54cb4185b3</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1198,7 +1198,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f567bb78-b614-489e-9462-568179b55c94</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">99445296-ef4b-49aa-b77d-2c5541ecd1ae</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1242,7 +1242,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valore testuale; stringa vuota se assente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">937c6e71-8ca1-4c8d-81bb-97c6333ac41c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0660c1fa-e26d-4b63-940e-08b1f49f7919</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1265,7 +1265,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">True se la chiave esiste; un valore null resta presente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a47488d9-aa7c-45a3-8fba-1cf9b954eacb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb7c5cc9-e1e0-40c3-a7c6-51accd100363</item>
                         <item name="Name" type_name="gh_string" type_code="10">Found</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1288,7 +1288,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Numeri nelle unita IFC originali; NaN se assente/non numerico.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7718bae1-0469-477f-981f-ee2ab1300dde</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e41d65bd-7fb1-4e2b-875d-cf10e62c8b2d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Numbers</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1311,7 +1311,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera dei valori numerici finiti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">946cded5-90c8-47e9-8334-2ed28d714c2a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e266e334-193e-45fb-8eed-446cc8c5c66e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Is numeric</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NUM</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1343,7 +1343,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c739d84-5215-4b88-b45b-6c4fafaa3f40</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">95847de0-96f3-4a49-85a7-8e34a7b4d835</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Property Value</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1391,12 +1391,12 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aeb505cf-6ec0-4d8d-a35c-241daf830ae1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">caad49dc-ce06-4dc1-9a18-403afd7f0cb9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUMERI | 1, 2, 10</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">7718bae1-0469-477f-981f-ee2ab1300dde</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">e41d65bd-7fb1-4e2b-875d-cf10e62c8b2d</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1440,7 +1440,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8150829f-997b-433b-a492-6289794562ab</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fccdbc54-c57a-4360-b020-47e379c671b5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CHIAVE NUMERICA</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1488,7 +1488,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">88ec2723-2e62-4d8a-a9fa-390adde64c6c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ba3959c4-fe66-49a4-8bd8-8c9a57aafb46</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SOGLIA INDICE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1535,7 +1535,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">08db60ed-1287-4c02-97c0-e0ed6657c2e5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e9e1eeff-68ee-4f20-837e-bc87c93e1604</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SOGLIA &gt;=</item>
                   </items>
@@ -1558,11 +1558,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">03c234aa-1ccf-40e8-b512-5d6e8ec834c0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a32d8677-01f0-4972-a4a1-94be4be8a513</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6b186a44-d45d-4584-8245-ecd2da153ec6</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1e84f480-d7cf-45ed-a5ba-bb54cb4185b3</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1581,11 +1581,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb2d722f-60ea-4170-bb0f-759e39dc7e30</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">70222431-3267-43d6-8024-45a5e6a078d4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8150829f-997b-433b-a492-6289794562ab</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">fccdbc54-c57a-4360-b020-47e379c671b5</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1625,7 +1625,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32e533c5-de24-4723-884e-b94bc8206762</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">07ed8fbf-c958-4528-91fe-21024834589d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1668,11 +1668,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ec58250c-b1eb-4934-8287-e062bd6fbdff</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">759f3029-0b75-4e07-b205-9d15903ff775</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">88ec2723-2e62-4d8a-a9fa-390adde64c6c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ba3959c4-fe66-49a4-8bd8-8c9a57aafb46</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1712,7 +1712,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d9d6ca00-d3fe-428c-a5ed-49259c9d487e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">64342789-03dc-4597-afa4-dc307ddd2a49</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1755,7 +1755,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e50d994-aeeb-455c-af64-f886de72cae7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ad47e893-8437-4651-a15c-df43c48879bd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1778,7 +1778,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e3544752-85b9-43ca-a57a-d0312472ae62</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb83c7e7-5e6c-49f2-950a-e107e04ec366</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1801,7 +1801,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0b2d3f5c-f51b-4b4d-b6f8-1c624d6f9d3c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0b894e31-8c06-4d99-84bf-3f27c277d421</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1833,7 +1833,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">37fb25ab-9d0c-4fa2-b675-4fbae3ec76a6</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1f872bf-2a82-46fb-bca2-8a9a462a526a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1883,7 +1883,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">742d1b4e-c8fd-43a0-8138-2a7cfa159999</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">250a5acc-4037-44ea-b0a0-83bde6ed8f74</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SELEZIONABILE</item>
                   </items>
@@ -1906,11 +1906,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">24f0dfe4-932e-4119-bd58-cef29f0e7d2a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fec3f6ac-fac1-4541-bd2e-f8096738e411</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4e50d994-aeeb-455c-af64-f886de72cae7</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ad47e893-8437-4651-a15c-df43c48879bd</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1929,11 +1929,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e94afb2-3092-4b61-ae51-75b1842e8b10</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4806f8c9-4123-49de-b6e6-843a8e86d848</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f259d313-5fa1-4bdb-bca8-b06f74795301</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b65342bb-19c0-4e7f-9cbc-2572fa9ca196</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1973,7 +1973,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2bbe4c64-d715-4d84-a096-5bd8ca7e7402</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fff26020-aeb8-4506-a880-0d238d5b2e17</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2016,7 +2016,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">914d3d63-441b-4989-975e-bcaf9359ea86</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7f9967ae-ab91-43e5-90d2-c8811c145062</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2059,7 +2059,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf7dc11d-7bd4-474a-bc5e-fb571ed79687</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6d1ef09a-009b-4cb2-b71b-e4e0994f9e6d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2102,7 +2102,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">193bc224-a5b5-4727-b889-e41a3d7f5859</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">21f438c4-241c-4fa6-8b16-ba18d507be45</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2125,7 +2125,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1f6ddd10-09f5-4878-9c49-f973b0e5abc6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0b5cf944-0b56-498c-8992-825280c485d9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2148,7 +2148,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1bef3e82-8406-4615-ac2d-b22b663462fb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">44dc961c-1783-4a7b-8a1e-4f8c2bc68673</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2180,7 +2180,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8256ca91-22c9-4463-9c7e-b3bcbc3c4800</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">02fb135d-c1a1-466f-af5e-b6630e26ea5b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2228,7 +2228,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f259d313-5fa1-4bdb-bca8-b06f74795301</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b65342bb-19c0-4e7f-9cbc-2572fa9ca196</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CHIAVE BOOLEANA | confronto testuale true</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2278,7 +2278,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3841ca6-596d-47a0-be42-b491924c1d99</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bc513ac3-c578-41db-8fe7-218419c9cab8</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PARETI FILTRATE</item>
                   </items>
@@ -2301,11 +2301,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dfc02fca-b2ae-4891-b620-46a3008eb132</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c7188e14-7ca7-41ee-ae5a-f15c07cc9fc5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">193bc224-a5b5-4727-b889-e41a3d7f5859</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">21f438c4-241c-4fa6-8b16-ba18d507be45</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2325,7 +2325,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f6699836-71c2-42aa-b1e6-5c944da01831</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">18d013dd-e163-4187-b474-23327cef3945</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2347,7 +2347,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5feda085-4b2f-4a57-902d-f18443bc4219</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e6bb7075-5f3b-42ef-ad56-d524b1c68bf1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2390,7 +2390,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a332f5b-f6d7-4eb0-a214-dc872bfe778d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">098ac984-a6e1-4615-a251-545489b5d10e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2437,7 +2437,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">91a7c216-44ae-47de-8069-2befe8f5216a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">80133e36-ff52-42c9-b911-03dd9abda6ba</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2460,7 +2460,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">de017a23-9752-4bbb-acd6-e390950ff71a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">07f2a0e9-9821-4009-8175-52350f78918c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2483,7 +2483,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4b8d47fb-0606-4391-be19-b078828c4ddb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">629c3d42-0337-496a-b00e-444eab33299d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2506,7 +2506,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">84117cdb-9787-4d21-9560-eddbfa8eb23e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">118c2020-95b4-4f15-a41e-64728ddef313</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2529,7 +2529,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">34bf9d62-8206-49be-b3f8-23e7edef6fac</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4adb0d72-f092-42b2-9de2-3eb36d2de2c4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2552,7 +2552,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2af3bcb6-50e3-491f-8474-19a01751efab</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0773ccfa-0686-4456-ab70-df7b8c2a6f1b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2575,7 +2575,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f2d551c8-0a16-448d-9e18-15f648e8d1a2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6c4231d5-62df-4072-a941-fb992b3c5826</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2598,7 +2598,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4194fe6-bdc4-40af-bb3f-f51d87513dda</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">34939b52-8cef-4877-946b-b26088280ba3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2630,7 +2630,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b84dd0f1-9765-46d5-91be-0d5410a654d2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e7963f39-a42d-4fa8-8392-50fc8f324810</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2678,7 +2678,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">69784dd1-2de0-4cc8-ad32-46a639f2c2e2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">783067a0-f816-453c-b452-ef9a66ee80e9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2735,7 +2735,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">95d8572e-6c80-4dea-910e-d107ed8274a1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d2894ba-c6a5-432f-aa1e-0fec8078335b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PARETI FILTRATE</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -2759,11 +2759,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6785a980-d770-4696-b036-761310da5b1d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d29b4b0e-d461-481e-a6f6-8b6226737314</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">91a7c216-44ae-47de-8069-2befe8f5216a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">80133e36-ff52-42c9-b911-03dd9abda6ba</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2782,11 +2782,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9785e12e-fc9f-433e-bee2-f9800f9d5039</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4823ce86-d294-4061-9a15-e9f40fbc890e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">69784dd1-2de0-4cc8-ad32-46a639f2c2e2</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">783067a0-f816-453c-b452-ef9a66ee80e9</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2845,7 +2845,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b633f1f-f966-4483-b99f-1a7359f45974</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7370608b-6930-401e-b4ba-312ad4008fbe</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2895,7 +2895,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Area e volume delle mesh in SI; non sostituiscono i Quantity Set IFC. Volume NaN per mesh non chiuse/orientate.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a6394156-6259-4dc8-bd0b-30be0ccd9b1c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">657239ce-7bd5-490f-a4ef-f1432f3485c7</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Metrics</item>
                   </items>
@@ -2918,11 +2918,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4d2e59c8-8b98-4d37-9f2d-04670ed85d36</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e714750-b8bc-4b7e-857f-4475f0869968</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">193bc224-a5b5-4727-b889-e41a3d7f5859</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">21f438c4-241c-4fa6-8b16-ba18d507be45</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2941,7 +2941,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Offset per box/centri visualizzati in Rhino; non modifica le misure.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">015fcbbe-987b-41dd-8baf-96768c7c9827</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b549f9a-9761-4e89-abc9-faf0cf5ddf7a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2988,7 +2988,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Superficie totale della mesh in metri quadrati; NaN senza mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6cf02ac8-9a6f-44c1-956f-86e6330fc6c4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">be8061d3-43e8-40bd-bf7f-1ebf15020aed</item>
                         <item name="Name" type_name="gh_string" type_code="10">Area m2</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3011,7 +3011,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Volume assoluto in metri cubi per mesh chiusa/orientata; altrimenti NaN.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dc69db89-1ab5-4d52-9767-dce9d7f91bd0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c0cf670f-a2e8-41ea-ae81-14f9a0b5b1f8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Volume m3</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3034,7 +3034,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">True se e stato calcolato un volume.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">17e4ed85-5484-42e0-86bc-cc6a46c53e73</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6a13f5cc-a997-4813-af3f-ab1b73f5fc9a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Has volume</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OK</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3057,7 +3057,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Dimensioni XYZ del bounding box nelle coordinate originali, metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">18d780e1-0139-4502-97cd-d1f245cd2deb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2a68fbb8-b105-4def-ab5a-0aa7032cf6b4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Dimensions metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3080,7 +3080,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b72dca5-03de-4b54-a69d-578f5f08058f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ec86c494-b540-4f76-a24e-48ec0e015ceb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Boxes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3103,7 +3103,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Centri dei box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3db0f512-25c0-450d-bff5-4cc367920667</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">69b4b1be-915f-43bd-939f-8881f02d9144</item>
                         <item name="Name" type_name="gh_string" type_code="10">Centers</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3135,7 +3135,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dcd482d4-b7fd-4b24-8315-44383a983aee</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ee01dac-65d8-4925-a2a3-57628336247c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3184,7 +3184,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Perform mass addition of a list of items</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0cc282f5-1dd6-462a-bd39-069a21228eeb</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">08d7fa73-044e-4a8d-a2bf-df30f6a3a761</item>
                     <item name="Name" type_name="gh_string" type_code="10">Mass Addition</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MA</item>
                   </items>
@@ -3207,11 +3207,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Input values for mass addition.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d1694732-31e2-439f-82c5-babbfbc19c5f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5b711993-f6a1-4682-8e6b-5bf092ef9238</item>
                         <item name="Name" type_name="gh_string" type_code="10">Input</item>
                         <item name="NickName" type_name="gh_string" type_code="10">I</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">dc69db89-1ab5-4d52-9767-dce9d7f91bd0</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c0cf670f-a2e8-41ea-ae81-14f9a0b5b1f8</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3230,7 +3230,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Result of mass addition</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f3f01b1c-0301-49c5-a87b-1da0b9a96b0a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">15077dd2-d384-4bbe-9f59-344b7cda0bbe</item>
                         <item name="Name" type_name="gh_string" type_code="10">Result</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3253,7 +3253,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">List of partial results</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">180b53fd-1b3d-46a3-b526-42aeef14c39c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1cc8110c-fd15-4051-af97-ae744d1bedea</item>
                         <item name="Name" type_name="gh_string" type_code="10">Partial Results</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Pr</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3285,7 +3285,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2454be76-6bfb-471e-8eb6-c53d575f1c37</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">74605434-739d-4877-b599-33660e7b72d5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Mass Addition</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3333,12 +3333,12 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">96095c01-097b-420c-847a-f7b2da9aa96e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9acf860a-39e3-4999-b725-95c16a597d84</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">TOTALE VOLUMI | m3</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">f3f01b1c-0301-49c5-a87b-1da0b9a96b0a</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">15077dd2-d384-4bbe-9f59-344b7cda0bbe</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -3384,7 +3384,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Esporta un abaco UTF-8 con un oggetto per riga e parametri per colonna. Scrittura solo su fronte False -&gt; True.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b273968-29d1-44de-80a2-8750d0ac4875</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2f8b9f7b-4ac1-41a4-a3c2-edba7350b027</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Export CSV</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC CSV</item>
                   </items>
@@ -3407,12 +3407,12 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e9a8545b-44a2-482f-a151-8121ad63c829</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6d46ee74-218c-4106-b60f-cc5e3ddc3c7f</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">193bc224-a5b5-4727-b889-e41a3d7f5859</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">21f438c4-241c-4fa6-8b16-ba18d507be45</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3432,12 +3432,12 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colonne in ordine. Vuoto = tutte le chiavi tranne MetadataJSON.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">724433e1-af07-400d-9032-7961dedc4a20</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca5c813f-2a88-41c6-8aaf-75ef9121c2c8</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8cd72f26-75ca-4528-b226-4cb33aad3e78</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9786614b-09a6-4ff5-b56b-87a5525c4453</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3456,11 +3456,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Percorso .csv.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">56b48ff4-4019-48b1-a6d3-22ba415cec87</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">20e8203a-64d0-414c-8ff6-f0a8e37cda49</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b9cd3b35-5453-4124-be56-7dfae2f1cf34</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a3f56164-0c7d-4ecd-bf8f-d4418ff02146</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3479,11 +3479,11 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ebfb0c60-c581-404b-bfa9-4198c95bfa48</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">50309e89-ec9d-420c-8464-d9cb7f07373a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4f091e6e-becd-47ff-99a9-53a4892898e9</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">dd5d7bbe-aed7-42e1-aaa8-159da5ca58aa</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -3522,7 +3522,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Permette la sostituzione atomica di un file esistente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d08e3c1f-3570-4e13-b6d8-61566745fd1f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">40988c33-235f-4bac-ad7f-75ec243d9551</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3564,7 +3564,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="5">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Separatore: ; (predefinito), virgola o tab.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b25bf557-3d14-4092-a13b-bc4e8f945ae6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ddbf28d8-b215-4916-ab16-bf428d28493a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Delimiter</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3607,7 +3607,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_input" index="6">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Prefissa con apostrofo celle che iniziano con = + - @, per leggerle come testo in Excel.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">485a32cb-133a-4233-bac2-e107d7f39779</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2bbd2084-2999-4e70-b639-3c68207ff9a5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Excel safe</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3649,7 +3649,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Percorso dell'ultimo salvataggio riuscito.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0f6f9081-d8c8-4e58-976b-2cb78d93eb6a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">35a0a2f3-7c43-4482-947d-b98de28b454e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3681,7 +3681,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb5ab143-0e71-4d47-bd9b-9db0e46a676a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">51e10692-8ca8-4574-a5e8-3db1db07bbea</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Export CSV</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3729,7 +3729,7 @@ Sposta lo slider a 10: resta una parete, 4.5 m3. Il flag false della parete con 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8cd72f26-75ca-4528-b226-4cb33aad3e78</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9786614b-09a6-4ff5-b56b-87a5525c4453</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">COLONNE CSV | una chiave per riga</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3780,7 +3780,7 @@ IFC.Property.Tutorial.Selezionabile</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b9cd3b35-5453-4124-be56-7dfae2f1cf34</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a3f56164-0c7d-4ecd-bf8f-d4418ff02146</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DESTINAZIONE CSV | modificabile</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3830,7 +3830,7 @@ IFC.Property.Tutorial.Selezionabile</item>
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f091e6e-becd-47ff-99a9-53a4892898e9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dd5d7bbe-aed7-42e1-aaa8-159da5ca58aa</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE CSV</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3864,12 +3864,12 @@ IFC.Property.Tutorial.Selezionabile</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4fa6b910-232e-4bc2-8044-ce4a70f212e7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">14b98117-ba0e-4094-9bb4-778f43bb104c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE SALVATO | vuoto finche non premi WRITE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">0f6f9081-d8c8-4e58-976b-2cb78d93eb6a</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">35a0a2f3-7c43-4482-947d-b98de28b454e</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

@@ -1,5 +1,13 @@
 [
   {
+    "key": "UserTextChangesComponent",
+    "name": "IFC Changes From Rhino",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/UserTextChangesComponent.png",
+    "svg": "svg/UserTextChangesComponent.svg"
+  },
+  {
     "key": "SetAttributeComponent",
     "name": "IFC Set Attribute",
     "family": "Modifica",

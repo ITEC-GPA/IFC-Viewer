@@ -152,7 +152,7 @@ namespace IfcViewer
         protected override void RegisterInputParams(GH_InputParamManager p)
         {
             p.AddGenericParameter("Model", "M", "Un solo modello da Read IFC.", GH_ParamAccess.list); p[0].DataMapping = GH_DataMapping.Flatten;
-            p.AddGenericParameter("Changes", "C", "Unire richieste Set Attribute/Set Property. Conflitti sullo stesso campo bloccano l'intero export.", GH_ParamAccess.list); p[1].DataMapping = GH_DataMapping.Flatten;
+            p.AddGenericParameter("Changes", "C", "Unire richieste Set Attribute/Set Property. Conflitti sullo stesso campo bloccano l'intero export.", GH_ParamAccess.list); p[1].DataMapping = GH_DataMapping.Flatten; p[1].Optional = true;
             p.AddTextParameter("File", "F", "Nuovo percorso .ifc, diverso dall'originale.", GH_ParamAccess.item);
             p.AddBooleanParameter("Write", "W", "Button; scrive solo sul fronte False -> True.", GH_ParamAccess.item, false);
             p.AddBooleanParameter("Overwrite", "O", "Sostituisce la destinazione, mai il sorgente originale.", GH_ParamAccess.item, false);
@@ -171,7 +171,10 @@ namespace IfcViewer
                 var modelData = new List<object>(); var editData = new List<object>();
                 da.GetDataList(0, modelData); da.GetDataList(1, editData);
                 if (modelData.Count != 1) throw new ArgumentException("Esportare un solo modello per componente.");
-                var model = Unwrap<IfcModel>(modelData[0]); var changes = editData.Select(Unwrap<IfcEdit>).ToList(); IfcEditing.Validate(model, changes);
+                var model = Unwrap<IfcModel>(modelData[0]); var changes = editData.Select(Unwrap<IfcEdit>).ToList();
+                if (model == null) throw new ArgumentException("Collegare un modello originale.");
+                if (changes.Count == 0 && !trigger) { _file = ""; _report = ""; da.SetData(0, ""); da.SetData(1, ""); return; }
+                IfcEditing.Validate(model, changes);
                 da.SetDataList(2, changes.Select(c => c.ToString()));
                 string path = ""; bool overwrite = false; if (!da.GetData(2, ref path)) return; da.GetData(4, ref overwrite);
                 string signature = IfcModel.Hash(model.SourceKey + model.Metadata["source_sha256"] + path + overwrite + new JArray(changes.Select(c => c.Data)).ToString(Formatting.None));

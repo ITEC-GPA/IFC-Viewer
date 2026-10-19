@@ -1,8 +1,8 @@
-# Meerkat — catalogo dei 22 componenti
+# Meerkat — catalogo dei 23 componenti
 
 Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` contiene i 19 componenti di lettura, analisi e bake; il file `09_Modifica_dati_IFC.gh` illustra i tre nuovi componenti di modifica. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
 
-La raccolta di **[nove esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 22 componenti all'esempio consigliato.
+La raccolta di **[dieci esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 23 componenti all'esempio consigliato.
 
 ## Modificare dati ed esportare IFC
 
@@ -22,7 +22,17 @@ WRITE agisce su False -> True. Il sorgente non e sovrascrivibile nemmeno con Ove
 
 Esempio completo: **[09 — Modifica dati IFC](examples/09_Modifica_dati_IFC.gh)**. API di riferimento: [IfcOpenShell property editing](https://docs.ifcopenshell.org/autoapi/ifcopenshell/api/pset/edit_pset/index.html); implementazione verificata con la versione 0.8.3 installata nel progetto.
 
-## Lettura e visualizzazione
+## Trasferire User Text da Rhino
+
+**IFC Changes From Rhino** riceve il modello originale, GUID Rhino espliciti e le chiavi User Text da confrontare. Dopo le modifiche in Rhino premi Refresh, controlla Preview e collega Changes a IFC Write File. Se tutti i campi sono invariati, non produce richieste. Non trasferisce automaticamente tutte le chiavi.
+
+Sono ammessi `IFC.Name`, `IFC.Attribute.Name/Description/Tag`, `IFC.Type.Name/Description/Tag` e proprieta scalari sotto `IFC.Property`, `IFC.InstanceProperty`, `IFC.TypeProperty`. I nomi contenenti punti, percentuali o parentesi usano la codifica gia presente negli User Text. Le chiavi Type/TypeProperty modificano il tipo condiviso. Non selezionare contemporaneamente alias dello stesso campo con valori discordanti: il writer rifiuta il conflitto.
+
+Gli identificativi e l'hash del bake devono coincidere con il modello scelto. GUID/classi, metadati JSON e altre chiavi di sistema non sono scrivibili. Una chiave mancante causa errore: non viene interpretata come cancellazione. Per impostare null utilizzare Clear in Set Attribute/Set Property. Un nuovo User Text scalare con chiave ammessa puo creare una proprieta (Auto applica il template o IfcLabel per proprieta custom). Il nome dell'oggetto Rhino e i layer non sono User Text e non vengono trasferiti.
+
+Esempio: **[10 — User Text a IFC](examples/10_User_Text_a_IFC.gh)**. Bake, modifica degli attributi in Rhino, Refresh, controllo delle differenze, Write IFC.
+
+## Componenti di lettura
 
 | Componente | Input principali | Output / utilizzo |
 | --- | --- | --- |
