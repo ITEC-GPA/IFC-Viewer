@@ -137,8 +137,14 @@ class WriterTests(unittest.TestCase):
                 with zipfile.ZipFile(compressed, "w") as archive: archive.write(self.source, "input.ifc")
                 extract(compressed, self.archive, threads=1)
                 with zipfile.ZipFile(self.archive) as archive: self.metadata = json.loads(archive.read("model.json"))
-                self.write([self.change()], overwrite=True)
-                self.assertEqual(ifcopenshell.open(str(self.destination)).schema, self.model.schema)
+                self.write([self.change(), self.change(pset="Meerkat", name="Numero", value="3", value_type="IfcCountMeasure")], overwrite=True)
+                updated = ifcopenshell.open(str(self.destination))
+                self.assertEqual(updated.schema, self.model.schema)
+                if schema == "IFC4X3":
+                    self.assertIsInstance(eu.get_psets(updated.by_guid(self.walls[0].GlobalId))["Meerkat"]["Numero"], int)
+                    before = self.destination.read_bytes()
+                    with self.assertRaises(ValueError): self.write([self.change(pset="Meerkat", name="Numero", value="3.5", value_type="IfcCountMeasure")], overwrite=True)
+                    self.assertEqual(self.destination.read_bytes(), before)
 
 
 if __name__ == "__main__": unittest.main()

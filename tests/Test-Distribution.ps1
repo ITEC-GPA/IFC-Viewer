@@ -1,7 +1,8 @@
+param([string]$DistributionDirectory = '')
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path $PSScriptRoot -Parent
 $distribution = Join-Path $projectRoot ('test-output\portable-' + [guid]::NewGuid().ToString('N') + '\Meerkat')
-$binPath = Join-Path $projectRoot 'bin'
+$binPath = if ($DistributionDirectory) { [IO.Path]::GetFullPath($DistributionDirectory) } else { Join-Path $projectRoot 'bin' }
 $manifest = @(Get-Content -LiteralPath (Join-Path $binPath 'distribution.json') -Raw | ConvertFrom-Json)
 foreach ($entry in $manifest) {
     $target = Join-Path $distribution $entry.path

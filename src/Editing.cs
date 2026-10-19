@@ -29,7 +29,14 @@ namespace IfcViewer
         }
         public override string ToString()
         {
+            if ((string)_data["kind"] == "geometry") return "instance | " + _data["global_id"] + " | Body -> " + ((JArray)_data["vertices_metres"]).Count + " vertici, " + ((JArray)_data["faces"]).Count + " triangoli (non parametrico; Qto non ricalcolate)";
             return _data["scope"] + " | " + _data["global_id"] + " | " + (_data["pset"] == null ? "" : _data["pset"] + ".") + _data["name"] + " = " + _data["value"].ToString(Formatting.None);
+        }
+        internal static IfcEdit Geometry(IfcElement element, IEnumerable<double[]> vertices, IEnumerable<int[]> faces)
+        {
+            var change = new IfcEdit(element, "geometry", "Body", null, false);
+            change._data["vertices_metres"] = JArray.FromObject(vertices); change._data["faces"] = JArray.FromObject(faces);
+            return change;
         }
     }
 
@@ -56,7 +63,7 @@ namespace IfcViewer
             {
                 File.WriteAllText(request, new JObject(new JProperty("source_sha256", model.Metadata["source_sha256"]), new JProperty("changes", new JArray(changes.Select(c => c.Data)))).ToString(), new UTF8Encoding(false));
                 var start = new ProcessStartInfo(python, Engine.Quote(Path.Combine(Engine.PluginDirectory, "ifc_writer.py")) + " " + Engine.Quote(model.ArchivePath) + " " + Engine.Quote(request) + " " + Engine.Quote(path) + (overwrite ? " --overwrite" : ""))
-                { UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true };
+                { UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true, StandardOutputEncoding = Encoding.UTF8, StandardErrorEncoding = Encoding.UTF8 };
                 start.EnvironmentVariables["PYTHONUTF8"] = "1";
                 using (var process = Process.Start(start))
                 {

@@ -1,4 +1,4 @@
-# Dieci esempi Grasshopper IFC — tutti i 23 componenti
+# Undici esempi Grasshopper IFC — tutti i 24 componenti
 
 Apri i file `.gh` in **Rhino 8 / Grasshopper su Windows**, dopo aver eseguito `Setup.cmd` dalla cartella principale e riavviato Rhino. Il plugin Meerkat deve essere caricato. I modelli sono gia incorporati: per provare gli esempi non occorre premere READ, ne avere Python in esecuzione per consultarli; la scrittura di nuovi IFC richiede il runtime Python. Sono disponibili anche le copie `.ghx` leggibili come XML.
 
@@ -16,10 +16,13 @@ Apri un esempio alla volta e usa Zoom Extents nella viewport Rhino. I pannelli a
 | [08 — Bake e rilettura](08_Bake_e_rilettura.gh) | User Text, aggiornamento senza duplicati e Refresh | 6 oggetti dopo BAKE |
 | [09 — Modifica dati IFC](09_Modifica_dati_IFC.gh) | Modificare Description e FireRating ed esportare il modello completo | 6 richieste su 3 pareti; nessuna scrittura all'apertura |
 | [10 — User Text a IFC](10_User_Text_a_IFC.gh) | Trasferire nell'IFC le modifiche ai campi scelti in Rhino | Nessuna richiesta finche non modifichi gli User Text |
+| [11 — Geometria Rhino a IFC](11_Geometria_Rhino_a_IFC.gh) | Modificare le mesh e ripristinare le coordinate IFC dopo un bake locale | Nessuna richiesta prima delle modifiche geometriche |
 
 **09:** cambia i valori nei pannelli, imposta una destinazione `.ifc` diversa dal sorgente e premi WRITE IFC. Il file conserva tutti gli 11 oggetti del modello, con descrizione e FireRating modificati solo sulle tre pareti. Il report mostra prima/dopo e hash dei file; per vedere il nuovo modello collegare il percorso salvato a Read IFC e premere READ. I parametri On type restano False: abilitarli modifica il tipo condiviso e puo coinvolgere istanze fuori dalla selezione. Serve il runtime Python per scrivere.
 
 **10:** premi BAKE, seleziona una parete in Rhino e cambia `IFC.Property.Pset_WallCommon.FireRating` o `IFC.Attribute.Description` negli Attribute User Text. Premi REFRESH: l'anteprima contiene solo le differenze delle chiavi richieste. Scegli un nuovo percorso e premi WRITE IFC. Il confronto richiede lo stesso modello/versione usato per il bake; non alterare gli identificativi IFC. Il report JSON del bake non viene usato come fonte delle modifiche.
+
+**11:** premi BAKE, poi sposta/ruota o modifica i vertici di una parete in Rhino mantenendo una mesh chiusa. Premi REFRESH e WRITE IFC su un nuovo percorso. Non ripetere BAKE dopo le modifiche, perche ripristinerebbe la geometria del modello originale. Il writer annulla l'offset locale e conserva la modifica nelle coordinate IFC. Il Body esportato e tessellato: Qto, dati dimensionali e modello analitico non vengono aggiornati. Il test automatico sposta una mesh di 1000 mm in X e 250 mm in Z, poi verifica gli stessi incrementi nell'IFC riletto, in metri.
 
 Per iniziare dai dati usa **06**. Per il flusso che porta gli IFC in Rhino con layer e tutti i parametri usa **08**.
 
@@ -170,6 +173,11 @@ All'apertura il conteggio e zero in un documento vuoto. Se contiene gia oggetti 
 | Save IFC Archive | 05 |
 | IFC Export CSV | 01, 03, 04, 07 |
 | IFC Export 3DM | 05 |
+| IFC Set Attribute | 09 |
+| IFC Set Property | 09 |
+| IFC Write File | 09, 10, 11 |
+| IFC Changes From Rhino | 10 |
+| IFC Geometry From Rhino | 11 |
 
 La copertura completa, verificata sui `.gh` riaperti dal disco, e registrata in [componenti-esempi.json](componenti-esempi.json).
 
@@ -177,4 +185,4 @@ La copertura completa, verificata sui `.gh` riaperti dal disco, e registrata in 
 
 Sono inclusi `tutorial_A.ifc`, `tutorial_B.ifc`, `tutorial_coordinate_grandi.ifc`, `tutorial_numeri.ifc` e i corrispondenti archivi `.ifcdata.zip`. Sono modelli sintetici didattici: due piani, pareti, solai, un pilastro e record senza geometria. Le modifiche della revisione B e le proprieta dell'esempio numerico sono scritte negli IFC sorgente.
 
-`Build-Examples.ps1`, dalla cartella principale, rigenera i modelli con IfcOpenShell e le dieci definizioni con il runtime Rhino. Richiede l'ambiente Python del progetto, Rhino 8 e una licenza disponibile. Il generatore riapre ogni `.gh` e verifica conteggi, parametri, confronto, selezione per ID, interazione dello slider, bake/update/Refresh, CSV, 3DM e archivio in documenti di prova. I file consegnati sono salvati prima di attivare i pulsanti nei test. `tests/check_examples.py` controlla inoltre le righe CSV con il parser CSV di Python.
+`Build-Examples.ps1`, dalla cartella principale, rigenera i modelli con IfcOpenShell e le undici definizioni con il runtime Rhino. Richiede l'ambiente Python del progetto, Rhino 8 e una licenza disponibile. Il generatore riapre ogni `.gh` e verifica conteggi, parametri, confronto, selezione per ID, interazione dello slider, bake/update/Refresh, CSV, 3DM e archivio in documenti di prova. I file consegnati sono salvati prima di attivare i pulsanti nei test. `tests/check_examples.py` controlla inoltre le righe CSV con il parser CSV di Python.

@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">359948c1-3cd6-42f4-890a-ebe777b63dcf</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">501c2f82-bf3d-475e-9296-05de93186f7c</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280217372126229</item>
+            <item name="Date" type_name="gh_date" type_code="8">639280230090569115</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5622947b-2e5a-4555-a43c-1e3bfabfbe9f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4863f43d-f641-4c06-981f-2227519ad35f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">10 | DA USER TEXT A IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">07303eef-a6e7-41e7-b5b4-36978d6f6ecc</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fd81916b-356b-48b9-ab63-da495fe06f2c</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">85a5ed74-988b-4575-9fdf-c16898501e9d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cdbd6ee9-1fb3-447b-9b89-b66555ee0900</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c85ddb2a-63c1-4e9b-9cb4-6f44acc9170a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ef442d96-2ff0-40dc-ad49-b5a0ae263c12</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cab9059c-df46-4c6c-b958-90fb32d92a8d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">63cdf32b-047c-45c1-875e-d5884ada6a4d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6e7bbba1-e834-4dea-9ce2-cd7836c690ba</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">52fd739b-20ac-499b-8487-bf575cda6956</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b25d2026-03d3-4478-9cb6-0c4d62d8129a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f499c3b-f6de-4003-9eb1-37fca490e4ac</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d6cef6b7-707b-4127-b2ab-d86bcb09559a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">88487518-0846-4de7-bdb0-379990c75a8b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e0f27b2e-88bb-4914-b50f-9eaf8faf8856</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">de0090fd-c42d-4834-a647-f030d45a48ea</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">73e2fb8b-a3e2-4ed5-a101-7f42847e7a3e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ed83e29-b9b1-47c3-8e5d-7f1cf0275e35</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c85ddb2a-63c1-4e9b-9cb4-6f44acc9170a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef442d96-2ff0-40dc-ad49-b5a0ae263c12</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6e7bbba1-e834-4dea-9ce2-cd7836c690ba</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">52fd739b-20ac-499b-8487-bf575cda6956</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4306d8dc-16b9-4aea-8e7b-f51f80be6863</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c8e1c5c9-6767-44a4-b27a-37aa524c7485</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IfcWall</item>
                   </items>
@@ -488,11 +488,11 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6acad143-f9f8-43f9-a9ca-7104279ff925</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf780313-b36f-47fa-a70c-2f0b129a9fcb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d6cef6b7-707b-4127-b2ab-d86bcb09559a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">88487518-0846-4de7-bdb0-379990c75a8b</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6276fcc2-fc26-40c1-b476-92381480774f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7209d166-44c0-4ae5-b8f7-953e1b9a7222</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -554,7 +554,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">43759267-f1bc-4ec3-aaee-30ec6e639d89</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f7508d91-10e1-4aac-af5a-589f2e4a2370</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +597,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fc325768-2db0-43a1-b8c2-1102c1236f1b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">86d4cfd0-d7ab-47d8-8a8a-dea5753f96b1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -640,7 +640,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">796f1d16-ec0a-42d2-a59f-a324242ae847</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e55be36-fea9-482d-8109-28100fb966e6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +683,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fd22f005-b7d3-4ef5-8c4d-58ec0621f05b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">53d9ae20-2177-447d-b1ee-c77d52fdcf75</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +706,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">34110d85-d435-40cb-b0a0-e4945741edae</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c57b5af8-c518-42e4-b9ef-1788f2402501</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +729,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b774a8bd-a24e-4fe7-8d81-abb0bf0fd3e9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6e04c3e4-d8d1-45cd-a063-81e9aa5b4c2c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,7 +761,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c6a14771-4494-4dad-991b-4e02da86c0d1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">20b0ccd5-84e3-477c-8791-807ad2c5f767</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -811,7 +811,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Bake su layer Radice::Modello::ClasseIFC e tutti i parametri negli User Text. Un record Undo per operazione.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d295fd59-2deb-44e5-8b4a-e40855e05324</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">938c21a2-53f9-40bc-89ca-c0162712c349</item>
                     <item name="Name" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Bake</item>
                   </items>
@@ -834,12 +834,12 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da IFC Elements o Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0d9634a2-876d-4914-811a-683a9ce7ffe9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f7bf32b2-a5bb-44a7-99d2-c3a5b7f5f639</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">fd22f005-b7d3-4ef5-8c4d-58ec0621f05b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">53d9ae20-2177-447d-b1ee-c77d52fdcf75</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -858,11 +858,11 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button: agisce solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6b3e893a-c45b-443c-a4d7-a081de5f3370</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9de80690-7722-42b8-ac02-81983712cf76</item>
                         <item name="Name" type_name="gh_string" type_code="10">Bake</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">23ae5d0f-25d2-4cf3-bacb-6ba4741c23ad</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">042d3af8-fb70-4907-b26d-c96196b8d493</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -901,7 +901,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Layer radice.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">be2982ca-ecea-4bb4-9818-74e06b1337d8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d355b95d-f2c0-4700-b2b2-fab15127c55b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Root layer</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -944,7 +944,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">True aggiorna gli oggetti precedentemente creati da questo componente, stessa sorgente e GlobalId. False crea copie.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1611bcfe-45c4-4964-a8a8-a0bd070fb969</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef92b992-04d5-4525-882e-c0dc9f92dda4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Update</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -986,7 +986,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Stesso offset usato nella visualizzazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">66820e5e-d460-41c6-ad4b-9d85a84ec844</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0f4a9eff-d624-40e2-ad7b-a9f7210fdf2e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1033,7 +1033,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID Rhino dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">86c9b788-16a8-4c2a-a5df-4b7f214ceb09</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6a27440b-4e6d-48ce-bc8d-29d7b03cbab9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Object IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1055,7 +1055,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Risultato dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7d2e8d8c-fd75-4531-b8bf-043a3599c8a5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3c152980-4e95-40c8-a229-902a8a9b02af</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1087,7 +1087,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bc07568a-bf34-475f-8109-e246f333e307</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ec4b68d4-8fb1-431b-8e28-fbe43557ae1c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1137,7 +1137,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">23ae5d0f-25d2-4cf3-bacb-6ba4741c23ad</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">042d3af8-fb70-4907-b26d-c96196b8d493</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1173,7 +1173,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Confronta User Text scelti esplicitamente con il modello IFC e prepara solo le differenze. Verifica provenienza e versione del bake. Non scrive file.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">322fe920-f229-48ac-9b06-deec4e8f34df</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">39e3c084-e3b8-4d01-aca7-977d50384cf3</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Changes From Rhino</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Rhino Edit</item>
                   </items>
@@ -1196,12 +1196,12 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo modello originale da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f5a45c40-f498-4e5b-a50b-1718a07adbeb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f461379b-72bc-465c-b9a1-6b725d8707f5</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b25d2026-03d3-4478-9cb6-0c4d62d8129a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4f499c3b-f6de-4003-9eb1-37fca490e4ac</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1221,12 +1221,12 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID espliciti degli oggetti del bake, ad esempio da Bake IFC o Read Baked.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e21cd7c6-7c40-4435-adde-90c0db405d49</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">189dbf6c-6b05-4cd8-89bd-5f316639c39a</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rhino IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">86c9b788-16a8-4c2a-a5df-4b7f214ceb09</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6a27440b-4e6d-48ce-bc8d-29d7b03cbab9</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1246,12 +1246,12 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Chiavi esatte da trasferire: IFC.Attribute.Name, IFC.Property.Pset_WallCommon.FireRating... Le chiavi IFC.TypeProperty modificano il tipo condiviso.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8bdbbee-ec49-41e2-8dd4-cfde8f997d6f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ebfce08-aec0-41aa-a52f-e7b73fae0d32</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4f4cceb1-6d25-43ab-855f-2f959ada0c74</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">62dd671a-2ffb-4973-b217-151c1abf10eb</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1270,11 +1270,11 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button dopo aver modificato User Text in Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cc47cd2f-6fe3-4b05-93cb-f6ea0e2f5f5e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b38050da-33a7-4604-8989-aebe81bb2258</item>
                         <item name="Name" type_name="gh_string" type_code="10">Refresh</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">06d27f01-4ca0-42fd-9fa3-5383b1f61815</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">0e57dd0f-a4c2-4a41-8157-e6c8ff0a29f5</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1314,7 +1314,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Solo differenze: collegare a IFC Write File.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e88d80ac-d0e4-4713-b442-de8ae246754d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">28b3eeda-c93c-4d07-99c9-763720854acb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1337,7 +1337,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Anteprima delle richieste; schema/tipi controllati al Write.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0010485d-70fe-49e4-a1cb-8a277a0e6506</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1078befe-26f4-41c3-b2c4-d7b6d0dd1437</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1359,7 +1359,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                     <chunk name="param_output" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Conteggio delle differenze o indicazione di assenza di selezione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">05f09077-6a8d-4da1-af51-d2c35fc1107f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b6e077d9-70c9-4930-b569-6d838a326027</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1391,7 +1391,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a02967f9-e586-41bd-b22f-5515ac7f1dd2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">701ebe96-b819-41df-80df-81a5ade62779</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Changes From Rhino</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1439,7 +1439,7 @@ Non alterare identificativi/hash. La geometria Rhino non viene trasferita da que
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f4cceb1-6d25-43ab-855f-2f959ada0c74</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">62dd671a-2ffb-4973-b217-151c1abf10eb</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CHIAVI DA TRASFERIRE | una per riga</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1490,7 +1490,7 @@ IFC.Attribute.Description</item>
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">06d27f01-4ca0-42fd-9fa3-5383b1f61815</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e57dd0f-a4c2-4a41-8157-e6c8ff0a29f5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REFRESH</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1524,12 +1524,12 @@ IFC.Attribute.Description</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d0aa727c-fe73-4e47-868c-827237389647</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">788e4c04-e8f6-4b52-bf47-738a0578bbea</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SOLE DIFFERENZE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">0010485d-70fe-49e4-a1cb-8a277a0e6506</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">1078befe-26f4-41c3-b2c4-d7b6d0dd1437</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1575,7 +1575,7 @@ IFC.Attribute.Description</item>
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Applica Changes al sorgente incorporato ed esporta un nuovo .ifc. Originale protetto; valida schema e riapertura prima della pubblicazione. Il modello in ingresso resta invariato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">59cdc5fb-3569-48b9-a196-4b3de1e36412</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2e2326fb-952d-4d76-b0aa-fa0ed906bf85</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write</item>
                   </items>
@@ -1598,12 +1598,12 @@ IFC.Attribute.Description</item>
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo modello da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0bbe88eb-cfb2-43b8-a019-79f819bb509a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8eaf8568-6166-4bdf-86da-3b67c3c3abd0</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b25d2026-03d3-4478-9cb6-0c4d62d8129a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4f499c3b-f6de-4003-9eb1-37fca490e4ac</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1623,12 +1623,12 @@ IFC.Attribute.Description</item>
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Unire richieste Set Attribute/Set Property. Conflitti sullo stesso campo bloccano l'intero export.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">850fc251-33a7-4aa0-8df9-ad17640b22b9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e54f4714-f05b-4472-8cd7-e28743bf33c3</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e88d80ac-d0e4-4713-b442-de8ae246754d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">28b3eeda-c93c-4d07-99c9-763720854acb</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1647,11 +1647,11 @@ IFC.Attribute.Description</item>
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Nuovo percorso .ifc, diverso dall'originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bd5a5e50-4192-4742-a0b4-91828fe273f9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e741e513-a352-4bab-a7b3-396416b66e4f</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d11aa7e8-8fae-4b22-a152-0e0bc13998d6</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">62037427-a5c9-4f70-b6dd-6aee3ecbcf03</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1670,11 +1670,11 @@ IFC.Attribute.Description</item>
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button; scrive solo sul fronte False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e7a1fc53-1731-45ae-b834-fa3181834c32</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4d92bcd-340f-4553-a531-25cb9af9219e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">afa53bf5-a9ea-4ff9-ab9d-13c3df4ccc41</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a4983dd9-82b7-4cc5-aa08-f257a50496e4</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1713,7 +1713,7 @@ IFC.Attribute.Description</item>
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Sostituisce la destinazione, mai il sorgente originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3a59f1f-06da-4978-b24d-ddae8bddbbb1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">69611fa0-74b2-416b-b5fa-d8f9f4ee63f8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1755,7 +1755,7 @@ IFC.Attribute.Description</item>
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ultimo percorso scritto per gli input correnti. Collegare a Read IFC e premere READ per ricaricarlo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">40d00e9f-8d87-4c14-8344-847c2f606d24</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">91402443-a66d-43f0-8295-c7acbefe708b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1777,7 +1777,7 @@ IFC.Attribute.Description</item>
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Report JSON della scrittura: prima/dopo, hash, schema, istanze del tipo interessate. Si azzera cambiando gli input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dde28d9b-722b-438a-9604-45106df8f71c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e0907e41-e26a-437b-80ef-5bb62c81035f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1800,7 +1800,7 @@ IFC.Attribute.Description</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste correnti, anche prima del Write. Non equivale a validazione completa dello schema.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ebd7a10d-6473-460f-aea9-2670ad4f10d3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1aa5d725-8102-4269-bb3a-3c45df405432</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1832,7 +1832,7 @@ IFC.Attribute.Description</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8e17b10-7471-45bd-81ce-88c77cc44dfe</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7ec1bf92-3a34-460b-a568-0fbefafafeaa</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1880,7 +1880,7 @@ IFC.Attribute.Description</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d11aa7e8-8fae-4b22-a152-0e0bc13998d6</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">62037427-a5c9-4f70-b6dd-6aee3ecbcf03</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUOVO IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1930,7 +1930,7 @@ IFC.Attribute.Description</item>
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">afa53bf5-a9ea-4ff9-ab9d-13c3df4ccc41</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a4983dd9-82b7-4cc5-aa08-f257a50496e4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1964,12 +1964,12 @@ IFC.Attribute.Description</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f51641a3-fe1d-46e0-930d-98ac276eaab7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2f24eb06-0da9-4ed6-9991-25969262483a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT DI SCRITTURA</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">dde28d9b-722b-438a-9604-45106df8f71c</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">e0907e41-e26a-437b-80ef-5bb62c81035f</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

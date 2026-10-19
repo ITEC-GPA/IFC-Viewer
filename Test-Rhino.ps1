@@ -1,4 +1,4 @@
-param([switch]$ExamplesOnly, [switch]$All, [switch]$DistributionOnly)
+param([switch]$ExamplesOnly, [switch]$All, [switch]$DistributionOnly, [int]$ExampleStart = 1, [int]$ExampleEnd = 11)
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
 $rhinoDir = 'C:\Program Files\Rhino 8'
@@ -16,12 +16,25 @@ $arguments += $refs | ForEach-Object { "/reference:$_" }
 $arguments += Get-ChildItem -LiteralPath (Join-Path $projectRoot 'tests') -Filter '*.cs' | ForEach-Object { $_.FullName }
 & $compiler $arguments
 if ($LASTEXITCODE -ne 0) { throw 'Compilazione test fallita.' }
-if ($DistributionOnly) { & "$outputPath\RhinoHarness.exe" $projectRoot 'distribution' }
-elseif ($All) {
-    & "$outputPath\RhinoHarness.exe" $projectRoot 'test'
-    if ($LASTEXITCODE -ne 0) { throw 'Test Rhino fallito.' }
-    & "$outputPath\RhinoHarness.exe" $projectRoot 'examples'
+function Invoke-Harness([string]$Mode) {
+    $completed = $false
+    & "$outputPath\RhinoHarness.exe" $projectRoot $Mode | ForEach-Object { if ($_ -eq 'HARNESS_COMPLETED') { $completed = $true }; Write-Output $_ }
+    if ($LASTEXITCODE -ne 0 -or -not $completed) { throw "Test Rhino incompleto o fallito: $Mode" }
 }
-elseif ($ExamplesOnly) { & "$outputPath\RhinoHarness.exe" $projectRoot 'examples' }
-else { & "$outputPath\RhinoHarness.exe" $projectRoot 'test' }
-if ($LASTEXITCODE -ne 0) { throw 'Test Rhino fallito.' }
+function Invoke-Examples([int]$Start, [int]$End) {
+    $env:MEERKAT_EXAMPLE_START = [string]$Start
+    $env:MEERKAT_EXAMPLE_END = [string]$End
+    Invoke-Harness 'examples'
+}
+if ($DistributionOnly) { Invoke-Harness 'distribution' }
+elseif ($All) {
+    Invoke-Harness 'test'
+    # Native Rhino test documents and unit changes must not outlive their suite.
+    # Keep each editing workflow in a fresh RhinoCore process on this host.
+    Invoke-Examples 1 8
+    Invoke-Examples 9 9
+    Invoke-Examples 10 10
+    Invoke-Examples 11 11
+}
+elseif ($ExamplesOnly) { Invoke-Examples $ExampleStart $ExampleEnd }
+else { Invoke-Harness 'test' }

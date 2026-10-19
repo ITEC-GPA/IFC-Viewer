@@ -42,6 +42,7 @@ internal static class Bootstrap
         try
         {
             Assembly.GetExecutingAssembly().GetType("RhinoHarness").GetMethod("Run", BindingFlags.Static | BindingFlags.NonPublic).Invoke(null, new object[] { Root, args.Length > 1 ? args[1] : "test" });
+            Console.WriteLine("HARNESS_COMPLETED");
             return 0;
         }
         catch (Exception ex) { Console.Error.WriteLine(ex); return 1; }

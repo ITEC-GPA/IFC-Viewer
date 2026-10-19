@@ -58,5 +58,10 @@ internal static class BrandTests
         check(File.Exists(python) && python.StartsWith(expected, StringComparison.OrdinalIgnoreCase), "Relocated distribution uses its own installed Python runtime");
         var fresh = Engine.Read(Path.Combine(expected, "examples", "tutorial_A.ifc"));
         check(fresh.Elements.Count == 11 && fresh.Elements.Count(e => e.MeshMetres != null) == 6, "Relocated worker reads source IFC end to end without repository runtime");
+        var wall = fresh.Elements.First(e => e.IfcClass == "IfcWall");
+        string output = Path.Combine(expected, "portable-città.ifc");
+        string report = IfcEditing.Write(fresh, new[] { new IfcEdit(wall, "attribute", "Description", "Verificato: città e unità", false) }, output, false);
+        check((string)Newtonsoft.Json.Linq.JObject.Parse(report)["file"] == output && report.Contains("città e unità"), "Writer report preserves UTF-8 paths and values");
+        check((string)Engine.Read(output).Elements.Single(e => e.GlobalId == wall.GlobalId).Record["attributes"]["Description"] == "Verificato: città e unità", "Relocated writer exports and reopens modified IFC with its local runtime");
     }
 }

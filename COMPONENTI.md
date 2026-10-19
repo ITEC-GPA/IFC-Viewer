@@ -1,8 +1,8 @@
-# Meerkat — catalogo dei 23 componenti
+# Meerkat — catalogo dei 24 componenti
 
 Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` contiene i 19 componenti di lettura, analisi e bake; il file `09_Modifica_dati_IFC.gh` illustra i tre nuovi componenti di modifica. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
 
-La raccolta di **[dieci esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 23 componenti all'esempio consigliato.
+La raccolta di **[undici esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 24 componenti all'esempio consigliato.
 
 ## Modificare dati ed esportare IFC
 
@@ -18,6 +18,8 @@ Il writer usa l'IFC originale contenuto nell'archivio: funziona anche dopo aver 
 
 Numeri con punto decimale, booleani `true`/`false`, misure nelle **unita IFC della proprieta** (o del progetto se manca un'unita esplicita). Nessuna conversione dalle unita Rhino. `Clear=True` imposta null senza cancellare la proprieta. Zero, false e testo vuoto sono distinti da null. Quantita Qto, proprieta enumerate/composte e cambi di tipo di una proprieta esistente sono rifiutati.
 
+Tipi scalari supportati: IfcLabel, IfcText, IfcIdentifier, IfcBoolean, IfcLogical, IfcInteger, IfcReal e misure di lunghezza, area, volume, massa, conteggio, rapporto, trasmittanza, temperatura, pressione, tempo e valuta. Date/durate e altri tipi non elencati non vengono convertiti implicitamente. IfcCountMeasure segue il tipo dello schema: intero in IFC4x3, reale in IFC2x3/IFC4.
+
 WRITE agisce su False -> True. Il sorgente non e sovrascrivibile nemmeno con Overwrite; la destinazione viene pubblicata solo dopo la riapertura e il controllo di nuovi errori di schema. Gli errori preesistenti vengono conteggiati nel report: questa e una verifica di schema, non una validazione completa delle regole EXPRESS, di una MVD o dei requisiti informativi di commessa. In caso di errore il file destinazione esistente rimane intatto.
 
 Esempio completo: **[09 — Modifica dati IFC](examples/09_Modifica_dati_IFC.gh)**. API di riferimento: [IfcOpenShell property editing](https://docs.ifcopenshell.org/autoapi/ifcopenshell/api/pset/edit_pset/index.html); implementazione verificata con la versione 0.8.3 installata nel progetto.
@@ -32,7 +34,19 @@ Gli identificativi e l'hash del bake devono coincidere con il modello scelto. GU
 
 Esempio: **[10 — User Text a IFC](examples/10_User_Text_a_IFC.gh)**. Bake, modifica degli attributi in Rhino, Refresh, controllo delle differenze, Write IFC.
 
-## Componenti di lettura
+## Modificare la geometria da Rhino
+
+**IFC Geometry From Rhino** riceve Model, GUID Rhino delle mesh del bake, Refresh e una tolleranza di confronto in metri (default `1e-6 m`). Produce richieste solo per le mesh cambiate, da combinare con le modifiche dei dati nell'input Changes di IFC Write File. Il controllo considera vertici e triangoli: una diversa triangolazione puo essere segnalata anche per una forma equivalente.
+
+Le coordinate passano dalle unita Rhino ai metri; viene annullato l'offset salvato nel bake e applicato l'inverso del placement IFC. Il nuovo file mantiene placement e GlobalId. Una modifica al Body di un'istanza non riscrive le mappe geometriche del tipo o gli oggetti vicini. IFC4/IFC4x3 usano tessellazioni; IFC2x3 usa un IfcFacetedBrep. Il risultato e una forma esplicita, non una ricostruzione del modello parametrico originario.
+
+Sono accettate mesh chiuse, manifold, orientate, con un solo involucro connesso. Le richieste con facce degeneri, indici invalidi, coordinate non finite, aperture/riempimenti IFC, ShapeAspect o placement non locali vengono rifiutate. Non si creano nuovi oggetti IFC e non si trasferiscono cancellazioni, Brep, curve, layer o modifiche ai tipi geometrici. Le normali globalmente invertite sono corrette nella copia esportata.
+
+**Qto e dati analitici:** le quantita IFC, le proprieta dimensionali, le rappresentazioni secondarie (assi/ingombri/footprint) e il modello strutturale analitico non vengono ricalcolati. Anche gli stili per faccia non sono trasferiti alla nuova mesh. Il componente e il report lo segnalano: dopo una modifica di forma quei dati possono non essere piu coerenti. Il writer confronta ingombro e volume triangolato della mesh con il risultato IfcOpenShell; non esegue una verifica esaustiva delle autointersezioni, ne una verifica strutturale.
+
+Esempio: **[11 — Geometria Rhino a IFC](examples/11_Geometria_Rhino_a_IFC.gh)**, con coordinate grandi e origine locale. Riferimento: [IfcOpenShell mesh representation](https://docs.ifcopenshell.org/autoapi/ifcopenshell/api/geometry/add_mesh_representation/index.html).
+
+## Lettura e visualizzazione
 
 | Componente | Input principali | Output / utilizzo |
 | --- | --- | --- |

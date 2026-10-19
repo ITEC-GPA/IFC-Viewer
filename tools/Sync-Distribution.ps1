@@ -20,6 +20,7 @@ $files = [ordered]@{
     'Meerkat.gha' = $(if ($PluginPath) { [IO.Path]::GetFullPath($PluginPath) } else { Join-Path $destination 'Meerkat.gha' })
     'ifc_reader.py' = Join-Path $projectRoot 'engine\ifc_reader.py'
     'ifc_writer.py' = Join-Path $projectRoot 'engine\ifc_writer.py'
+    'ifc_geometry_edit.py' = Join-Path $projectRoot 'engine\ifc_geometry_edit.py'
     'Setup.ps1' = Join-Path $projectRoot 'installer\Setup.ps1'
     'Setup.cmd' = Join-Path $projectRoot 'Setup.cmd'
     'requirements.txt' = Join-Path $projectRoot 'requirements.txt'

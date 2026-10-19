@@ -1,5 +1,13 @@
 [
   {
+    "key": "GeometryChangesComponent",
+    "name": "IFC Geometry From Rhino",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/GeometryChangesComponent.png",
+    "svg": "svg/GeometryChangesComponent.svg"
+  },
+  {
     "key": "UserTextChangesComponent",
     "name": "IFC Changes From Rhino",
     "family": "Modifica",

@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">57c63cc5-d5fc-4327-99e9-f2b0b8b14304</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">1a62873e-df34-4705-85e5-33fb0e35278a</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280217344035009</item>
+            <item name="Date" type_name="gh_date" type_code="8">639280229718551054</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb889c5d-98a5-46c1-92e7-872372f764ba</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f7d1962c-e622-4880-bc20-0381401999b0</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">09 | MODIFICA DATI IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bef6b154-9151-4001-9638-d6fa76437eb1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2e38b52d-5839-421f-9caa-28d268be7f1e</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">346c7de1-45e1-4e10-a8ea-b3e33c352ba4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">03b7f772-a66e-4bf0-a4bf-33006af6d4f6</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9b29ddfa-31fb-4536-bc82-6a945d57850c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4ddc9b98-7169-455f-b786-58e61a52a4d4</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d6692926-5db3-4d8e-87b0-45c08ed3299e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">645e7645-7390-4592-b9f2-53d3fdeb82f8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8b9e28ed-e55a-4311-931c-86cac8278e85</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">51ad8e7e-a1b2-4bd2-b3b9-f52bd6e82507</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3d5eb619-2226-4675-9230-d607a911cc54</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2192a483-c2ad-457c-902f-bc3be34094b2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1be84e8-7fd3-4b4e-8706-82dc454877d6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">805384a9-66f0-4c5e-a592-c82954405d5c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b5d80e69-e4ef-4edc-833e-26d792c9af81</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d2f4c0a-9446-4fbe-a767-e670c94fda60</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3595e950-9da9-413d-aea5-b10960d2de6f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3a93de15-027a-4a94-acc2-20f41295f015</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b29ddfa-31fb-4536-bc82-6a945d57850c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4ddc9b98-7169-455f-b786-58e61a52a4d4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b9e28ed-e55a-4311-931c-86cac8278e85</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">51ad8e7e-a1b2-4bd2-b3b9-f52bd6e82507</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">660c730d-40c7-4ad7-9e9a-f37f9b851241</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dfea7cd2-c3ae-4929-a4a0-dcbadff81413</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IfcWall</item>
                   </items>
@@ -488,11 +488,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a43f426d-8306-45c8-880c-7bd8efe54dbf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d758dfcc-3145-4d48-b9ad-724f657fb9db</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a1be84e8-7fd3-4b4e-8706-82dc454877d6</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">805384a9-66f0-4c5e-a592-c82954405d5c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3d5fd829-b997-445a-9e56-51ab0de5a0db</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32520579-652f-417a-9540-4ccde2c9b4ad</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -554,7 +554,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8cf2fda-9a61-44ee-93e1-2376b84520ad</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f7f38275-c50d-46d4-a320-8d1f386616d3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +597,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9ecb013c-57b3-42c6-b6a3-9c8ef0520d6e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1ac6f317-8ff5-48ed-809b-0198449ac498</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -640,7 +640,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">84dfcaf8-7cec-44d3-8bdf-49c0b8213c96</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">529419de-c507-4432-a8f8-00ca0f1e45a0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +683,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f9d5d7d-da17-4824-be13-b89e60877a85</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9a69622b-c73d-4dc6-b1e0-1bf2b7b76fea</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +706,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">83b92b22-8f42-4d47-b522-d6c871f993d5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">61908c2c-5671-41bc-bc59-591a72c4642c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +729,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">50ef295c-747d-4fbf-bed6-7c716e4c3ea9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">728824a5-6e4f-4c56-8a9a-f825ee025064</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,7 +761,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">08b1cc7a-b049-492f-9fc6-7dab26bc48d2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">94b040b7-47f1-4e4b-b417-448dead1cf53</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -811,7 +811,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Prepara modifiche a Name, Description o Tag. Non modifica il modello: collegare Changes a IFC Write File.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">522ec91d-61b4-478e-9ea2-c5c59448abc2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e79b3638-7189-4508-9133-fcd2dba7b654</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Set Attribute</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Attr</item>
                   </items>
@@ -834,11 +834,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ed084a63-0341-42fd-b62c-3ec27101fff2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">11439543-c608-4ec4-baab-f75a475273b4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3f9d5d7d-da17-4824-be13-b89e60877a85</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9a69622b-c73d-4dc6-b1e0-1bf2b7b76fea</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -857,7 +857,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Name, Description oppure Tag.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5be6e652-4da4-4cc5-bed3-8678ec4455fd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5eff10a2-4e82-4a4a-bc5f-2bb2cce341e9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Attribute</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -901,11 +901,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un valore per tutti gli elementi oppure un valore per elemento; nessuna ripetizione implicita dell'ultimo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb7e7985-8c76-4ddc-8fd1-2d4dab60729f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ff5de912-04fc-45fa-b874-25f8351fc7d9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9e55c41b-15ae-4839-a7f3-047dd4c60d14</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f83b2923-b3d3-4444-96c2-87a27ea4e9b1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -924,7 +924,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Modifica il tipo condiviso: riguarda TUTTE le sue istanze.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a80f7bb5-4c65-4ecf-a77e-840488561a91</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">14fde7f0-80cd-423d-8567-053d5fab73b3</item>
                         <item name="Name" type_name="gh_string" type_code="10">On type</item>
                         <item name="NickName" type_name="gh_string" type_code="10">T</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -966,7 +966,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Imposta l'attributo a null; Values ignorato.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f091a82-dd02-41e6-9645-a5b31556aa1e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">45fce5bc-abc1-4e98-8919-e7fe973cea5e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Clear</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1009,7 +1009,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste da unire e collegare a IFC Write File.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5cead1ce-542e-4084-96fc-dc29581ca3b5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">940d8755-a107-4d38-b1e0-3ccce465ad2b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1032,7 +1032,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Anteprima delle richieste; validazione IFC completa al Write.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">64ad20ff-971c-4c6b-accc-53cdda96952e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">45c3d8e5-4aba-4ce5-94a2-2a7e74c8e03b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1064,7 +1064,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1c540013-2f3a-4b84-be11-8de4f7e49352</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9675bbe5-8d2d-4659-bce3-21706e9edb17</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Set Attribute</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1112,7 +1112,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e55c41b-15ae-4839-a7f3-047dd4c60d14</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f83b2923-b3d3-4444-96c2-87a27ea4e9b1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUOVA DESCRIZIONE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1162,7 +1162,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Prepara creazione/modifica di proprieta scalari. Mantiene tipo e unita delle proprieta esistenti. Le modifiche di istanza isolano i Pset condivisi.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5a057371-ba21-421f-91d0-1fb1298e6795</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ea9998d8-d5de-4520-bb66-7044696d9c26</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Set Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Pset</item>
                   </items>
@@ -1185,11 +1185,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2ea86f5e-718b-4286-ad09-e1d3313a3cb8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb2072ab-d07d-4b05-8c32-6fc29f908f9a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3f9d5d7d-da17-4824-be13-b89e60877a85</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9a69622b-c73d-4dc6-b1e0-1bf2b7b76fea</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1208,11 +1208,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Nome esatto, non una chiave User Text. Es. Pset_WallCommon.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">15b0a269-3c6c-4b09-9a80-10929ced4e03</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">24f68920-a995-4dec-83ad-078a67fde7a7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Property Set</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bf798f12-7934-49f8-aeed-e1b49452e14b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1458e6ad-e7cc-43f8-8afd-32cae6c58ca9</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1231,11 +1231,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Nome esatto. Es. FireRating. Quantity Set e proprieta complesse esclusi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">565919dd-0ab4-4105-a63a-9c3400bd1037</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9749d787-2b39-446d-a2ff-59130342b288</item>
                         <item name="Name" type_name="gh_string" type_code="10">Property</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7f69467e-57f3-4dd0-928e-95540a3e7a2d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9ad8fb84-511c-4576-bdfe-72231a290f11</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1255,11 +1255,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un valore per tutti o uno per elemento. Numeri con punto decimale; booleani true/false. Misure nelle unita IFC della proprieta/progetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">43c4cd38-3f6d-4940-bc10-d48d87172bad</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b1268ce9-e07b-4652-aeab-5de2bcd1b02d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">48579920-57a3-41c7-8281-12fe06f09ad8</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">25b11c8b-71a1-473d-90d9-266c633de222</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1278,7 +1278,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Auto conserva il tipo esistente/template; nuove proprieta custom diventano IfcLabel. Oppure IfcText, IfcBoolean, IfcInteger, IfcReal, IfcLengthMeasure, IfcAreaMeasure, IfcVolumeMeasure...</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">21ebefaf-3146-4944-9566-6ec7f929e2a5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">92efe74a-08a0-4d3c-a9a6-208cc4e061bf</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value type</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1321,7 +1321,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="5">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Modifica il tipo condiviso e quindi tutte le sue istanze.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4cc2892b-3ea6-4798-8c3a-4743984d68a4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a65891d5-d839-4eab-a058-b91d149e54e7</item>
                         <item name="Name" type_name="gh_string" type_code="10">On type</item>
                         <item name="NickName" type_name="gh_string" type_code="10">T</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1363,7 +1363,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="6">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Imposta il valore a null, senza eliminare la proprieta.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f8cb8f03-0193-4e95-9f41-a57bd975d794</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c8e17f3-3839-49a1-939f-802c4b58a616</item>
                         <item name="Name" type_name="gh_string" type_code="10">Clear</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1406,7 +1406,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste da unire e collegare a IFC Write File.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cd37fc30-48bc-4b78-9f8d-b1f168334265</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">96e46cac-3eac-4993-ba9e-baab68d6eefa</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1429,7 +1429,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Anteprima delle richieste; validazione IFC completa al Write.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">42c64b83-cb44-4ee8-acc7-22811b35aee5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a9e64b57-68c6-4b4c-a3d0-d9c7ce5f34b8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1461,7 +1461,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">056d47e2-fc3d-436b-b6f4-7b66df258468</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d78b9f46-294c-4fea-8c52-ecf6f6399be5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Set Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1509,7 +1509,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf798f12-7934-49f8-aeed-e1b49452e14b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1458e6ad-e7cc-43f8-8afd-32cae6c58ca9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PROPERTY SET</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1557,7 +1557,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7f69467e-57f3-4dd0-928e-95540a3e7a2d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9ad8fb84-511c-4576-bdfe-72231a290f11</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PROPRIETA</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1605,7 +1605,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">48579920-57a3-41c7-8281-12fe06f09ad8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">25b11c8b-71a1-473d-90d9-266c633de222</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUOVO VALORE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1655,7 +1655,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Applica Changes al sorgente incorporato ed esporta un nuovo .ifc. Originale protetto; valida schema e riapertura prima della pubblicazione. Il modello in ingresso resta invariato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3d7f7f57-f8ed-4907-9e0a-04b171353447</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">93a30a74-47df-4922-b2bf-93d2ee62e807</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write</item>
                   </items>
@@ -1678,12 +1678,12 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo modello da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4d9d554-14aa-42a3-9c4c-c77a06df2fba</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f233f010-9fba-4540-9310-3ba5462bc992</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3d5eb619-2226-4675-9230-d607a911cc54</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2192a483-c2ad-457c-902f-bc3be34094b2</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1703,13 +1703,13 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="10">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Unire richieste Set Attribute/Set Property. Conflitti sullo stesso campo bloccano l'intero export.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">147c9471-a37d-4067-ade1-c6816585035b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">59d97049-4d23-4f7b-a858-2859974a4fac</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5cead1ce-542e-4084-96fc-dc29581ca3b5</item>
-                        <item name="Source" index="1" type_name="gh_guid" type_code="9">cd37fc30-48bc-4b78-9f8d-b1f168334265</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">940d8755-a107-4d38-b1e0-3ccce465ad2b</item>
+                        <item name="Source" index="1" type_name="gh_guid" type_code="9">96e46cac-3eac-4993-ba9e-baab68d6eefa</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">2</item>
                       </items>
                       <chunks count="1">
@@ -1728,11 +1728,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Nuovo percorso .ifc, diverso dall'originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f3ebac67-2015-4ab1-85d8-52a679351be6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cbf9cb58-a511-4315-b056-c9afe9fb8a90</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2bbbfc2c-cabf-4083-b035-d24062526672</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">92e2aae4-31aa-495d-b147-e34cb6413ff3</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1751,11 +1751,11 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button; scrive solo sul fronte False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">283b00ba-dafd-4aa4-9657-06078eb7802d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">50bdb8b3-d22b-4875-9525-b6952238603b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3db7991e-1d35-40e1-8230-e291928532c8</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b75b1edb-15a1-4b23-8822-4bb170abb47c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1794,7 +1794,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Sostituisce la destinazione, mai il sorgente originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f99c465-e1b8-4e98-8cab-5f04835813b4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4a3fe1e6-1cc6-4f41-97cb-0d7d6ec699d6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1836,7 +1836,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ultimo percorso scritto per gli input correnti. Collegare a Read IFC e premere READ per ricaricarlo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">463f3640-042f-4633-ae48-02bd4f587b78</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f47b7f5f-6969-4305-a793-2298bb77fac2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1858,7 +1858,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Report JSON della scrittura: prima/dopo, hash, schema, istanze del tipo interessate. Si azzera cambiando gli input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6347ea06-970e-43e1-991d-ef01bfa9c90f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">64127777-69de-4ec5-a72e-0ece35666ff2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1881,7 +1881,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste correnti, anche prima del Write. Non equivale a validazione completa dello schema.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b95d8946-b2f5-4479-abc6-31e95ad12eb2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c723f2a9-db44-44f5-bd1b-e695776f2b57</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1913,7 +1913,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">feb34d8f-3bf0-4a81-8d7a-84fc592447fd</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d14cd8f7-aa49-443e-881a-22a84a76824a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1961,7 +1961,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2bbbfc2c-cabf-4083-b035-d24062526672</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">92e2aae4-31aa-495d-b147-e34cb6413ff3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUOVO FILE IFC | cambia destinazione</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2011,7 +2011,7 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3db7991e-1d35-40e1-8230-e291928532c8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b75b1edb-15a1-4b23-8822-4bb170abb47c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2045,12 +2045,12 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2421701b-4e76-490e-912a-0e1d0d0ee8e1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2eb31f92-c1e2-4b5e-8d14-2516fa235b04</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ANTEPRIMA MODIFICHE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">b95d8946-b2f5-4479-abc6-31e95ad12eb2</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">c723f2a9-db44-44f5-bd1b-e695776f2b57</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2094,12 +2094,12 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d80ccdb1-1c22-44bf-a339-0273051d7b0f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1ca4147d-e7fe-4d04-ac19-8633a5bc00de</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE SCRITTO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">463f3640-042f-4633-ae48-02bd4f587b78</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">f47b7f5f-6969-4305-a793-2298bb77fac2</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2143,12 +2143,12 @@ WRITE salva il modello completo con le modifiche. Per ispezionare il risultato, 
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d3302d9-91fa-4f83-b086-2374e945c6b9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f3cc37dc-867e-461c-8e5c-fbf65604abfd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT PRIMA/DOPO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">6347ea06-970e-43e1-991d-ef01bfa9c90f</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">64127777-69de-4ec5-a72e-0ece35666ff2</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

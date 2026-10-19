@@ -15,6 +15,7 @@ import ifcopenshell.api
 import ifcopenshell.util.element as eu
 import ifcopenshell.util.pset as pu
 import ifcopenshell.validate
+from ifc_geometry_edit import prepare_geometry, apply_geometry
 
 ATTRIBUTES = {"Name", "Description", "Tag"}
 TEXT_TYPES = {"IfcLabel", "IfcText", "IfcIdentifier"}
@@ -42,7 +43,7 @@ def scalar(model, text, value_type):
         if text.strip().lower() not in choices:
             raise ValueError("Valore booleano non valido: usare true/false (unknown solo per IfcLogical).")
         value = choices[text.strip().lower()]
-    elif value_type == "IfcInteger":
+    elif value_type == "IfcInteger" or (value_type == "IfcCountMeasure" and model.create_entity(value_type).attribute_type(0) == "INT"):
         if not re.fullmatch(r"[+-]?\d+", text.strip()):
             raise ValueError("Intero non valido: " + text)
         value = int(text)
@@ -144,6 +145,9 @@ def prepare(model, metadata, changes):
             plan["unit"] = prop.Unit if prop else None
             plan["before"] = prop.NominalValue.wrappedValue if prop and prop.NominalValue else None
             key = (target.id(), kind, pset_name, name)
+        elif kind == "geometry":
+            plan["geometry"] = prepare_geometry(model, target, change)
+            key = (target.id(), kind)
         else:
             raise ValueError("Operazione non supportata: " + str(kind))
         signature = json.dumps({k: v for k, v in change.items() if k not in ("step_id", "global_id", "scope")}, sort_keys=True)
@@ -163,6 +167,11 @@ def apply(model, plans):
         if change["kind"] == "attribute":
             # These three descriptive attributes have no PredefinedType side effects.
             setattr(target, change["name"], change["value"])
+        elif change["kind"] == "geometry":
+            geometry_report = apply_geometry(model, target, plan["geometry"])
+            ifcopenshell.api.run("owner.update_owner_history", model, element=target)
+            report.append(dict(target_global_id=target.GlobalId, target_class=target.is_a(), scope="instance", field="Body", **geometry_report))
+            continue
         else:
             pset = direct_pset(target, change["pset"])
             if pset and len(eu.get_elements_by_pset(pset)) > 1:
@@ -179,7 +188,7 @@ def apply(model, plans):
         ifcopenshell.api.run("owner.update_owner_history", model, element=target)
         report.append({"target_global_id": target.GlobalId, "target_class": target.is_a(),
                        "scope": change.get("scope", "instance"), "field": (change.get("pset", "") + "." + change["name"]).lstrip("."),
-                       "before": plan["before"], "after": change["value"],
+                       "before": plan["before"], "after": (plan["nominal"].wrappedValue if plan["nominal"] is not None else None) if change["kind"] == "property" else change["value"],
                        "type_occurrences": len(eu.get_types(target)) if target.is_a("IfcTypeObject") else 0})
     return report
 
@@ -187,7 +196,8 @@ def apply(model, plans):
 def validation_errors(model):
     logger = ifcopenshell.validate.json_logger()
     ifcopenshell.validate.validate(model, logger)
-    return Counter((s["message"], str(s.get("attribute", ""))) for s in logger.statements if s.get("level") == "error")
+    return Counter((s["message"], str(s.get("attribute", "")), s["instance"].id() if isinstance(s.get("instance"), ifcopenshell.entity_instance) else None)
+                   for s in logger.statements if s.get("level") == "error")
 
 
 def write_ifc(archive_path, request, destination, overwrite=False):
@@ -230,6 +240,9 @@ def write_ifc(archive_path, request, destination, overwrite=False):
                 raise ValueError("Nuovi errori di schema IFC: " + str(next(iter(new_errors))))
             if overwrite:
                 os.replace(staging, destination)
+            elif os.name == "nt":
+                # Windows rename fails if the destination exists, including on drives without hardlinks.
+                os.rename(staging, destination)
             else:
                 # Exclusive publication: cannot silently replace a concurrently created file.
                 os.link(staging, destination)
