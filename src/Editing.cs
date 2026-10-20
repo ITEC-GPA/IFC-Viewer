@@ -38,6 +38,13 @@ namespace IfcViewer
             change._data["vertices_metres"] = JArray.FromObject(vertices); change._data["faces"] = JArray.FromObject(faces);
             return change;
         }
+        public static IfcEdit Request(IfcElement element, JObject data)
+        {
+            var change = new IfcEdit(element, (string)data["kind"], (string)data["name"] ?? "", (string)data["value"], (string)data["scope"] == "type");
+            foreach (var property in data.Properties()) change._data[property.Name] = property.Value.DeepClone();
+            change._data["step_id"] = element.StepId; change._data["global_id"] = element.GlobalId;
+            return change;
+        }
     }
 
     public static class IfcEditing

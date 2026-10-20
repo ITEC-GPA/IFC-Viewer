@@ -29,6 +29,7 @@ $files = [ordered]@{
     'Meerkat.gh' = Join-Path $projectRoot 'Meerkat.gh'
     'Meerkat.ghx' = Join-Path $projectRoot 'Meerkat.ghx'
 }
+foreach ($worker in Get-ChildItem -LiteralPath (Join-Path $projectRoot 'engine') -Filter '*.py' -File) { $files[$worker.Name] = $worker.FullName }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $projectRoot 'examples') -File) {
     if ($file.Extension -in @('.gh', '.ghx', '.ifc', '.zip', '.md', '.json')) { $files['examples/' + $file.Name] = $file.FullName }
 }

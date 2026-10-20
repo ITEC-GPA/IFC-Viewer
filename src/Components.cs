@@ -34,6 +34,8 @@ namespace IfcViewer
             return (wrapper == null ? value : wrapper.Value) as T;
         }
         protected void Error(Exception ex) { AddRuntimeMessage(GH_RuntimeMessageLevel.Error, ex.Message); }
+        protected static void ModelInput(GH_InputParamManager p)
+        { p.AddGenericParameter("Model", "M", "Un solo Model da Read IFC.", GH_ParamAccess.list); p[0].DataMapping = GH_DataMapping.Flatten; }
     }
 
     public sealed class ReadIfcComponent : IfcComponent

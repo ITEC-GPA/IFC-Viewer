@@ -16,6 +16,7 @@ import ifcopenshell.util.element as eu
 import ifcopenshell.util.pset as pu
 import ifcopenshell.validate
 from ifc_geometry_edit import prepare_geometry, apply_geometry
+from ifc_quantity_edit import prepare_quantity, apply_quantity
 
 ATTRIBUTES = {"Name", "Description", "Tag"}
 TEXT_TYPES = {"IfcLabel", "IfcText", "IfcIdentifier"}
@@ -148,6 +149,10 @@ def prepare(model, metadata, changes):
         elif kind == "geometry":
             plan["geometry"] = prepare_geometry(model, target, change)
             key = (target.id(), kind)
+        elif kind == "quantity":
+            plan["quantity"] = prepare_quantity(model, target, change)
+            plan["before"] = plan["quantity"]["before"]
+            key = (target.id(), kind, change["pset"], name)
         else:
             raise ValueError("Operazione non supportata: " + str(kind))
         signature = json.dumps({k: v for k, v in change.items() if k not in ("step_id", "global_id", "scope")}, sort_keys=True)
@@ -172,6 +177,8 @@ def apply(model, plans):
             ifcopenshell.api.run("owner.update_owner_history", model, element=target)
             report.append(dict(target_global_id=target.GlobalId, target_class=target.is_a(), scope="instance", field="Body", **geometry_report))
             continue
+        elif change["kind"] == "quantity":
+            apply_quantity(model, target, change, plan["quantity"])
         else:
             pset = direct_pset(target, change["pset"])
             if pset and len(eu.get_elements_by_pset(pset)) > 1:
@@ -188,7 +195,7 @@ def apply(model, plans):
         ifcopenshell.api.run("owner.update_owner_history", model, element=target)
         report.append({"target_global_id": target.GlobalId, "target_class": target.is_a(),
                        "scope": change.get("scope", "instance"), "field": (change.get("pset", "") + "." + change["name"]).lstrip("."),
-                       "before": plan["before"], "after": (plan["nominal"].wrappedValue if plan["nominal"] is not None else None) if change["kind"] == "property" else change["value"],
+                       "before": plan["before"], "after": ((plan["nominal"].wrappedValue if plan["nominal"] is not None else None) if change["kind"] == "property" else plan["quantity"]["value"] if change["kind"] == "quantity" else change["value"]),
                        "type_occurrences": len(eu.get_types(target)) if target.is_a("IfcTypeObject") else 0})
     return report
 

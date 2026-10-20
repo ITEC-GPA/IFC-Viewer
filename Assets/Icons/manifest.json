@@ -1,5 +1,29 @@
 [
   {
+    "key": "PropertyUnitsComponent",
+    "name": "IFC Property Units",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/PropertyUnitsComponent.png",
+    "svg": "svg/PropertyUnitsComponent.svg"
+  },
+  {
+    "key": "SetQuantityComponent",
+    "name": "IFC Set Quantity",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/SetQuantityComponent.png",
+    "svg": "svg/SetQuantityComponent.svg"
+  },
+  {
+    "key": "PreviewChangesComponent",
+    "name": "IFC Preview Changes",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/PreviewChangesComponent.png",
+    "svg": "svg/PreviewChangesComponent.svg"
+  },
+  {
     "key": "GeometryChangesComponent",
     "name": "IFC Geometry From Rhino",
     "family": "Modifica",

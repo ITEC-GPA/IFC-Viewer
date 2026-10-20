@@ -37,6 +37,9 @@ const mark = (dark=false, mono=false) => {
 const wordmark = (dark=false) => `<text x="201" y="106" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2.8" fill="${dark?'#F5F3ED':'#183A42'}">Meerkat</text><text x="206" y="144" font-family="Arial, sans-serif" font-size="14" letter-spacing="2.2" fill="${dark?'#B2CED0':'#58747A'}">IFC &amp; BIM · GRASSHOPPER</text>`;
 const logoBody = (dark=false) => `<g transform="translate(16 2) scale(1.4)">${mark(dark)}</g>${wordmark(dark)}`;
 const glyphs = [
+ ['PropertyUnitsComponent','IFC Property Units','Parametri','#B36A29','<path d="M3 4h18v16H3zM7 4v5m5-5v3m5-3v5M6 15h12m-3-3 3 3-3 3"/>'],
+ ['SetQuantityComponent','IFC Set Quantity','Modifica','#B36A29','<path d="M3 7l7-4 7 4-7 4zM3 7v10l7 4 7-4V7M10 11v10M18 1v7m-3-3h7"/>'],
+ ['PreviewChangesComponent','IFC Preview Changes','Modifica','#B36A29','<path d="M2 12q10-15 20 0-10 15-20 0z"/><circle cx="12" cy="12" r="3"/><path d="M16 3h5v5"/>'],
  ['GeometryChangesComponent','IFC Geometry From Rhino','Modifica','#B36A29','<path d="M3 6l8-4 8 4-8 5zM3 6v11l8 5 8-5V6M3 6l8 16M11 11l8 6M20 2v7m-3-3 3 3 3-3"/>'],
  ['UserTextChangesComponent','IFC Changes From Rhino','Modifica','#B36A29','<path d="M3 5h12v15H3zM6 9h5M6 13h3M18 3v13m-3-3 3 3 3-3M9 18h11"/>'],
  ['SetAttributeComponent','IFC Set Attribute','Modifica','#B36A29','<path d="M3 4h12v5M3 4v17h14v-5M6 8h5M6 12h3M11 15l7-9 3 3-7 9-4 1z"/>'],
