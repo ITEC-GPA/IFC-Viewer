@@ -1,8 +1,46 @@
-# Meerkat — catalogo dei 24 componenti
+# Meerkat — catalogo dei 35 componenti
 
 Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` contiene i 19 componenti di lettura, analisi e bake; il file `09_Modifica_dati_IFC.gh` illustra i tre nuovi componenti di modifica. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
 
-La raccolta di **[undici esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 24 componenti all'esempio consigliato.
+La raccolta di **[diciotto esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 35 componenti all'esempio consigliato.
+
+## Nuovi flussi: verifica, quantita, relazioni e modello analitico
+
+Gli undici componenti seguenti richiedono il runtime Python anche quando il modello e gia incorporato nel GH. `Set Quantity` e `Assign Type` preparano richieste: la validazione sullo schema avviene in Preview/Write. Gli altri strumenti interrogano l'IFC incorporato, verificandone l'hash. Per questi strumenti di interrogazione usare una sorgente/versione per componente; Clash accetta piu sorgenti.
+
+| Componente | Input / comportamento | Output | Esempio |
+| --- | --- | --- | --- |
+| **IFC Preview Changes** | Model, Changes, Run. Applica il batch e rilegge una copia temporanea; originale protetto anche nei writer successivi. | Modello modificato, tutti gli elementi, istanze interessate prima/dopo, report effettivo. | 12, 14, 16 |
+| **IFC Property Units** | Elements, Pset/Qto, nome, unita destinazione. Legge unita esplicite o del progetto e controlla le dimensioni. | Valori convertiti, unita originali, Valid e dettagli, mantenendo l'ordine. | 12 |
+| **IFC Set Quantity** | Elements, set/nome, valori, tipo, unita di input, metodo di misura. Un valore comune o uno per elemento. | Changes da unire a Preview/Write. | 12 |
+| **IFC Relationships** | Elements, relazione, Recursive. Naviga relazioni esplicite, fermandosi sui cicli. | Un ramo di elementi correlati per elemento iniziale, metadati. | 13 |
+| **IFC Import Table** | Model, CSV UTF-8 o testo multilinea, colonne modificabili, separatore, Read. | Changes, esito globale, report per riga. Errori bloccano tutto il batch. | 14 |
+| **IFC Validate IDS** | Model, percorso .ids, Run. Integra IfcTester 0.8.3. | Passed/Failed, esito globale, motivazioni e report JSON. | 15 |
+| **IFC Materials & Layers** | Elements. Risolve assegnazioni dirette o ereditate. | Nomi, spessori in metri, profili, scope, grafi e proprieta. | 13 |
+| **IFC Assign Type** | Elements, GlobalId tipo nello stesso modello, Duplicate, nome nuovo, Apply type geometry. | Richieste di riassegnazione/duplicazione. | 16 |
+| **IFC Extract Model** | Selezione, nuovo .ifc, Include descendants, Write, Overwrite. | File e report delle dipendenze incluse. | 16 |
+| **IFC Clash / Clearance** | Set A/B anche federati, modalita, distanza in metri, esclusioni, offset, Run. | Coppie di elementi, punti, distanza, tipo di interferenza e report. | 17 |
+| **IFC Structural Model** | Model, offset di visualizzazione in metri. | Membri/connessioni, assi/bordi, punti, vincoli, carichi e report completo. | 18 |
+
+**Preview:** Run=True ricalcola la copia quando cambiano gli input. Il report delle richieste viene sostituito dai valori effettivamente applicati. Per modifiche al tipo, Affected include tutte le istanze del tipo, anche quelle con override locali: usa gli elementi prima/dopo per leggere i valori effettivi o collegarli a IFC Elements/Custom Preview. I file temporanei di lavoro non sono una destinazione di consegna. Le geometrie dell'anteprima sono quelle del modello modificato. I Changes originali restano riferiti alla versione originale: per ulteriori modifiche creare nuove richieste sugli elementi della copia.
+
+**Quantita e unita:** tipi supportati Length, Area, Volume, Mass, Time e Count. Le unita di input possono essere `IFC`, `SI`, m/mm/cm/ft/in, m2/mm2/cm2, m3/mm3/L, kg/g/t, s/min/h, oppure 1 per conteggi. Property Units supporta anche K/degC, N/kN e Pa/kPa/MPa. Unita assenti o non interpretabili non vengono indovinate; i valori falliti sono NaN con Valid=False. I valori originali restano disponibili nel report.
+
+Il Quantity Set mantiene il metodo di misura comune: un metodo differente richiede un nuovo set. I template standard controllano nome e tipo della quantita; le quantita condivise vengono isolate prima della modifica. Non vengono dedotte aree nette/lorde o quantita da nomi generici: l'esempio 12 scrive il volume geometrico in un set custom `Meerkat_Measured`. Dopo una modifica geometrica le altre Qto restano da verificare. Per annullare/rimuovere una quantita non usare null: questo componente gestisce valori numerici espliciti, non cancellazioni.
+
+**Relazioni:** `Type`, `Instances`, `Container`, `Parent`, `Parts`, `Groups`, `Members`, `Openings`, `Fillings`, `Connections`. Parts segue aggregazione e nesting; Parent risale anche host/apertura/riempimento. Connections legge le relazioni fra elementi; i collegamenti analitici strutturali sono nel componente Structural Model. Tipi e gruppi hanno metadati e possono essere usati per ulteriori interrogazioni, ma non diventano istanze geometriche scrivibili.
+
+**CSV:** header `IFC.GlobalId` obbligatorio, un GlobalId univoco per riga. Le colonne da trasferire vanno scelte esplicitamente: `IFC.Attribute.Name/Description/Tag`, `IFC.Property.Pset.Nome`, `IFC.InstanceProperty.Pset.Nome`, `IFC.TypeProperty.Pset.Nome` o `IFC.Type.Name/Description/Tag`. La codifica dei nomi e la stessa degli User Text. Solo proprieta scalari; tipi esistenti/template conservati, nuove custom come IfcLabel. Campi vuoti significano stringa vuota, non null; numeri/booleani non validi vengono segnalati. Per un giro CSV export/import fedele usare `Excel safe=False` su dati controllati: gli apostrofi di protezione Excel non vengono rimossi automaticamente. Il CSV puo contenere colonne non selezionate, ignorate.
+
+**IDS:** Passed/Failed contengono i prodotti rappresentati nella selezione del lettore; eventuali errori su tipi, classificazioni o requisiti senza elementi applicabili restano nel report globale. Un elenco Failed vuoto non equivale a Valid=True. Viene controllata anche la compatibilita dello schema richiesto dall'IDS. Non e una verifica normativa strutturale.
+
+**Tipi:** senza Type GlobalId viene usato il tipo corrente. Duplicate crea nuovi GlobalId e Pset indipendenti; nella stessa operazione un tipo sorgente/nome produce una sola copia per le istanze selezionate. I materiali sono associati al nuovo tipo; le proprieta di istanza restano override. Se il tipo possiede RepresentationMaps, e necessario attivare Apply type geometry: la geometria delle istanze puo essere sostituita. I materiali con layer/profile usage vengono aggiornati dall'API. Qto e dati analitici non sono ricalcolati. Non combinare la riassegnazione con altre modifiche sugli stessi oggetti o tipi: applica il tipo, poi prepara le nuove modifiche dalla copia riletta.
+
+**Estrazione:** include gli antenati spaziali/di aggregazione, gli host necessari e le aperture che sottraggono geometria agli host conservati. Include descendants aggiunge anche la decomposizione della selezione iniziale. Restano proprieta, materiali e tipi usati; sono rimossi prodotti esclusi e tipi non utilizzati. Le relazioni verso prodotti esclusi vengono eliminate; contesti e metadati non geometrici possono restare nel file. Controllo di schema e riapertura precedono la pubblicazione atomica. Non e un export parametrico delle mesh Rhino.
+
+**Interferenze:** Intersection cerca penetrazioni oltre la tolleranza; Collision confronta le superfici e puo includere contatti; Clearance cerca distanze inferiori alla soglia. Esclusioni per classe esatta o coppia `IFC.Key|IFC.Key`. Nessuna trasformazione GIS fra file: usare modelli gia allineati. Punti e distanza sono indicativi del riscontro del motore tessellato, non volume di interferenza o certificazione di assenza di collisioni. Le triangolazioni esattamente coincidenti vengono segnalate esplicitamente come `coincident_geometry` quando non restituite dal motore: distanza 0 senza stima della penetrazione. Oggetti non tessellabili sono elencati in Skipped. I GlobalId ripetuti fra sorgenti sono distinti tramite IFC.Key.
+
+**Strutture:** vengono lette le entita IfcStructuralMember/Connection, le loro relazioni, condizioni al contorno, attivita/carichi, load groups e sistemi di riferimento. Assi rettilinei, polilinee, vertici e bordi poligonali sono visualizzati nelle unita Rhino con offset comune. Le curve non lineari non sono sostituite da corde: il grafo originale resta nel report con un avviso. Per membri superficiali i bordi non sono una discretizzazione FEM. Carichi, rigidezze e dimensioni nei grafi JSON mantengono le unita IFC originali, elencate nel report; i valori booleani di vincolo sono distinti da rigidezze numeriche e null. Il componente non ricostruisce un modello analitico assente e non verifica stabilita, collegamenti mancanti o adeguatezza dei vincoli.
 
 ## Modificare dati ed esportare IFC
 
@@ -16,7 +54,7 @@ La raccolta di **[undici esempi Grasshopper](examples/ESEMPI.md)** contiene flus
 
 Il writer usa l'IFC originale contenuto nell'archivio: funziona anche dopo aver rimosso il file sorgente esterno. Conserva GlobalId, classi, relazioni e geometrie. Non esporta la sola selezione: applica le richieste selezionate al modello intero. Un solo modello per writer; richieste provenienti da altre sorgenti/versioni sono rifiutate. Conflitti sullo stesso campo bloccano tutto il batch. Il modello in Grasshopper rimane invariato; ricarica il nuovo IFC per analizzarlo o applicare ulteriori modifiche.
 
-Numeri con punto decimale, booleani `true`/`false`, misure nelle **unita IFC della proprieta** (o del progetto se manca un'unita esplicita). Nessuna conversione dalle unita Rhino. `Clear=True` imposta null senza cancellare la proprieta. Zero, false e testo vuoto sono distinti da null. Quantita Qto, proprieta enumerate/composte e cambi di tipo di una proprieta esistente sono rifiutati.
+Numeri con punto decimale, booleani `true`/`false`, misure nelle **unita IFC della proprieta** (o del progetto se manca un'unita esplicita). Nessuna conversione dalle unita Rhino. `Clear=True` imposta null senza cancellare la proprieta. Zero, false e testo vuoto sono distinti da null. Set Property rifiuta quantita Qto (usare Set Quantity), proprieta enumerate/composte e cambi di tipo di una proprieta esistente.
 
 Tipi scalari supportati: IfcLabel, IfcText, IfcIdentifier, IfcBoolean, IfcLogical, IfcInteger, IfcReal e misure di lunghezza, area, volume, massa, conteggio, rapporto, trasmittanza, temperatura, pressione, tempo e valuta. Date/durate e altri tipi non elencati non vengono convertiti implicitamente. IfcCountMeasure segue il tipo dello schema: intero in IFC4x3, reale in IFC2x3/IFC4.
 

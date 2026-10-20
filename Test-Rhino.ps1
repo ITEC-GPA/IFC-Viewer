@@ -1,4 +1,4 @@
-param([switch]$ExamplesOnly, [switch]$All, [switch]$DistributionOnly, [int]$ExampleStart = 1, [int]$ExampleEnd = 11)
+param([switch]$ExamplesOnly, [switch]$All, [switch]$DistributionOnly, [int]$ExampleStart = 1, [int]$ExampleEnd = 18)
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
 $rhinoDir = 'C:\Program Files\Rhino 8'
@@ -35,6 +35,7 @@ elseif ($All) {
     Invoke-Examples 9 9
     Invoke-Examples 10 10
     Invoke-Examples 11 11
+    foreach ($number in 12..18) { Invoke-Examples $number $number }
 }
 elseif ($ExamplesOnly) { Invoke-Examples $ExampleStart $ExampleEnd }
 else { Invoke-Harness 'test' }

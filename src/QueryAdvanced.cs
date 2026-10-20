@@ -69,6 +69,7 @@ namespace IfcViewer
                 bool run = false; da.GetData(4, ref run); if (!run) return;
                 var model = IfcTools.Model(da, 0); string csv = "", sep = ";"; var columns = new List<string>();
                 if (!da.GetData(1, ref csv) || !da.GetDataList(2, columns)) return; da.GetData(3, ref sep);
+                if (!csv.Contains("\n") && !csv.Contains("\r")) csv = IfcTools.ResolveFile(this, csv);
                 var result = IfcTools.Run(model, "table", new JObject(new JProperty("csv", csv), new JProperty("columns", new JArray(columns)), new JProperty("separator", sep)));
                 da.SetDataList(0, result["changes"].Cast<JObject>().Select(c => IfcEdit.Request(model.Elements.Single(e => e.StepId == (int)c["step_id"]), c)));
                 da.SetData(1, (bool)result["valid"]); da.SetData(2, result.ToString());
@@ -101,6 +102,7 @@ namespace IfcViewer
             {
                 bool run = false; da.GetData(2, ref run); if (!run) return; var model = IfcTools.Model(da, 0); string path = "";
                 if (!da.GetData(1, ref path)) return;
+                path = IfcTools.ResolveFile(this, path);
                 var result = IfcTools.Run(model, "ids", new JObject(new JProperty("ids_file", path)));
                 da.SetDataList(0, IfcTools.Resolve(model, result["passed"])); da.SetDataList(1, IfcTools.Resolve(model, result["failed"]));
                 da.SetData(2, (bool)result["valid"]); da.SetDataList(3, result["issues"].Select(i => i.ToString(Formatting.None))); da.SetData(4, result["report"].ToString());

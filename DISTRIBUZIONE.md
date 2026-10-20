@@ -9,10 +9,12 @@ Questa cartella e la distribuzione completa di **Meerkat** per Rhino 8 / Grassho
 1. Estrai tutti i file in una cartella locale e chiudi Rhino.
 2. Esegui `Setup.cmd`: crea il runtime Python `.venv` qui accanto e registra la cartella in Grasshopper tramite `Meerkat.ghlink`. Servono Python x64 e accesso a Internet per installare IfcOpenShell 0.8.3. Il setup cerca Python 3.9; per un altro interprete compatibile usa `Setup.ps1 -Python "C:\percorso\python.exe"`.
 3. Avvia Rhino 8, imposta le unita del documento e apri Grasshopper: cerca la scheda **Meerkat**.
-4. Apri `Meerkat.gh` oppure uno degli [undici esempi guidati](examples/ESEMPI.md). I modelli incorporati funzionano anche senza Python; per leggere o scrivere nuovi IFC serve il runtime.
+4. Apri `Meerkat.gh` oppure uno degli [diciotto esempi guidati](examples/ESEMPI.md). I modelli incorporati funzionano anche senza Python; per leggere o scrivere nuovi IFC serve il runtime.
 5. Cambia i percorsi degli input/output prima di usare READ, WRITE o SAVE. Premi BAKE per creare mesh con layer e tutti gli attributi. Gli esempi 09, 10 e 11 esportano un nuovo IFC dopo modifiche ai dati, agli User Text o alle mesh. Il Body geometrico esportato e non parametrico; Qto e modello analitico non sono ricalcolati. Salva il `.gh` e il documento Rhino `.3dm` per conservare il lavoro.
 
-Il [catalogo dei 24 componenti](COMPONENTI.md) descrive filtri, parametri, coordinate e salvataggi. [Logo e identita](Assets/Brand/README.md) e [catalogo icone](Assets/Icons/catalog.html) sono inclusi.
+Il [catalogo dei 35 componenti](COMPONENTI.md) descrive filtri, parametri, coordinate e salvataggi. [Logo e identita](Assets/Brand/README.md) e [catalogo icone](Assets/Icons/catalog.html) sono inclusi.
+
+Gli esempi **12–18** aggiungono quantita/unita/anteprima, relazioni/materiali, importazione tabella, IDS, tipi/estrazione, interferenze e modello strutturale analitico. Questi flussi interrogano l'IFC incorporato tramite Python: eseguire nuovamente Setup per installare anche IfcTester 0.8.3. CSV e IDS di prova sono inclusi in `examples`; i percorsi relativi sono risolti accanto al GH o in questa cartella.
 
 ## Contenuto
 

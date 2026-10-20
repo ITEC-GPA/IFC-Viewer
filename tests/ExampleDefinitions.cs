@@ -18,7 +18,7 @@ using Rhino.Geometry;
 
 // Executable examples: generate native definitions, reopen them and exercise
 // the saved wiring against known IFC models. Writes only to the test directory.
-internal static class ExampleDefinitions
+internal static partial class ExampleDefinitions
 {
     private const string Fire = "IFC.Property.Pset_WallCommon.FireRating";
     private const string Code = "IFC.Property.Progetto.Codice";
@@ -313,6 +313,7 @@ internal static class ExampleDefinitions
     }
     private static void Verify(GH_Document doc, int number)
     {
+        if (number >= 12) { VerifyAdvanced(doc, number); return; }
         if (number == 1)
         {
             Check(Elements(Find<SortElementsComponent>(doc), 0).Length == 3, "01 | abaco di 3 pareti");
@@ -439,6 +440,7 @@ internal static class ExampleDefinitions
     private static void Disconnect(GH_Component c, int index) { c.Params.Input[index].RemoveAllSources(); }
     private static void Exercise(GH_Document doc, RhinoDoc rhino, int number)
     {
+        if (number >= 12) { ExerciseAdvanced(doc, number); return; }
         if (number == 11)
         {
             var bake = Find<BakeIfcComponent>(doc); var changes = Find<GeometryChangesComponent>(doc); var writer = Find<WriteIfcComponent>(doc);
@@ -611,8 +613,10 @@ internal static class ExampleDefinitions
     {
         Root = root; Check = check; Expected = JObject.Parse(File.ReadAllText(Path.Combine(root, "examples", "scenari.json")));
         OutputRoot = Path.Combine(root, "test-output", "examples-" + Guid.NewGuid().ToString("N")); Directory.CreateDirectory(OutputRoot);
-        var names = new[] { "01_Abaco_pareti", "02_Piani_e_colori", "03_Controllo_parametri", "04_Confronto_revisioni", "05_Origine_locale_export", "06_Esplora_modello", "07_Filtri_numerici", "08_Bake_e_rilettura", "09_Modifica_dati_IFC", "10_User_Text_a_IFC", "11_Geometria_Rhino_a_IFC" };
-        Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin, Explore, NumericFilters, BakeAndRead, EditData, EditUserText, EditGeometry };
+        var names = new[] { "01_Abaco_pareti", "02_Piani_e_colori", "03_Controllo_parametri", "04_Confronto_revisioni", "05_Origine_locale_export", "06_Esplora_modello", "07_Filtri_numerici", "08_Bake_e_rilettura", "09_Modifica_dati_IFC", "10_User_Text_a_IFC", "11_Geometria_Rhino_a_IFC",
+            "12_Quantita_unita_anteprima", "13_Relazioni_e_materiali", "14_Importa_tabella", "15_Validazione_IDS", "16_Tipi_ed_estrazione", "17_Interferenze", "18_Modello_strutturale" };
+        Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin, Explore, NumericFilters, BakeAndRead, EditData, EditUserText, EditGeometry,
+            QuantityPreview, RelationsMaterials, ImportSchedule, ValidateRequirements, TypesAndExtract, ClashExample, StructuralExample };
         var coverage = new Dictionary<string, HashSet<string>>();
         int start = 1; int.TryParse(Environment.GetEnvironmentVariable("MEERKAT_EXAMPLE_START") ?? "1", out start);
         int end = factories.Length; int.TryParse(Environment.GetEnvironmentVariable("MEERKAT_EXAMPLE_END") ?? factories.Length.ToString(), out end);
@@ -636,7 +640,8 @@ internal static class ExampleDefinitions
             using (var reopened = io.Document)
             {
                 reopened.AssociateWithRhinoDocument(); reopened.Enabled = true; reopened.NewSolution(true, GH_SolutionMode.Silent); NoErrors(reopened, "Riapertura " + names[i]); Verify(reopened, i + 1);
-                Check(reopened.Objects.OfType<ReadIfcComponent>().All(c => c.Params.Output[1].VolatileDataCount == 11), names[i] + " | modelli incorporati recuperati");
+                int expectedCount = i == 16 ? 8 : i == 17 ? 12 : 11;
+                Check(reopened.Objects.OfType<ReadIfcComponent>().All(c => c.Params.Output[1].VolatileDataCount == expectedCount), names[i] + " | modelli incorporati recuperati");
                 Check(ActiveObjectCount(rhino) == 0, names[i] + " | riapertura senza bake");
                 foreach (var component in reopened.Objects.OfType<IfcComponent>())
                 {

@@ -166,7 +166,14 @@ def prepare(model, metadata, changes):
             continue
         seen[key] = signature
         plans.append(plan)
+    methods = {}
     for plan in plans:
+        if "quantity" in plan:
+            key = (plan["target"].id(), plan["change"]["pset"])
+            method = plan["quantity"]["method"]
+            if key in methods and methods[key] != method:
+                raise ValueError("Metodi di misura in conflitto nello stesso Quantity Set.")
+            methods[key] = method
         if "type" not in plan:
             continue
         ids = {plan["target"].id(), plan["type"]["source"].id()}
@@ -214,6 +221,9 @@ def apply(model, plans):
                        "scope": change.get("scope", "instance"), "field": (change.get("pset", "") + "." + change["name"]).lstrip("."),
                        "before": plan["before"], "after": ((plan["nominal"].wrappedValue if plan["nominal"] is not None else None) if change["kind"] == "property" else plan["quantity"]["value"] if change["kind"] == "quantity" else change["value"]),
                        "type_occurrences": len(eu.get_types(target)) if target.is_a("IfcTypeObject") else 0})
+        if change["kind"] == "quantity":
+            report[-1].update(measurement_method=plan["quantity"]["method"], input_unit=change.get("input_unit", "IFC"),
+                              stored_unit=plan["quantity"]["stored_unit"])
     return report
 
 

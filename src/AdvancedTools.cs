@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using Grasshopper.Kernel;
@@ -53,6 +54,18 @@ namespace IfcViewer
         }
         internal static IEnumerable<IfcElement> Resolve(IfcModel model, JToken ids)
         { var set = new HashSet<int>(ids.Values<int>()); return model.Elements.Where(e => set.Contains(e.StepId)); }
+        internal static string ResolveFile(GH_Component component, string path)
+        {
+            if (Path.IsPathRooted(path)) return path;
+            var document = component.OnPingDocument();
+            if (document != null && !string.IsNullOrEmpty(document.FilePath))
+            {
+                string candidate = Path.Combine(Path.GetDirectoryName(document.FilePath), path);
+                if (File.Exists(candidate)) return candidate;
+            }
+            string distributed = Path.Combine(Engine.PluginDirectory, "examples", path);
+            return File.Exists(distributed) ? distributed : Path.GetFullPath(path);
+        }
     }
 
     public sealed class PropertyUnitsComponent : ElementTool
@@ -148,6 +161,15 @@ namespace IfcViewer
                 try
                 {
                     var report = JObject.Parse(IfcEditing.Write(model, changes, path, false)); var after = Engine.Read(path);
+                    // Retain the logical source path so downstream writers still
+                    // protect the user's original, including after GH serialization.
+                    after.Metadata["source_path"] = model.Metadata["source_path"];
+                    after.Metadata["source_name"] = model.Metadata["source_name"];
+                    using (var zip = ZipFile.Open(after.ArchivePath, ZipArchiveMode.Update))
+                    {
+                        zip.GetEntry("model.json").Delete();
+                        using (var writer = new StreamWriter(zip.CreateEntry("model.json").Open(), new UTF8Encoding(false))) writer.Write(after.Metadata.ToString());
+                    }
                     var ids = new HashSet<string>(changes.Select(c => (string)c.Data["global_id"]));
                     foreach (JObject change in report["changes"])
                     {

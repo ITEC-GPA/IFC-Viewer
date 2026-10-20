@@ -63,7 +63,8 @@ def prepare_quantity(model, target, change):
         raise ValueError("Quantita negativa o conteggio non intero.")
     if cls == "IfcQuantityCount" and model.create_entity("IfcCountMeasure").attribute_type(0) == "INT":
         value = int(value)
-    return dict(cls=cls, value=value, unit=unit, before=old[3] if old else None, method=method)
+    return dict(cls=cls, value=value, unit=unit, before=old[3] if old else None, method=method,
+                stored_unit=uu.get_unit_symbol(target_unit) if target_unit else "1")
 
 
 def apply_quantity(model, target, change, plan):

@@ -1,4 +1,4 @@
-# Undici esempi Grasshopper IFC — tutti i 24 componenti
+# Diciotto esempi Grasshopper IFC — tutti i 35 componenti
 
 Apri i file `.gh` in **Rhino 8 / Grasshopper su Windows**, dopo aver eseguito `Setup.cmd` dalla cartella principale e riavviato Rhino. Il plugin Meerkat deve essere caricato. I modelli sono gia incorporati: per provare gli esempi non occorre premere READ, ne avere Python in esecuzione per consultarli; la scrittura di nuovi IFC richiede il runtime Python. Sono disponibili anche le copie `.ghx` leggibili come XML.
 
@@ -17,6 +17,29 @@ Apri un esempio alla volta e usa Zoom Extents nella viewport Rhino. I pannelli a
 | [09 — Modifica dati IFC](09_Modifica_dati_IFC.gh) | Modificare Description e FireRating ed esportare il modello completo | 6 richieste su 3 pareti; nessuna scrittura all'apertura |
 | [10 — User Text a IFC](10_User_Text_a_IFC.gh) | Trasferire nell'IFC le modifiche ai campi scelti in Rhino | Nessuna richiesta finche non modifichi gli User Text |
 | [11 — Geometria Rhino a IFC](11_Geometria_Rhino_a_IFC.gh) | Modificare le mesh e ripristinare le coordinate IFC dopo un bake locale | Nessuna richiesta prima delle modifiche geometriche |
+| [12 — Quantita, unita e anteprima](12_Quantita_unita_anteprima.gh) | Misurare, scrivere Qto esplicite, rileggere la copia e convertire unita | 3 volumi, totale 12 m3 |
+| [13 — Relazioni e materiali](13_Relazioni_e_materiali.gh) | Navigare tipi, leggere assegnazioni, strati e profili | 3 rami per le pareti |
+| [14 — Importazione tabella](14_Importa_tabella.gh) | Abbinare CSV tramite GlobalId e preparare solo differenze valide | 6 modifiche su 3 pareti |
+| [15 — Validazione IDS](15_Validazione_IDS.gh) | Verificare requisiti informativi esterni e visualizzare errori | 2 conformi, 1 senza codice |
+| [16 — Tipi ed estrazione](16_Tipi_ed_estrazione.gh) | Duplicare tipi e consegnare una selezione con dipendenze | 3 pareti assegnate al tipo duplicato |
+| [17 — Interferenze](17_Interferenze.gh) | Contatti, penetrazioni, distanze ed esclusioni | 2 contatti parete-solaio |
+| [18 — Modello strutturale](18_Modello_strutturale.gh) | Leggere assi, nodi, vincoli e carichi analitici IFC | Trave 5 m, 2 nodi, Fz=-10000 N |
+
+**12–18 richiedono Python anche all'apertura**: leggono il sorgente IFC incorporato tramite i nuovi worker. Eseguire Setup per aggiornare le dipendenze. Nessun file di consegna o bake viene creato automaticamente; le anteprime 12/14/16 usano copie temporanee. Gli esempi originali 01–11 rimangono disponibili.
+
+**12:** Geometry Metrics misura i volumi delle mesh chiuse, Set Quantity prepara `Meerkat_Measured.Volume` con un metodo dichiarato, Preview applica il batch a una copia e Property Units rilegge i valori in m3. Il totale deve essere 12. Cambia Target unit in `mm3` per ottenere 12 miliardi; usa `m2` per provare il controllo di incompatibilita. WRITE salva un nuovo IFC completo.
+
+**13:** Relationships restituisce il tipo per ogni parete; cambia Relation in `Container` o `Parent`, oppure collega i tipi a un secondo Relationships con `Instances`. Materials & Layers mostra i dati effettivamente dichiarati: gli spessori sono disponibili solo per assegnazioni stratificate, altrimenti NaN. I profili restano dati IFC, senza inventare geometrie assenti.
+
+**14:** modifica il CSV incorporato nel pannello oppure indica `14_aggiornamento.csv`. Le colonne selezionate sono Description e FireRating; il GlobalId serve all'abbinamento. Prova a duplicare una riga o inserire un GlobalId sconosciuto: Valid diventa False e Changes resta vuoto; la Preview a valle segnala che non ci sono modifiche valide. Correggi la tabella prima dell'export.
+
+**15:** `15_requisiti.ids` richiede Codice e FireRating per le pareti. La parete senza codice appare rossa; due sono verdi. Sostituisci il percorso con un tuo IDS. Valid e l'esito globale: considera anche requisiti senza elementi applicabili e incompatibilita di schema. L'IDS di prova e incluso nella distribuzione.
+
+**16:** Duplicate=True crea un tipo con nuovi GlobalId e Pset indipendenti. Preview mostra le proprieta prima/dopo; EXTRACT esporta le tre pareti e i loro antenati, tipi e materiali. La selezione non viene automaticamente estesa a tutti gli altri oggetti dello stesso tipo. Per tipi con geometria mappata occorre accettare esplicitamente Apply type geometry.
+
+**17:** il demo ha due pareti a contatto con il solaio. Collision e Include touching=True restituiscono due coppie. Imposta Exclude classes=`IfcWall`: nessuna coppia. Per distanze cambia Mode in Clearance e Distance metres; per penetrazioni usa Intersection. I punti non rappresentano l'intero volume di interferenza. Per piu file collega insiemi provenienti da lettori diversi, gia allineati.
+
+**18:** `tutorial_struttura.ifc` contiene davvero IfcStructuralCurveMember, due IfcStructuralPointConnection, condizioni e un IfcStructuralPointAction. Il segmento misura 5000 mm in Rhino impostato in millimetri; il carico mantiene -10000 N nei dati IFC. I grafi riportano anche i sistemi di riferimento. E un esempio di lettura dati, non un modello verificato di calcolo.
 
 **09:** cambia i valori nei pannelli, imposta una destinazione `.ifc` diversa dal sorgente e premi WRITE IFC. Il file conserva tutti gli 11 oggetti del modello, con descrizione e FireRating modificati solo sulle tre pareti. Il report mostra prima/dopo e hash dei file; per vedere il nuovo modello collegare il percorso salvato a Read IFC e premere READ. I parametri On type restano False: abilitarli modifica il tipo condiviso e puo coinvolgere istanze fuori dalla selezione. Serve il runtime Python per scrivere.
 
@@ -178,11 +201,22 @@ All'apertura il conteggio e zero in un documento vuoto. Se contiene gia oggetti 
 | IFC Write File | 09, 10, 11 |
 | IFC Changes From Rhino | 10 |
 | IFC Geometry From Rhino | 11 |
+| IFC Preview Changes | 12, 14, 16 |
+| IFC Property Units | 12 |
+| IFC Set Quantity | 12 |
+| IFC Relationships | 13 |
+| IFC Materials & Layers | 13 |
+| IFC Import Table | 14 |
+| IFC Validate IDS | 15 |
+| IFC Assign Type | 16 |
+| IFC Extract Model | 16 |
+| IFC Clash / Clearance | 17 |
+| IFC Structural Model | 18 |
 
 La copertura completa, verificata sui `.gh` riaperti dal disco, e registrata in [componenti-esempi.json](componenti-esempi.json).
 
 ## Modelli e rigenerazione
 
-Sono inclusi `tutorial_A.ifc`, `tutorial_B.ifc`, `tutorial_coordinate_grandi.ifc`, `tutorial_numeri.ifc` e i corrispondenti archivi `.ifcdata.zip`. Sono modelli sintetici didattici: due piani, pareti, solai, un pilastro e record senza geometria. Le modifiche della revisione B e le proprieta dell'esempio numerico sono scritte negli IFC sorgente.
+Sono inclusi `tutorial_A.ifc`, `tutorial_B.ifc`, `tutorial_coordinate_grandi.ifc`, `tutorial_numeri.ifc`, `tutorial_struttura.ifc` e i corrispondenti archivi `.ifcdata.zip`. Sono modelli sintetici didattici: due piani, pareti, solai, un pilastro e record senza geometria. Le modifiche della revisione B e le proprieta dell'esempio numerico sono scritte negli IFC sorgente.
 
-`Build-Examples.ps1`, dalla cartella principale, rigenera i modelli con IfcOpenShell e le undici definizioni con il runtime Rhino. Richiede l'ambiente Python del progetto, Rhino 8 e una licenza disponibile. Il generatore riapre ogni `.gh` e verifica conteggi, parametri, confronto, selezione per ID, interazione dello slider, bake/update/Refresh, CSV, 3DM e archivio in documenti di prova. I file consegnati sono salvati prima di attivare i pulsanti nei test. `tests/check_examples.py` controlla inoltre le righe CSV con il parser CSV di Python.
+`Build-Examples.ps1`, dalla cartella principale, rigenera i modelli con IfcOpenShell e le diciotto definizioni con il runtime Rhino. Richiede l'ambiente Python del progetto, Rhino 8 e una licenza disponibile. Il generatore riapre ogni `.gh` e verifica conteggi, parametri, confronto, selezione per ID, interazione dello slider, bake/update/Refresh, CSV, 3DM e archivio in documenti di prova. I file consegnati sono salvati prima di attivare i pulsanti nei test. `tests/check_examples.py` controlla inoltre le righe CSV con il parser CSV di Python.

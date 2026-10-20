@@ -9,7 +9,7 @@ import ifcopenshell.api
 import ifcopenshell.util.element as eu
 import ifcopenshell.util.type as tu
 import ifcopenshell.util.unit as uu
-from ifc_reader import info, reference
+from ifc_reader import info, reference, json_value
 
 
 def materials(model, elements):
@@ -60,7 +60,7 @@ def prepare_type(model, target, change):
     if getattr(new_type, "RepresentationMaps", None) and not change.get("map_geometry", False):
         raise ValueError("Il tipo ha geometrie mappate: attivare Apply type geometry per accettarne la sostituzione.")
     return dict(source=new_type, duplicate=duplicate, name=name, before=reference(eu.get_type(target)),
-                before_properties=eu.get_psets(target))
+                before_properties=json_value(eu.get_psets(target)))
 
 
 def apply_type(model, target, change, plan, copies):
@@ -70,7 +70,7 @@ def apply_type(model, target, change, plan, copies):
         if key not in copies:
             copied = eu.copy(model, new_type)
             copied.Name = plan["name"]
-            copied.HasPropertySets = [eu.copy_deep(model, p) for p in new_type.HasPropertySets or ()] or None
+            copied.HasPropertySets = [eu.copy_deep(model, p, exclude=["IfcOwnerHistory"]) for p in new_type.HasPropertySets or ()] or None
             if getattr(new_type, "RepresentationMaps", None):
                 copied.RepresentationMaps = [eu.copy_deep(model, r, exclude=["IfcGeometricRepresentationContext"]) for r in new_type.RepresentationMaps]
             for rel in getattr(new_type, "HasAssociations", ()):
@@ -81,7 +81,7 @@ def apply_type(model, target, change, plan, copies):
     ifcopenshell.api.run("type.assign_type", model, related_objects=[target], relating_type=new_type, should_map_representations=True)
     return dict(target_global_id=target.GlobalId, target_class=target.is_a(), scope="instance", field="Type",
                 before=plan["before"], after=reference(new_type), before_properties=plan["before_properties"],
-                after_properties=eu.get_psets(target), type_occurrences=len(eu.get_types(new_type)),
+                after_properties=json_value(eu.get_psets(target)), type_occurrences=len(eu.get_types(new_type)),
                 warning="Assegnazione tipo/materiali; Qto e modello analitico non ricalcolati.")
 
 

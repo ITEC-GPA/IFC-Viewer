@@ -1,5 +1,12 @@
 [
   {
+    "component": "IFC Assign Type",
+    "guid": "a33c7151-8190-4a00-a001-100000000008",
+    "examples": [
+      "16_Tipi_ed_estrazione.gh"
+    ]
+  },
+  {
     "component": "Bake IFC",
     "guid": "f2c6c624-8665-49fb-be2b-b904676dd197",
     "examples": [
@@ -8,6 +15,13 @@
       "08_Bake_e_rilettura.gh",
       "10_User_Text_a_IFC.gh",
       "11_Geometria_Rhino_a_IFC.gh"
+    ]
+  },
+  {
+    "component": "IFC Clash / Clearance",
+    "guid": "a33c7151-8190-4a00-a001-100000000010",
+    "examples": [
+      "17_Interferenze.gh"
     ]
   },
   {
@@ -42,6 +56,13 @@
     ]
   },
   {
+    "component": "IFC Extract Model",
+    "guid": "a33c7151-8190-4a00-a001-100000000009",
+    "examples": [
+      "16_Tipi_ed_estrazione.gh"
+    ]
+  },
+  {
     "component": "IFC Filter Property",
     "guid": "e2b93e81-4253-4bb4-918a-5129bb880004",
     "examples": [
@@ -53,7 +74,11 @@
       "08_Bake_e_rilettura.gh",
       "09_Modifica_dati_IFC.gh",
       "10_User_Text_a_IFC.gh",
-      "11_Geometria_Rhino_a_IFC.gh"
+      "11_Geometria_Rhino_a_IFC.gh",
+      "12_Quantita_unita_anteprima.gh",
+      "13_Relazioni_e_materiali.gh",
+      "16_Tipi_ed_estrazione.gh",
+      "17_Interferenze.gh"
     ]
   },
   {
@@ -69,7 +94,8 @@
     "examples": [
       "01_Abaco_pareti.gh",
       "05_Origine_locale_export.gh",
-      "07_Filtri_numerici.gh"
+      "07_Filtri_numerici.gh",
+      "12_Quantita_unita_anteprima.gh"
     ]
   },
   {
@@ -77,6 +103,13 @@
     "guid": "e2b93e81-4253-4bb4-918a-5129bb880006",
     "examples": [
       "02_Piani_e_colori.gh"
+    ]
+  },
+  {
+    "component": "IFC Import Table",
+    "guid": "a33c7151-8190-4a00-a001-100000000005",
+    "examples": [
+      "14_Importa_tabella.gh"
     ]
   },
   {
@@ -89,7 +122,17 @@
       "05_Origine_locale_export.gh",
       "06_Esplora_modello.gh",
       "07_Filtri_numerici.gh",
-      "08_Bake_e_rilettura.gh"
+      "08_Bake_e_rilettura.gh",
+      "13_Relazioni_e_materiali.gh",
+      "15_Validazione_IDS.gh",
+      "17_Interferenze.gh"
+    ]
+  },
+  {
+    "component": "IFC Materials & Layers",
+    "guid": "a33c7151-8190-4a00-a001-100000000007",
+    "examples": [
+      "13_Relazioni_e_materiali.gh"
     ]
   },
   {
@@ -108,10 +151,26 @@
     ]
   },
   {
+    "component": "IFC Preview Changes",
+    "guid": "a33c7151-8190-4a00-a001-100000000003",
+    "examples": [
+      "12_Quantita_unita_anteprima.gh",
+      "14_Importa_tabella.gh",
+      "16_Tipi_ed_estrazione.gh"
+    ]
+  },
+  {
     "component": "IFC Property Keys",
     "guid": "e2b93e81-4253-4bb4-918a-5129bb880002",
     "examples": [
       "06_Esplora_modello.gh"
+    ]
+  },
+  {
+    "component": "IFC Property Units",
+    "guid": "a33c7151-8190-4a00-a001-100000000001",
+    "examples": [
+      "12_Quantita_unita_anteprima.gh"
     ]
   },
   {
@@ -145,7 +204,21 @@
       "08_Bake_e_rilettura.gh",
       "09_Modifica_dati_IFC.gh",
       "10_User_Text_a_IFC.gh",
-      "11_Geometria_Rhino_a_IFC.gh"
+      "11_Geometria_Rhino_a_IFC.gh",
+      "12_Quantita_unita_anteprima.gh",
+      "13_Relazioni_e_materiali.gh",
+      "14_Importa_tabella.gh",
+      "15_Validazione_IDS.gh",
+      "16_Tipi_ed_estrazione.gh",
+      "17_Interferenze.gh",
+      "18_Modello_strutturale.gh"
+    ]
+  },
+  {
+    "component": "IFC Relationships",
+    "guid": "a33c7151-8190-4a00-a001-100000000004",
+    "examples": [
+      "13_Relazioni_e_materiali.gh"
     ]
   },
   {
@@ -177,11 +250,25 @@
     ]
   },
   {
+    "component": "IFC Set Quantity",
+    "guid": "a33c7151-8190-4a00-a001-100000000002",
+    "examples": [
+      "12_Quantita_unita_anteprima.gh"
+    ]
+  },
+  {
     "component": "IFC Sort",
     "guid": "e2b93e81-4253-4bb4-918a-5129bb880007",
     "examples": [
       "01_Abaco_pareti.gh",
       "07_Filtri_numerici.gh"
+    ]
+  },
+  {
+    "component": "IFC Structural Model",
+    "guid": "a33c7151-8190-4a00-a001-100000000011",
+    "examples": [
+      "18_Modello_strutturale.gh"
     ]
   },
   {
@@ -199,12 +286,21 @@
     ]
   },
   {
+    "component": "IFC Validate IDS",
+    "guid": "a33c7151-8190-4a00-a001-100000000006",
+    "examples": [
+      "15_Validazione_IDS.gh"
+    ]
+  },
+  {
     "component": "IFC Write File",
     "guid": "beeb272d-1ce2-461c-9771-e9366a837c03",
     "examples": [
       "09_Modifica_dati_IFC.gh",
       "10_User_Text_a_IFC.gh",
-      "11_Geometria_Rhino_a_IFC.gh"
+      "11_Geometria_Rhino_a_IFC.gh",
+      "12_Quantita_unita_anteprima.gh",
+      "14_Importa_tabella.gh"
     ]
   }
 ]

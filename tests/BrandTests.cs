@@ -59,6 +59,12 @@ internal static class BrandTests
         var fresh = Engine.Read(Path.Combine(expected, "examples", "tutorial_A.ifc"));
         check(fresh.Elements.Count == 11 && fresh.Elements.Count(e => e.MeshMetres != null) == 6, "Relocated worker reads source IFC end to end without repository runtime");
         var wall = fresh.Elements.First(e => e.IfcClass == "IfcWall");
+        var units = IfcTools.Run(fresh, "units", new Newtonsoft.Json.Linq.JObject(
+            new Newtonsoft.Json.Linq.JProperty("pset", "Qto_WallBaseQuantities"),
+            new Newtonsoft.Json.Linq.JProperty("name", "Length"), new Newtonsoft.Json.Linq.JProperty("unit", "m")), new[] { wall });
+        check((bool)units["rows"][0]["valid"] && Math.Abs((double)units["rows"][0]["converted"] - 5.0) < 1e-6, "Relocated advanced worker resolves units with the local runtime");
+        var ids = IfcTools.Run(fresh, "ids", new Newtonsoft.Json.Linq.JObject(new Newtonsoft.Json.Linq.JProperty("ids_file", Path.Combine(expected, "examples", "15_requisiti.ids"))));
+        check(!(bool)ids["valid"] && ((Newtonsoft.Json.Linq.JArray)ids["passed"]).Count == 2 && ((Newtonsoft.Json.Linq.JArray)ids["failed"]).Count == 1, "Relocated IfcTester loads bundled IDS and returns serializable validation results");
         string output = Path.Combine(expected, "portable-città.ifc");
         string report = IfcEditing.Write(fresh, new[] { new IfcEdit(wall, "attribute", "Description", "Verificato: città e unità", false) }, output, false);
         check((string)Newtonsoft.Json.Linq.JObject.Parse(report)["file"] == output && report.Contains("città e unità"), "Writer report preserves UTF-8 paths and values");

@@ -1,4 +1,5 @@
 import sys
+import json
 from pathlib import Path
 import unittest
 import ifcopenshell
@@ -40,6 +41,30 @@ class AdvancedTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 self.write([change], overwrite=True)
             self.assertEqual(self.destination.read_bytes(), b"keep")
+        with self.assertRaises(ValueError):
+            self.write([self.quantity(), self.quantity(name="NetVolume", value="4.5", quantity_type="Volume", input_unit="m3", method="Metodo diverso")], overwrite=True)
+        self.assertEqual(self.destination.read_bytes(), b"keep")
+
+    def test_new_writer_operations_in_ifc2x3_and_ifc4x3(self):
+        from create_fixture import create_fixture
+        for schema in ("IFC2X3", "IFC4X3"):
+            with self.subTest(schema=schema):
+                self.model = create_fixture(self.source, schema)
+                self.walls = self.model.by_type("IfcWall")
+                self.snapshot()
+                self.write([self.quantity()], overwrite=True)
+                result = ifcopenshell.open(str(self.destination))
+                self.assertEqual(eu.get_psets(result.by_guid(self.walls[0].GlobalId))["Qto_WallBaseQuantities"]["Length"], 6000.)
+                changes = []
+                for wall in self.walls:
+                    change = self.change(wall, kind="assign_type", name="Type", value="")
+                    change.update(type_global_id="", duplicate=True, type_name="Tipo isolato", map_geometry=False)
+                    changes.append(change)
+                self.write(changes, overwrite=True)
+                result = ifcopenshell.open(str(self.destination))
+                new_types = {eu.get_type(result.by_guid(w.GlobalId)).GlobalId for w in self.walls}
+                self.assertEqual(len(new_types), 1)
+                self.assertNotIn(eu.get_type(self.walls[0]).GlobalId, new_types)
 
     def test_property_units_missing_text_and_si_powers(self):
         request = dict(source_sha256=self.metadata["source_sha256"], operation="units",
@@ -89,6 +114,7 @@ class AdvancedTests(unittest.TestCase):
         definition.specifications.append(rule)
         path = self.folder / "test.ids"; definition.to_xml(str(path))
         result = validate_ids(self.model, dict(ids_file=str(path)))
+        json.dumps(result, allow_nan=False)
         self.assertFalse(result["valid"])
         self.assertEqual(result["failed"], [self.walls[1].id()])
         self.assertEqual(result["passed"], [self.walls[0].id()])

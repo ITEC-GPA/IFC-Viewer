@@ -145,7 +145,9 @@ def validate_ids(model, request):
                 issues.append(dict(specification=item.name, element=reference(failure["element"]), reason=failure["reason"]))
         if not item.status and not item.applicable_entities:
             issues.append(dict(specification=item.name, reason="Nessun elemento applicabile alla specifica obbligatoria."))
-    report = reporter.Json(spec).report()
+    json_report = reporter.Json(spec)
+    json_report.report()
+    report = json.loads(json_report.to_string())
     if mismatch:
         issues.append(dict(reason="Schema IFC non previsto da: " + ", ".join(mismatch)))
     return dict(passed=sorted(applicable - failed), failed=sorted(failed), applicable=sorted(applicable),
