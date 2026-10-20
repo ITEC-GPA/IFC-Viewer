@@ -1,5 +1,29 @@
 [
   {
+    "key": "MaterialsLayersComponent",
+    "name": "IFC Materials & Layers",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/MaterialsLayersComponent.png",
+    "svg": "svg/MaterialsLayersComponent.svg"
+  },
+  {
+    "key": "AssignTypeComponent",
+    "name": "IFC Assign Type",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/AssignTypeComponent.png",
+    "svg": "svg/AssignTypeComponent.svg"
+  },
+  {
+    "key": "ExtractModelComponent",
+    "name": "IFC Extract Model",
+    "family": "Salvataggio",
+    "color": "#39805A",
+    "png": "png/ExtractModelComponent.png",
+    "svg": "svg/ExtractModelComponent.svg"
+  },
+  {
     "key": "RelationshipsComponent",
     "name": "IFC Relationships",
     "family": "Parametri",

@@ -17,6 +17,7 @@ import ifcopenshell.util.pset as pu
 import ifcopenshell.validate
 from ifc_geometry_edit import prepare_geometry, apply_geometry
 from ifc_quantity_edit import prepare_quantity, apply_quantity
+from ifc_model_ops import prepare_type, apply_type
 
 ATTRIBUTES = {"Name", "Description", "Tag"}
 TEXT_TYPES = {"IfcLabel", "IfcText", "IfcIdentifier"}
@@ -153,6 +154,9 @@ def prepare(model, metadata, changes):
             plan["quantity"] = prepare_quantity(model, target, change)
             plan["before"] = plan["quantity"]["before"]
             key = (target.id(), kind, change["pset"], name)
+        elif kind == "assign_type":
+            plan["type"] = prepare_type(model, target, change)
+            key = (target.id(), kind)
         else:
             raise ValueError("Operazione non supportata: " + str(kind))
         signature = json.dumps({k: v for k, v in change.items() if k not in ("step_id", "global_id", "scope")}, sort_keys=True)
@@ -162,11 +166,20 @@ def prepare(model, metadata, changes):
             continue
         seen[key] = signature
         plans.append(plan)
+    for plan in plans:
+        if "type" not in plan:
+            continue
+        ids = {plan["target"].id(), plan["type"]["source"].id()}
+        old_type = eu.get_type(plan["target"])
+        if old_type:
+            ids.add(old_type.id())
+        if any(other is not plan and other["change"]["kind"] != "assign_type" and other["target"].id() in ids for other in plans):
+            raise ValueError("Assegnare il tipo in un passaggio separato dalle altre modifiche sugli stessi oggetti/tipi.")
     return plans
 
 
 def apply(model, plans):
-    report = []
+    report, copies = [], {}
     for plan in plans:
         target, change = plan["target"], plan["change"]
         if change["kind"] == "attribute":
@@ -179,6 +192,10 @@ def apply(model, plans):
             continue
         elif change["kind"] == "quantity":
             apply_quantity(model, target, change, plan["quantity"])
+        elif change["kind"] == "assign_type":
+            report.append(apply_type(model, target, change, plan["type"], copies))
+            ifcopenshell.api.run("owner.update_owner_history", model, element=target)
+            continue
         else:
             pset = direct_pset(target, change["pset"])
             if pset and len(eu.get_elements_by_pset(pset)) > 1:
@@ -231,9 +248,16 @@ def write_ifc(archive_path, request, destination, overwrite=False):
         previous_errors = validation_errors(model)
         identities = {e.id(): (e.is_a(), e.GlobalId) for e in model.by_type("IfcRoot")}
         plans = prepare(model, metadata, request.get("changes"))
+        removable = {r.id() for p in plans if p["change"]["kind"] == "assign_type"
+                     for r in model.get_inverse(p["target"]) if r.is_a("IfcRelDefinesByType")}
         changes = apply(model, plans)
         for step_id, identity in identities.items():
-            current = model.by_id(step_id)
+            try:
+                current = model.by_id(step_id)
+            except RuntimeError:
+                if step_id in removable:
+                    continue
+                raise ValueError("Entita IFC eliminata inaspettatamente: #%s" % step_id)
             if (current.is_a(), current.GlobalId) != identity:
                 raise ValueError("Identita IFC alterata durante la modifica.")
         destination.parent.mkdir(parents=True, exist_ok=True)

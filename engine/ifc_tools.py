@@ -48,6 +48,11 @@ def execute(archive, request):
             return import_table(model, metadata, request)
         if request["operation"] == "ids":
             return validate_ids(model, request)
+        from ifc_model_ops import materials, extract_model
+        if request["operation"] == "materials":
+            return materials(model, elements)
+        if request["operation"] == "extract":
+            return extract_model(model, metadata, elements, request["destination"], request.get("overwrite", False), request.get("descendants", True), archive)
         raise ValueError("Operazione sconosciuta: " + request["operation"])
 
 

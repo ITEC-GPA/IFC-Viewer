@@ -98,6 +98,47 @@ class AdvancedTests(unittest.TestCase):
         self.assertFalse(result["valid"])
         self.assertTrue(result["issues"])
 
+    def test_duplicate_type_isolates_properties_and_preserves_siblings(self):
+        change = self.change(kind="assign_type", name="Type", value="", scope="instance")
+        change.update(type_global_id="", duplicate=True, type_name="Nuovo tipo", map_geometry=False)
+        report = self.write([change])
+        result = ifcopenshell.open(str(self.destination))
+        new_type = eu.get_type(result.by_guid(self.walls[0].GlobalId))
+        old_type = eu.get_type(result.by_guid(self.walls[1].GlobalId))
+        self.assertNotEqual(new_type.GlobalId, old_type.GlobalId)
+        self.assertEqual(new_type.Name, "Nuovo tipo")
+        self.assertNotEqual(new_type.HasPropertySets[0].id(), old_type.HasPropertySets[0].id())
+        self.assertEqual(eu.get_psets(result.by_guid(self.walls[0].GlobalId))["Pset_WallCommon"]["FireRating"], "REI 60")
+        self.assertEqual(report["changes"][0]["type_occurrences"], 1)
+        with self.assertRaises(ValueError):
+            self.write([change, self.change()], overwrite=True)
+
+    def test_extract_selection_dependencies_and_original_guard(self):
+        from ifc_model_ops import extract_model
+        before = self.source.read_bytes()
+        result = extract_model(self.model, self.metadata, [self.walls[0]], self.destination)
+        reopened = ifcopenshell.open(str(self.destination))
+        self.assertEqual(len(reopened.by_type("IfcWall")), 1)
+        self.assertEqual(len(reopened.by_type("IfcSlab")), 0)
+        self.assertEqual(len(reopened.by_type("IfcBuildingStorey")), 1)
+        self.assertEqual(eu.get_type(reopened.by_type("IfcWall")[0]).Name, "Parete esterna 300 mm")
+        self.assertEqual(eu.get_psets(reopened.by_type("IfcWall")[0])["Progetto"]["Codice"], "P-001")
+        self.assertEqual(self.source.read_bytes(), before)
+        self.assertEqual(result["retained_products"], 4)
+        with self.assertRaises(ValueError):
+            extract_model(reopened, self.metadata, reopened.by_type("IfcWall"), self.source, overwrite=True)
+
+    def test_material_layers_millimetres_and_inheritance(self):
+        from ifc_model_ops import materials
+        wall_type = eu.get_type(self.walls[0])
+        ifcopenshell.api.run("material.unassign_material", self.model, products=[wall_type])
+        layer_set = self.model.create_entity("IfcMaterialLayerSet", MaterialLayers=[
+            self.model.create_entity("IfcMaterialLayer", Material=self.model.by_type("IfcMaterial")[0], LayerThickness=300.)])
+        ifcopenshell.api.run("material.assign_material", self.model, products=[wall_type], type="IfcMaterialLayerSet", material=layer_set)
+        row = materials(self.model, [self.walls[0]])["rows"][0]
+        self.assertEqual(row["scope"], "type")
+        self.assertEqual(row["items"][0]["thickness_metres"], .3)
+
 
 if __name__ == "__main__":
     unittest.main()
