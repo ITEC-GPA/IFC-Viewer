@@ -41,6 +41,13 @@ def execute(archive, request):
         elements = select(model, request.get("elements", []))
         if request["operation"] == "units":
             return property_units(model, elements, request)
+        from ifc_query import relationships, import_table, validate_ids
+        if request["operation"] == "relationships":
+            return relationships(model, elements, request)
+        if request["operation"] == "table":
+            return import_table(model, metadata, request)
+        if request["operation"] == "ids":
+            return validate_ids(model, request)
         raise ValueError("Operazione sconosciuta: " + request["operation"])
 
 

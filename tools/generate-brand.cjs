@@ -37,6 +37,9 @@ const mark = (dark=false, mono=false) => {
 const wordmark = (dark=false) => `<text x="201" y="106" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2.8" fill="${dark?'#F5F3ED':'#183A42'}">Meerkat</text><text x="206" y="144" font-family="Arial, sans-serif" font-size="14" letter-spacing="2.2" fill="${dark?'#B2CED0':'#58747A'}">IFC &amp; BIM · GRASSHOPPER</text>`;
 const logoBody = (dark=false) => `<g transform="translate(16 2) scale(1.4)">${mark(dark)}</g>${wordmark(dark)}`;
 const glyphs = [
+ ['RelationshipsComponent','IFC Relationships','Parametri','#267E87','<rect x="8" y="2" width="8" height="5"/><path d="M12 7v5M4 12h16M4 12v4m16-4v4"/><rect x="1" y="16" width="6" height="5"/><rect x="17" y="16" width="6" height="5"/>'],
+ ['ImportTableComponent','IFC Import Table','Modifica','#B36A29','<path d="M2 3h17v18H2zM2 9h17M8 3v18M2 15h10M13 16h10m-3-3 3 3-3 3"/>'],
+ ['ValidateIdsComponent','IFC Validate IDS','Controllo','#39805A','<path d="M4 2h13l3 3v17H4zM7 7h7M7 12l2 2 6-5M7 18h10"/>'],
  ['PropertyUnitsComponent','IFC Property Units','Parametri','#B36A29','<path d="M3 4h18v16H3zM7 4v5m5-5v3m5-3v5M6 15h12m-3-3 3 3-3 3"/>'],
  ['SetQuantityComponent','IFC Set Quantity','Modifica','#B36A29','<path d="M3 7l7-4 7 4-7 4zM3 7v10l7 4 7-4V7M10 11v10M18 1v7m-3-3h7"/>'],
  ['PreviewChangesComponent','IFC Preview Changes','Modifica','#B36A29','<path d="M2 12q10-15 20 0-10 15-20 0z"/><circle cx="12" cy="12" r="3"/><path d="M16 3h5v5"/>'],

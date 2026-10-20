@@ -1,5 +1,29 @@
 [
   {
+    "key": "RelationshipsComponent",
+    "name": "IFC Relationships",
+    "family": "Parametri",
+    "color": "#267E87",
+    "png": "png/RelationshipsComponent.png",
+    "svg": "svg/RelationshipsComponent.svg"
+  },
+  {
+    "key": "ImportTableComponent",
+    "name": "IFC Import Table",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/ImportTableComponent.png",
+    "svg": "svg/ImportTableComponent.svg"
+  },
+  {
+    "key": "ValidateIdsComponent",
+    "name": "IFC Validate IDS",
+    "family": "Controllo",
+    "color": "#39805A",
+    "png": "png/ValidateIdsComponent.png",
+    "svg": "svg/ValidateIdsComponent.svg"
+  },
+  {
     "key": "PropertyUnitsComponent",
     "name": "IFC Property Units",
     "family": "Parametri",
