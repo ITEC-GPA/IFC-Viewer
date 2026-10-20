@@ -139,6 +139,44 @@ class AdvancedTests(unittest.TestCase):
         self.assertEqual(row["scope"], "type")
         self.assertEqual(row["items"][0]["thickness_metres"], .3)
 
+    def test_clash_contact_clearance_exclusion_and_federation(self):
+        from ifc_analysis import clashes
+        refs = [dict(step_id=e.id(), global_id=e.GlobalId, key=str(e.id()), a=e.is_a("IfcWall"), b=e.is_a("IfcSlab"))
+                for e in self.walls + self.model.by_type("IfcSlab")]
+        source = dict(archive=str(self.archive), source_sha256=self.metadata["source_sha256"], elements=refs)
+        request = dict(sources=[source], mode="Collision", touching=True, distance=.002)
+        result = clashes(request)
+        self.assertEqual(len(result["pairs"]), 2)
+        request["exclude_pairs"] = ["%s|%s" % (result["pairs"][0]["a"]["key"], result["pairs"][0]["b"]["key"])]
+        self.assertEqual(len(clashes(request)["pairs"]), 1)
+        request["exclude_pairs"] = []; request["exclude_classes"] = ["IfcWall"]
+        self.assertEqual(len(clashes(request)["pairs"]), 0)
+        # Identical GUIDs and STEP IDs in different files must remain distinguishable.
+        second = dict(source, elements=[dict(r, key="other-" + r["key"], a=False) for r in refs])
+        request = dict(sources=[dict(source, elements=[dict(r, b=False) for r in refs]), second],
+                       mode="Collision", touching=True, distance=.001)
+        self.assertEqual(len(clashes(request)["pairs"]), 2)
+        request["mode"] = "Clearance"; request["distance"] = .1
+        self.assertEqual(len(clashes(request)["pairs"]), 2)
+        request["sources"][1]["elements"] = [dict(r, key="other-" + r["key"], a=False, b=r["a"]) for r in refs]
+        coincident = clashes(request)["pairs"]
+        self.assertEqual(len(coincident), 2)
+        self.assertTrue(all(p["distance_metres"] == 0 and p["a"]["key"] != p["b"]["key"] for p in coincident))
+
+    def test_structural_topology_conditions_loads_and_no_inference(self):
+        from create_advanced_examples import add_structure
+        from ifc_analysis import structural_model
+        self.assertEqual(structural_model(self.model)["rows"], [])
+        member, nodes, activity = add_structure(self.model)
+        result = structural_model(self.model)
+        self.assertEqual(len(result["rows"]), 3)
+        row = next(r for r in result["rows"] if r["element"]["step_id"] == member.id())
+        self.assertEqual(row["geometry"]["segments"], [[[0., 0., 3.], [5., 0., 3.]]])
+        self.assertEqual(len(row["connections"]), 2)
+        node = next(r for r in result["rows"] if r["element"]["step_id"] == nodes[1].id())
+        self.assertEqual(node["activities"][0]["load"][0]["ForceZ"], -10000.)
+        self.assertIs(node["condition"][0]["TranslationalStiffnessX"]["value"], False)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -37,6 +37,9 @@ def select(model, refs):
 
 
 def execute(archive, request):
+    if request["operation"] == "clash":
+        from ifc_analysis import clashes
+        return clashes(request)
     with snapshot(archive, request["source_sha256"]) as (model, metadata):
         elements = select(model, request.get("elements", []))
         if request["operation"] == "units":
@@ -53,6 +56,9 @@ def execute(archive, request):
             return materials(model, elements)
         if request["operation"] == "extract":
             return extract_model(model, metadata, elements, request["destination"], request.get("overwrite", False), request.get("descendants", True), archive)
+        if request["operation"] == "structural":
+            from ifc_analysis import structural_model
+            return structural_model(model)
         raise ValueError("Operazione sconosciuta: " + request["operation"])
 
 

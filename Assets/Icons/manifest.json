@@ -1,5 +1,21 @@
 [
   {
+    "key": "ClashComponent",
+    "name": "IFC Clash / Clearance",
+    "family": "Controllo",
+    "color": "#39805A",
+    "png": "png/ClashComponent.png",
+    "svg": "svg/ClashComponent.svg"
+  },
+  {
+    "key": "StructuralModelComponent",
+    "name": "IFC Structural Model",
+    "family": "Strutture",
+    "color": "#267E87",
+    "png": "png/StructuralModelComponent.png",
+    "svg": "svg/StructuralModelComponent.svg"
+  },
+  {
     "key": "MaterialsLayersComponent",
     "name": "IFC Materials & Layers",
     "family": "Parametri",

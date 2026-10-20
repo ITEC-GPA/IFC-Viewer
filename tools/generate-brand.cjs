@@ -37,6 +37,8 @@ const mark = (dark=false, mono=false) => {
 const wordmark = (dark=false) => `<text x="201" y="106" font-family="Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="-2.8" fill="${dark?'#F5F3ED':'#183A42'}">Meerkat</text><text x="206" y="144" font-family="Arial, sans-serif" font-size="14" letter-spacing="2.2" fill="${dark?'#B2CED0':'#58747A'}">IFC &amp; BIM · GRASSHOPPER</text>`;
 const logoBody = (dark=false) => `<g transform="translate(16 2) scale(1.4)">${mark(dark)}</g>${wordmark(dark)}`;
 const glyphs = [
+ ['ClashComponent','IFC Clash / Clearance','Controllo','#39805A','<path d="M2 4h12v12H2zM10 10h12v12H10zM7 2v5m10 10v5M3 20l3-3"/>'],
+ ['StructuralModelComponent','IFC Structural Model','Strutture','#267E87','<path d="M3 18h18M5 17V6h14v11M2 22l3-4 3 4M16 22l3-4 3 4M12 1v8m-3-3 3 3 3-3"/>'],
  ['MaterialsLayersComponent','IFC Materials & Layers','Parametri','#B36A29','<path d="M2 7l10-5 10 5-10 5zM2 12l10 5 10-5M2 17l10 5 10-5"/>'],
  ['AssignTypeComponent','IFC Assign Type','Modifica','#B36A29','<path d="M2 3h8v8H2zM14 13h8v8h-8zM13 5h7v5m-3-3 3 3 3-3M4 15v5h6"/>'],
  ['ExtractModelComponent','IFC Extract Model','Salvataggio','#39805A','<path d="M2 3h14v18H2zM5 7h7M5 11h4M10 16h12m-4-4 4 4-4 4"/>'],

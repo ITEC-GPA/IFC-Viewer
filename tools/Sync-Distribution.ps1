@@ -31,7 +31,7 @@ $files = [ordered]@{
 }
 foreach ($worker in Get-ChildItem -LiteralPath (Join-Path $projectRoot 'engine') -Filter '*.py' -File) { $files[$worker.Name] = $worker.FullName }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $projectRoot 'examples') -File) {
-    if ($file.Extension -in @('.gh', '.ghx', '.ifc', '.zip', '.md', '.json')) { $files['examples/' + $file.Name] = $file.FullName }
+    if ($file.Extension -in @('.gh', '.ghx', '.ifc', '.zip', '.md', '.json', '.csv', '.ids')) { $files['examples/' + $file.Name] = $file.FullName }
 }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Assets') -File -Recurse) {
     $files[$file.FullName.Substring($projectRoot.TrimEnd('\').Length + 1).Replace('\', '/')] = $file.FullName
