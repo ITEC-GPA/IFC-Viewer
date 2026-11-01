@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">da1cfaeb-5e4a-4ca1-8953-d81e41458ecf</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">628cb29c-76ee-4747-95a2-7ccc4ed07030</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639265544157093245</item>
+            <item name="Date" type_name="gh_date" type_code="8">639280229347934751</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -114,7 +114,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e2514e1a-af39-4544-a97f-27fe39a72bbe</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2d013ff3-02fd-44ba-9a25-b24b2755cb88</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">08 | BAKE E RILETTURA DEGLI ATTRIBUTI RHINO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -169,7 +169,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8018fff0-1f55-4062-8415-795f905cf3ca</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">79d922fd-cc8c-4017-a933-a0e8a56d8a69</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -193,12 +193,12 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9ed45cba-9ac8-4a75-94cd-ac9619404c46</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6cf05f82-9d79-498e-8ac8-bd2d61128d23</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d1176610-4d60-470e-8762-564ccaae3feb</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">aaf0d372-3d0b-4b59-bbc5-545ed63dcb24</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -217,11 +217,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a41eca07-a1bf-4ac4-9b0b-9113ea9801b3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cd03088a-07ab-4a15-a1b9-47a053d6574b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d24c41c1-fabe-44c1-b446-b4f2927fc0c3</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">938c0070-f71f-40d9-9f94-09d5f1dfcf43</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -261,7 +261,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5337c742-8ff8-4f9f-8f2c-22ffe8f4d09e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c1b15649-a26e-4bd4-b0c0-867667dddd96</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -284,7 +284,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">531635b9-34f4-400c-bcc9-c0ee7cf6d0cb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f0203756-4e0b-40c3-a246-d619e8afde87</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -307,7 +307,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0cf975c1-9e90-493a-a548-e8c2c9d5886b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">869e02dd-9e79-4f35-a54d-42fb2e75c52a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -339,7 +339,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c3c0973-c2d3-4592-b582-c9a638bb5555</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">422b71b7-f4d0-40e7-b2e2-d4fe95ae3ce3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -387,7 +387,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d1176610-4d60-470e-8762-564ccaae3feb</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aaf0d372-3d0b-4b59-bbc5-545ed63dcb24</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -437,7 +437,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d24c41c1-fabe-44c1-b446-b4f2927fc0c3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">938c0070-f71f-40d9-9f94-09d5f1dfcf43</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -473,7 +473,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a42a9758-bf95-474d-8414-d1570c8cfdb4</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fb704de8-a104-4ca0-838a-e98ba6500fe7</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ok</item>
                   </items>
@@ -496,11 +496,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d2a63e2c-e3e3-4cf8-b620-cdd57399bc1f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e8eb0559-6c7b-41d4-9b22-b7423f990913</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">531635b9-34f4-400c-bcc9-c0ee7cf6d0cb</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f0203756-4e0b-40c3-a246-d619e8afde87</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -519,7 +519,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c6939b73-81f6-43f9-98de-348b3d121f92</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">62084c4f-b24d-48e6-ab8f-013c5613a3be</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -562,7 +562,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">62757a31-d2be-488a-a477-52700d236b06</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e336d8f-37ee-4954-8995-972828cb8e52</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -605,7 +605,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c37c773-d327-4b75-98bb-341f04a4de93</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1406b43c-3a57-4630-a90b-20fdc648d5f3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -648,7 +648,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb163d5a-332a-4c0e-9a4b-ca365743e44c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f3e9511-cf97-4fe2-a545-b6a03b13792b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -691,7 +691,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e6efb089-7478-4264-8852-67b551bb44a7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8567ebba-b683-4f4a-ada7-db4a4b94a93d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -714,7 +714,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f599efd-2d27-4eaf-b3ac-8f515c609baf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ec3b01a7-089d-46b9-ac25-c4e03d664430</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -737,7 +737,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e4afe02-ac25-41fc-882e-203b46477c17</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">460ee455-7812-471c-ad80-91b477cdf1de</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -769,7 +769,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3c7821ab-63bf-42f9-84a4-1274f26e533f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">62f159b5-462b-4ab2-90cb-793e33855320</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -819,7 +819,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">288ae7d0-6b12-446e-9cd8-972503051070</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cde30009-3558-458c-b4d6-37ad06bd4e76</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Data</item>
                   </items>
@@ -842,11 +842,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c5b1867-ba07-4115-9a31-36aec608cd54</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">27cf9aef-f02f-4f50-8a3c-44add66305a9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e6efb089-7478-4264-8852-67b551bb44a7</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8567ebba-b683-4f4a-ada7-db4a4b94a93d</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -866,7 +866,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">80e3cefd-1ddb-4ee1-8c84-7cb12496010d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a54cd3a7-4eb8-49cf-9dfc-9f80f2a36956</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -888,7 +888,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d1634213-dda0-4e7c-a02e-f999e15c7331</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2666d28b-2262-4446-9ce7-3245243ca9a7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -931,7 +931,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">60892cb5-db75-40b1-9144-9f99813c7b63</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2aaea5a8-ce70-4a43-941f-92b89e11d7f9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -978,7 +978,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9a1f4b58-6d3e-4707-b8fe-e69d6b103bf3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e0c2d02-e1af-4d60-ab13-82f6c48a5fb0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1001,7 +1001,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a87f109f-a3fb-46cb-9cb4-88e7c55c6e4d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7388402e-8616-4dab-84bd-f45db86ad1ca</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1024,7 +1024,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">914a863a-7aac-4f69-ba15-2a9032fe72fd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9ac85c61-4d9b-4c80-b650-353063758b7e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1047,7 +1047,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">834b3a8d-d212-4823-a293-0ecdf8a80a59</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c077f691-ba62-40b8-b8da-f8abf3e4f4b4</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1070,7 +1070,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">93f0c0a0-4a2f-467f-91ff-0e560dd9361a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">83b73a96-9528-4702-9fb7-bb10269a79c3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1093,7 +1093,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">09d1f159-79aa-499e-b980-fdc80eceec2c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c45d7200-664d-4b52-aaae-c4a8065b30a9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1116,7 +1116,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">71397671-aa6d-472c-b069-abd16c6ed745</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa134c48-6836-4e78-99fe-0b274ebc6ec6</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1139,7 +1139,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0fb29aba-619b-4ef5-9fd9-d97aa158f227</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">42a639ab-a4b2-4172-87f0-58db455aff91</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1171,7 +1171,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7794542c-fb04-4eda-ae8d-77538ab42081</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3895d108-85d3-4fa5-88a9-921e5ccdb255</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1220,7 +1220,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">21eca069-3db6-4c10-a803-04486a1d6b35</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">00f20496-f0da-4838-bef9-c637cea4f37a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ANTEPRIMA PRIMA DEL BAKE</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -1244,11 +1244,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a5a63aff-0bec-4ef8-8eb2-c714f9398f06</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">670c1686-8849-436d-9cea-46eb27f2c94c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9a1f4b58-6d3e-4707-b8fe-e69d6b103bf3</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4e0c2d02-e1af-4d60-ab13-82f6c48a5fb0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1267,11 +1267,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c673c28e-632c-46d5-b3ee-49dacd4d59ae</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">64c5ff54-61fd-43bb-a5c7-bc1cb0de246c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">0fb29aba-619b-4ef5-9fd9-d97aa158f227</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">42a639ab-a4b2-4172-87f0-58db455aff91</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1330,7 +1330,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">648b928c-57b3-4b02-83a5-5cd46f2ae573</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">73a381fe-7ea6-4711-8964-d8849d8db423</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1378,7 +1378,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">88158b3e-7996-488d-8bab-d99e0d8fa292</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b49677a6-4c18-4838-b5c3-622f4559bfc3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DOPO IL BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1428,7 +1428,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Bake su layer Radice::Modello::ClasseIFC e tutti i parametri negli User Text. Un record Undo per operazione.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a84ce4a6-c809-48e6-a98a-d9a16eba3810</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">00973f30-ef16-4e78-99cc-cb0455cfed3d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Bake</item>
                   </items>
@@ -1451,12 +1451,12 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da IFC Elements o Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb5dbae0-e1a6-431d-b6ba-6d0bfddfe2f5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">af0f60f1-4856-41ed-ba0a-723b90cca709</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e6efb089-7478-4264-8852-67b551bb44a7</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8567ebba-b683-4f4a-ada7-db4a4b94a93d</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1475,11 +1475,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button: agisce solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7cc926e-9561-447c-9843-09789c000b8c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">abe093ea-bebd-4ba3-beb3-6ed898180721</item>
                         <item name="Name" type_name="gh_string" type_code="10">Bake</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7c0f6ffd-93e5-49be-b9ce-3415499b93ac</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7ce192a3-94b4-42b6-abea-b76218d344f1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1518,7 +1518,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Layer radice.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">76990fbc-f010-4358-b176-497d1f7229e8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7650c397-cbe0-4eb0-8690-909658571b73</item>
                         <item name="Name" type_name="gh_string" type_code="10">Root layer</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1561,7 +1561,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">True aggiorna gli oggetti precedentemente creati da questo componente, stessa sorgente e GlobalId. False crea copie.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fc00aa59-12ed-41c6-b3c1-01531913f02b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca4fce2f-352c-4435-901d-62b1644bd342</item>
                         <item name="Name" type_name="gh_string" type_code="10">Update</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1603,7 +1603,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Stesso offset usato nella visualizzazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">01a2e16e-f38b-47ed-ab74-bdeabd3d4448</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a5d11491-5134-4944-ae4f-434940dcb334</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1650,7 +1650,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID Rhino dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">14a90ac6-a633-4810-ae30-c6e7e3fe46f3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6a158705-580b-4895-a427-e8f7c51e767e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Object IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1672,7 +1672,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Risultato dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">992100bf-c071-45d8-889e-c4366d5e2f51</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf70071d-8850-4c53-8f7e-013958adc3e1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1704,7 +1704,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">508d0676-d885-4b32-a0a6-82160fb70b84</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8adee684-8dfd-4cab-a066-a8cada79352c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1754,7 +1754,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c0f6ffd-93e5-49be-b9ce-3415499b93ac</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7ce192a3-94b4-42b6-abea-b76218d344f1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1790,7 +1790,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Rilegge geometrie e User Text degli oggetti IFC gia presenti nel documento Rhino. Premere Refresh dopo modifiche al documento.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5060431b-ae7f-43d5-b98e-e213502ca9ce</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">06ad6500-8b6b-431c-bd4e-8d2807b48794</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Read Baked</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Baked</item>
                   </items>
@@ -1813,11 +1813,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID Rhino (es. uscita Bake). Vuoto = tutti gli oggetti marcati IFCViewer.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">10aa446a-4f55-479f-8c0b-58d6f3544b5b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">966e0c47-0280-4835-8646-4872958a7dc3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rhino object IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">14a90ac6-a633-4810-ae30-c6e7e3fe46f3</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6a158705-580b-4895-a427-e8f7c51e767e</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1836,7 +1836,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per radice salvata nel bake; vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5870356d-7f79-4abe-8041-ec83d30ae131</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f2c8f90-646e-42fb-a23d-8256e761dda2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Root</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1879,11 +1879,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button per ricalcolare dopo modifiche in Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5fd7c589-cba7-4701-bc07-68f453d91e39</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ac9311b7-1e2c-49d2-917c-2cea4230707b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Refresh</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9f8e6724-5ec9-47ed-a1cc-b272991649e0</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">35d2238e-e4c6-416b-bec0-12ac3bdae424</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1923,7 +1923,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID degli oggetti trovati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d78eaa9b-5e76-4478-911c-73f553a77f74</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6639ce7e-f590-499d-85bc-8af6d065f195</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rhino IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1946,7 +1946,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle coordinate correnti Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2f1295f5-3887-4ec6-b274-42ed4f4e8ab5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">38db8eeb-63e6-4d97-9f0c-c761d0045a8b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1969,7 +1969,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">User Text per ramo {oggetto}.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">43440884-a22a-4d24-be6c-ce2c237bd1db</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a68db714-ed4b-4f7b-af4f-cb5d6c8e473f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1992,7 +1992,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3c73fdfa-4fbc-4fa8-9877-398135999233</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9884e4ad-422e-4fc4-9744-0b36f5db0791</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2015,7 +2015,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadati IFC salvati nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ab27bbf1-1080-4e3c-8445-362bbb41c09e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">be0876f8-e9aa-4243-b983-e8b63b9afa93</item>
                         <item name="Name" type_name="gh_string" type_code="10">Metadata JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2038,7 +2038,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID assenti, non mesh, non IFCViewer o fuori dalla radice richiesta.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d67845c-93cc-4cd1-85d6-cb0554042c9b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">405c3bcc-76b1-4290-881a-860ca2004012</item>
                         <item name="Name" type_name="gh_string" type_code="10">Not found</item>
                         <item name="NickName" type_name="gh_string" type_code="10">MISS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2070,7 +2070,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d869dd9c-14cf-4c29-b714-f40c9872fb15</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3d1800e4-bfbc-4b31-8c90-5751b26ab3a9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Read Baked</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2120,7 +2120,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f8e6724-5ec9-47ed-a1cc-b272991649e0</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">35d2238e-e4c6-416b-bec0-12ac3bdae424</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REFRESH</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2155,7 +2155,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Measure the length of a list.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d09d18b3-a6bb-4da3-a11f-37f2561cb42c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c9386545-5e8b-461c-b669-78ba00c98986</item>
                     <item name="Name" type_name="gh_string" type_code="10">List Length</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Lng</item>
                   </items>
@@ -2178,11 +2178,11 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Base list</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">992708f5-937b-4bd5-9a2e-0edf70ed1077</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4609493e-93fc-4f10-9571-52fd99e85309</item>
                         <item name="Name" type_name="gh_string" type_code="10">List</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d78eaa9b-5e76-4478-911c-73f553a77f74</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6639ce7e-f590-499d-85bc-8af6d065f195</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2201,7 +2201,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Number of items in L</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe9fca96-c7b9-4d03-a7f5-4923d7e111ca</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">84f75910-af0a-490f-b420-9bdab63f290f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Length</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2233,7 +2233,7 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3de0ab6f-e163-41de-9a8e-e3565b827ced</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c6660898-25cb-4e0c-a63a-4cf03c60acc7</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">List Length</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2281,12 +2281,12 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0276be9b-709f-4633-805a-d092d884e31d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2704f172-e781-44a4-a7d5-50cd3687dc9c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">OGGETTI RHINO | 0 prima, 6 dopo BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">fe9fca96-c7b9-4d03-a7f5-4923d7e111ca</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">84f75910-af0a-490f-b420-9bdab63f290f</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2330,12 +2330,12 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e7f037b3-3b9a-44b9-9ba3-3634d4e4fd6e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4a3445f-707b-4745-a9cf-9f41e8998031</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">992100bf-c071-45d8-889e-c4366d5e2f51</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">bf70071d-8850-4c53-8f7e-013958adc3e1</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2379,12 +2379,12 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">04bbb7f5-d3f0-4fb2-b3f6-b13b572bb3c6</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5b8d618-be8b-4c24-8b10-79882d40bf47</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">GUID RHINO | diversi dai GlobalId IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">d78eaa9b-5e76-4478-911c-73f553a77f74</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">6639ce7e-f590-499d-85bc-8af6d065f195</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2428,12 +2428,12 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">89cc07f7-6e58-4f1c-aaea-74fb26265b7d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d937e885-bf06-4aa3-863b-24a8a9bcf261</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CHIAVI USER TEXT | un ramo per oggetto</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">43440884-a22a-4d24-be6c-ce2c237bd1db</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">a68db714-ed4b-4f7b-af4f-cb5d6c8e473f</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2477,12 +2477,12 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1a6d25e9-6bd6-498c-8834-ef7fe3e7cedf</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">23b86517-71cb-467b-8d95-2be2f33e90df</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">VALORI | righe allineate alle chiavi</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">3c73fdfa-4fbc-4fa8-9877-398135999233</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">9884e4ad-422e-4fc4-9744-0b36f5db0791</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2526,12 +2526,12 @@ Se modifichi gli User Text in Rhino premi REFRESH. JSON conserva il record IFC o
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fcfd4c02-1eb7-41d7-9599-293cb3bad5d4</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bea8f69d-33cd-4377-a4e6-d592186bcf54</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">METADATI IFC ORIGINALI | JSON</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ab27bbf1-1080-4e3c-8445-362bbb41c09e</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">be0876f8-e9aa-4243-b983-e8b63b9afa93</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

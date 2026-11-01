@@ -189,7 +189,7 @@ namespace IfcViewer
             Directory.CreateDirectory(cache);
             string archive = Path.Combine(cache, "model.ifcdata.zip");
             var start = new ProcessStartInfo(python, Quote(Path.Combine(PluginDirectory, "ifc_reader.py")) + " " + Quote(input) + " " + Quote(archive))
-            { UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true };
+            { UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true, StandardOutputEncoding = Encoding.UTF8, StandardErrorEncoding = Encoding.UTF8 };
             start.EnvironmentVariables["PYTHONUTF8"] = "1";
             using (var process = Process.Start(start))
             {

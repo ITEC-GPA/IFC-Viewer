@@ -1,4 +1,4 @@
-param([string]$RhinoDir = 'C:\Program Files\Rhino 8')
+param([string]$RhinoDir = 'C:\Program Files\Rhino 8', [string]$DistributionDirectory = '')
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
 $outputPath = Join-Path $projectRoot 'build\compiler'
@@ -58,5 +58,4 @@ if ($commit -match '^[0-9a-fA-F]{40}$') {
 else { Write-Warning 'Commit del checkout non trovato: il plugin non potra verificare la propria bin.' }
 & $compiler $arguments
 if ($LASTEXITCODE -ne 0) { throw 'Compilazione fallita.' }
-& (Join-Path $projectRoot 'tools\Sync-Distribution.ps1') -PluginPath (Join-Path $outputPath 'Meerkat.gha')
-Write-Host "Plugin pronto: $projectRoot\bin\Meerkat.gha"
+& (Join-Path $projectRoot 'tools\Sync-Distribution.ps1') -PluginPath (Join-Path $outputPath 'Meerkat.gha') -DistributionDirectory $DistributionDirectory

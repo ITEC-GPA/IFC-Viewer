@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">5421027a-af72-4505-b3ab-071853bb86e5</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">9f567acb-7b44-4bc9-a83f-6f7eeae7158f</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639265544143947784</item>
+            <item name="Date" type_name="gh_date" type_code="8">639280229176443951</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d4fd99c2-354b-4123-ab4e-e1425f791e01</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ecff0951-dfba-4b33-b59f-1fd8f8df3d63</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">04 | CONFRONTO REVISIONI A / B</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e4303142-000d-47d3-8069-9920e4eb6c81</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ad0f2a3a-e971-4029-8f9e-b4331f7e716c</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PRIMA | A</item>
@@ -185,12 +185,12 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a71f4289-2ef2-4ef4-a6d2-38be18bcefeb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c65ef7e-587c-494c-b057-ad38e214175e</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5857e6e8-fd88-4c85-8b85-fa6597b957d2</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">714f3bac-c6f7-466f-b17c-df64a1c1f6d4</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">943db4c2-c2a9-4289-a1ee-71662b277ef1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cc06fb90-259b-41da-8e42-c634dd679d2e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">06f6d081-d576-482f-bd20-b778a8982880</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">21d0e9bb-5d01-473d-ba2f-a5f00adbaf0f</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32cffe95-d5c5-4722-9db4-da4169670e8d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">abf35617-8621-4883-8283-f3fa1d2b3edd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1a5434b7-38c1-41d5-bf98-c7d606e99c29</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d120cf07-0440-4eb6-9d3c-d46b483fa5e8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">48a936f5-a345-4878-b13c-9e3d8d887f2b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ed5fcc5d-60f2-49f7-a5eb-7a0a546b2bf8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fafb8c7f-bc5c-4d9e-93b8-1bbd9bf687ce</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">160fa981-df26-4cd9-af5a-17fec44af5aa</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5857e6e8-fd88-4c85-8b85-fa6597b957d2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">714f3bac-c6f7-466f-b17c-df64a1c1f6d4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">06f6d081-d576-482f-bd20-b778a8982880</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">21d0e9bb-5d01-473d-ba2f-a5f00adbaf0f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -468,7 +468,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">45992fc4-21b3-4ef2-a637-42497c6adc15</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf3a2cfd-572f-4188-aecc-ea28f18f148c</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DOPO | B</item>
@@ -492,12 +492,12 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0fe4a40c-b0ae-4c77-baa0-bc3eedc4e3b6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">52f56b24-ad3b-4dda-92eb-447debb34244</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8f39132d-5fc9-46bc-9201-73118ae8fa72</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e40b4625-5a81-40a3-8bf4-861dfb5289c0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -516,11 +516,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4919554e-7abe-4e49-94d2-7d0571b4986e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bbfc3988-0196-4701-9865-88905d8bae84</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e777f0ab-5419-4dd5-b72a-c99a2aa99c09</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4e6d7162-12ef-45fb-a701-dc7205019eec</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -560,7 +560,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">84db9594-fbdf-46c8-81d3-e702baeb39c5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2425da3e-7175-49cb-a163-637aeed492fb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -583,7 +583,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4de04248-442b-4c48-82f8-f9942c223caf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">96c5b29b-a16f-460f-80f8-4469f320d2e4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -606,7 +606,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9d66e1e0-a56c-4607-8e7d-af5780c4c926</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a3db0cc1-c068-44a4-9be3-828e0a6b0955</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -638,7 +638,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bdc4954f-1ecb-499a-a304-8be8b836bfc3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b8decac-9c50-47cd-8920-e8d7040bbf7b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -686,7 +686,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8f39132d-5fc9-46bc-9201-73118ae8fa72</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e40b4625-5a81-40a3-8bf4-861dfb5289c0</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -736,7 +736,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e777f0ab-5419-4dd5-b72a-c99a2aa99c09</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e6d7162-12ef-45fb-a701-dc7205019eec</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -772,7 +772,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Confronta due modelli per GlobalId: aggiunti, rimossi, dati cambiati e mesh cambiate. Ignora rinumerazione STEP e OwnerHistory.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa998016-1205-48bc-b756-80bc6def9f73</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">89a7f7cd-6b71-47ac-9300-2ec3affe2187</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Compare Revisions</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Diff</item>
                   </items>
@@ -794,11 +794,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="0">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Un modello della revisione precedente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">35e4b272-e014-4ca4-b7c8-3343c349244c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f97a562f-abf9-4b09-ac47-032e624d8b9c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Before</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">32cffe95-d5c5-4722-9db4-da4169670e8d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">abf35617-8621-4883-8283-f3fa1d2b3edd</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -817,11 +817,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Un modello della revisione successiva della stessa opera.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">332d4250-32ea-44b7-945d-31eceefa1503</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e54e2f0-93d3-4c93-87af-0dd64cd10f17</item>
                         <item name="Name" type_name="gh_string" type_code="10">After</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">84db9594-fbdf-46c8-81d3-e702baeb39c5</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2425da3e-7175-49cb-a163-637aeed492fb</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -840,7 +840,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Confronta triangoli e coordinate SI. Una diversa triangolazione e segnalata come modifica.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9c65c165-f297-4b11-970c-9d37740625cf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">013d024d-3b75-4f07-a157-92f4770e5ea5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Compare meshes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -882,7 +882,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Griglia di arrotondamento delle coordinate; non e una distanza massima garantita.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6cd60ea7-23d8-4b3f-a16a-db61e620cd45</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0d5074e7-cc17-44ea-bdbb-62de5a959b84</item>
                         <item name="Name" type_name="gh_string" type_code="10">Precision metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -925,7 +925,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nuovi oggetti (revisione B).</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">64310388-cffb-4da4-bd90-e2f6b253a7e3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a0da3963-d0ff-4e4e-8433-92d65e35204e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Added</item>
                         <item name="NickName" type_name="gh_string" type_code="10">+</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -948,7 +948,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti rimossi (revisione A).</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">304b43ab-b2a8-486a-a7b0-ce185f5ffd4b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">baa3cc94-780c-4d1e-bad1-90b817cabb0e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Removed</item>
                         <item name="NickName" type_name="gh_string" type_code="10">-</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -971,7 +971,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Versione precedente degli oggetti modificati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e4e2234-b2c8-4c6f-aea9-86def7a73a58</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">752e7cbe-ae42-4daf-bbb7-dcc701100b0c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changed before</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OLD</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -994,7 +994,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Versione nuova degli oggetti modificati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a6813ed3-4833-470a-9178-6fb348905d7e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">619af93b-d3f8-436d-8dba-5fe7da86900c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changed after</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NEW</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1017,7 +1017,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti senza differenze rilevate (revisione B).</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5c657c54-0357-4b88-b636-5fddb1704a9f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a48beca9-07c2-42ad-a761-639a36a58fef</item>
                         <item name="Name" type_name="gh_string" type_code="10">Unchanged</item>
                         <item name="NickName" type_name="gh_string" type_code="10">=</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1040,7 +1040,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Campi cambiati per ramo {indice oggetto modificato}.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe302658-bcd0-4fc7-bc3f-03b2580eabc1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5fa59cb8-97db-45c0-9710-7fcb0432515b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changed fields</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1063,7 +1063,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">69a6b83d-87cc-424f-85c8-e66192262010</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d9f1e23d-2d72-449f-a17c-b0f50729674f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1095,7 +1095,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a91220ac-e973-488e-bc74-984d0f56a195</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e878b80c-5eed-4f6a-a5a1-b1f9c4f24876</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Compare Revisions</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1143,12 +1143,12 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d5355661-4557-437c-a65f-27be3e88827f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c885e464-f370-4b9c-86ab-c068fa286273</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT CONFRONTO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">69a6b83d-87cc-424f-85c8-e66192262010</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">d9f1e23d-2d72-449f-a17c-b0f50729674f</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1192,12 +1192,12 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">adc33635-693c-44cc-bb7f-afd173a1ebd1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7112be09-0e50-4589-866b-2505fd886e2d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CAMPI MODIFICATI | rami allineati a Changed After</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">fe302658-bcd0-4fc7-bc3f-03b2580eabc1</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">5fa59cb8-97db-45c0-9710-7fcb0432515b</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1243,7 +1243,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ab826ab-c0fb-4b05-a4a4-a197773eebb0</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ccc4e1f1-ddc8-481d-afa8-50ae24827bed</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">AGGIUNTI | verde</item>
                   </items>
@@ -1266,11 +1266,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1d857437-24f5-41c0-bc90-4c66edaf2f89</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">66d4652d-d2f2-486f-8746-7e9ad05c3331</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">64310388-cffb-4da4-bd90-e2f6b253a7e3</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a0da3963-d0ff-4e4e-8433-92d65e35204e</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1290,7 +1290,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">462aeae8-e89a-4b52-b82e-15e357d4665a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4a3177f-72cf-4784-a494-51305928c113</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1312,7 +1312,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7428736-bf88-442f-b37d-5a667cbde403</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">092dc8da-fed0-4f75-b629-57e56ca80412</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1355,7 +1355,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">040a53fb-0bef-4625-94c9-e950e3185679</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4d2164c9-c251-4c48-b3cc-d275c8d47caa</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1402,7 +1402,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">114c7a62-7cc4-4ec1-9a3c-1bd7c0d8fae7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">11162acf-7c5f-4396-bb08-fdc97b75a4c0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1425,7 +1425,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">490e1f1d-e250-4872-82e7-60f2c8cafa2e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe0255f3-f606-44f5-aadd-964b1f7a5978</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1448,7 +1448,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">93131c25-40b9-4b76-bb37-0c87cff8e2d3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">87e14ab6-04b5-4ffc-a829-8c60b3878165</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1471,7 +1471,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">603ba6ee-b2b1-4f6f-b0a0-e3a2d71695ff</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">103014d3-6d8d-4566-9a56-c4b6a3f65e05</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1494,7 +1494,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f7d3f28-964d-4ed8-835b-a7451aadf25d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">534916c5-01ed-4830-ba64-731a49bf1eda</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1517,7 +1517,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">996b70c0-aaa0-49b9-a2e3-fc5930310784</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4d46a4dc-2820-4be1-bd19-a3c6615e5ab8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1540,7 +1540,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d75c4bef-7a56-4e26-ada6-b2ce59cde755</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">06b5d2e3-2da7-43c3-8cca-20725e37dc20</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1563,7 +1563,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">182f57c6-57e2-4817-b638-130ee97b8b0c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">76054fa6-f508-46ee-8ea4-a46990c4fb1f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1595,7 +1595,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4d8d8859-5282-4f47-926a-023d10b8dbee</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0180733f-8345-4f15-9ade-8634b2053b91</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1643,7 +1643,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f4180c3a-3768-44d7-8394-25acd137a834</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">42e54d25-8c2a-4795-9bde-2e5df7e3e7bb</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1700,7 +1700,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4a40d1f4-8b02-48e0-8ecd-54b964b3fc35</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d02cd18b-2718-459f-8dda-c7b0e33a3b8f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">AGGIUNTI | verde</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -1724,11 +1724,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">db8ebe3d-e327-41dd-a47e-1e7a6a8299e1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f07d4f90-9f6e-4420-a912-1085682922a2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">114c7a62-7cc4-4ec1-9a3c-1bd7c0d8fae7</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">11162acf-7c5f-4396-bb08-fdc97b75a4c0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1747,11 +1747,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e650ecbd-078d-422f-bb69-aec5555e3241</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a32d2c25-54ab-454a-b873-3cd04b54887c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f4180c3a-3768-44d7-8394-25acd137a834</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">42e54d25-8c2a-4795-9bde-2e5df7e3e7bb</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1810,7 +1810,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">74b793ea-56dd-4043-b117-18bee0bd91bb</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f76558cd-91bf-44ce-b768-ca78d68c4e2d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1860,7 +1860,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a20c4ca2-d37e-4b02-8445-1782488fe5d8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2cd68b39-0ca1-4dce-bec1-794ef45c5d6b</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">RIMOSSI | rosso</item>
                   </items>
@@ -1883,11 +1883,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ffd132e1-9543-43ad-860c-3552bce0b7cc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">42b80766-abcf-4cf3-b475-c8f54619a1c5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">304b43ab-b2a8-486a-a7b0-ce185f5ffd4b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">baa3cc94-780c-4d1e-bad1-90b817cabb0e</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1907,7 +1907,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b1b01db2-5598-40b2-805f-50c3074d7f3f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">204f44cb-7d0e-439a-8543-f63bd4e89cdc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1929,7 +1929,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9678b83a-e57c-48cf-a53d-60c8e37f79a5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3aefd3ef-fa9b-4c25-90a2-e3271418d9d5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1972,7 +1972,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">56edad31-004f-4b2a-85f5-7fdd14f60119</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f64d461-1b1a-4a96-9a56-53b251da7df9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2019,7 +2019,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8ae393f-9d84-47f3-bbef-72edfb7218cb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d4d40545-20c4-4228-8813-4caf40238cc2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2042,7 +2042,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">75b7a156-7a9d-4aa4-93aa-c18be807b459</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8eed4716-7604-4b69-8bdd-ae0c933c7888</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2065,7 +2065,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">291bff76-5e52-4891-8d4f-537accccc24d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f30d5709-b79b-48fa-9c0c-36b8775c0fa9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2088,7 +2088,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf89904b-29ea-46ca-ada1-db746bff7cc9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">939bbd2d-937a-4dce-8826-2cfabb393aac</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2111,7 +2111,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8dc4609d-8e3e-45eb-b87d-2a24fdd61db5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4bf9f065-46af-4e91-bc82-d54586f46c91</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2134,7 +2134,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">606ed825-1c7e-455a-be51-b1548a354139</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f8e131a-c148-45af-b544-53e321fb8f7a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2157,7 +2157,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c1db925-3a0a-40ad-9c66-ba73a6cbf6fd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a3eaa0e-8305-452c-8a72-3fa2707221bf</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2180,7 +2180,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8ceab96-acaa-4eec-a008-bdbbe028c635</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0fde2ab8-3f4c-4fb1-a616-981662b3cd9f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2212,7 +2212,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">729c1a16-f273-435e-9423-34f69091117e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fa9ca99c-32f8-4da5-b042-9b1b18bdddb6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2260,7 +2260,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">385b1a15-6244-4e96-b2c2-a5be7ad474e1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2f19aa41-c12a-4d36-88bc-d05f7c7ab1bd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2317,7 +2317,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">09fb7464-f88b-448f-be9d-fb6847362329</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">919e2675-2317-4e66-9593-58b080e26950</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">RIMOSSI | rosso</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -2341,11 +2341,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">40674ef3-334e-4f13-b94a-1519e8fec76c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4f6a816-5964-4d62-a160-186ff8fed942</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b8ae393f-9d84-47f3-bbef-72edfb7218cb</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d4d40545-20c4-4228-8813-4caf40238cc2</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2364,11 +2364,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9c304fd4-bfd6-4bf0-b6b9-7d00aeb522c7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e920b01e-b495-4b35-a280-4f526f1ace9a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">385b1a15-6244-4e96-b2c2-a5be7ad474e1</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2f19aa41-c12a-4d36-88bc-d05f7c7ab1bd</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2427,7 +2427,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4ec4b779-b55f-45fd-9035-fd039538aa32</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">568b12f1-7310-46d3-852c-92d1c796237a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2477,7 +2477,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a2183518-3ca9-407b-b236-0498f0669602</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8e383335-a3b3-4312-b5a2-59929b9eda7f</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODIFICATI | arancio</item>
                   </items>
@@ -2500,11 +2500,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">34a5c04f-6e30-4a62-a000-f5c06b7b0635</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">08ad2fcd-0034-4429-a19a-06d3bfa41306</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a6813ed3-4833-470a-9178-6fb348905d7e</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">619af93b-d3f8-436d-8dba-5fe7da86900c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2524,7 +2524,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b37acf9a-57a4-467e-8b87-6877843fe54f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9907de09-5457-4a1c-882b-e3efb94d9bf5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2546,7 +2546,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e2a065a9-b4d9-4120-92c7-ebf2536a5d74</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f539f65-a336-4aba-a17f-96472e7ba990</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2589,7 +2589,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">735ce719-5ae1-401a-80aa-7a61dd9b909d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7e7406c-6173-419b-b315-81eb42ba8cb3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2636,7 +2636,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4cf51246-a93a-4fb5-af25-e7d43d842867</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">11817854-cf69-4034-8d1c-1e0b315ac9d9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2659,7 +2659,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">37c1c937-7d88-49d5-868a-dfdbcea6625b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4379f15e-20ab-45d4-bad2-183ca501c0e5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2682,7 +2682,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f2f89d8-37e8-491d-954d-2c6a942a3aa8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f859de95-879a-43e7-8302-0fc47bdfde52</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2705,7 +2705,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">22f86fa7-ab3b-4128-92ec-b289bb39e48a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8c6aab1-a8b6-4549-b41d-b573dfcdfb29</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2728,7 +2728,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9a03ba1f-4650-43d9-be04-02cae4cf1033</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">22582105-3bcd-4f4f-a815-dcb22b2d6732</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2751,7 +2751,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">df2082c7-b88e-4217-8155-32f0a6d799f4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9491783d-d26f-4410-a74f-0520af805e05</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2774,7 +2774,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f48ef7ea-26d9-4e79-9297-63efff871ba6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e5270cf0-899d-4074-b0e0-228dbc64ce86</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2797,7 +2797,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1b7ae22b-594c-491c-ad57-3565b92eda15</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9221ec64-0e87-430f-9d05-238bacdb559b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2829,7 +2829,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b4303da-cd06-4d41-bff7-2fe1b87c7840</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">53c3a959-527b-4638-96cb-2bc74b38ae9b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2877,7 +2877,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b5fb762-4aa8-48ca-9c51-0705add40f7f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef40e18b-3b7a-4c3d-8698-af8f34e8029f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2934,7 +2934,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5dbaa2b0-d7ba-45cc-a2ac-a3cd6d12ba86</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c68cb82-2015-477b-909a-8a2b9423619a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODIFICATI | arancio</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -2958,11 +2958,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8bd1ece8-1254-4300-9db7-36cbde533af0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">80ac1d12-9c4c-4827-a1b5-3d1ea8b3f8e8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4cf51246-a93a-4fb5-af25-e7d43d842867</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">11817854-cf69-4034-8d1c-1e0b315ac9d9</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2981,11 +2981,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">40dd1a7a-4bd1-4824-b51c-623d53fe129f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5633ad8d-6908-4ab2-900a-6b6d888db195</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8b5fb762-4aa8-48ca-9c51-0705add40f7f</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ef40e18b-3b7a-4c3d-8698-af8f34e8029f</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -3044,7 +3044,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ce4c94e2-bf60-4c5a-ada5-768f5c2097f7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e9cbd72c-8da1-4e6d-9648-ba7276afbb78</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3094,7 +3094,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5d15ab3d-2a4f-411c-be0e-ea0e786d76fe</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b48cf62c-c3a8-4464-8d2e-14a2fa32039a</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">INVARIATI | grigio</item>
                   </items>
@@ -3117,11 +3117,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">44d36cb8-209a-4aa4-af6d-4ae318538aaa</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">26a1ecc3-051c-49fe-a870-0a6e11d821c0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5c657c54-0357-4b88-b636-5fddb1704a9f</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a48beca9-07c2-42ad-a761-639a36a58fef</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3141,7 +3141,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f2c3cc7-df3a-4274-9e5e-72abfb2484d8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7ffb8d81-acd1-4e4d-bab5-9fa241452add</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -3163,7 +3163,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3df0745e-8ffe-45a6-92e3-a8c154f05d74</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">45cf5666-0bf8-4ea7-b652-43ff0d4f596b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3206,7 +3206,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ae90dc0a-9283-416f-a438-7883eaea8260</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb31de7c-4baa-4b3d-9383-194f33ec302b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3253,7 +3253,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c655eccd-2fc5-457c-b6fb-16efa95931ac</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e3ea33b8-b06b-4347-bf2a-0b0fc93ac06a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3276,7 +3276,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">67cdf377-79e2-4d97-8a94-30282b790a3d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4694e9d0-7680-48e5-a219-1ed7464f8c89</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3299,7 +3299,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">88dc3b43-d4de-40cd-9143-1df5fe9bbc38</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">84ec9bdd-5140-4cb5-8fb9-06c102db3da1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3322,7 +3322,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4af81707-a0a0-4468-94ce-7efb8fa92b86</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f53e888-0923-460f-90ed-ccc175d7ea5e</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3345,7 +3345,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa9e804b-6b0c-439c-8b58-7d958e391f58</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9295b77a-a2b3-499e-a535-34a383b6bceb</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3368,7 +3368,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">47ef1bfa-bb8a-4da1-be46-f00e6d4b4064</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ec2d6c9e-625b-4ed3-9c24-57c4a8adb732</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3391,7 +3391,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2cc618e8-6a42-4e16-9896-3b91fbe26bb7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eceb7ecc-84cc-4477-a8bb-84a8e3419ef1</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3414,7 +3414,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">04c30243-0217-4353-aa70-098af6f9ff19</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">58034e20-d1c9-4cf9-a2de-afe590837d87</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3446,7 +3446,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8100639b-e8f2-4877-b56e-b18089ed851f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0ba60e6e-c2b1-4441-a820-a4c99a55e352</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3494,7 +3494,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aaeca9b8-412d-4b0d-b264-ad8015776b35</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">067acbdb-f4f7-4af3-b89d-c2b853f6d8a6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3551,7 +3551,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb0b6bfb-732d-42ac-81c9-9d6f79e023ec</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ce6e4f5-0107-4a44-81bf-e2f1c042b7d3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">INVARIATI | grigio</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -3575,11 +3575,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">33c1ebbe-d071-4650-a30b-2b2d5cd5dc71</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">06c43199-ce5f-4596-8014-59177b3a5934</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c655eccd-2fc5-457c-b6fb-16efa95931ac</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e3ea33b8-b06b-4347-bf2a-0b0fc93ac06a</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3598,11 +3598,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">81268a0b-2319-4ec4-af82-aed48c8f7399</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aeac03e0-f7e4-4316-b67d-58eb2599bf6f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">aaeca9b8-412d-4b0d-b264-ad8015776b35</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">067acbdb-f4f7-4af3-b89d-c2b853f6d8a6</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -3661,7 +3661,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f648d25-c1fa-433b-a028-e4c296fedc28</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">32a5d135-7f49-41b7-9e6f-f98394d40813</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3711,7 +3711,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Esporta un abaco UTF-8 con un oggetto per riga e parametri per colonna. Scrittura solo su fronte False -&gt; True.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">37b99194-af7f-430d-8a21-ca290cf26482</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a0b2dd5f-330f-4ac4-8b97-80356ef23d82</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Export CSV</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC CSV</item>
                   </items>
@@ -3734,12 +3734,12 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bfecab50-8789-4881-85d3-571d57356e35</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fc53b1fe-2701-46ee-b194-7ce11c611369</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a6813ed3-4833-470a-9178-6fb348905d7e</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">619af93b-d3f8-436d-8dba-5fe7da86900c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3759,12 +3759,12 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colonne in ordine. Vuoto = tutte le chiavi tranne MetadataJSON.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ac1828b-46c3-44bd-916c-b0ebf54f04af</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3d72ff96-532a-461d-9415-e7f9c8a6185b</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4635ad38-44e5-4b13-93c5-fef1ac0e1619</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5321958c-29f6-4d48-bd93-b61fa58da1ff</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3783,11 +3783,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Percorso .csv.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c2a38c0-d256-4b73-84e6-18e5fd136e1f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">005dfdbf-efb5-433c-858a-e800c0b33a9b</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f769f5dd-75be-4e44-b6a6-9ca06bbfac89</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8093932e-5dfe-46ec-aac5-fe911537158f</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -3806,11 +3806,11 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">64f5b6b9-a68c-4afb-9e73-4d51c963712f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">709095d9-d539-46e7-a805-2ec9d88986a8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7096c114-ca24-4d21-975b-ddf9b7373655</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6b0b5daa-3478-4dcf-8f32-acd1271a23c4</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -3849,7 +3849,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Permette la sostituzione atomica di un file esistente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">618dd8ce-fb69-4f98-b1a2-e7514116ca9a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7f8e74e2-da74-4003-965c-4f059e1fc956</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3891,7 +3891,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="5">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Separatore: ; (predefinito), virgola o tab.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">39bd5525-02b8-4ec5-b0a5-c18779a76278</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cd9ab28c-2a23-4ae3-9758-bcb42afdfcf0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Delimiter</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3934,7 +3934,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_input" index="6">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Prefissa con apostrofo celle che iniziano con = + - @, per leggerle come testo in Excel.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0ddb86bb-ef75-4d66-b185-2c08479b6002</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">81357e86-f726-449b-baaa-018384511165</item>
                         <item name="Name" type_name="gh_string" type_code="10">Excel safe</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3976,7 +3976,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Percorso dell'ultimo salvataggio riuscito.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fbbd94e8-ce3e-4597-a8d5-f0f61a850ba4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">61f53eea-3d83-44d5-9d56-58bddbfcd7e7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -4008,7 +4008,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">65881d51-6e9b-4eeb-b7d5-c0ed9ddf9a4e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fff74ef4-2ce5-44fe-9da7-38cce483570b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Export CSV</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -4056,7 +4056,7 @@ Le modifiche sono FireRating REI 60 -&gt; REI 90 e lo spostamento di un pilastro
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4635ad38-44e5-4b13-93c5-fef1ac0e1619</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5321958c-29f6-4d48-bd93-b61fa58da1ff</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">COLONNE CSV | una chiave per riga</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -4109,7 +4109,7 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f769f5dd-75be-4e44-b6a6-9ca06bbfac89</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8093932e-5dfe-46ec-aac5-fe911537158f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DESTINAZIONE CSV | modificabile</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -4159,7 +4159,7 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7096c114-ca24-4d21-975b-ddf9b7373655</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6b0b5daa-3478-4dcf-8f32-acd1271a23c4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE CSV</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -4193,12 +4193,12 @@ IFC.Property.Pset_WallCommon.FireRating</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cdb3d847-7fd2-48fb-a964-1c7cad766048</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">df43277c-7b42-498f-b838-6363dc8b2120</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE SALVATO | vuoto finche non premi WRITE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">fbbd94e8-ce3e-4597-a8d5-f0f61a850ba4</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">61f53eea-3d83-44d5-9d56-58bddbfcd7e7</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

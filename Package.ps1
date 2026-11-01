@@ -1,3 +1,4 @@
+param([string]$DistributionDirectory = '')
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $projectRoot = $PSScriptRoot
@@ -7,7 +8,7 @@ function Get-Sha256([string]$Path) {
     try { return ([BitConverter]::ToString($hash.ComputeHash($stream))).Replace('-', '').ToLowerInvariant() }
     finally { $stream.Dispose(); $hash.Dispose() }
 }
-$binPath = Join-Path $projectRoot 'bin'
+$binPath = if ($DistributionDirectory) { [IO.Path]::GetFullPath($DistributionDirectory) } else { Join-Path $projectRoot 'bin' }
 $manifestPath = Join-Path $binPath 'distribution.json'
 if (-not (Test-Path -LiteralPath $manifestPath)) { throw 'Prima eseguire Build.ps1: manca la distribuzione bin.' }
 $manifest = @(Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json)

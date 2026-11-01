@@ -1,5 +1,133 @@
 [
   {
+    "key": "ClashComponent",
+    "name": "IFC Clash / Clearance",
+    "family": "Controllo",
+    "color": "#39805A",
+    "png": "png/ClashComponent.png",
+    "svg": "svg/ClashComponent.svg"
+  },
+  {
+    "key": "StructuralModelComponent",
+    "name": "IFC Structural Model",
+    "family": "Strutture",
+    "color": "#267E87",
+    "png": "png/StructuralModelComponent.png",
+    "svg": "svg/StructuralModelComponent.svg"
+  },
+  {
+    "key": "MaterialsLayersComponent",
+    "name": "IFC Materials & Layers",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/MaterialsLayersComponent.png",
+    "svg": "svg/MaterialsLayersComponent.svg"
+  },
+  {
+    "key": "AssignTypeComponent",
+    "name": "IFC Assign Type",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/AssignTypeComponent.png",
+    "svg": "svg/AssignTypeComponent.svg"
+  },
+  {
+    "key": "ExtractModelComponent",
+    "name": "IFC Extract Model",
+    "family": "Salvataggio",
+    "color": "#39805A",
+    "png": "png/ExtractModelComponent.png",
+    "svg": "svg/ExtractModelComponent.svg"
+  },
+  {
+    "key": "RelationshipsComponent",
+    "name": "IFC Relationships",
+    "family": "Parametri",
+    "color": "#267E87",
+    "png": "png/RelationshipsComponent.png",
+    "svg": "svg/RelationshipsComponent.svg"
+  },
+  {
+    "key": "ImportTableComponent",
+    "name": "IFC Import Table",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/ImportTableComponent.png",
+    "svg": "svg/ImportTableComponent.svg"
+  },
+  {
+    "key": "ValidateIdsComponent",
+    "name": "IFC Validate IDS",
+    "family": "Controllo",
+    "color": "#39805A",
+    "png": "png/ValidateIdsComponent.png",
+    "svg": "svg/ValidateIdsComponent.svg"
+  },
+  {
+    "key": "PropertyUnitsComponent",
+    "name": "IFC Property Units",
+    "family": "Parametri",
+    "color": "#B36A29",
+    "png": "png/PropertyUnitsComponent.png",
+    "svg": "svg/PropertyUnitsComponent.svg"
+  },
+  {
+    "key": "SetQuantityComponent",
+    "name": "IFC Set Quantity",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/SetQuantityComponent.png",
+    "svg": "svg/SetQuantityComponent.svg"
+  },
+  {
+    "key": "PreviewChangesComponent",
+    "name": "IFC Preview Changes",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/PreviewChangesComponent.png",
+    "svg": "svg/PreviewChangesComponent.svg"
+  },
+  {
+    "key": "GeometryChangesComponent",
+    "name": "IFC Geometry From Rhino",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/GeometryChangesComponent.png",
+    "svg": "svg/GeometryChangesComponent.svg"
+  },
+  {
+    "key": "UserTextChangesComponent",
+    "name": "IFC Changes From Rhino",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/UserTextChangesComponent.png",
+    "svg": "svg/UserTextChangesComponent.svg"
+  },
+  {
+    "key": "SetAttributeComponent",
+    "name": "IFC Set Attribute",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/SetAttributeComponent.png",
+    "svg": "svg/SetAttributeComponent.svg"
+  },
+  {
+    "key": "SetPropertyComponent",
+    "name": "IFC Set Property",
+    "family": "Modifica",
+    "color": "#B36A29",
+    "png": "png/SetPropertyComponent.png",
+    "svg": "svg/SetPropertyComponent.svg"
+  },
+  {
+    "key": "WriteIfcComponent",
+    "name": "IFC Write File",
+    "family": "Modifica",
+    "color": "#39805A",
+    "png": "png/WriteIfcComponent.png",
+    "svg": "svg/WriteIfcComponent.svg"
+  },
+  {
     "key": "ReadIfcComponent",
     "name": "Read IFC",
     "family": "Lettura",

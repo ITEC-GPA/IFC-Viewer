@@ -18,7 +18,7 @@ using Rhino.Geometry;
 
 // Executable examples: generate native definitions, reopen them and exercise
 // the saved wiring against known IFC models. Writes only to the test directory.
-internal static class ExampleDefinitions
+internal static partial class ExampleDefinitions
 {
     private const string Fire = "IFC.Property.Pset_WallCommon.FireRating";
     private const string Code = "IFC.Property.Progetto.Codice";
@@ -313,6 +313,7 @@ internal static class ExampleDefinitions
     }
     private static void Verify(GH_Document doc, int number)
     {
+        if (number >= 12) { VerifyAdvanced(doc, number); return; }
         if (number == 1)
         {
             Check(Elements(Find<SortElementsComponent>(doc), 0).Length == 3, "01 | abaco di 3 pareti");
@@ -373,10 +374,159 @@ internal static class ExampleDefinitions
             Check(Find<ReadBakedComponent>(doc).Params.Output[0].VolatileDataCount == 0, "08 | rilettura vuota prima del bake");
         }
     }
+    private static GH_Document EditData()
+    {
+        var doc = new GH_Document();
+        Header(doc, "09 | MODIFICA DATI IFC", "Read -> seleziona pareti -> prepara attributi e proprieta -> WRITE IFC. Il modello originale non cambia.\nModifica i pannelli e scegli un NUOVO percorso .ifc. On type=False limita le modifiche alle istanze selezionate.\nWRITE salva il modello completo con le modifiche. Per ispezionare il risultato, apri il percorso salvato con Read IFC.");
+        var read = Reader(doc, "tutorial_A");
+        var walls = Filter(doc, read.Params.Output[1], "IFC.Class", "IfcWall", 650, 345);
+        var attr = Tool(doc, new SetAttributeComponent(), walls.Params.Output[0], 1100, 345);
+        ToolTests.SetText(attr, 1, "Description");
+        attr.Params.Input[2].AddSource(Panel(doc, "NUOVA DESCRIZIONE", "Verificato con Meerkat", 720, 480, 430, 65));
+        var property = Tool(doc, new SetPropertyComponent(), walls.Params.Output[0], 1100, 790);
+        property.Params.Input[1].AddSource(Panel(doc, "PROPERTY SET", "Pset_WallCommon", 30, 620, 380, 65));
+        property.Params.Input[2].AddSource(Panel(doc, "PROPRIETA", "FireRating", 30, 745, 380, 65));
+        property.Params.Input[3].AddSource(Panel(doc, "NUOVO VALORE", "REI 90", 30, 870, 380, 65));
+        var writer = Tool(doc, new WriteIfcComponent(), read.Params.Output[0], 1560, 790);
+        writer.Params.Input[1].AddSource(attr.Params.Output[0]); writer.Params.Input[1].AddSource(property.Params.Output[0]);
+        writer.Params.Input[2].AddSource(Panel(doc, "NUOVO FILE IFC | cambia destinazione", Path.Combine(Root, "exports", "tutorial_modificato.ifc"), 720, 1030, 650, 65));
+        Button(doc, writer, 3, "WRITE IFC", 1330, 1120);
+        Out(doc, "ANTEPRIMA MODIFICHE", writer.Params.Output[2], 1730, 280, 540, 260);
+        Out(doc, "FILE SCRITTO", writer.Params.Output[0], 1730, 670, 540, 80);
+        Out(doc, "REPORT PRIMA/DOPO", writer.Params.Output[1], 1730, 840, 540, 290);
+        return doc;
+    }
+    private static GH_Document EditUserText()
+    {
+        var doc = new GH_Document();
+        Header(doc, "10 | DA USER TEXT A IFC", "1. BAKE crea le pareti. 2. Modifica in Rhino IFC.Property.Pset_WallCommon.FireRating o IFC.Attribute.Description.\n3. REFRESH confronta SOLO le chiavi elencate con il modello originale. 4. Controlla l'anteprima, scegli un NUOVO percorso e premi WRITE IFC.\nNon alterare identificativi/hash. La geometria Rhino non viene trasferita da questo componente; valori mancanti non significano cancellazione.");
+        var read = Reader(doc, "tutorial_A");
+        var walls = Filter(doc, read.Params.Output[1], "IFC.Class", "IfcWall", 650, 345);
+        var bake = Tool(doc, new BakeIfcComponent(), walls.Params.Output[0], 1050, 345);
+        ToolTests.SetText(bake, 2, "Esempio_10"); Button(doc, bake, 1, "BAKE", 800, 470);
+        var changes = Tool(doc, new UserTextChangesComponent(), read.Params.Output[0], 1050, 790);
+        changes.Params.Input[1].AddSource(bake.Params.Output[0]);
+        changes.Params.Input[2].AddSource(Panel(doc, "CHIAVI DA TRASFERIRE | una per riga", Fire + "\nIFC.Attribute.Description", 30, 630, 680, 120));
+        Button(doc, changes, 3, "REFRESH", 820, 910);
+        Out(doc, "SOLE DIFFERENZE", changes.Params.Output[1], 1290, 300, 650, 250);
+        var writer = Tool(doc, new WriteIfcComponent(), read.Params.Output[0], 1580, 790);
+        writer.Params.Input[1].AddSource(changes.Params.Output[0]);
+        writer.Params.Input[2].AddSource(Panel(doc, "NUOVO IFC", Path.Combine(Root, "exports", "da_rhino.ifc"), 30, 1000, 700, 65));
+        Button(doc, writer, 3, "WRITE IFC", 1390, 1030);
+        Out(doc, "REPORT DI SCRITTURA", writer.Params.Output[1], 1760, 730, 650, 300);
+        return doc;
+    }
+    private static GH_Document EditGeometry()
+    {
+        var doc = new GH_Document();
+        Header(doc, "11 | GEOMETRIA RHINO A IFC", "1. BAKE centra localmente le pareti del modello a coordinate grandi. 2. Sposta/ruota/modifica una mesh in Rhino.\n3. REFRESH prepara le sole differenze. 4. Scegli un nuovo percorso e premi WRITE IFC: il file ripristina le coordinate IFC originali piu le tue modifiche.\nIl Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e modello analitico non sono ricalcolati. No aperture IFC o mesh aperte/disgiunte.");
+        var read = Reader(doc, "tutorial_coordinate_grandi");
+        var walls = Filter(doc, read.Params.Output[1], "IFC.Class", "IfcWall", 650, 345);
+        var origin = Tool(doc, new OriginComponent(), walls.Params.Output[0], 1030, 345);
+        var bake = Tool(doc, new BakeIfcComponent(), walls.Params.Output[0], 1510, 345);
+        ToolTests.SetText(bake, 2, "Esempio_11"); bake.Params.Input[4].AddSource(origin.Params.Output[0]); Button(doc, bake, 1, "BAKE", 1310, 470);
+        var changes = Tool(doc, new GeometryChangesComponent(), read.Params.Output[0], 1050, 790);
+        changes.Params.Input[1].AddSource(bake.Params.Output[0]); Button(doc, changes, 2, "REFRESH", 820, 910);
+        Out(doc, "GEOMETRIE DA SOSTITUIRE", changes.Params.Output[1], 1730, 230, 650, 280);
+        Out(doc, "LIMITI DELLA CONVERSIONE", changes.Params.Output[2], 30, 670, 680, 160);
+        var writer = Tool(doc, new WriteIfcComponent(), read.Params.Output[0], 1580, 790);
+        writer.Params.Input[1].AddSource(changes.Params.Output[0]);
+        writer.Params.Input[2].AddSource(Panel(doc, "NUOVO IFC", Path.Combine(Root, "exports", "geometria_modificata.ifc"), 30, 1000, 700, 65));
+        Button(doc, writer, 3, "WRITE IFC", 1390, 1030);
+        Out(doc, "REPORT IFC", writer.Params.Output[1], 1760, 730, 650, 300);
+        return doc;
+    }
     private static int ActiveObjectCount(RhinoDoc rhino) { return rhino.Objects.GetObjectList(Rhino.DocObjects.ObjectType.AnyObject).Count(o => !o.IsDeleted); }
     private static void Disconnect(GH_Component c, int index) { c.Params.Input[index].RemoveAllSources(); }
     private static void Exercise(GH_Document doc, RhinoDoc rhino, int number)
     {
+        if (number >= 12) { ExerciseAdvanced(doc, number); return; }
+        if (number == 11)
+        {
+            var bake = Find<BakeIfcComponent>(doc); var changes = Find<GeometryChangesComponent>(doc); var writer = Find<WriteIfcComponent>(doc);
+            Disconnect(bake, 1); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "BAKE 11");
+            Check(changes.Params.Output[0].VolatileDataCount == 0, "11 | bake con offset non crea false differenze geometriche");
+            var ids = Text(bake, 0).Select(Guid.Parse).ToArray(); var model = ((GH_ObjectWrapper)Find<ReadIfcComponent>(doc).Params.Output[0].VolatileData.AllData(true).Single()).Value as IfcModel;
+            var original = RhinoEdits.Match(model, rhino.Objects.FindId(ids[0])); var before = original.MeshMetres.GetBoundingBox(true);
+            using (var moved = ((Mesh)rhino.Objects.FindId(ids[0]).Geometry).DuplicateMesh())
+            {
+                moved.Translate(new Vector3d(1000, 0, 250)); Check(rhino.Objects.Replace(ids[0], moved), "11 | traslazione mesh Rhino di 1000/250 mm");
+                Disconnect(changes, 2); ToolTests.SetBool(changes, 2, true); doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "REFRESH 11");
+                Check(changes.Params.Output[0].VolatileDataCount == 1, "11 | una sola istanza modificata");
+                var mmRequest = GeometryEdits.FromRhino(model, rhino, new[] { ids[0] }, 1e-6).Single().Data;
+                using (var metres = moved.DuplicateMesh())
+                {
+                    metres.Scale(0.001); rhino.Objects.Replace(ids[0], metres); rhino.ModelUnitSystem = UnitSystem.Meters;
+                    var mRequest = GeometryEdits.FromRhino(model, rhino, new[] { ids[0] }, 1e-6).Single().Data;
+                    Check(JToken.DeepEquals(mmRequest["vertices_metres"], mRequest["vertices_metres"]), "11 | documenti Rhino mm e m producono le stesse coordinate IFC");
+                    rhino.ModelUnitSystem = UnitSystem.Millimeters; rhino.Objects.Replace(ids[0], moved);
+                }
+                string file = Path.Combine(OutputRoot, "esempio_11.ifc"); Disconnect(writer, 2); Disconnect(writer, 3); ToolTests.SetText(writer, 2, file); ToolTests.SetBool(writer, 3, true);
+                doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "WRITE IFC 11");
+                Console.WriteLine("11 | reading exported IFC: " + file);
+                var updated = Engine.Read(file); Console.WriteLine("11 | exported IFC loaded");
+                var element = updated.Elements.Single(e => e.GlobalId == original.GlobalId); var after = element.MeshMetres.GetBoundingBox(true);
+                Check(Math.Abs(after.Min.X - before.Min.X - 1) < 1e-6 && Math.Abs(after.Min.Z - before.Min.Z - 0.25) < 1e-6 && Math.Abs(after.Min.Y - before.Min.Y) < 1e-6, "11 | offset annullato e traslazione conservata nelle coordinate IFC grandi");
+                Check(updated.Elements.Count == 11 && updated.Elements.Count(e => e.MeshMetres != null) == 6 && element.UserText()[Fire] == original.UserText()[Fire], "11 | geometrie e attributi del resto del modello conservati");
+                Check(Text(writer, 1).Single().Contains("non ricalcolati"), "11 | report esplicita quantita e modello analitico invariati");
+                using (var opened = moved.DuplicateMesh())
+                {
+                    opened.Faces.RemoveAt(0); rhino.Objects.Replace(ids[0], opened);
+                    bool rejected = false; try { GeometryEdits.FromRhino(model, rhino, new[] { ids[0] }, 1e-6); } catch (ArgumentException) { rejected = true; }
+                    Check(rejected, "11 | mesh aperta rifiutata prima dell'export");
+                }
+            }
+        }
+        if (number == 10)
+        {
+            var bake = Find<BakeIfcComponent>(doc); var changes = Find<UserTextChangesComponent>(doc); var writer = Find<WriteIfcComponent>(doc);
+            Disconnect(bake, 1); ToolTests.SetBool(bake, 1, true); doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "BAKE 10");
+            Check(changes.Params.Output[0].VolatileDataCount == 0, "10 | nessuna differenza subito dopo il bake");
+            var ids = Text(bake, 0).Select(Guid.Parse).ToArray();
+            var obj = rhino.Objects.FindId(ids[0]); var original = obj.Attributes.Duplicate(); var attrs = obj.Attributes.Duplicate();
+            attrs.SetUserString(Fire, "REI 180"); attrs.SetUserString("IFC.Attribute.Description", "Controllato in Rhino");
+            Check(rhino.Objects.ModifyAttributes(obj.Id, attrs, true), "10 | User Text modificati nel documento di prova");
+            Disconnect(changes, 3); ToolTests.SetBool(changes, 3, true); doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "REFRESH 10");
+            Check(changes.Params.Output[0].VolatileDataCount == 2, "10 | trasferite solo due differenze richieste");
+            var model = ((GH_ObjectWrapper)Find<ReadIfcComponent>(doc).Params.Output[0].VolatileData.AllData(true).Single()).Value as IfcModel;
+            var sourceElement = RhinoEdits.Match(model, obj); string previous = sourceElement.UserText()[Fire];
+            string file = Path.Combine(OutputRoot, "esempio_10.ifc"); Disconnect(writer, 2); Disconnect(writer, 3); ToolTests.SetText(writer, 2, file); ToolTests.SetBool(writer, 3, true);
+            doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "WRITE IFC 10");
+            var updated = Engine.Read(file).Elements.Single(e => e.GlobalId == sourceElement.GlobalId);
+            Check(updated.UserText()[Fire] == "REI 180" && (string)updated.Record["attributes"]["Description"] == "Controllato in Rhino", "10 | IFC riletto conserva le modifiche User Text");
+            Check(sourceElement.UserText()[Fire] == previous, "10 | modello in ingresso invariato");
+            Action<Action, string> rejects = (action, label) => { bool rejected = false; try { action(); } catch (ArgumentException) { rejected = true; } Check(rejected, label); };
+            rejects(() => RhinoEdits.FromUserText(model, rhino, ids, new[] { "IFC.GlobalId" }), "10 | campi identita protetti anche se invariati");
+            rejects(() => RhinoEdits.FromUserText(model, rhino, ids, new[] { "IFC.Property.Assente.Campo" }), "10 | chiave rimossa/assente non diventa una cancellazione");
+            attrs = rhino.Objects.FindId(ids[0]).Attributes.Duplicate();
+            attrs.SetUserString("IFC.SourceSHA256", "altra revisione"); Check(rhino.Objects.ModifyAttributes(ids[0], attrs, true), "10 | revisione di prova modificata");
+            rejects(() => RhinoEdits.FromUserText(model, rhino, new[] { ids[0] }, new[] { Fire }), "10 | bake da altra revisione rifiutato");
+            attrs = rhino.Objects.FindId(ids[0]).Attributes.Duplicate();
+            attrs.SetUserString("IFC.SourceSHA256", (string)model.Metadata["source_sha256"]);
+            attrs.SetUserString("IFC.Property.Custom%2EData.Nota%25", "citta"); Check(rhino.Objects.ModifyAttributes(ids[0], attrs, true), "10 | revisione ripristinata e chiave codificata aggiunta");
+            var encoded = RhinoEdits.FromUserText(model, rhino, new[] { ids[0] }, new[] { "IFC.Property.Custom%2EData.Nota%25" }).Single().Data;
+            Check((string)encoded["pset"] == "Custom.Data" && (string)encoded["name"] == "Nota%", "10 | decodifica chiavi con punti e percentuali");
+            rhino.Objects.ModifyAttributes(obj.Id, original, true);
+        }
+        if (number == 9)
+        {
+            var writer = Find<WriteIfcComponent>(doc); var property = Find<SetPropertyComponent>(doc);
+            Check(Text(writer, 0).Single() == "" && writer.Params.Output[2].VolatileDataCount == 6, "09 | sei richieste in anteprima senza scrittura automatica");
+            string file = Path.Combine(OutputRoot, "esempio_09.ifc");
+            Disconnect(writer, 2); Disconnect(writer, 3); ToolTests.SetText(writer, 2, file); ToolTests.SetBool(writer, 3, true);
+            doc.NewSolution(true, GH_SolutionMode.Silent); NoErrors(doc, "WRITE IFC 09");
+            Check(File.Exists(file) && Text(writer, 0).Single() == file, "09 | pulsante scrive un nuovo IFC");
+            var updated = Engine.Read(file);
+            Check(updated.Elements.Count == 11 && updated.Elements.Where(e => e.IfcClass == "IfcWall").All(e => e.UserText()[Fire] == "REI 90" && (string)e.Record["attributes"]["Description"] == "Verificato con Meerkat"), "09 | IFC riletto: modello intero, attributi e proprieta aggiornati");
+            DateTime timestamp = File.GetLastWriteTimeUtc(file); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(File.GetLastWriteTimeUtc(file) == timestamp, "09 | Write mantenuto True non riscrive");
+            ToolTests.SetBool(writer, 3, false); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(Text(writer, 1).Single().Contains("source_sha256"), "09 | report conservato dopo rilascio pulsante");
+            Disconnect(property, 3); ToolTests.SetText(property, 3, "REI 30"); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(Text(writer, 0).Single() == "" && File.GetLastWriteTimeUtc(file) == timestamp, "09 | modifica input invalida il risultato senza riscrivere");
+            ToolTests.SetText(property, 3, "REI 30", "REI 60"); doc.NewSolution(true, GH_SolutionMode.Silent);
+            Check(property.RuntimeMessages(GH_RuntimeMessageLevel.Error).Count == 1 && property.Params.Output[0].VolatileDataCount == 0, "09 | liste valori disallineate rifiutate");
+        }
         if (number == 6)
         {
             var ids = Find<SelectIdsComponent>(doc); var wall = Elements(ids, 0).Single();
@@ -463,14 +613,19 @@ internal static class ExampleDefinitions
     {
         Root = root; Check = check; Expected = JObject.Parse(File.ReadAllText(Path.Combine(root, "examples", "scenari.json")));
         OutputRoot = Path.Combine(root, "test-output", "examples-" + Guid.NewGuid().ToString("N")); Directory.CreateDirectory(OutputRoot);
-        var names = new[] { "01_Abaco_pareti", "02_Piani_e_colori", "03_Controllo_parametri", "04_Confronto_revisioni", "05_Origine_locale_export", "06_Esplora_modello", "07_Filtri_numerici", "08_Bake_e_rilettura" };
-        Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin, Explore, NumericFilters, BakeAndRead };
+        var names = new[] { "01_Abaco_pareti", "02_Piani_e_colori", "03_Controllo_parametri", "04_Confronto_revisioni", "05_Origine_locale_export", "06_Esplora_modello", "07_Filtri_numerici", "08_Bake_e_rilettura", "09_Modifica_dati_IFC", "10_User_Text_a_IFC", "11_Geometria_Rhino_a_IFC",
+            "12_Quantita_unita_anteprima", "13_Relazioni_e_materiali", "14_Importa_tabella", "15_Validazione_IDS", "16_Tipi_ed_estrazione", "17_Interferenze", "18_Modello_strutturale" };
+        Func<GH_Document>[] factories = { Schedule, Floors, Quality, Revision, LocalOrigin, Explore, NumericFilters, BakeAndRead, EditData, EditUserText, EditGeometry,
+            QuantityPreview, RelationsMaterials, ImportSchedule, ValidateRequirements, TypesAndExtract, ClashExample, StructuralExample };
         var coverage = new Dictionary<string, HashSet<string>>();
+        int start = 1; int.TryParse(Environment.GetEnvironmentVariable("MEERKAT_EXAMPLE_START") ?? "1", out start);
+        int end = factories.Length; int.TryParse(Environment.GetEnvironmentVariable("MEERKAT_EXAMPLE_END") ?? factories.Length.ToString(), out end);
+        if (start < 1 || end > factories.Length || end < start) throw new ArgumentException("Indice esempio non valido.");
         GH_Document.EnableSolutions = true;
         using (var rhino = RhinoDoc.CreateHeadless(null))
         {
             RhinoDoc.ActiveDoc = rhino; rhino.ModelUnitSystem = UnitSystem.Millimeters;
-          for (int i = 0; i < factories.Length; i++)
+          for (int i = start - 1; i < end; i++)
           {
             string file = Path.Combine(root, "examples", names[i] + ".gh");
             using (var doc = factories[i]())
@@ -485,7 +640,8 @@ internal static class ExampleDefinitions
             using (var reopened = io.Document)
             {
                 reopened.AssociateWithRhinoDocument(); reopened.Enabled = true; reopened.NewSolution(true, GH_SolutionMode.Silent); NoErrors(reopened, "Riapertura " + names[i]); Verify(reopened, i + 1);
-                Check(reopened.Objects.OfType<ReadIfcComponent>().All(c => c.Params.Output[1].VolatileDataCount == 11), names[i] + " | modelli incorporati recuperati");
+                int expectedCount = i == 16 ? 8 : i == 17 ? 12 : 11;
+                Check(reopened.Objects.OfType<ReadIfcComponent>().All(c => c.Params.Output[1].VolatileDataCount == expectedCount), names[i] + " | modelli incorporati recuperati");
                 Check(ActiveObjectCount(rhino) == 0, names[i] + " | riapertura senza bake");
                 foreach (var component in reopened.Objects.OfType<IfcComponent>())
                 {
@@ -504,15 +660,29 @@ internal static class ExampleDefinitions
           BrandTests.Legacy(Root, Check);
         }
         var expectedTypes = typeof(IfcComponent).Assembly.GetTypes().Where(t => !t.IsAbstract && typeof(IfcComponent).IsAssignableFrom(t)).ToArray();
-        Check(expectedTypes.Length == 19 && new HashSet<string>(expectedTypes.Select(t => t.FullName)).SetEquals(coverage.Keys), "Copertura: tutti i 19 componenti nei file GH riaperti");
+        string coveragePath = Path.Combine(root, "examples", "componenti-esempi.json");
+        if (File.Exists(coveragePath))
+        {
+            var ids = expectedTypes.ToDictionary(t => ((GH_Component)Activator.CreateInstance(t)).ComponentGuid.ToString(), t => t.FullName);
+            var generatedNames = new HashSet<string>(names.Skip(start - 1).Take(end - start + 1).Select(n => n + ".gh"));
+            foreach (JObject entry in JArray.Parse(File.ReadAllText(coveragePath)))
+            {
+                string typeName; if (!ids.TryGetValue((string)entry["guid"], out typeName)) continue;
+                HashSet<string> files;
+                if (!coverage.TryGetValue(typeName, out files)) { files = new HashSet<string>(); coverage.Add(typeName, files); }
+                foreach (string file in entry["examples"].Values<string>().Where(n => !generatedNames.Contains(n))) files.Add(file);
+            }
+        }
+        if (end == names.Length) Check(expectedTypes.All(t => coverage.ContainsKey(t.FullName) && coverage[t.FullName].Count > 0), "Copertura: tutti i componenti nei file GH riaperti");
         var manifest = new JArray();
         foreach (var type in expectedTypes.OrderBy(t => t.Name))
         {
             var component = (GH_Component)Activator.CreateInstance(type);
-            manifest.Add(new JObject(new JProperty("component", component.Name), new JProperty("guid", component.ComponentGuid.ToString()), new JProperty("examples", new JArray(coverage[type.FullName].OrderBy(x => x)))));
+            HashSet<string> files; coverage.TryGetValue(type.FullName, out files);
+            manifest.Add(new JObject(new JProperty("component", component.Name), new JProperty("guid", component.ComponentGuid.ToString()), new JProperty("examples", new JArray((files ?? new HashSet<string>()).OrderBy(x => x)))));
         }
         File.WriteAllText(Path.Combine(root, "examples", "componenti-esempi.json"), manifest.ToString());
-        File.WriteAllText(Path.Combine(root, "test-output", "last-examples-output.txt"), OutputRoot);
+        if (start == 1) File.WriteAllText(Path.Combine(root, "test-output", "last-examples-output.txt"), OutputRoot);
         Console.WriteLine("EXAMPLES_OUTPUT=" + OutputRoot);
     }
 }

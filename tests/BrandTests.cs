@@ -30,7 +30,7 @@ internal static class BrandTests
             using (var sha = SHA256.Create())
             { icon.Save(stream, System.Drawing.Imaging.ImageFormat.Png); hashes.Add(Convert.ToBase64String(sha.ComputeHash(stream.ToArray()))); }
         }
-        check(types.Length == 19 && hashes.Count == 19 && assembly.GetManifestResourceNames().Count(n => n.StartsWith("Meerkat.Icons.")) == 20, "19 distinct component icons plus plugin logo embedded");
+        check(types.Length >= 22 && hashes.Count == types.Length && assembly.GetManifestResourceNames().Count(n => n.StartsWith("Meerkat.Icons.")) == types.Length + 1, "Distinct icons for every component plus plugin logo embedded");
     }
 
     internal static void Legacy(string root, Action<bool, string> check)
@@ -58,5 +58,16 @@ internal static class BrandTests
         check(File.Exists(python) && python.StartsWith(expected, StringComparison.OrdinalIgnoreCase), "Relocated distribution uses its own installed Python runtime");
         var fresh = Engine.Read(Path.Combine(expected, "examples", "tutorial_A.ifc"));
         check(fresh.Elements.Count == 11 && fresh.Elements.Count(e => e.MeshMetres != null) == 6, "Relocated worker reads source IFC end to end without repository runtime");
+        var wall = fresh.Elements.First(e => e.IfcClass == "IfcWall");
+        var units = IfcTools.Run(fresh, "units", new Newtonsoft.Json.Linq.JObject(
+            new Newtonsoft.Json.Linq.JProperty("pset", "Qto_WallBaseQuantities"),
+            new Newtonsoft.Json.Linq.JProperty("name", "Length"), new Newtonsoft.Json.Linq.JProperty("unit", "m")), new[] { wall });
+        check((bool)units["rows"][0]["valid"] && Math.Abs((double)units["rows"][0]["converted"] - 5.0) < 1e-6, "Relocated advanced worker resolves units with the local runtime");
+        var ids = IfcTools.Run(fresh, "ids", new Newtonsoft.Json.Linq.JObject(new Newtonsoft.Json.Linq.JProperty("ids_file", Path.Combine(expected, "examples", "15_requisiti.ids"))));
+        check(!(bool)ids["valid"] && ((Newtonsoft.Json.Linq.JArray)ids["passed"]).Count == 2 && ((Newtonsoft.Json.Linq.JArray)ids["failed"]).Count == 1, "Relocated IfcTester loads bundled IDS and returns serializable validation results");
+        string output = Path.Combine(expected, "portable-città.ifc");
+        string report = IfcEditing.Write(fresh, new[] { new IfcEdit(wall, "attribute", "Description", "Verificato: città e unità", false) }, output, false);
+        check((string)Newtonsoft.Json.Linq.JObject.Parse(report)["file"] == output && report.Contains("città e unità"), "Writer report preserves UTF-8 paths and values");
+        check((string)Engine.Read(output).Elements.Single(e => e.GlobalId == wall.GlobalId).Record["attributes"]["Description"] == "Verificato: città e unità", "Relocated writer exports and reopens modified IFC with its local runtime");
     }
 }

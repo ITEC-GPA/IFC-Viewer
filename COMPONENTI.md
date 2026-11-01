@@ -1,10 +1,90 @@
-# Meerkat — catalogo dei 19 componenti
+# Meerkat — catalogo dei 35 componenti
 
-Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` li contiene gia collegati in cinque aree. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
+Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` contiene i 19 componenti di lettura, analisi e bake; il file `09_Modifica_dati_IFC.gh` illustra i tre nuovi componenti di modifica. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
 
-La raccolta di **[otto esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 19 componenti all'esempio consigliato.
+La raccolta di **[diciotto esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 35 componenti all'esempio consigliato.
 
-## Leggere e visualizzare
+## Nuovi flussi: verifica, quantita, relazioni e modello analitico
+
+Gli undici componenti seguenti richiedono il runtime Python anche quando il modello e gia incorporato nel GH. `Set Quantity` e `Assign Type` preparano richieste: la validazione sullo schema avviene in Preview/Write. Gli altri strumenti interrogano l'IFC incorporato, verificandone l'hash. Per questi strumenti di interrogazione usare una sorgente/versione per componente; Clash accetta piu sorgenti.
+
+| Componente | Input / comportamento | Output | Esempio |
+| --- | --- | --- | --- |
+| **IFC Preview Changes** | Model, Changes, Run. Applica il batch e rilegge una copia temporanea; originale protetto anche nei writer successivi. | Modello modificato, tutti gli elementi, istanze interessate prima/dopo, report effettivo. | 12, 14, 16 |
+| **IFC Property Units** | Elements, Pset/Qto, nome, unita destinazione. Legge unita esplicite o del progetto e controlla le dimensioni. | Valori convertiti, unita originali, Valid e dettagli, mantenendo l'ordine. | 12 |
+| **IFC Set Quantity** | Elements, set/nome, valori, tipo, unita di input, metodo di misura. Un valore comune o uno per elemento. | Changes da unire a Preview/Write. | 12 |
+| **IFC Relationships** | Elements, relazione, Recursive. Naviga relazioni esplicite, fermandosi sui cicli. | Un ramo di elementi correlati per elemento iniziale, metadati. | 13 |
+| **IFC Import Table** | Model, CSV UTF-8 o testo multilinea, colonne modificabili, separatore, Read. | Changes, esito globale, report per riga. Errori bloccano tutto il batch. | 14 |
+| **IFC Validate IDS** | Model, percorso .ids, Run. Integra IfcTester 0.8.3. | Passed/Failed, esito globale, motivazioni e report JSON. | 15 |
+| **IFC Materials & Layers** | Elements. Risolve assegnazioni dirette o ereditate. | Nomi, spessori in metri, profili, scope, grafi e proprieta. | 13 |
+| **IFC Assign Type** | Elements, GlobalId tipo nello stesso modello, Duplicate, nome nuovo, Apply type geometry. | Richieste di riassegnazione/duplicazione. | 16 |
+| **IFC Extract Model** | Selezione, nuovo .ifc, Include descendants, Write, Overwrite. | File e report delle dipendenze incluse. | 16 |
+| **IFC Clash / Clearance** | Set A/B anche federati, modalita, distanza in metri, esclusioni, offset, Run. | Coppie di elementi, punti, distanza, tipo di interferenza e report. | 17 |
+| **IFC Structural Model** | Model, offset di visualizzazione in metri. | Membri/connessioni, assi/bordi, punti, vincoli, carichi e report completo. | 18 |
+
+**Preview:** Run=True ricalcola la copia quando cambiano gli input. Il report delle richieste viene sostituito dai valori effettivamente applicati. Per modifiche al tipo, Affected include tutte le istanze del tipo, anche quelle con override locali: usa gli elementi prima/dopo per leggere i valori effettivi o collegarli a IFC Elements/Custom Preview. I file temporanei di lavoro non sono una destinazione di consegna. Le geometrie dell'anteprima sono quelle del modello modificato. I Changes originali restano riferiti alla versione originale: per ulteriori modifiche creare nuove richieste sugli elementi della copia.
+
+**Quantita e unita:** tipi supportati Length, Area, Volume, Mass, Time e Count. Le unita di input possono essere `IFC`, `SI`, m/mm/cm/ft/in, m2/mm2/cm2, m3/mm3/L, kg/g/t, s/min/h, oppure 1 per conteggi. Property Units supporta anche K/degC, N/kN e Pa/kPa/MPa. Unita assenti o non interpretabili non vengono indovinate; i valori falliti sono NaN con Valid=False. I valori originali restano disponibili nel report.
+
+Il Quantity Set mantiene il metodo di misura comune: un metodo differente richiede un nuovo set. I template standard controllano nome e tipo della quantita; le quantita condivise vengono isolate prima della modifica. Non vengono dedotte aree nette/lorde o quantita da nomi generici: l'esempio 12 scrive il volume geometrico in un set custom `Meerkat_Measured`. Dopo una modifica geometrica le altre Qto restano da verificare. Per annullare/rimuovere una quantita non usare null: questo componente gestisce valori numerici espliciti, non cancellazioni.
+
+**Relazioni:** `Type`, `Instances`, `Container`, `Parent`, `Parts`, `Groups`, `Members`, `Openings`, `Fillings`, `Connections`. Parts segue aggregazione e nesting; Parent risale anche host/apertura/riempimento. Connections legge le relazioni fra elementi; i collegamenti analitici strutturali sono nel componente Structural Model. Tipi e gruppi hanno metadati e possono essere usati per ulteriori interrogazioni, ma non diventano istanze geometriche scrivibili.
+
+**CSV:** header `IFC.GlobalId` obbligatorio, un GlobalId univoco per riga. Le colonne da trasferire vanno scelte esplicitamente: `IFC.Attribute.Name/Description/Tag`, `IFC.Property.Pset.Nome`, `IFC.InstanceProperty.Pset.Nome`, `IFC.TypeProperty.Pset.Nome` o `IFC.Type.Name/Description/Tag`. La codifica dei nomi e la stessa degli User Text. Solo proprieta scalari; tipi esistenti/template conservati, nuove custom come IfcLabel. Campi vuoti significano stringa vuota, non null; numeri/booleani non validi vengono segnalati. Per un giro CSV export/import fedele usare `Excel safe=False` su dati controllati: gli apostrofi di protezione Excel non vengono rimossi automaticamente. Il CSV puo contenere colonne non selezionate, ignorate.
+
+**IDS:** Passed/Failed contengono i prodotti rappresentati nella selezione del lettore; eventuali errori su tipi, classificazioni o requisiti senza elementi applicabili restano nel report globale. Un elenco Failed vuoto non equivale a Valid=True. Viene controllata anche la compatibilita dello schema richiesto dall'IDS. Non e una verifica normativa strutturale.
+
+**Tipi:** senza Type GlobalId viene usato il tipo corrente. Duplicate crea nuovi GlobalId e Pset indipendenti; nella stessa operazione un tipo sorgente/nome produce una sola copia per le istanze selezionate. I materiali sono associati al nuovo tipo; le proprieta di istanza restano override. Se il tipo possiede RepresentationMaps, e necessario attivare Apply type geometry: la geometria delle istanze puo essere sostituita. I materiali con layer/profile usage vengono aggiornati dall'API. Qto e dati analitici non sono ricalcolati. Non combinare la riassegnazione con altre modifiche sugli stessi oggetti o tipi: applica il tipo, poi prepara le nuove modifiche dalla copia riletta.
+
+**Estrazione:** include gli antenati spaziali/di aggregazione, gli host necessari e le aperture che sottraggono geometria agli host conservati. Include descendants aggiunge anche la decomposizione della selezione iniziale. Restano proprieta, materiali e tipi usati; sono rimossi prodotti esclusi e tipi non utilizzati. Le relazioni verso prodotti esclusi vengono eliminate; contesti e metadati non geometrici possono restare nel file. Controllo di schema e riapertura precedono la pubblicazione atomica. Non e un export parametrico delle mesh Rhino.
+
+**Interferenze:** Intersection cerca penetrazioni oltre la tolleranza; Collision confronta le superfici e puo includere contatti; Clearance cerca distanze inferiori alla soglia. Esclusioni per classe esatta o coppia `IFC.Key|IFC.Key`. Nessuna trasformazione GIS fra file: usare modelli gia allineati. Punti e distanza sono indicativi del riscontro del motore tessellato, non volume di interferenza o certificazione di assenza di collisioni. Le triangolazioni esattamente coincidenti vengono segnalate esplicitamente come `coincident_geometry` quando non restituite dal motore: distanza 0 senza stima della penetrazione. Oggetti non tessellabili sono elencati in Skipped. I GlobalId ripetuti fra sorgenti sono distinti tramite IFC.Key.
+
+**Strutture:** vengono lette le entita IfcStructuralMember/Connection, le loro relazioni, condizioni al contorno, attivita/carichi, load groups e sistemi di riferimento. Assi rettilinei, polilinee, vertici e bordi poligonali sono visualizzati nelle unita Rhino con offset comune. Le curve non lineari non sono sostituite da corde: il grafo originale resta nel report con un avviso. Per membri superficiali i bordi non sono una discretizzazione FEM. Carichi, rigidezze e dimensioni nei grafi JSON mantengono le unita IFC originali, elencate nel report; i valori booleani di vincolo sono distinti da rigidezze numeriche e null. Il componente non ricostruisce un modello analitico assente e non verifica stabilita, collegamenti mancanti o adeguatezza dei vincoli.
+
+## Modificare dati ed esportare IFC
+
+| Componente | Input principali | Output / utilizzo |
+| --- | --- | --- |
+| **IFC Set Attribute** | Elements, Attribute, Values, On type, Clear | Richieste per Name, Description o Tag; anteprima. Un valore per tutti gli elementi oppure esattamente un valore per elemento. |
+| **IFC Set Property** | Elements, Property Set, Property, Values, Value type, On type, Clear | Creazione/modifica di IfcPropertySingleValue. Auto mantiene il tipo esistente o usa il template standard; nuove proprieta custom sono IfcLabel. |
+| **IFC Write File** | Model, Changes, File, Write, Overwrite | Esporta il modello completo in un nuovo `.ifc`; percorso e report JSON prima/dopo. Riunire Changes con Merge oppure collegare piu sorgenti all'input. |
+
+`On type=False` crea/modifica la proprieta dell'istanza, isolando Pset condivisi e creando un override se il valore era ereditato. `On type=True` cambia il **tipo condiviso**: tutte le sue istanze ereditano il nuovo valore, salvo override locali. Il report indica quante istanze usano quel tipo; non duplica il tipo e non ne cambia l'assegnazione.
+
+Il writer usa l'IFC originale contenuto nell'archivio: funziona anche dopo aver rimosso il file sorgente esterno. Conserva GlobalId, classi, relazioni e geometrie. Non esporta la sola selezione: applica le richieste selezionate al modello intero. Un solo modello per writer; richieste provenienti da altre sorgenti/versioni sono rifiutate. Conflitti sullo stesso campo bloccano tutto il batch. Il modello in Grasshopper rimane invariato; ricarica il nuovo IFC per analizzarlo o applicare ulteriori modifiche.
+
+Numeri con punto decimale, booleani `true`/`false`, misure nelle **unita IFC della proprieta** (o del progetto se manca un'unita esplicita). Nessuna conversione dalle unita Rhino. `Clear=True` imposta null senza cancellare la proprieta. Zero, false e testo vuoto sono distinti da null. Set Property rifiuta quantita Qto (usare Set Quantity), proprieta enumerate/composte e cambi di tipo di una proprieta esistente.
+
+Tipi scalari supportati: IfcLabel, IfcText, IfcIdentifier, IfcBoolean, IfcLogical, IfcInteger, IfcReal e misure di lunghezza, area, volume, massa, conteggio, rapporto, trasmittanza, temperatura, pressione, tempo e valuta. Date/durate e altri tipi non elencati non vengono convertiti implicitamente. IfcCountMeasure segue il tipo dello schema: intero in IFC4x3, reale in IFC2x3/IFC4.
+
+WRITE agisce su False -> True. Il sorgente non e sovrascrivibile nemmeno con Overwrite; la destinazione viene pubblicata solo dopo la riapertura e il controllo di nuovi errori di schema. Gli errori preesistenti vengono conteggiati nel report: questa e una verifica di schema, non una validazione completa delle regole EXPRESS, di una MVD o dei requisiti informativi di commessa. In caso di errore il file destinazione esistente rimane intatto.
+
+Esempio completo: **[09 — Modifica dati IFC](examples/09_Modifica_dati_IFC.gh)**. API di riferimento: [IfcOpenShell property editing](https://docs.ifcopenshell.org/autoapi/ifcopenshell/api/pset/edit_pset/index.html); implementazione verificata con la versione 0.8.3 installata nel progetto.
+
+## Trasferire User Text da Rhino
+
+**IFC Changes From Rhino** riceve il modello originale, GUID Rhino espliciti e le chiavi User Text da confrontare. Dopo le modifiche in Rhino premi Refresh, controlla Preview e collega Changes a IFC Write File. Se tutti i campi sono invariati, non produce richieste. Non trasferisce automaticamente tutte le chiavi.
+
+Sono ammessi `IFC.Name`, `IFC.Attribute.Name/Description/Tag`, `IFC.Type.Name/Description/Tag` e proprieta scalari sotto `IFC.Property`, `IFC.InstanceProperty`, `IFC.TypeProperty`. I nomi contenenti punti, percentuali o parentesi usano la codifica gia presente negli User Text. Le chiavi Type/TypeProperty modificano il tipo condiviso. Non selezionare contemporaneamente alias dello stesso campo con valori discordanti: il writer rifiuta il conflitto.
+
+Gli identificativi e l'hash del bake devono coincidere con il modello scelto. GUID/classi, metadati JSON e altre chiavi di sistema non sono scrivibili. Una chiave mancante causa errore: non viene interpretata come cancellazione. Per impostare null utilizzare Clear in Set Attribute/Set Property. Un nuovo User Text scalare con chiave ammessa puo creare una proprieta (Auto applica il template o IfcLabel per proprieta custom). Il nome dell'oggetto Rhino e i layer non sono User Text e non vengono trasferiti.
+
+Esempio: **[10 — User Text a IFC](examples/10_User_Text_a_IFC.gh)**. Bake, modifica degli attributi in Rhino, Refresh, controllo delle differenze, Write IFC.
+
+## Modificare la geometria da Rhino
+
+**IFC Geometry From Rhino** riceve Model, GUID Rhino delle mesh del bake, Refresh e una tolleranza di confronto in metri (default `1e-6 m`). Produce richieste solo per le mesh cambiate, da combinare con le modifiche dei dati nell'input Changes di IFC Write File. Il controllo considera vertici e triangoli: una diversa triangolazione puo essere segnalata anche per una forma equivalente.
+
+Le coordinate passano dalle unita Rhino ai metri; viene annullato l'offset salvato nel bake e applicato l'inverso del placement IFC. Il nuovo file mantiene placement e GlobalId. Una modifica al Body di un'istanza non riscrive le mappe geometriche del tipo o gli oggetti vicini. IFC4/IFC4x3 usano tessellazioni; IFC2x3 usa un IfcFacetedBrep. Il risultato e una forma esplicita, non una ricostruzione del modello parametrico originario.
+
+Sono accettate mesh chiuse, manifold, orientate, con un solo involucro connesso. Le richieste con facce degeneri, indici invalidi, coordinate non finite, aperture/riempimenti IFC, ShapeAspect o placement non locali vengono rifiutate. Non si creano nuovi oggetti IFC e non si trasferiscono cancellazioni, Brep, curve, layer o modifiche ai tipi geometrici. Le normali globalmente invertite sono corrette nella copia esportata.
+
+**Qto e dati analitici:** le quantita IFC, le proprieta dimensionali, le rappresentazioni secondarie (assi/ingombri/footprint) e il modello strutturale analitico non vengono ricalcolati. Anche gli stili per faccia non sono trasferiti alla nuova mesh. Il componente e il report lo segnalano: dopo una modifica di forma quei dati possono non essere piu coerenti. Il writer confronta ingombro e volume triangolato della mesh con il risultato IfcOpenShell; non esegue una verifica esaustiva delle autointersezioni, ne una verifica strutturale.
+
+Esempio: **[11 — Geometria Rhino a IFC](examples/11_Geometria_Rhino_a_IFC.gh)**, con coordinate grandi e origine locale. Riferimento: [IfcOpenShell mesh representation](https://docs.ifcopenshell.org/autoapi/ifcopenshell/api/geometry/add_mesh_representation/index.html).
+
+## Lettura e visualizzazione
 
 | Componente | Input principali | Output / utilizzo |
 | --- | --- | --- |

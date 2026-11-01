@@ -12,7 +12,7 @@ if (-not $RegisterOnly) {
     }
     & $runtimePython -m pip install -r (Join-Path $pluginFolder 'requirements.txt')
     if ($LASTEXITCODE -ne 0) { throw 'Installazione IfcOpenShell fallita.' }
-    & $runtimePython -c 'import ifcopenshell; print(ifcopenshell.version)'
+    & $runtimePython -c 'import ifcopenshell, ifctester; print(ifcopenshell.version)'
     if ($LASTEXITCODE -ne 0) { throw 'Verifica runtime IFC fallita.' }
     Write-Host 'Runtime IFC pronto nella cartella di Meerkat.'
 }

@@ -1,7 +1,8 @@
-param([string]$PluginPath = '')
+param([string]$PluginPath = '', [string]$DistributionDirectory = '')
 $ErrorActionPreference = 'Stop'
 $projectRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-$destination = Join-Path $projectRoot 'bin'
+$destination = if ($DistributionDirectory) { [IO.Path]::GetFullPath($DistributionDirectory) } else { Join-Path $projectRoot 'bin' }
+if (-not $destination.StartsWith($projectRoot.TrimEnd('\') + '\', [StringComparison]::OrdinalIgnoreCase) -or (Split-Path $destination -Leaf) -ine 'bin') { throw 'La distribuzione deve essere una cartella bin interna al progetto.' }
 function Get-Sha256([string]$Path) {
     $hash = [Security.Cryptography.SHA256]::Create()
     $stream = [IO.File]::OpenRead($Path)
@@ -18,6 +19,8 @@ function Assert-DistributionPath([string]$Target) {
 $files = [ordered]@{
     'Meerkat.gha' = $(if ($PluginPath) { [IO.Path]::GetFullPath($PluginPath) } else { Join-Path $destination 'Meerkat.gha' })
     'ifc_reader.py' = Join-Path $projectRoot 'engine\ifc_reader.py'
+    'ifc_writer.py' = Join-Path $projectRoot 'engine\ifc_writer.py'
+    'ifc_geometry_edit.py' = Join-Path $projectRoot 'engine\ifc_geometry_edit.py'
     'Setup.ps1' = Join-Path $projectRoot 'installer\Setup.ps1'
     'Setup.cmd' = Join-Path $projectRoot 'Setup.cmd'
     'requirements.txt' = Join-Path $projectRoot 'requirements.txt'
@@ -26,8 +29,9 @@ $files = [ordered]@{
     'Meerkat.gh' = Join-Path $projectRoot 'Meerkat.gh'
     'Meerkat.ghx' = Join-Path $projectRoot 'Meerkat.ghx'
 }
+foreach ($worker in Get-ChildItem -LiteralPath (Join-Path $projectRoot 'engine') -Filter '*.py' -File) { $files[$worker.Name] = $worker.FullName }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $projectRoot 'examples') -File) {
-    if ($file.Extension -in @('.gh', '.ghx', '.ifc', '.zip', '.md', '.json')) { $files['examples/' + $file.Name] = $file.FullName }
+    if ($file.Extension -in @('.gh', '.ghx', '.ifc', '.zip', '.md', '.json', '.csv', '.ids')) { $files['examples/' + $file.Name] = $file.FullName }
 }
 foreach ($file in Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Assets') -File -Recurse) {
     $files[$file.FullName.Substring($projectRoot.TrimEnd('\').Length + 1).Replace('\', '/')] = $file.FullName
