@@ -2,6 +2,14 @@
   <Target Name="MeerkatCleanModuleBins" BeforeTargets="PrepareForBuild" Condition="'$(DesignTimeBuild)' != 'true'">
     <Exec Command="powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;$(MeerkatRoot)tools\Build-Layout.ps1&quot; -CleanModules" />
   </Target>
+  <!-- The commit of the build, read at load by src/PluginBuildCheck.cs; Build.ps1 writes the same attribute. -->
+  <Target Name="MeerkatBuildCommit" BeforeTargets="CoreCompile" DependsOnTargets="InitializeSourceControlInformation" Condition="'$(MSBuildProjectName)' == 'Meerkat' and '$(SourceControlInformationFeatureSupported)' == 'true'">
+    <WriteLinesToFile Condition="'$(SourceRevisionId)' != ''" File="$(IntermediateOutputPath)BuildCommit.g.cs" Lines="[assembly: System.Reflection.AssemblyMetadata(&quot;BuildCommit&quot;, &quot;$(SourceRevisionId)&quot;)]" Overwrite="true" WriteOnlyWhenDifferent="true" />
+    <ItemGroup Condition="'$(SourceRevisionId)' != ''">
+      <Compile Include="$(IntermediateOutputPath)BuildCommit.g.cs" />
+      <FileWrites Include="$(IntermediateOutputPath)BuildCommit.g.cs" />
+    </ItemGroup>
+  </Target>
   <Target Name="MeerkatDistribution" AfterTargets="Build" Condition="'$(MSBuildProjectName)' == 'Meerkat' and '$(DesignTimeBuild)' != 'true'">
     <Exec Command="powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;$(MeerkatRoot)tools\Sync-Distribution.ps1&quot; -PluginPath &quot;$(TargetPath)&quot;" />
   </Target>

@@ -28,6 +28,7 @@ namespace IfcViewer
         {
             Instances.ComponentServer.AddCategoryIcon("Meerkat", BrandIcons.Get("Meerkat"));
             Instances.ComponentServer.AddCategorySymbolName("Meerkat", 'M');
+            Gpc.PluginChecks.PluginBuildCheck.Start(typeof(MeerkatPriority).Assembly, "Meerkat");
             return GH_LoadingInstruction.Proceed;
         }
     }
