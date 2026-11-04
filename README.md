@@ -2,6 +2,8 @@
 
 ![Meerkat](Assets/Brand/logo.png)
 
+**Versione:** 0.1.0, scritta solo in `src/AssemblyVersion.cs`. A ogni rilascio una correzione alza l'ultimo numero, ogni altra modifica il secondo.
+
 Progetto per **Rhino 8 / Grasshopper 1, Windows x64**, con **35 componenti**, definizione `.gh` gia collegata e un modello IFC di esempio incorporato. Compilato e verificato con Rhino 8.35. Non richiede Geometry Gym, VisualARQ o altri plugin BIM. Il motore di lettura e IfcOpenShell 0.8.3, installato in un ambiente Python locale al progetto.
 
 ## Avvio

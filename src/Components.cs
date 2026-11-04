@@ -17,6 +17,7 @@ namespace IfcViewer
     {
         public override string Name { get { return "Meerkat"; } }
         public override string Description { get { return "IFC geometry, BIM attributes, archives and attributed bake."; } }
+        public override string Version { get { return typeof(MeerkatInfo).Assembly.GetName().Version.ToString(3); } }
         public override Guid Id { get { return new Guid("D1313D48-9B86-4F54-886C-B19E419E9FD2"); } }
         public override string AuthorName { get { return "Meerkat"; } }
         public override string AuthorContact { get { return ""; } }
