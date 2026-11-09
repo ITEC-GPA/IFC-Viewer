@@ -28,7 +28,18 @@ namespace IfcViewer
         {
             Instances.ComponentServer.AddCategoryIcon("Meerkat", BrandIcons.Get("Meerkat"));
             Instances.ComponentServer.AddCategorySymbolName("Meerkat", 'M');
-            Gpc.PluginChecks.PluginBuildCheck.Start(typeof(MeerkatPriority).Assembly, "Meerkat");
+            // ComponentServer may register a COFF-loaded assembly only after PriorityLoad.
+            // Retry at the first idle event when its physical path is available.
+            EventHandler initialize = null;
+            initialize = (sender, args) =>
+            {
+                Rhino.RhinoApp.Idle -= initialize;
+                try { Gpc.PluginChecks.PluginBuildCheck.Start(typeof(MeerkatPriority).Assembly, "Meerkat", true, Engine.PluginDirectory); }
+                catch (Exception ex) { Rhino.RhinoApp.WriteLine("Meerkat: verifica build non disponibile: " + ex.Message); }
+            };
+            if (!string.IsNullOrEmpty(typeof(MeerkatPriority).Assembly.Location))
+                Gpc.PluginChecks.PluginBuildCheck.Start(typeof(MeerkatPriority).Assembly, "Meerkat");
+            else Rhino.RhinoApp.Idle += initialize;
             return GH_LoadingInstruction.Proceed;
         }
     }

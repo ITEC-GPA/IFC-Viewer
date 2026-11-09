@@ -1,5 +1,5 @@
-// Load-time check shared by the gPC Grasshopper plug-ins: keep every copy identical to the reference copy in
-// BridGHe/src/BridGHe.Grasshopper/Helpers/PluginBuildCheck.cs, tested by BridGHe/tests/BridGHe.Smoke/PluginBuildCheckTests.cs.
+// Based on the shared gPC check in BridGHe/src/BridGHe.Grasshopper/Helpers/PluginBuildCheck.cs.
+// Meerkat additionally accepts the installation folder for Grasshopper COFF loading.
 // C# 5: Meerkat compiles with the .NET Framework csc, which rejects even a skipped #nullable; the pragma below silences the
 // nullable warnings of the plug-ins that enable them.
 #if NET
@@ -36,12 +36,12 @@ namespace Gpc.PluginChecks
         }
 
         /// <summary>Called once from the plug-in's GH_AssemblyPriority. Never throws.</summary>
-        public static void Start(Assembly pluginAssembly, string name, bool sharedLibraries = true)
+        public static void Start(Assembly pluginAssembly, string name, bool sharedLibraries = true, string installationFolder = null)
         {
             lock (Sync) { if (plugin != null) return; plugin = pluginAssembly; pluginName = name; }
             try
             {
-                pluginFolder = Path.GetDirectoryName(pluginAssembly.Location);
+                pluginFolder = installationFolder ?? Path.GetDirectoryName(pluginAssembly.Location);
                 if (string.IsNullOrEmpty(pluginFolder)) return;
                 string head, branch;
                 string root = FindRepository(pluginFolder, out head, out branch);

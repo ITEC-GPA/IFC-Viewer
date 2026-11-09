@@ -25,13 +25,14 @@ internal static class Bootstrap
     private static int Main(string[] args)
     {
         Root = Path.GetFullPath(args[0]);
-        string rhino = @"C:\Program Files\Rhino 8\System";
+        string rhinoRoot = System.Environment.GetEnvironmentVariable("MEERKAT_RHINO_DIR") ?? @"C:\Program Files\Rhino 8";
+        string rhino = Path.Combine(rhinoRoot, "System");
         SetDllDirectory(rhino);
         AppDomain.CurrentDomain.AssemblyResolve += delegate(object sender, ResolveEventArgs e)
         {
             string name = new AssemblyName(e.Name).Name;
             string pluginDirectory = System.Environment.GetEnvironmentVariable("MEERKAT_PLUGIN_DIR") ?? Path.Combine(Root, "bin");
-            foreach (string dir in new[] { pluginDirectory, rhino, @"C:\Program Files\Rhino 8\Plug-ins\Grasshopper" })
+            foreach (string dir in new[] { pluginDirectory, rhino, Path.Combine(rhinoRoot, "Plug-ins", "Grasshopper") })
                 foreach (string extension in new[] { ".dll", ".gha" })
                 {
                     string file = Path.Combine(dir, name + extension);
@@ -83,6 +84,7 @@ internal static class RhinoHarness
             using (var doc = RhinoDoc.CreateHeadless(null))
             {
                 RhinoDoc.ActiveDoc = doc;
+                RuntimeTests.Run(Root, Check);
                 doc.ModelUnitSystem = UnitSystem.Millimeters;
                 CreateDefinition(model);
                 int skipped;

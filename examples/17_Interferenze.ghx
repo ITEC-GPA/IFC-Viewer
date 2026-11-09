@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">e587a283-f24b-4c20-82c1-e4b1edb10aaf</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">7b9a0e90-ad7a-4ae4-8f88-e78d537a4b73</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280916540760383</item>
+            <item name="Date" type_name="gh_date" type_code="8">639298609923394938</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>12</X>
-                  <Y>12</Y>
+                  <X>10</X>
+                  <Y>10</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -77,17 +77,17 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.1.1.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
-                <item name="Version" type_name="gh_string" type_code="10"></item>
+                <item name="Version" type_name="gh_string" type_code="10">0.1.1</item>
               </items>
             </chunk>
           </chunks>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6903cea0-28f3-45da-8dc5-29aabf753341</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ae8afa4c-0aee-4ea4-bc8f-c51789e2d6ca</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">17 | INTERFERENZE E DISTANZE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8edb3d1-8265-4631-befd-c82d69abd209</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7685e87e-f644-4871-a1bc-b431bb8a55ae</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a061f80f-3c84-476a-bfd4-58c048d962be</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9a5a49db-a36f-4189-9686-ce68160ffa4f</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5b208c14-4332-4eeb-ba04-d33b5615bfe8</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6a0b231e-6c27-470a-8d65-95a1ce47ef43</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d7971567-9f7b-40f8-ab3e-3346ebac1c98</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">157c1efd-a10f-4bf8-bc20-169f9f32449a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a37a522a-f716-4dac-95ff-0969267c5d22</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f53fa544-afd6-4d59-a1f9-b0a885d13431</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">42bc2527-e621-449c-9cbc-3abf3e951a7b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7220bfb-9dc5-4e87-84f8-deea30a959fc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b16d40c-8af9-40a3-9a89-9873558ce523</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f3f77ae-3bfe-466a-87f3-9364e23c1256</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">624c8b38-8e41-4886-a5e8-95c757f62b84</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5a50d3ed-6aa8-4826-ad6e-8e5d37aa55a1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3173a9d6-51a8-49b7-9751-a496e3d05420</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c846a95-c704-429a-a6a2-5d1e81df061b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5b208c14-4332-4eeb-ba04-d33b5615bfe8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6a0b231e-6c27-470a-8d65-95a1ce47ef43</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a37a522a-f716-4dac-95ff-0969267c5d22</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f53fa544-afd6-4d59-a1f9-b0a885d13431</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bc2272b3-4cf0-4616-9449-3dd94d1f2665</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">59eb4374-7328-45f8-ada5-2d93152e4aff</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IfcWall</item>
                   </items>
@@ -488,11 +488,11 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fd75ea65-8eab-4548-a18f-4f4e1667ad6e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">74eda9b4-a192-4b0e-91b8-3f8fa165066b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2b16d40c-8af9-40a3-9a89-9873558ce523</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6f3f77ae-3bfe-466a-87f3-9364e23c1256</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">57c6dd10-016d-4468-a31b-96349c673b82</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fdcd805f-e517-4293-b8e5-91a35ddcb6cd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -554,7 +554,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c401d25f-b966-41b8-ba0d-d5b57eb3a9d2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9443b6f5-5d46-4274-9fbb-51b7152c4290</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +597,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e903a5c4-109f-406c-a3e2-e7140df55583</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f736ac90-3936-4900-a5be-6ba7e96e85d9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -640,7 +640,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">24103e43-9b2e-4db2-b758-acc2f00b7e5d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">083ab833-1406-4b0a-ae73-33bfd1e166f6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +683,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f8cbac7-9154-4c3f-8226-bf9a43a82b5b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d272d5a3-ec28-4c0b-b6b3-e88957659521</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +706,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">763b24c9-cb9b-408c-a481-30c629988e29</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">41ae09fe-8a8c-4b37-aff5-8e5595195237</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +729,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fc382ce8-beef-407e-a6ca-6834dae7a7d8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c27101f6-b9e9-46d5-8862-e7be9de1a2bd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,7 +761,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4baf6b5-687d-4316-8051-4f3cea8e2c3f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">baacb6c1-83ba-4876-83c3-c4701dc5081a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -811,7 +811,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">48d9fe34-0f43-48e4-ab65-51d98c7c9a62</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ffb5a433-eef6-4395-9695-bb2fc0a43e9d</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IfcSlab</item>
                   </items>
@@ -834,11 +834,11 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7654b1ef-d7ac-45f5-98b7-b8bde49e51fc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d0fe5ebc-212f-43b0-94d7-10cb8ec15604</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2b16d40c-8af9-40a3-9a89-9873558ce523</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6f3f77ae-3bfe-466a-87f3-9364e23c1256</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -857,7 +857,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b81ceb4-a9db-4b92-8977-553eedda1e2c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9c598f0a-00fc-4a05-8a6d-e43e6de2652c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -900,7 +900,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5e61a7d0-ba8f-40e9-a205-ae5ecb1605b9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6b3ef409-61d2-4b8e-b9d9-024982f4beef</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -943,7 +943,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">21af4045-af44-42e8-92c4-60ee9d9db15a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d5fa9b34-77d3-4005-a48f-536d3e5b6e3d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -986,7 +986,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">65bbefb3-0d75-4751-ac42-3780e4b0f9c4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">42816c9b-5247-4465-bf5c-d264725e1a61</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1029,7 +1029,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">befc57b8-d954-4773-aa56-a568c80becc9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">deebe2d9-c341-4341-a422-9fa9cc5c4562</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1052,7 +1052,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">91e794ac-d538-4ba5-a0ca-a4920c9205ef</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b233ad25-31f5-4be2-a085-a53fdc6b26f3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1075,7 +1075,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4a605792-be70-4b8e-b869-95b084613021</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fc5400ba-3089-4dd7-82c8-d0c1cde1c072</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1107,7 +1107,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">425f4202-298e-4612-b7d0-6d1f5df39800</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">43cc07f6-e327-4dba-b21e-66989deaed5b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1156,7 +1156,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="4">
                     <item name="Description" type_name="gh_string" type_code="10">Interferenze, contatti e distanze insufficienti fra due insiemi anche federati. Usa coordinate IFC comuni e geometria tessellata.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">694a1f12-df8d-49c9-bec5-ad4bf3c4d189</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ab0cc275-a64d-4faf-be95-8c91f2ff0a94</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Clash / Clearance</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Clash</item>
                   </items>
@@ -1179,12 +1179,12 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9734db3c-f565-4651-b02a-dbfe3c84e7cf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">523684e8-a5ca-4ff1-b9c2-5ec52aeb8ee3</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Set A</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3f8cbac7-9154-4c3f-8226-bf9a43a82b5b</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d272d5a3-ec28-4c0b-b6b3-e88957659521</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1204,12 +1204,12 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Secondo insieme. Puo coincidere con A.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3193fa2-a33d-4f7b-bf97-a5baceb18078</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">29ab2249-9c26-45c4-8034-bc194cda2b41</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Set B</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">befc57b8-d954-4773-aa56-a568c80becc9</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">deebe2d9-c341-4341-a422-9fa9cc5c4562</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1228,7 +1228,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Intersection (penetrazione), Collision (superfici), Clearance (distanza).</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">68d8a30c-c8a7-4dae-a3c5-d28e29fa8d7c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b189e98-cd84-46c8-9c30-47e6b77724cf</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mode</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1271,7 +1271,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Tolleranza Intersection o distanza minima Clearance, in metri. Collision ignora questo valore.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">44302f87-a652-4c42-baf3-3d0e5e9c56b0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dd8a84b5-eb15-47b9-93d2-61813fee0845</item>
                         <item name="Name" type_name="gh_string" type_code="10">Distance metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1313,7 +1313,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Include contatti in Collision.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">13593553-ac20-44b2-9c0d-03178b126019</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e5338a3e-95db-48f4-bb27-e3326b39818d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Include touching</item>
                         <item name="NickName" type_name="gh_string" type_code="10">T</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1356,7 +1356,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classi esatte da escludere.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">422b2260-dcab-4f33-9b9a-05d337f16419</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4830d3e-2f1d-4ac1-babd-604216a7a186</item>
                         <item name="Name" type_name="gh_string" type_code="10">Exclude classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">X</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1379,7 +1379,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Coppie IFC.Key|IFC.Key da ignorare.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e41b8dca-aa98-4350-b0a1-201080fa7ef0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">87cd9344-6b0f-4b09-b9b9-32a938ae17b4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Exclude pairs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1401,7 +1401,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="7">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Offset di sola visualizzazione in metri, come IFC Elements.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fc11edf9-e19d-4a5d-8adf-455b3cb577ef</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a716cb2-2ccd-480f-9b83-5e52ed50ad70</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1447,7 +1447,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="8">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Esegue il controllo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4ebeed7b-bbe8-4233-9de7-89a57e646250</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">70b107f8-df63-409c-b170-85247ac53a8e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Run</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1490,7 +1490,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un ramo {i} con i due elementi coinvolti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">739a1a93-c926-4f87-a1d6-0812fdbe3f3c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">52dfdaa8-e9bd-4223-bb97-6ce26917a47e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Pairs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1513,7 +1513,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Punto indicativo A nelle unita Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0d5b95c9-1f90-40cb-94e6-9bf8e1458663</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a66136e3-1599-4c43-9fdd-812185d2922d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Points A</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1536,7 +1536,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Punto indicativo B nelle unita Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7dfe7ac5-2a81-4408-b8ac-c6ed410dfb39</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">48216523-8cc4-4cda-bdad-0b0e20bb60a5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Points B</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1559,7 +1559,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Penetrazione/separazione secondo Kind; non volume di intersezione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cc295883-6126-4f7b-808d-cbf64238d156</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d55a917e-fe51-4a5a-b260-79ecb8e8deca</item>
                         <item name="Name" type_name="gh_string" type_code="10">Distance metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1582,7 +1582,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tipo restituito dal motore geometrico.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e76f7a40-ad80-4979-9453-28f4bc68f9cb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">41944958-0136-489c-853c-41f6820e0d8d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Kind</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1604,7 +1604,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_output" index="5">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Coppie, elementi senza geometria e ipotesi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e7a944c-aeaa-4735-bbba-68d64a8521d8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">17b75421-5803-49c6-9384-e9283ef5eaa0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1636,7 +1636,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f9e5b8ad-57db-407c-8a1c-ddad87dd77a0</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e223dfd8-cec9-4add-b64a-ea5984d51a91</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Clash / Clearance</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1684,12 +1684,12 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4057dd75-5615-45f6-a158-fe2a18d22681</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8423faf2-4744-44ec-a2a5-5ac03ec36d55</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">COPPIE | due elementi in ogni ramo</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">739a1a93-c926-4f87-a1d6-0812fdbe3f3c</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">52dfdaa8-e9bd-4223-bb97-6ce26917a47e</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1733,12 +1733,12 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7801da39-43b8-40b0-be9b-cdfe12b19d22</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">46a83c0a-4ff1-4492-82c6-f9bd65568994</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">TIPO DI INTERFERENZA</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">e76f7a40-ad80-4979-9453-28f4bc68f9cb</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">41944958-0136-489c-853c-41f6820e0d8d</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1782,12 +1782,12 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">01b1dd3e-34a2-48db-8d5d-09956f23610b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e1eaf0fd-ab8e-4fe9-9690-0dbd86e1c628</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT | inclusi oggetti non verificabili</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">0e7a944c-aeaa-4735-bbba-68d64a8521d8</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">17b75421-5803-49c6-9384-e9283ef5eaa0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1833,7 +1833,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a4f46026-e1c7-47ff-ac3b-d2453a181f54</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">920600db-29fc-4631-85aa-3a9913a0e491</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO</item>
                   </items>
@@ -1856,11 +1856,11 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2e9796e4-c92c-441e-8c72-c181d0cad792</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">794ae14c-8361-4ff1-8ac3-00aa744edda0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2b16d40c-8af9-40a3-9a89-9873558ce523</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6f3f77ae-3bfe-466a-87f3-9364e23c1256</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1880,7 +1880,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5b2d8024-0026-43dc-80a1-8c9969626a23</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c8bfe013-7aa1-4da2-98c2-5adb9ed0182a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1902,7 +1902,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">574f9112-3b08-48f2-a4c4-2409e89c8170</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">be173941-005d-4b97-a5f9-6026885a8077</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1945,7 +1945,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b88d262a-67e0-496e-8295-bcd6f2b08368</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a74ec0d4-2d92-4aff-b05c-87c8df0bacd4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1992,7 +1992,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ff0d39a0-0c31-4cea-8564-24cde47f5e56</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eec4ffee-346f-4e3e-bf97-a6810000514a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2015,7 +2015,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">420c2f78-2f2e-4395-9c1c-448874f6a498</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">90022788-71af-4593-a170-897ec2f12494</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2038,7 +2038,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2ac0c43d-6779-4144-8b0b-76c6f799248c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1f270707-23d2-4075-a914-3cc379ac43fd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2061,7 +2061,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7d4fee8a-2a60-4d67-bc17-ed793405b569</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">35e23c0c-078d-4368-9e62-bd43e01ddb2d</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2084,7 +2084,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">02c7bdb9-4396-451e-abac-07b67aa301b5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7505f1fa-46b2-4749-aa48-f67242a94267</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2107,7 +2107,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">50e14c77-f56a-4cee-87be-ab526d09f22b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8cba2e5c-4b84-44d2-afb3-7306e97cd6c3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2130,7 +2130,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">11c9b09e-f93c-49f0-a75e-6b81aeffc893</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4bd4a844-0c29-4c48-9ed4-4fc7dc5df532</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2153,7 +2153,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8afacb31-e4d6-4c7f-b5fb-dcf22de4e0e5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">485b48b0-3165-4f7e-ac6a-0bb49049a7f5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2185,7 +2185,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">30f873bf-09a4-474a-9d06-180a1598f52d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7086ead2-168a-4d4d-845b-1ce106f37b1b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2233,7 +2233,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">51214a9b-ddf4-4c88-a38d-df581e47d512</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">361d1683-041e-4ca8-97ed-aee96e351a49</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2290,7 +2290,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">852ed395-2f48-4bd5-a20c-1c0a8b13d933</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">83957ea2-c218-4b4c-89e3-82e404d792de</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -2314,11 +2314,11 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2f15be1a-26e6-40d0-8829-4a72abd76ee2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b82f0648-00a0-41f0-8d0f-269e216a5d94</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ff0d39a0-0c31-4cea-8564-24cde47f5e56</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">eec4ffee-346f-4e3e-bf97-a6810000514a</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2337,11 +2337,11 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c4f8395-edcd-4e4f-b477-d550342eec66</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b97904e2-90f4-41bb-9b2d-f2c8b5e40f7a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">51214a9b-ddf4-4c88-a38d-df581e47d512</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">361d1683-041e-4ca8-97ed-aee96e351a49</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2400,7 +2400,7 @@ Escludi classi o coppie IFC.Key|IFC.Key. I punti sono indicativi e Distance dipe
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b247b00-4b9e-4c59-875e-12ff8dd17416</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">11611c76-d105-4b67-811e-aa4fafae46b6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>

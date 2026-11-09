@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">ad3e3f06-762b-4e0b-8ad5-f3e90c48bd77</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">630016a1-65ab-49e4-ac0a-dc5b4cb0e9b5</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280229268848179</item>
+            <item name="Date" type_name="gh_date" type_code="8">639298605936143814</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>12</X>
-                  <Y>12</Y>
+                  <X>10</X>
+                  <Y>10</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -77,17 +77,17 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.1.1.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
-                <item name="Version" type_name="gh_string" type_code="10"></item>
+                <item name="Version" type_name="gh_string" type_code="10">0.1.1</item>
               </items>
             </chunk>
           </chunks>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0f54754e-cdf6-4c0b-a808-d198d94df358</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">847ae907-284c-4c6f-9940-2e91cf0f1c50</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">06 | ESPLORA MODELLO, CHIAVI E IDENTIFICATIVI</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8d25c7f-ea82-4a48-8416-4ccba22c118c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3dc60312-7380-4f4f-942f-d68e2070c150</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">70ee2ca8-9fcb-4149-9eac-ef81b04a48f6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7e5f5c7e-371d-442e-a017-812731f1862e</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">248c3f3d-25f6-4f68-9253-cac1b743461d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2fcc9f24-68e6-4653-bd70-2f8e7ed7d1a4</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7608b28b-2bbb-4616-97af-39bc5c6d83e0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a12de2f1-d1fb-486b-b469-240a69433193</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6326f1db-a244-4fe7-9803-0eed77cde11a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4223b705-b812-46ca-aa77-703f9f07b693</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">01c05ec3-144b-4954-b34c-0bd0940a8b53</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3dfca440-3de5-4428-8697-fe022ca0aa87</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b35c089-f197-4a37-a817-f049c916bbf1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a89ac650-3e1c-4de1-9642-398fe248af40</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">87677644-e97c-4293-a99b-4c4f29ce3235</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">be280e10-d8fe-431f-be16-96e7f40273e5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bde68cd1-eaef-4651-b566-9c415faaca83</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">349c93ff-8292-4061-b96c-ba3f3d5aaec8</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">248c3f3d-25f6-4f68-9253-cac1b743461d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2fcc9f24-68e6-4653-bd70-2f8e7ed7d1a4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6326f1db-a244-4fe7-9803-0eed77cde11a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4223b705-b812-46ca-aa77-703f9f07b693</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Schema, sorgenti, unita, conteggi e classi dei modelli caricati.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">06d8a095-396e-4f28-8701-e0023ba3ee35</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f177b58-ba42-438e-9f9c-50d009745054</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Model Info</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Info</item>
                   </items>
@@ -488,11 +488,11 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3efdcc48-7886-4c8d-9ae8-ba522b239953</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">adc15ee1-ac13-40a5-a4fb-0b34a1665835</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">01c05ec3-144b-4954-b34c-0bd0940a8b53</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3dfca440-3de5-4428-8697-fe022ca0aa87</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -512,7 +512,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nome sorgente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">29afb25b-dc9b-4bd5-8a65-c8fef1aadf3c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0cae6f59-4a18-455f-ac09-8823d55aa188</item>
                         <item name="Name" type_name="gh_string" type_code="10">Names</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -535,7 +535,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Schema IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">85ea7da8-23b7-4c7b-af1e-2735bb23f3b9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e95108d5-d104-4c5d-b240-3380ef276dcc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Schemas</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -558,7 +558,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Numero prodotti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">826105ad-ebb5-482c-8402-93bf214bb081</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">69c4eb71-71fe-49ee-b852-e830a238b26d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Products</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -581,7 +581,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Numero mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2f1f7f46-b2a1-461b-97bb-8eee0f077738</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">52a9d7c1-97ee-40b6-a99a-46a5fa342498</item>
                         <item name="Name" type_name="gh_string" type_code="10">Meshes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -604,7 +604,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Scala delle unita lineari IFC verso metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">67a6eb9d-08b2-4d00-9d7b-ad6779f5aa5d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e3e91a9-3c76-4784-a272-5e62969be6f8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Length to metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -627,7 +627,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classi uniche, ramo {modello}.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7e1e6852-dc5a-4df1-acee-34537e3d17b1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3fc5cddb-1a44-4aa0-86f5-34b423fc3456</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -650,7 +650,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Conteggi allineati a Classes.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b9f89d1c-ce8f-400f-8883-364211044c4b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">af973a4b-a8b6-4da9-8360-6b549ac92245</item>
                         <item name="Name" type_name="gh_string" type_code="10">Class counts</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Q</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -673,7 +673,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadati del modello, esclusi i prodotti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3cf8a3ad-0f84-46db-998b-19a4f836d93d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e4d74b5f-a321-4e1f-a350-4bba7e0866a1</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -705,7 +705,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1c043f22-fd44-4f10-b3de-db4aeca569dc</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">665eecae-073a-44f1-9626-4e21100725c7</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Model Info</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -753,12 +753,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ff98100d-b425-4d7d-95d4-52b81b34c6c9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7fc301d-9492-42c7-b4f7-650c3e0a086b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SCHEMA</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">85ea7da8-23b7-4c7b-af1e-2735bb23f3b9</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">e95108d5-d104-4c5d-b240-3380ef276dcc</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -802,12 +802,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ddfbfd06-71ab-4400-b8dc-744a3a2d6a49</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0aff6ce4-d63a-4e01-a4e4-fad5e30407f6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PRODOTTI / RECORD</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">826105ad-ebb5-482c-8402-93bf214bb081</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">69c4eb71-71fe-49ee-b852-e830a238b26d</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -851,12 +851,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7d684d81-a43d-4f86-8764-8afce28af472</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3ea8224a-13a0-4335-b82d-432b19e3503f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MESH</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">2f1f7f46-b2a1-461b-97bb-8eee0f077738</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">52a9d7c1-97ee-40b6-a99a-46a5fa342498</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -900,12 +900,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9ccd41d9-db23-4337-bf27-97a2ca365bdd</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7671e003-cf9e-4af5-879a-717e5afd33a8</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SCALA LUNGHEZZE IFC -&gt; METRI</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">67a6eb9d-08b2-4d00-9d7b-ad6779f5aa5d</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">1e3e91a9-3c76-4784-a272-5e62969be6f8</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -949,12 +949,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">790bab9a-0a20-404d-b756-6fbc8ea51cb3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7ca1770-7361-4fcd-9f94-b801d66c7db7</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CLASSI</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">7e1e6852-dc5a-4df1-acee-34537e3d17b1</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">3fc5cddb-1a44-4aa0-86f5-34b423fc3456</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -998,12 +998,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">adbb8da5-fa7a-459f-9101-a3caa1d4bc6b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">66ab94fe-f9cd-4c26-a93b-ad189e1fc0d7</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CONTEGGI PER CLASSE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">b9f89d1c-ce8f-400f-8883-364211044c4b</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">af973a4b-a8b6-4da9-8360-6b549ac92245</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1049,7 +1049,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Elenco unificato delle chiavi e numero di oggetti in cui ogni chiave e presente.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">63221520-cd49-43ed-a3f9-1997dbf100ae</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e3810afe-b76d-421c-b7e2-99a56d3dbafa</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Property Keys</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Keys</item>
                   </items>
@@ -1072,11 +1072,11 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1d7edb84-9d4a-4034-a19d-92fcc4f01e45</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ea5fe0f0-f9a9-443f-a4b3-02309b205780</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3b35c089-f197-4a37-a817-f049c916bbf1</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a89ac650-3e1c-4de1-9642-398fe248af40</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1095,11 +1095,11 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Testo contenuto nel nome della chiave.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">45a7259a-e521-4f4b-a69a-111794c1cfac</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a134afb1-dfa9-41fd-8451-f4f22b40441c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2c7349e1-e51e-4a1d-a8b9-ba51bcb15466</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b21a4e0e-7d9c-43df-ad77-2fe3ed13f622</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1140,7 +1140,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Chiavi esatte da usare negli altri componenti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ff19db9e-6217-49a7-a248-45e6b6f64dd7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5650ea03-cc50-4341-b99d-180e6060a885</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1163,7 +1163,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Numero di elementi con la chiave (anche se il valore e null).</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a6569515-8150-4e99-bc52-987093aef786</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9af6fa75-440f-4783-a9ba-8a77ee2b0490</item>
                         <item name="Name" type_name="gh_string" type_code="10">Occurrences</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1195,7 +1195,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">81d0de7c-ecb1-426e-9011-b7ec6c658ebe</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6801665e-b9b4-4166-aecd-fd524e9b27e2</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Property Keys</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1243,7 +1243,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c7349e1-e51e-4a1d-a8b9-ba51bcb15466</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b21a4e0e-7d9c-43df-ad77-2fe3ed13f622</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CERCA NEL NOME DELLA CHIAVE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1291,12 +1291,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cc58344e-13f9-4311-a5ac-d8a45b900b3d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5270c1a0-f63a-436a-a456-62829cc96bcd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CHIAVI ESATTE | copia una chiave sotto</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ff19db9e-6217-49a7-a248-45e6b6f64dd7</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">5650ea03-cc50-4341-b99d-180e6060a885</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1340,12 +1340,12 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">56976ab3-b1c9-43ee-b2c6-b495b07d5613</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8eb8a43-1cb5-4bf3-bcd4-f53e33538518</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">OCCORRENZE | stessa riga della chiave</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">a6569515-8150-4e99-bc52-987093aef786</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">9af6fa75-440f-4783-a9ba-8a77ee2b0490</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1391,7 +1391,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Seleziona GlobalId, #STEP-ID oppure chiavi sorgente:GlobalId. I GlobalId distinguono maiuscole/minuscole.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dfeb2896-f50d-4389-8fce-546297a64955</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1005bf00-84b1-451b-bf50-424d6300be23</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Select IDs</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC IDs</item>
                   </items>
@@ -1414,11 +1414,11 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b00acea0-0bc9-4ed8-bd1a-2a06971672f9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e1879fad-921b-4195-b835-6e023ed7d87c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3b35c089-f197-4a37-a817-f049c916bbf1</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a89ac650-3e1c-4de1-9642-398fe248af40</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1438,11 +1438,11 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId, #42 o chiave completa (sorgente:GlobalId).</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5137c320-a8c4-42db-8678-5acbd7f7bc84</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e2ef0972-fbda-4c7a-bc90-2c4c0c862a68</item>
                         <item name="Name" type_name="gh_string" type_code="10">IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6ea9cdf2-7b23-4d74-9472-42dea122f9d1</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7857c517-8edb-4600-9478-05ffc3978440</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1462,7 +1462,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi selezionati nell'ordine originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">be2445e0-55a4-4255-a16e-0743103f7544</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">73afcf14-aa28-4e21-9639-7cae84c4816b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1485,7 +1485,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Indici nella lista di input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d958f8fe-8f84-4d62-8d7d-f59e8faaea72</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ed674da3-cc76-45dc-91bd-fa3c7a367881</item>
                         <item name="Name" type_name="gh_string" type_code="10">Indices</item>
                         <item name="NickName" type_name="gh_string" type_code="10">I</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1508,7 +1508,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Identificativi senza corrispondenza.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3171e01a-9c03-4d4f-924f-4e9a0cc457ed</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb1db144-d956-45b7-8bb1-14c9b27d53cf</item>
                         <item name="Name" type_name="gh_string" type_code="10">Not found</item>
                         <item name="NickName" type_name="gh_string" type_code="10">MISS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1531,7 +1531,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Identificativi che selezionano piu elementi (es. modelli federati).</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">694a13aa-701e-4cc4-b465-dd9ce7b39627</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">177be6af-6cef-4b36-99a4-b3df04e181e8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Ambiguous</item>
                         <item name="NickName" type_name="gh_string" type_code="10">MULTI</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1563,7 +1563,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6446146d-1c39-4997-8ecf-0ea3736e05b5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f277cc11-cfbc-4f43-b9d5-f95bd223cc0a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Select IDs</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1611,7 +1611,7 @@ Cambia la ricerca delle chiavi, copia una chiave nel pannello PARAMETRO e consul
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ea9cdf2-7b23-4d74-9472-42dea122f9d1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7857c517-8edb-4600-9478-05ffc3978440</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ID | GlobalId, #STEP-ID oppure IFC.Key</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1660,12 +1660,12 @@ ID_NON_PRESENTE</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">63abaa91-6235-4462-a462-03380ac9ed81</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4cb3015e-2b98-40dc-8193-d4888ae2eb3f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ID NON TROVATI | esempio intenzionale</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">3171e01a-9c03-4d4f-924f-4e9a0cc457ed</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">bb1db144-d956-45b7-8bb1-14c9b27d53cf</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1711,7 +1711,7 @@ ID_NON_PRESENTE</item>
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6376c050-1a10-43ed-a7be-e63d2dd4e45c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">24f8362b-56a5-499d-b34b-c7c702f92bde</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Data</item>
                   </items>
@@ -1734,11 +1734,11 @@ ID_NON_PRESENTE</item>
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f9e610b4-e993-4184-80a0-43f881db0372</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c26bd6e4-c4f6-43ca-952a-f613c4e7bae2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">be2445e0-55a4-4255-a16e-0743103f7544</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">73afcf14-aa28-4e21-9639-7cae84c4816b</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1758,7 +1758,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4258dc27-0d93-434a-982b-1174977ae14a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a7b86214-fbc9-4d7a-b020-ea7ac802f414</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1780,7 +1780,7 @@ ID_NON_PRESENTE</item>
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">92b0613c-3ad5-4a6b-9bd8-4e3cb2c387db</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">063af9f3-bfe1-426d-bcdf-23f620f3a938</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1823,7 +1823,7 @@ ID_NON_PRESENTE</item>
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">96d79f7e-c9fd-4eef-9e28-f3e027506f1b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">730e8672-ec28-41ae-a5b3-aa0d867a25c3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1870,7 +1870,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d1c81dfc-784d-41f1-84e0-09cacb419556</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">84a772b4-7dea-46f4-a8a7-7bd635a66322</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1893,7 +1893,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1a8c7ce2-cdb5-45c3-b9c0-d3b6de3951dc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8be89f9e-f4c1-40d2-9716-14f82053a6c3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1916,7 +1916,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7eb48bda-2c99-4577-982d-7f96c8ea1da7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef09860a-38fa-420a-be38-15edfd64bab9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1939,7 +1939,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">63b64a95-602f-4c0c-8d50-d67e85c9d5e9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">500f0090-cb28-4ad7-a228-b55bbe049be1</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1962,7 +1962,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">31563c01-f404-45b3-b5d4-7745dbc275cc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">469b4b14-f6d0-4443-a2c4-3ec187798fbc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1985,7 +1985,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">98b16068-70f9-4521-af26-ad7164bb7101</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d346731d-e6d9-4993-926a-b16020871186</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2008,7 +2008,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e99e7ada-e1cf-431f-b507-1fcde90e6ba5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d6829298-c17d-4ce7-aa16-ca1b79446cf0</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2031,7 +2031,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">394b83bc-bc71-4985-9294-5db7694dadc6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a340f0bd-a503-48f9-bd81-2bb834b7788e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2063,7 +2063,7 @@ ID_NON_PRESENTE</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">59bfc129-b2a7-4081-baae-0e36f495e423</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">de4c0356-4b82-4af9-bfcc-496b393b61d1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2112,7 +2112,7 @@ ID_NON_PRESENTE</item>
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f561f92c-70a8-42a6-bbec-072629e33763</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">70ea5a82-529c-4e15-89b1-3d347ac2829b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SOLO OGGETTO SELEZIONATO</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -2136,11 +2136,11 @@ ID_NON_PRESENTE</item>
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">da1efa7f-cc2e-4078-94fd-8930e51224ef</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">34485434-33a2-4486-885e-9eb947cb894a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d1c81dfc-784d-41f1-84e0-09cacb419556</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">84a772b4-7dea-46f4-a8a7-7bd635a66322</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2159,11 +2159,11 @@ ID_NON_PRESENTE</item>
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">23741d9f-3805-4955-8266-0f7b5bc9c625</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">14f47b99-bd56-4945-8053-09ca5ae004cf</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">394b83bc-bc71-4985-9294-5db7694dadc6</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a340f0bd-a503-48f9-bd81-2bb834b7788e</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2222,7 +2222,7 @@ ID_NON_PRESENTE</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">835ad4fe-fc36-4ff1-98f3-b3647c87d044</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ae8732c-c7a8-48a1-95fe-fc9722e8e586</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2272,7 +2272,7 @@ ID_NON_PRESENTE</item>
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Estrae un parametro per ogni oggetto mantenendo allineamento e valori mancanti.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b192adb1-7883-455c-bb56-e8f7867104d2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">767ba490-c609-47b0-a4c3-976c875a53f3</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Property Value</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Value</item>
                   </items>
@@ -2295,11 +2295,11 @@ ID_NON_PRESENTE</item>
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7f569ce-5f8f-43e9-99fb-d76cfd12ec61</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9834caad-3f9e-4cb2-9ba8-e50d74cbb878</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">be2445e0-55a4-4255-a16e-0743103f7544</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">73afcf14-aa28-4e21-9639-7cae84c4816b</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2318,11 +2318,11 @@ ID_NON_PRESENTE</item>
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dd58a505-9e59-4aa6-80de-357f24e979f5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1e3016e1-d922-47a9-93bf-b0f7d0ac3ee1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3944de5d-59fc-4519-9829-3506cb6932de</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">87ed7627-2855-48cf-a9fc-4e35c992239f</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2363,7 +2363,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valore testuale; stringa vuota se assente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6a11617e-47e5-4383-90a7-80c52f998e66</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3c864f53-432d-423e-aa62-11b31565fc3e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2386,7 +2386,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">True se la chiave esiste; un valore null resta presente.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3a4128fa-6f8b-4bde-854c-16a579e848ae</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f82a6873-5873-44ba-9892-0961007d551e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Found</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2409,7 +2409,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Numeri nelle unita IFC originali; NaN se assente/non numerico.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2d4fae8e-b2fb-45cf-b7d5-f078ed1c2e7a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">19b65c83-e22e-4e58-bc52-5f7728ee8b51</item>
                         <item name="Name" type_name="gh_string" type_code="10">Numbers</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2432,7 +2432,7 @@ ID_NON_PRESENTE</item>
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera dei valori numerici finiti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">19d44e23-b8d9-47b5-bdb3-fbdcece33cf6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ff607057-78bc-49b6-b915-2ccdbafe5254</item>
                         <item name="Name" type_name="gh_string" type_code="10">Is numeric</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NUM</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2464,7 +2464,7 @@ ID_NON_PRESENTE</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7be09570-09da-4180-804a-1e7a95f200d3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aaa71ad6-3efd-4fa3-bbd4-f6235bdc3864</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Property Value</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2512,7 +2512,7 @@ ID_NON_PRESENTE</item>
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3944de5d-59fc-4519-9829-3506cb6932de</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">87ed7627-2855-48cf-a9fc-4e35c992239f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PARAMETRO | incolla una chiave da Property Keys</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2560,12 +2560,12 @@ ID_NON_PRESENTE</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">223bf78b-ea90-4bdb-957d-d8e543dcc734</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">41ed5c9a-a917-4867-8ed6-3259b2bb0970</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">VALORE EFFETTIVO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">6a11617e-47e5-4383-90a7-80c52f998e66</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">3c864f53-432d-423e-aa62-11b31565fc3e</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2609,12 +2609,12 @@ ID_NON_PRESENTE</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7ee43f47-f783-47dc-baae-97e0b545de46</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0b4bcab2-cbcf-49b0-8fb5-89824f260597</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PRESENTE | distingue assente da valore vuoto</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">3a4128fa-6f8b-4bde-854c-16a579e848ae</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">f82a6873-5873-44ba-9892-0961007d551e</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2658,12 +2658,12 @@ ID_NON_PRESENTE</item>
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b30949e3-a056-40d1-a821-de7bbf35fc75</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bd6001aa-8345-4ac6-bddc-4c22d46cd7c3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">JSON COMPLETO | doppio clic per consultare</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">e99e7ada-e1cf-431f-b507-1fcde90e6ba5</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">d6829298-c17d-4ce7-aa16-ca1b79446cf0</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

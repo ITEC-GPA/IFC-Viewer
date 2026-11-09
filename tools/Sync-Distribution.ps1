@@ -26,6 +26,7 @@ $files = [ordered]@{
     'requirements.txt' = Join-Path $projectRoot 'requirements.txt'
     'README.md' = Join-Path $projectRoot 'DISTRIBUZIONE.md'
     'COMPONENTI.md' = Join-Path $projectRoot 'COMPONENTI.md'
+    'CHANGELOG.md' = Join-Path $projectRoot 'CHANGELOG.md'
     'Meerkat.gh' = Join-Path $projectRoot 'Meerkat.gh'
     'Meerkat.ghx' = Join-Path $projectRoot 'Meerkat.ghx'
 }

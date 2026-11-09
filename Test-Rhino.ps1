@@ -1,7 +1,6 @@
-param([switch]$ExamplesOnly, [switch]$All, [switch]$DistributionOnly, [int]$ExampleStart = 1, [int]$ExampleEnd = 18)
+param([string]$RhinoDir = 'C:\Program Files\Rhino 8', [switch]$ExamplesOnly, [switch]$All, [switch]$DistributionOnly, [int]$ExampleStart = 1, [int]$ExampleEnd = 18)
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
-$rhinoDir = 'C:\Program Files\Rhino 8'
 $compiler = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
 $outputPath = Join-Path $projectRoot 'build'
 $pluginDirectory = if ($env:MEERKAT_PLUGIN_DIR) { $env:MEERKAT_PLUGIN_DIR } else { Join-Path $projectRoot 'bin' }
@@ -18,7 +17,11 @@ $arguments += Get-ChildItem -LiteralPath (Join-Path $projectRoot 'tests') -Filte
 if ($LASTEXITCODE -ne 0) { throw 'Compilazione test fallita.' }
 function Invoke-Harness([string]$Mode) {
     $completed = $false
-    & "$outputPath\RhinoHarness.exe" $projectRoot $Mode | ForEach-Object { if ($_ -eq 'HARNESS_COMPLETED') { $completed = $true }; Write-Output $_ }
+    $savedRhinoDirectory = $env:MEERKAT_RHINO_DIR
+    try {
+        $env:MEERKAT_RHINO_DIR = $RhinoDir
+        & "$outputPath\RhinoHarness.exe" $projectRoot $Mode | ForEach-Object { if ($_ -eq 'HARNESS_COMPLETED') { $completed = $true }; Write-Output $_ }
+    } finally { $env:MEERKAT_RHINO_DIR = $savedRhinoDirectory }
     if ($LASTEXITCODE -ne 0 -or -not $completed) { throw "Test Rhino incompleto o fallito: $Mode" }
 }
 function Invoke-Examples([int]$Start, [int]$End) {

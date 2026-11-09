@@ -11,7 +11,7 @@ function Get-Sha256([string]$Path) {
 $binPath = if ($DistributionDirectory) { [IO.Path]::GetFullPath($DistributionDirectory) } else { Join-Path $projectRoot 'bin' }
 $manifestPath = Join-Path $binPath 'distribution.json'
 if (-not (Test-Path -LiteralPath $manifestPath)) { throw 'Prima eseguire Build.ps1: manca la distribuzione bin.' }
-$manifest = @(Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json)
+$manifest = Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json
 $files = @('distribution.json')
 foreach ($entry in $manifest) {
     $source = [IO.Path]::GetFullPath((Join-Path $binPath $entry.path))

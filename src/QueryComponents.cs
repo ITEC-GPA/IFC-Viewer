@@ -219,7 +219,7 @@ namespace IfcViewer
 
     public sealed class ValidateElementsComponent : ElementTool
     {
-        public ValidateElementsComponent() : base("IFC Check Data", "IFC Check", "Controlla parametri richiesti, GlobalId duplicati/mancanti e disponibilita delle mesh. Non e una validazione normativa IFC.", "5 Check", "CHK") { }
+        public ValidateElementsComponent() : base("IFC Check Data", "IFC Check", "Controlla parametri richiesti, GlobalId duplicati/mancanti e disponibilita delle mesh. Non e una validazione normativa IFC.", "4 Check", "CHK") { }
         public override Guid ComponentGuid { get { return new Guid("E2B93E81-4253-4BB4-918A-5129BB88000A"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         { ElementInput(p); p.AddTextParameter("Required keys", "K", "Parametri che devono avere un valore non vuoto/null.", GH_ParamAccess.list); p[1].Optional = true; p.AddBooleanParameter("Require geometry", "G", "Richiede una mesh per ogni elemento.", GH_ParamAccess.item, false); }

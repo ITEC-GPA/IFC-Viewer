@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -62,25 +61,16 @@ namespace IfcViewer
             path = Path.GetFullPath(path);
             if (!path.EndsWith(".ifc", StringComparison.OrdinalIgnoreCase)) throw new ArgumentException("Destinazione .ifc richiesta.");
             if (string.Equals(path, Path.GetFullPath((string)model.Metadata["source_path"]), StringComparison.OrdinalIgnoreCase)) throw new ArgumentException("Il file sorgente e protetto: scegliere un nuovo percorso.");
-            string python = Engine.PythonPath();
-            if (!File.Exists(python)) throw new FileNotFoundException("Runtime IFC mancante. Eseguire Setup.cmd.", python);
             string request = Path.Combine(Path.GetTempPath(), "Meerkat", Guid.NewGuid().ToString("N") + ".json");
             Directory.CreateDirectory(Path.GetDirectoryName(request));
             try
             {
                 File.WriteAllText(request, new JObject(new JProperty("source_sha256", model.Metadata["source_sha256"]), new JProperty("changes", new JArray(changes.Select(c => c.Data)))).ToString(), new UTF8Encoding(false));
-                var start = new ProcessStartInfo(python, Engine.Quote(Path.Combine(Engine.PluginDirectory, "ifc_writer.py")) + " " + Engine.Quote(model.ArchivePath) + " " + Engine.Quote(request) + " " + Engine.Quote(path) + (overwrite ? " --overwrite" : ""))
-                { UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true, StandardOutputEncoding = Encoding.UTF8, StandardErrorEncoding = Encoding.UTF8 };
-                start.EnvironmentVariables["PYTHONUTF8"] = "1";
-                using (var process = Process.Start(start))
-                {
-                    var stdout = process.StandardOutput.ReadToEndAsync(); var stderr = process.StandardError.ReadToEndAsync();
-                    if (!process.WaitForExit(30 * 60 * 1000)) { process.Kill(); process.WaitForExit(); throw new TimeoutException("Scrittura IFC interrotta dopo 30 minuti. Verificare il file destinazione prima di ripetere."); }
-                    if (process.ExitCode != 0) throw new InvalidOperationException(stderr.Result);
-                    return JObject.Parse(stdout.Result).ToString();
-                }
+                var arguments = new List<string> { model.ArchivePath, request, path };
+                if (overwrite) arguments.Add("--overwrite");
+                return JObject.Parse(WorkerProcess.Run(Engine.PythonPath(), Path.Combine(Engine.PluginDirectory, "ifc_writer.py"), arguments.ToArray())).ToString();
             }
-            finally { if (File.Exists(request)) File.Delete(request); }
+            finally { GC.KeepAlive(model); if (File.Exists(request)) File.Delete(request); }
         }
     }
 

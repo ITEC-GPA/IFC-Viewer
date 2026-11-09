@@ -145,7 +145,7 @@ namespace IfcViewer
 
     public sealed class CompareRevisionsComponent : IfcComponent
     {
-        public CompareRevisionsComponent() : base("IFC Compare Revisions", "IFC Diff", "Confronta due modelli per GlobalId: aggiunti, rimossi, dati cambiati e mesh cambiate. Ignora rinumerazione STEP e OwnerHistory.", "5 Check", "DIF") { }
+        public CompareRevisionsComponent() : base("IFC Compare Revisions", "IFC Diff", "Confronta due modelli per GlobalId: aggiunti, rimossi, dati cambiati e mesh cambiate. Ignora rinumerazione STEP e OwnerHistory.", "4 Check", "DIF") { }
         public override Guid ComponentGuid { get { return new Guid("E2B93E81-4253-4BB4-918A-5129BB88000E"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         {

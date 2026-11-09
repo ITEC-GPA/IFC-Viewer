@@ -1,6 +1,6 @@
 # Meerkat — catalogo dei 35 componenti
 
-Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. La definizione `Meerkat.gh` contiene i 19 componenti di lettura, analisi e bake; il file `09_Modifica_dati_IFC.gh` illustra i tre nuovi componenti di modifica. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
+Tutti i componenti si trovano nella scheda **Meerkat** di Grasshopper. I pannelli sono: **1 Read**, **2 Query**, **3 View**, **4 Check**, **5 Edit**, **6 Export**, **7 Bake**, **8 Structural**. GUID e parametri dei componenti restano invariati. La definizione `Meerkat.gh` contiene i 19 componenti di lettura, analisi e bake; il file `09_Modifica_dati_IFC.gh` illustra i tre nuovi componenti di modifica. I componenti di analisi usano gli elementi della selezione principale; le esportazioni restano inattive finche non premi un Button.
 
 La raccolta di **[diciotto esempi Grasshopper](examples/ESEMPI.md)** contiene flussi piu piccoli con modelli incorporati. In fondo alla guida trovi la tabella che associa ciascuno dei 35 componenti all'esempio consigliato.
 

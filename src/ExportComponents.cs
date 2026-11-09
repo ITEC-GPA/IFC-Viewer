@@ -16,7 +16,7 @@ namespace IfcViewer
     {
         private bool _lastWrite;
         private string _file = "";
-        public ExportCsvComponent() : base("IFC Export CSV", "IFC CSV", "Esporta un abaco UTF-8 con un oggetto per riga e parametri per colonna. Scrittura solo su fronte False -> True.", "4 Save", "CSV") { }
+        public ExportCsvComponent() : base("IFC Export CSV", "IFC CSV", "Esporta un abaco UTF-8 con un oggetto per riga e parametri per colonna. Scrittura solo su fronte False -> True.", "6 Export", "CSV") { }
         public override Guid ComponentGuid { get { return new Guid("E2B93E81-4253-4BB4-918A-5129BB88000B"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         {
@@ -52,7 +52,7 @@ namespace IfcViewer
     {
         private bool _lastWrite;
         private string _file = "", _report = "Premere Write per esportare la selezione.";
-        public Export3dmComponent() : base("IFC Export 3DM", "IFC 3DM", "Esporta gli elementi in un nuovo .3dm con layer e User Text, senza aggiungere oggetti al documento attivo.", "4 Save", "3DM") { }
+        public Export3dmComponent() : base("IFC Export 3DM", "IFC 3DM", "Esporta gli elementi in un nuovo .3dm con layer e User Text, senza aggiungere oggetti al documento attivo.", "6 Export", "3DM") { }
         public override Guid ComponentGuid { get { return new Guid("E2B93E81-4253-4BB4-918A-5129BB88000C"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         {

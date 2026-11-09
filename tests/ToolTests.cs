@@ -39,7 +39,7 @@ internal static class ToolTests
     }
     private static IfcModel Clone(IfcModel source)
     {
-        var copy = new IfcModel { ArchivePath = source.ArchivePath, Metadata = (JObject)source.Metadata.DeepClone() };
+        var copy = new IfcModel { Metadata = (JObject)source.Metadata.DeepClone() };
         foreach (var e in source.Elements) copy.Elements.Add(new IfcElement { Model = copy, Record = (JObject)e.Record.DeepClone(), MeshMetres = e.MeshMetres == null ? null : e.MeshMetres.DuplicateMesh() });
         return copy;
     }

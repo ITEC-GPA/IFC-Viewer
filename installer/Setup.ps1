@@ -6,10 +6,23 @@ if (-not (Test-Path -LiteralPath (Join-Path $pluginFolder 'Meerkat.gha'))) { thr
 if (-not $RegisterOnly) {
     $runtimePython = Join-Path $pluginFolder '.venv\Scripts\python.exe'
     if (-not (Test-Path -LiteralPath $runtimePython)) {
-        if ($Python) { & $Python -m venv (Join-Path $pluginFolder '.venv') }
-        else { & py -3.9 -m venv (Join-Path $pluginFolder '.venv') }
+        if (-not $Python) {
+            if (Get-Command py -ErrorAction SilentlyContinue) {
+                foreach ($version in @('3.12', '3.11')) {
+                    try { $candidate = & py "-$version" -c "import sys,struct; assert struct.calcsize('P')==8; print(sys.executable)" 2>$null }
+                    catch { continue }
+                    if ($LASTEXITCODE -eq 0 -and $candidate) { $Python = [string]$candidate; break }
+                }
+            }
+            if (-not $Python) { throw 'Installare Python x64 3.12 o 3.11, oppure indicare Setup.ps1 -Python percorso\python.exe.' }
+        }
+        & $Python -c "import sys,struct; assert struct.calcsize('P')==8 and (3,9)<=sys.version_info[:2]<=(3,12), 'Richiesto Python x64 3.9-3.12'"
+        if ($LASTEXITCODE -ne 0) { throw 'Interprete non compatibile con le wheel IfcOpenShell 0.8.3.' }
+        & $Python -m venv (Join-Path $pluginFolder '.venv')
         if ($LASTEXITCODE -ne 0) { throw 'Serve Python x64 compatibile con IfcOpenShell 0.8.3. Eseguire Setup.ps1 -Python percorso\python.exe.' }
     }
+    & $runtimePython -c "import sys,struct; assert struct.calcsize('P')==8 and (3,9)<=sys.version_info[:2]<=(3,12); print('Python',sys.version); print('AVVISO: runtime legacy; aggiornare a Python 3.12 in una nuova distribuzione.' if sys.version_info[:2]<(3,11) else '')"
+    if ($LASTEXITCODE -ne 0) { throw 'Il runtime esistente non e Python x64 utilizzabile. Preparare una nuova distribuzione.' }
     & $runtimePython -m pip install -r (Join-Path $pluginFolder 'requirements.txt')
     if ($LASTEXITCODE -ne 0) { throw 'Installazione IfcOpenShell fallita.' }
     & $runtimePython -c 'import ifcopenshell, ifctester; print(ifcopenshell.version)'

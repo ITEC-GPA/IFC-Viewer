@@ -21,9 +21,11 @@ internal static class BrandTests
         var types = assembly.GetTypes().Where(t => !t.IsAbstract && typeof(IfcComponent).IsAssignableFrom(t)).ToArray();
         var iconProperty = typeof(GH_Component).GetProperty("Icon", BindingFlags.NonPublic | BindingFlags.Instance);
         var hashes = new HashSet<string>();
+        var panels = new HashSet<string>();
         foreach (var type in types)
         {
             var c = (GH_Component)Activator.CreateInstance(type);
+            panels.Add(c.SubCategory);
             var icon = (Bitmap)iconProperty.GetValue(c, null);
             check(c.Category == "Meerkat" && icon != null && icon.Width == 24 && icon.Height == 24 && icon.GetPixel(0, 0).A < 255, "Meerkat category and icon: " + c.Name);
             using (var stream = new MemoryStream())
@@ -31,6 +33,7 @@ internal static class BrandTests
             { icon.Save(stream, System.Drawing.Imaging.ImageFormat.Png); hashes.Add(Convert.ToBase64String(sha.ComputeHash(stream.ToArray()))); }
         }
         check(types.Length >= 22 && hashes.Count == types.Length && assembly.GetManifestResourceNames().Count(n => n.StartsWith("Meerkat.Icons.")) == types.Length + 1, "Distinct icons for every component plus plugin logo embedded");
+        check(panels.SetEquals(new[] { "1 Read", "2 Query", "3 View", "4 Check", "5 Edit", "6 Export", "7 Bake", "8 Structural" }), "Eight distinct ordered panels without duplicate Check categories");
     }
 
     internal static void Legacy(string root, Action<bool, string> check)

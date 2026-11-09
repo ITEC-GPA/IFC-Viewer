@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">16fdebfb-14c5-4468-b835-f5ad48209b4d</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">8d2bfdae-becc-44a6-baae-ba786f3b6dc7</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280915757451426</item>
+            <item name="Date" type_name="gh_date" type_code="8">639298609037881501</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>12</X>
-                  <Y>12</Y>
+                  <X>10</X>
+                  <Y>10</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -77,17 +77,17 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.1.1.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
-                <item name="Version" type_name="gh_string" type_code="10"></item>
+                <item name="Version" type_name="gh_string" type_code="10">0.1.1</item>
               </items>
             </chunk>
           </chunks>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8a26487e-1023-4fa1-9253-bdac27b13118</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2ca99e89-50d9-4a70-a4ac-65fc106bf26b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">15 | VALIDAZIONE IDS</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">15c79677-c82e-4f3c-b1a9-fd8bee02a4da</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">381b85f1-a8c3-43ec-967f-c1c6dd0e207e</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d15b23c1-eac2-4d92-a9f3-6e5874667a12</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ebdedb02-f95e-4957-8557-7cad1d7061f4</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">81f01c3b-ed54-4d5b-b012-2be29341dbe2</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8d4f08c9-8d32-4a41-906e-cec4236d44de</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8713097e-d147-481b-8a13-57e2192ea706</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e13e0cb-9f19-4964-878d-bca0711987de</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ab6e313b-50ee-46c9-93d5-bc902425b821</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">02c26a73-43df-4dfb-a185-fac1b11aa378</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf2e8fc8-c5c4-4037-b15d-15803d7897f0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aaa72183-2689-49e4-9e46-342eff88b577</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4fdd4b9c-ce07-4b54-b0d4-e846409bfb82</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">702b162f-6f30-4699-9eef-5c3cf5bbb87c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3e8cb192-d00f-4d6a-bdbf-a91597046066</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1450f3c6-82b4-4a96-86ef-66cefa687f01</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7faaaf26-fcc5-4e32-ab6f-a1b512573ce5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">decc9dc9-0e06-48c4-9523-e7b71f5fa3b9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">81f01c3b-ed54-4d5b-b012-2be29341dbe2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d4f08c9-8d32-4a41-906e-cec4236d44de</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ab6e313b-50ee-46c9-93d5-bc902425b821</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">02c26a73-43df-4dfb-a185-fac1b11aa378</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Verifica requisiti informativi IDS con IfcTester. Passed/Failed contengono i prodotti applicabili; il report include anche errori globali e oggetti non geometrici.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">02401504-3a27-40c3-92f2-6bf6631d237b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">341c65ab-b280-4974-954e-900d146ccba8</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Validate IDS</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC IDS</item>
                   </items>
@@ -488,12 +488,12 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo Model da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ccd09899-eaff-4ae1-9829-7041fd29f312</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6253f0df-29f2-43b1-889b-16aacbf6a4f3</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bf2e8fc8-c5c4-4037-b15d-15803d7897f0</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">aaa72183-2689-49e4-9e46-342eff88b577</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -512,11 +512,11 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">File .ids valido.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aac8e6c8-7ab5-4851-9279-991e2e269f7f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">afc57008-dbb5-4d9f-8bf0-a154816c2d1a</item>
                         <item name="Name" type_name="gh_string" type_code="10">IDS file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e31fb79d-9d70-4cb7-bfeb-d5bdc28520ee</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">729e703b-763a-4d0a-8384-f250aa151bf9</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -535,7 +535,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Esegue la verifica.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">adb3c7b4-0ae9-47ac-939e-92a2b2916eb1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fcc73c05-258a-440d-9de7-9011c4a91d86</item>
                         <item name="Name" type_name="gh_string" type_code="10">Run</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -578,7 +578,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Prodotti applicabili senza requisiti falliti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d616ff8a-5e19-4aba-9417-19e76ea6e9d4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3d026890-1d5f-4468-ad00-af6b6e2a6579</item>
                         <item name="Name" type_name="gh_string" type_code="10">Passed</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -601,7 +601,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Prodotti con requisiti falliti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">17a09720-1e3c-4617-9ffa-a6c17c08219e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c0311b99-919a-4d5d-8491-163c3edddf49</item>
                         <item name="Name" type_name="gh_string" type_code="10">Failed</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -623,7 +623,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_output" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Esito globale, inclusi requisiti senza elementi applicabili e schema.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">35b026f2-3593-44f3-9598-b0223068ee5d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">111e4a06-f767-4647-88de-8e19f124e152</item>
                         <item name="Name" type_name="gh_string" type_code="10">Valid</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OK</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -646,7 +646,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Motivi, GlobalId e specifiche.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dfa4e859-7a3c-4b16-8a5d-9dc4f9b0454a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">44a004c3-ce16-4b53-a5ac-757ea20cc9ca</item>
                         <item name="Name" type_name="gh_string" type_code="10">Issues</item>
                         <item name="NickName" type_name="gh_string" type_code="10">I</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -668,7 +668,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_output" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Report JSON completo IfcTester.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe1206ea-5d03-4b0c-880c-1862a1778bc1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4b65659-5ded-40e1-9b5f-8ac84789f6dd</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -700,7 +700,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">20712b06-3437-4938-897f-cd098545c37e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">76647ab7-cc04-49fa-a591-5572b3b5a30e</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Validate IDS</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -748,7 +748,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e31fb79d-9d70-4cb7-bfeb-d5bdc28520ee</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">729e703b-763a-4d0a-8384-f250aa151bf9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REQUISITI IDS</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -796,12 +796,12 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7e776205-0d13-44a5-8061-eb3c12affb8a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">563ba059-baad-45c6-8996-7ca17907aebf</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">ERRORI | parete priva del codice</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">dfa4e859-7a3c-4b16-8a5d-9dc4f9b0454a</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">44a004c3-ce16-4b53-a5ac-757ea20cc9ca</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -847,7 +847,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">305ad8df-f21c-4735-aae2-1ecd410b4a58</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">508b2c36-8ec2-407a-bee7-1a737663cdc4</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CONFORMI</item>
                   </items>
@@ -870,11 +870,11 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">497f6c9a-ecb3-40ed-a56c-0979eb20d587</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">12b8545d-ffcd-4eae-98cd-c6a5cd9b8843</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d616ff8a-5e19-4aba-9417-19e76ea6e9d4</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3d026890-1d5f-4468-ad00-af6b6e2a6579</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -894,7 +894,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e7034b4b-df7c-4e82-a367-16ef12018b05</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c28b67b9-a14c-46bd-af79-18622f03d4e2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -916,7 +916,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">471235b1-445c-43b5-8432-f20ef053c3c4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f7360dbf-4dab-4b71-afc7-433b09124ae8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -959,7 +959,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ff90b1ab-5fd0-4412-9ba2-2f2b52ccaeaa</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8e5e25cb-468a-46bf-809e-aa7c4a4ab09a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1006,7 +1006,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">75a44409-8d8c-473b-bc8c-4fee9585a583</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6e01d7c0-bc64-46d8-a0aa-bba577ca404d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1029,7 +1029,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4b06c36e-c9a2-422d-bfe8-95062a1c1182</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">504ae01e-4072-47bb-a0b5-cd5f9986e39a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1052,7 +1052,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6670e17c-b2fc-4071-8b2e-5239496974db</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ecee85e3-71f8-4656-948d-bf8cdd46564c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1075,7 +1075,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f1cb16e-e381-40dd-b28f-6abb2fa2a33d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fbf00d3e-d275-4c60-81df-3ab2830f87a9</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1098,7 +1098,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5e51a10b-05a4-4dd1-a5b8-f844170f76af</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e7ec4fd-db9b-4fc7-9931-242754aa5111</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1121,7 +1121,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8f3202f8-7206-4d0c-85b1-a3743e9267dd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8a2cf9bd-1d8c-404e-a479-f275ea69530a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1144,7 +1144,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6dcb800c-0a59-4455-978e-60e3a7d43458</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b52e555-f69d-4808-9bf9-85f85fcabd83</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1167,7 +1167,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b2d2427-e2d0-4c5e-8b70-311cc806d566</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">93260d78-04e5-43b9-914c-92873a0d5b35</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1199,7 +1199,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7d812b9b-cd86-407a-aaa6-7f638d2c3392</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e1c78e3-58ec-4844-9e2a-e27e44114d95</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1247,7 +1247,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7114c0a9-e6ef-4d66-9ea6-6f8d9c23e028</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">223f9b39-f0cc-42da-8034-52596c1220a0</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1304,7 +1304,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">18d8f61f-c700-4fe8-9da2-c5b97b0d5076</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6c43fd9c-a593-44b4-9617-7faf2e63eb33</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CONFORMI</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -1328,11 +1328,11 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0d882a42-1b2f-436a-8b66-a4808346b5bb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">65df6f9f-dd66-488a-b8ce-c8d40a3bdb00</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">75a44409-8d8c-473b-bc8c-4fee9585a583</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6e01d7c0-bc64-46d8-a0aa-bba577ca404d</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1351,11 +1351,11 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4f69c26-2e63-410e-9ae4-b4c16b505adf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c9448a7e-ef76-4903-96f3-6956b069ae43</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7114c0a9-e6ef-4d66-9ea6-6f8d9c23e028</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">223f9b39-f0cc-42da-8034-52596c1220a0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1414,7 +1414,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef39314a-9fe2-4b22-a432-7e5470f280b3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cfa5eabf-3279-4cd5-90cc-2b6f407c73fd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1464,7 +1464,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">71e94393-aa73-4f88-88ff-b93c25bed8ae</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">540457f6-765e-4b2a-88d3-921253843927</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DA CORREGGERE</item>
                   </items>
@@ -1487,11 +1487,11 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7fca2d0c-5a90-4770-a2d0-8abb84deaa1e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a97be89d-c0fc-4453-98cd-d285c8dd8552</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">17a09720-1e3c-4617-9ffa-a6c17c08219e</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c0311b99-919a-4d5d-8491-163c3edddf49</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1511,7 +1511,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ad98d00a-28be-4119-9056-9ec9ac63163d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4e86f4c-5e2e-42d2-9957-6fadca1f6dc6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1533,7 +1533,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e94f78b1-c69c-4fdf-ae3d-d13547ea7c3e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">827922d5-28bc-4d4e-9a82-5f4879f2870d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1576,7 +1576,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">adb3ab2a-7483-4f39-9d30-09841a3a2251</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">280df5be-9c94-4a88-9ac4-bc2d676e75a1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1623,7 +1623,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">00b539cf-dc57-412e-9706-afd8920ef01d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ece1cdb1-214c-4a27-a446-983838b804b3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1646,7 +1646,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c4bfc4c-b8b1-402a-b755-f77ac47f2dde</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c8620f7-cb15-4d6e-85d3-2783de5ad917</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1669,7 +1669,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">df86425e-9e9b-424a-bfe3-bb194b96c8f8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f74d75e-0292-4780-9a67-2e7787629e8f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1692,7 +1692,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7957b16b-0a0e-4c59-a453-6d6a6f3cd138</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">47bee2a2-25fc-415d-8b21-088ac1c52812</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1715,7 +1715,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6de22dc0-91b3-4138-bdea-e722e33de513</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">20d5f76e-c7e5-4ead-8664-a687008acf3a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1738,7 +1738,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5247ef17-a5de-4f0c-b6d5-a9816aae74f2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">30cd5113-d76d-44bd-b57e-db1b446058df</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1761,7 +1761,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d714acf5-2c62-468d-bd23-e0faca154efb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d9ee75aa-26ad-412c-9a10-a9853e9a16e0</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1784,7 +1784,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ccca8e84-366d-4f6c-a00f-faec52b5c42d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2dd4b2db-fc1d-4329-997f-4e992a2b2475</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1816,7 +1816,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b6eaf432-1c79-42dc-b646-2f07bfd8a580</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">49d31b01-b14f-4934-a1b4-593385a4a324</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1864,7 +1864,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">73956307-ea7c-491d-a8f5-16d29dfcdcf5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7a033e6a-bbf0-4f96-9cce-696a0cb3e97b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1921,7 +1921,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ece9f73-8561-43ce-b7b7-40fe648bd650</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca5d85ec-460b-4136-b8e3-a2079de08dfb</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DA CORREGGERE</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -1945,11 +1945,11 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">82820e87-620e-4fe3-8389-5da0ac286e81</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e699fca-294c-43dc-9a01-51c5ea8660a4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">00b539cf-dc57-412e-9706-afd8920ef01d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ece1cdb1-214c-4a27-a446-983838b804b3</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1968,11 +1968,11 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2cbcda65-8470-43f1-8b96-fc19b2b61a79</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a7dadad0-b208-49ca-a5b4-70dcfaea5bd9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">73956307-ea7c-491d-a8f5-16d29dfcdcf5</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7a033e6a-bbf0-4f96-9cce-696a0cb3e97b</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2031,7 +2031,7 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">60590ed9-5045-4d3f-bcb3-90fedf6c794d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1d946597-9f77-4bce-bc94-d9262258af2b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2079,12 +2079,12 @@ Il percorso relativo viene cercato accanto al GH e negli examples della distribu
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">198835cb-1ccc-4eb6-a254-124b2cd06baa</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0ce9c8fc-20ae-423f-b999-52e876f6367f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT IDS COMPLETO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">fe1206ea-5d03-4b0c-880c-1862a1778bc1</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">b4b65659-5ded-40e1-9b5f-8ac84789f6dd</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

@@ -71,7 +71,7 @@ namespace IfcViewer
                     // Replace the result only after every input has been parsed.
                     _models = paths.Distinct(StringComparer.OrdinalIgnoreCase).Select(Engine.Read).ToList();
                 }
-                catch (Exception ex) { _models.Clear(); Error(ex); return; }
+                catch (Exception ex) { Error(ex); }
             }
             if (_models.Count == 0) { Message = "Premi Read"; return; }
             da.SetDataList(0, _models); da.SetDataList(1, _models.SelectMany(m => m.Elements));
@@ -89,24 +89,21 @@ namespace IfcViewer
         {
             writer.SetInt32("ModelCount", _models.Count);
             for (int i = 0; i < _models.Count; i++)
-                writer.SetByteArray("Archive" + i, File.ReadAllBytes(_models[i].ArchivePath));
+                writer.SetByteArray("Archive" + i, _models[i].ArchiveBytes());
             return base.Write(writer);
         }
         public override bool Read(GH_IReader reader)
         {
-            _models.Clear(); _lastRead = false;
+            var restored = new List<IfcModel>(); _lastRead = false;
             if (reader.ItemExists("ModelCount"))
             {
                 int count = reader.GetInt32("ModelCount");
                 for (int i = 0; i < count; i++)
                 {
-                    string folder = Path.Combine(Path.GetTempPath(), "Meerkat", Guid.NewGuid().ToString("N"));
-                    Directory.CreateDirectory(folder);
-                    string path = Path.Combine(folder, "embedded.ifcdata.zip");
-                    File.WriteAllBytes(path, reader.GetByteArray("Archive" + i));
-                    _models.Add(IfcModel.Load(path));
+                    restored.Add(IfcModel.Load(reader.GetByteArray("Archive" + i)));
                 }
             }
+            _models = restored;
             return base.Read(reader);
         }
     }
@@ -169,7 +166,7 @@ namespace IfcViewer
         private bool _lastBake;
         private List<Guid> _ids = new List<Guid>();
         private string _report = "Premere Bake per creare oggetti Rhino con User Text IFC.";
-        public BakeIfcComponent() : base("Bake IFC", "IFC Bake", "Bake su layer Radice::Modello::ClasseIFC e tutti i parametri negli User Text. Un record Undo per operazione.", "6 Bake", "BAK") { }
+        public BakeIfcComponent() : base("Bake IFC", "IFC Bake", "Bake su layer Radice::Modello::ClasseIFC e tutti i parametri negli User Text. Un record Undo per operazione.", "7 Bake", "BAK") { }
         public override Guid ComponentGuid { get { return new Guid("F2C6C624-8665-49FB-BE2B-B904676DD197"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         {
@@ -210,7 +207,7 @@ namespace IfcViewer
     {
         private bool _lastSave;
         private List<string> _paths = new List<string>();
-        public SaveIfcComponent() : base("Save IFC Archive", "IFC Save", "Salva archivi .ifcdata.zip con IFC originale, tutte le entita, attributi e mesh. Riapribili con Read IFC senza Python.", "4 Save", "ZIP") { }
+        public SaveIfcComponent() : base("Save IFC Archive", "IFC Save", "Salva archivi .ifcdata.zip con IFC originale, tutte le entita, attributi e mesh. Riapribili con Read IFC senza Python.", "6 Export", "ZIP") { }
         public override Guid ComponentGuid { get { return new Guid("F7A083CD-6E4B-4568-ACCD-623C698AFBE8"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         {
@@ -241,11 +238,10 @@ namespace IfcViewer
                     Directory.CreateDirectory(folder);
                     for (int i = 0; i < models.Count; i++)
                     {
-                        if (string.Equals(models[i].ArchivePath, paths[i], StringComparison.OrdinalIgnoreCase)) continue;
                         string staging = paths[i] + "." + Guid.NewGuid().ToString("N") + ".tmp";
                         try
                         {
-                            File.Copy(models[i].ArchivePath, staging);
+                            File.WriteAllBytes(staging, models[i].ArchiveBytes());
                             if (File.Exists(paths[i]))
                             {
                                 if (!overwrite) throw new IOException("Archivio gia esistente: " + paths[i]);

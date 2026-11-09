@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -33,18 +32,9 @@ namespace IfcViewer
             try
             {
                 File.WriteAllText(path, request.ToString(), new UTF8Encoding(false));
-                var start = new ProcessStartInfo(Engine.PythonPath(), Engine.Quote(Path.Combine(Engine.PluginDirectory, "ifc_tools.py")) + " " + Engine.Quote(model.ArchivePath) + " " + Engine.Quote(path))
-                { UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true, StandardOutputEncoding = Encoding.UTF8, StandardErrorEncoding = Encoding.UTF8 };
-                start.EnvironmentVariables["PYTHONUTF8"] = "1";
-                using (var process = Process.Start(start))
-                {
-                    var stdout = process.StandardOutput.ReadToEndAsync(); var stderr = process.StandardError.ReadToEndAsync();
-                    if (!process.WaitForExit(30 * 60 * 1000)) { process.Kill(); process.WaitForExit(); throw new TimeoutException("Operazione IFC interrotta dopo 30 minuti."); }
-                    if (process.ExitCode != 0) throw new InvalidOperationException(stderr.Result);
-                    return JObject.Parse(stdout.Result);
-                }
+                return JObject.Parse(WorkerProcess.Run(Engine.PythonPath(), Path.Combine(Engine.PluginDirectory, "ifc_tools.py"), new[] { model.ArchivePath, path }));
             }
-            finally { if (File.Exists(path)) File.Delete(path); }
+            finally { GC.KeepAlive(model); if (File.Exists(path)) File.Delete(path); }
         }
         internal static IfcModel Model(IGH_DataAccess da, int index)
         {
@@ -170,6 +160,7 @@ namespace IfcViewer
                         zip.GetEntry("model.json").Delete();
                         using (var writer = new StreamWriter(zip.CreateEntry("model.json").Open(), new UTF8Encoding(false))) writer.Write(after.Metadata.ToString());
                     }
+                    after.RefreshArchiveSnapshot();
                     var ids = new HashSet<string>(changes.Select(c => (string)c.Data["global_id"]));
                     foreach (JObject change in report["changes"])
                     {

@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">7b9a9853-a18e-4e7a-9663-2fab439c5708</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">f64122e7-3309-4229-90eb-b502ba4d0e06</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280916890330348</item>
+            <item name="Date" type_name="gh_date" type_code="8">639298610382448861</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>12</X>
-                  <Y>12</Y>
+                  <X>10</X>
+                  <Y>10</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -77,17 +77,17 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.1.1.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
-                <item name="Version" type_name="gh_string" type_code="10"></item>
+                <item name="Version" type_name="gh_string" type_code="10">0.1.1</item>
               </items>
             </chunk>
           </chunks>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f07a8af-2c2d-4f38-900c-4267f2eb7b62</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e6f99ef6-04ca-4b88-989b-1a164d4afd72</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">18 | MODELLO STRUTTURALE ANALITICO</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">03f8d33d-7aae-4491-a677-e6a306fe6cc5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1eb1c49b-14c3-4bae-9fce-48db6eb14772</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5762e0ab-5e09-4abb-ae6c-2259c3579c32</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f146ea34-7831-415a-b5ee-1c77dc84afb7</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">fe47a6c7-aef1-47c7-b484-97ba81a19a60</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e57c1c4a-2680-4bf1-bede-20b5524ee27c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1a5a781f-3032-4b5e-b7e5-5abe7dd3fc1a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32e8f65a-341d-4bf8-bf5a-c340c576ec00</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b3e7c18a-29a3-487b-a143-f48df336cd72</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e085bac2-99e6-4cc1-a4e3-b9892ef5eab9</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">352a436a-744c-4e73-8227-8ec865b92f2a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e5f46941-f0c7-4870-b245-8e314891a5f0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3b745bd-a3b6-42f2-b9ad-520a9b8d9a7e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d5bc8418-b23f-405d-be1c-798a36ae5b7e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b4d9a56-53fb-47c9-a5f6-fe42d2b4d93f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1c6ab23a-f204-4cce-9d5f-ef308af8031e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb008592-2977-4bff-981a-abab4c3bc96a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b79266e-7aed-4a1f-8564-f9df858ec23e</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe47a6c7-aef1-47c7-b484-97ba81a19a60</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e57c1c4a-2680-4bf1-bede-20b5524ee27c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3e7c18a-29a3-487b-a143-f48df336cd72</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e085bac2-99e6-4cc1-a4e3-b9892ef5eab9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -464,7 +464,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                 <chunk name="Container">
                   <items count="4">
                     <item name="Description" type_name="gh_string" type_code="10">Legge membri, connessioni, vincoli e carichi analitici esistenti. Visualizza topologie lineari; conserva il grafo originale. Non genera un modello FEM dalle mesh.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d2586316-3997-4495-a29e-6dc97d4796a6</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6fd751dd-06e3-4323-b9aa-ba318c099d11</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Structural Model</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Structural</item>
                   </items>
@@ -487,12 +487,12 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo Model da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">677e2938-6bf8-471b-a3a4-da1fbde4d245</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e01f8f2-5604-414c-a594-9e5072bb20a9</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">352a436a-744c-4e73-8227-8ec865b92f2a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e5f46941-f0c7-4870-b245-8e314891a5f0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Offset visualizzazione in metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe9e1f12-299e-470d-8877-d8450950140e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e7905703-8141-44e4-a372-99d925254814</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -558,7 +558,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Identificativi membri e connessioni, ordine dei rami.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c2787ce2-3465-4739-b0c9-25a4f0cf4b64</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">734cb8d6-2810-4f2c-9b8d-da20f537a168</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -581,7 +581,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Assi rettilinei e bordi poligonali nelle unita Rhino, un ramo per entita.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f960295-c332-43b7-95de-e1ce8dbf5db4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d29061b8-3674-4970-88f8-6d7b54c4ea76</item>
                         <item name="Name" type_name="gh_string" type_code="10">Axes / boundaries</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -604,7 +604,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Punti topologici nelle unita Rhino, senza fusione fra entita.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">51ef838a-2c02-4177-b30c-df69eb98dc93</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ac257dfd-d7a4-432b-b0b1-b380308863cc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Nodes / vertices</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -627,7 +627,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Dati IFC originali di connessioni, vincoli e sistemi locali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b8fb6c5-edd6-4a71-83b2-e1c79454f40d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b49c3496-6726-4382-bd94-8602619ec226</item>
                         <item name="Name" type_name="gh_string" type_code="10">Connections &amp; conditions</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -650,7 +650,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Attivita, carichi, gruppi e riferimenti locali/globali nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">28a47b8d-c3ef-4a81-845e-89aa18debfac</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5c77d17e-19de-4e00-b010-d0c570f79d10</item>
                         <item name="Name" type_name="gh_string" type_code="10">Loads</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -672,7 +672,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                     <chunk name="param_output" index="5">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Modelli analitici, load groups, unita e grafi IFC completi delle rappresentazioni.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">19c0afc3-7a2d-465d-80e7-cb4faf3587e5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5c2920bb-7305-4e99-af69-3c8a98e8a479</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -704,7 +704,7 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5a410be-c125-4b5f-8ea4-74546a13014b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f59aafd-1cf3-4320-b547-b6efd0996fa4</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Structural Model</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -752,12 +752,12 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">90550563-00ca-4570-9df4-88c43938df59</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f21006df-e028-4a0c-b4b6-ea927c800bfa</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MEMBRO E CONNESSIONI | GlobalId</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">c2787ce2-3465-4739-b0c9-25a4f0cf4b64</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">734cb8d6-2810-4f2c-9b8d-da20f537a168</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -801,12 +801,12 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">577ce774-ceaa-4388-aab6-68f0146876a5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">da08d244-1262-4303-9558-87d61460da4a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">VINCOLI | TRUE fisso, FALSE libero, null non specificato</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">9b8fb6c5-edd6-4a71-83b2-e1c79454f40d</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">b49c3496-6726-4382-bd94-8602619ec226</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -850,12 +850,12 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">34ffe759-0c1f-4f51-9b50-dc81c468e68f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c83a1cca-7a57-4f48-a20b-6cbd7459f19d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CARICHI | Fz -10000 N</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">28a47b8d-c3ef-4a81-845e-89aa18debfac</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">5c77d17e-19de-4e00-b010-d0c570f79d10</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -899,12 +899,12 @@ Assi/punti sono nelle unita Rhino; carichi e rigidezze mantengono unita e sistem
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6cfd7211-24c9-4ab6-89f3-1f20d6c41d4e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">78b97793-59c3-40b7-ac89-e12744e1d27a</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO, GRUPPI, UNITA E GRAFI IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">19c0afc3-7a2d-465d-80e7-cb4faf3587e5</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">5c2920bb-7305-4e99-af69-3c8a98e8a479</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">df90cfa1-9064-4c5a-bca2-5914f53ee717</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">bac79457-e06a-4681-a5da-51c08a367b3a</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280913390551951</item>
+            <item name="Date" type_name="gh_date" type_code="8">639298608106677129</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>12</X>
-                  <Y>12</Y>
+                  <X>10</X>
+                  <Y>10</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -77,17 +77,17 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.1.1.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
-                <item name="Version" type_name="gh_string" type_code="10"></item>
+                <item name="Version" type_name="gh_string" type_code="10">0.1.1</item>
               </items>
             </chunk>
           </chunks>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">be859619-7788-49ae-9713-160d30b58561</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6fe27e27-06cb-45f7-9294-ffa5e23d7fb6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">13 | RELAZIONI E MATERIALI</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1d5280af-c59b-4e3f-b118-3f3a70d4872a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1fa21a2f-50d7-4e32-af18-a680f28452a9</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">59a737c7-20a1-4559-a827-52ef234bbe6d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">883046e7-7b68-417b-86c9-3f075f2f9694</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">733d8ca1-e71a-4ef4-8f5f-a1aecb376041</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">89b66928-e4c8-479e-8f9d-7d821807d7ba</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b9493f1-ca99-46f3-b44e-24a8ee3b8674</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8a4f6920-0c93-4799-9591-f89e3af1e6ee</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bfa682cc-6c98-46b7-b26e-04b620413c11</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">10bbb83f-618f-4480-b757-d53eb2d2e0b1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dde87864-5fa7-42c0-a206-7bbbad036f4e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cf8ea111-5da9-4402-b7cf-51352d0ca09f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">20c88351-414e-4cae-942d-af5531248a16</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d27f17b3-44ca-4845-a52c-a505bf2465ae</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">712ca2b6-997d-4d01-b899-1909b826505b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca11f02b-d168-46a3-bfc5-4f1aa460564d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e0f9b5a-1197-47b1-b912-3aca39006e23</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4ecac8f6-c4eb-4b19-8ec8-c2660104ab34</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">733d8ca1-e71a-4ef4-8f5f-a1aecb376041</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">89b66928-e4c8-479e-8f9d-7d821807d7ba</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bfa682cc-6c98-46b7-b26e-04b620413c11</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">10bbb83f-618f-4480-b757-d53eb2d2e0b1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dc2920ec-a435-465a-a38e-faa9ae3d6b21</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c146e647-c0d4-4a2d-9c2d-5e3b95a5bb9a</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IfcWall</item>
                   </items>
@@ -488,11 +488,11 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef4d3808-f64d-4ee3-bbb7-57de481c10ca</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e15a940-b348-4008-a4ca-6e8a95f802d8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">20c88351-414e-4cae-942d-af5531248a16</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d27f17b3-44ca-4845-a52c-a505bf2465ae</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5bc057cc-3918-4236-b63c-6a71aeff51de</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">29d1b2dc-a260-480c-9ecb-3a7c3d0e90a7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -554,7 +554,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">26b5b390-e096-41f5-918f-8176a51c0d26</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">43c02e2c-5175-4eff-a3bc-50067c616bfe</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +597,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5003c835-45c0-4fb6-b0cc-c76b458ff150</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f7e3a54-98e0-4aff-adb0-92a91af93799</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -640,7 +640,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a146f6d7-2b9d-4c65-ae46-b0523fe53c06</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">04e7bb3a-6555-48e9-b547-862aab14beb7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +683,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dc48467f-4ff8-4340-ac14-7abb62909179</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2cb45574-a36a-4151-a1a1-b9ba241c5ede</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +706,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d0dafe61-603e-4668-9aa7-783d947ef528</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b6a8631b-2aaa-471b-be0d-177e056c36de</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +729,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">90386fb9-5215-4523-a4e7-cd388ad78124</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bee75dc7-7153-44d3-ac3d-5dba25e8ad67</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,7 +761,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5e701be-629e-4e5f-a2f0-ba907676b090</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">38838f4b-19e9-4c46-ab90-cf52b417c48b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -811,7 +811,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Naviga relazioni esplicite IFC. Un ramo per elemento iniziale. I tipi e gruppi restituiti hanno metadati anche senza mesh.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">41124eca-ba3a-41f9-80db-f45031f9a5cf</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6adb83c9-2906-4066-8cd8-c22d31392a22</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Relationships</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Relations</item>
                   </items>
@@ -834,11 +834,11 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">91d39ba7-34bc-410c-83f9-3de62a1203f1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eeb2903d-4d4f-4986-b6cd-a01a3e02f1e2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">dc48467f-4ff8-4340-ac14-7abb62909179</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2cb45574-a36a-4151-a1a1-b9ba241c5ede</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -857,7 +857,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Type, Instances, Container, Parent, Parts, Groups, Members, Openings, Fillings, Connections.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">690e2949-6061-47c3-9770-a1000f0bd95a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">23125930-f864-43b0-b480-0203bbee78b4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Relation</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -900,7 +900,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Segue ricorsivamente la stessa relazione, senza cicli.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2a4b95c9-9e41-4f0b-8cc9-23d9d9eb9af0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0fdd41d9-946a-41ce-a25b-49f9407ec222</item>
                         <item name="Name" type_name="gh_string" type_code="10">Recursive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -943,7 +943,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Albero {i} di elementi correlati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">621a5ab7-e490-4f95-8dfc-852d8001f9af</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0da28d76-7dbf-4a4f-b772-abc58097ab54</item>
                         <item name="Name" type_name="gh_string" type_code="10">Related elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -966,7 +966,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Riferimenti e metadati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8d5a59f-7c4a-4ac6-8ee1-5b791b47e648</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b235f69-05e1-46c9-a643-67504082d971</item>
                         <item name="Name" type_name="gh_string" type_code="10">Details</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -998,7 +998,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9babc746-460f-4cb6-b1a8-2d610511c29f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2a3869d3-a6bc-439a-994b-2047296e07ae</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Relationships</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1046,12 +1046,12 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d2249bef-66d0-439b-b3df-b83c64b49e4b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">164d2580-b14e-4701-86d2-cbbe10b53161</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">TIPI CORRELATI | i rami mantengono l'origine</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">621a5ab7-e490-4f95-8dfc-852d8001f9af</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">0da28d76-7dbf-4a4f-b772-abc58097ab54</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1097,7 +1097,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Materiali, stratigrafie, spessori in metri e profili. Conserva ordine e distingue assegnazione di istanza/tipo.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">251f8c14-b822-44c4-a159-423cc3606485</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">529f0005-1d91-4e85-b5b4-3c05fac53546</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Materials &amp; Layers</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Materials</item>
                   </items>
@@ -1120,11 +1120,11 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f91c74bb-3ea8-4c2f-ae09-628af4d4c1b8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8e45fb7f-d333-4d98-a0af-8663abc3a15a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">dc48467f-4ff8-4340-ac14-7abb62909179</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2cb45574-a36a-4151-a1a1-b9ba241c5ede</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1144,7 +1144,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un ramo per elemento, ordine degli strati/componenti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7dc98f98-34e5-4fbf-8662-de1a5fd8486c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3aa18d8-76a9-47ac-ba57-9afdde6ac407</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material names</item>
                         <item name="NickName" type_name="gh_string" type_code="10">N</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1167,7 +1167,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Spessore in m; NaN per materiali senza strato.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">23b732fe-abba-482b-99b5-ba9f1ef1cde0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f00b6fc3-f7cb-46a0-a1f5-1ab41efd6469</item>
                         <item name="Name" type_name="gh_string" type_code="10">Thickness metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">T</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1190,7 +1190,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Profilo IFC JSON; vuoto se assente. Dimensioni originali IFC nel JSON.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e5288ed-aa42-45b4-a403-6af5f36133cb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4613cc5b-04e8-4830-9efb-0aaba6735166</item>
                         <item name="Name" type_name="gh_string" type_code="10">Profiles</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1213,7 +1213,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">instance, type oppure none.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f4463fd0-21b9-4660-9617-cf652297a3ee</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c00cc37b-8704-4bd9-9f27-e8d223c5fd11</item>
                         <item name="Name" type_name="gh_string" type_code="10">Scope</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1236,7 +1236,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Assegnazione, offset/direzioni, frazioni, proprieta materiali e grafo profili.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ffbb3284-866e-4dcf-b087-1de30de3c811</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">75852d0f-d945-4f51-97a5-3423fb3f2e6e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Details</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1268,7 +1268,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">efe943cd-9136-4cb3-9348-4dbfea33ef25</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2a744f17-0d41-45f3-89a4-4d34e931537c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Materials &amp; Layers</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1316,12 +1316,12 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">14c76e6f-82f3-4e28-9b11-19da88ac47cb</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">72fefbb7-8aee-4541-92d1-862208fbc033</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MATERIALI | ordine degli strati/componenti</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">7dc98f98-34e5-4fbf-8662-de1a5fd8486c</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">b3aa18d8-76a9-47ac-ba57-9afdde6ac407</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1365,12 +1365,12 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">be204efd-b3b4-4c09-878c-3b3aed26a20f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">493d734b-8e9d-41cb-a7d3-448a877601d6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">SPESSORI IN METRI | NaN se non e uno strato</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">23b732fe-abba-482b-99b5-ba9f1ef1cde0</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">f00b6fc3-f7cb-46a0-a1f5-1ab41efd6469</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1414,12 +1414,12 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6a17e221-0f8b-4ebc-ae7c-5bc76f3acbd9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">508a9872-30b7-4a30-9341-990fd54b95ac</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DETTAGLI | scope, offset, proprieta e profili</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ffbb3284-866e-4dcf-b087-1de30de3c811</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">75852d0f-d945-4f51-97a5-3423fb3f2e6e</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1465,7 +1465,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Filtra, visualizza e consulta oggetti IFC. Ogni ramo {i} corrisponde allo stesso oggetto, anche se privo di geometria.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">de65d782-a0a6-4655-880d-588959a61515</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">254b0904-ea42-4e7b-899a-1bd1741e0439</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PARETI</item>
                   </items>
@@ -1488,11 +1488,11 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9def08c2-75eb-40b0-8155-b5a7d0f95210</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2d3f7d0e-e126-4b6d-a66e-7c7a745049e5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">dc48467f-4ff8-4340-ac14-7abb62909179</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">2cb45574-a36a-4151-a1a1-b9ba241c5ede</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1512,7 +1512,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Filtro per classe esatta, es. IfcWall, IfcSlab. Vuoto = tutte.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">117d7174-be66-47a7-bbc9-951959e077dc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">12468a47-a67e-486a-8ea0-12de167e1bed</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1534,7 +1534,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Cerca in nome, GlobalId o classe.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ac6b9852-ab18-4009-9dd6-fdc0327c3e2e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b5f925f2-f937-4f8b-afac-6410c891c7d1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Search</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1577,7 +1577,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione comune in metri per modelli lontani dall'origine; usare lo stesso offset nel bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4a684ce0-fb7f-4d32-94ec-d6ab851178be</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4cf7bb5d-6052-4e5c-bab7-0a8b6cd7c25d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1624,7 +1624,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Mesh nelle unita Rhino; ramo {i} vuoto se l'oggetto non ha mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dea22b76-41dd-455f-9002-21cab864a0b8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7bd1e352-64b1-482e-8e58-6b8845733db7</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1647,7 +1647,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti selezionati da collegare al bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8dc36097-0db2-4285-bc1a-2520872b98d3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fb70dfdc-242a-4124-aa8e-33f315797bbc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1670,7 +1670,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Classe IFC per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">866e3267-3d53-432e-92b0-64bc1ca4b31e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b86a5f16-14d5-4040-a491-0f12a3b07bbc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Classes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1693,7 +1693,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GlobalId per ogni oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">17c6bac7-8b09-4b2f-b9cc-92bb55082097</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e8fde038-2ec9-406b-9b37-8e9766c2a5ba</item>
                         <item name="Name" type_name="gh_string" type_code="10">GlobalIds</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1716,7 +1716,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Nomi dei parametri, un ramo {i} per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">936919fa-4acf-434e-8e08-5d0f301ad780</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eff33951-5845-482e-a585-9aa48ff23ee9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Keys</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1739,7 +1739,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori allineati a Keys; unita parametri originali IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ed5ea80b-df69-480e-a0e7-5b8a81a93f63</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32e31fa1-4de6-4cd9-89b7-920dabcc2f15</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1762,7 +1762,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Metadata completo per oggetto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0dc79daf-497a-4182-9f01-bd82e1713c38</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">625ec393-7669-4779-884b-17b15a9978bd</item>
                         <item name="Name" type_name="gh_string" type_code="10">JSON</item>
                         <item name="NickName" type_name="gh_string" type_code="10">J</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1785,7 +1785,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colore per classe; utilizzabile con Custom Preview.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1a92fc43-3227-41fd-b5a1-e9d539949873</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f337ac8e-9c73-4e93-9f8d-ffd9d5c67830</item>
                         <item name="Name" type_name="gh_string" type_code="10">Colors</item>
                         <item name="NickName" type_name="gh_string" type_code="10">RGB</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1817,7 +1817,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">25f68cc0-e535-4d1e-8bf0-ee4abff7af77</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aaf355af-d2ec-4977-980e-ae376428164b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Elements</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1865,7 +1865,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Contains a collection of RGB colours</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7491541b-b292-403d-9c78-014eb60b0cd4</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c8c43ef0-eb0d-4b2d-bd20-28b1e49be7b1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Colour</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Col</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1922,7 +1922,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                   <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Allows for customized geometry previews</item>
                     <item name="IncludeInRender" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c9918216-f4b0-41ec-85cd-ba81db867969</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9d1dd840-9d32-4848-bc02-e3151a846aeb</item>
                     <item name="Name" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PARETI</item>
                     <item name="ViewportFilter" type_name="gh_string" type_code="10"></item>
@@ -1946,11 +1946,11 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                       <items count="8">
                         <item name="Description" type_name="gh_string" type_code="10">Geometry to preview</item>
                         <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f0e4927-74a5-4807-b333-de5a36956429</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a627a780-1b9d-450f-8227-0d6b384951b4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Geometry</item>
                         <item name="NickName" type_name="gh_string" type_code="10">G</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">dea22b76-41dd-455f-9002-21cab864a0b8</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7bd1e352-64b1-482e-8e58-6b8845733db7</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1969,11 +1969,11 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">The material override</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">55a22758-c3be-4fde-b8bc-920ac1030644</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">25a9d7fc-52e9-4691-aa10-f898bac37c0a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Material</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">7491541b-b292-403d-9c78-014eb60b0cd4</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c8c43ef0-eb0d-4b2d-bd20-28b1e49be7b1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2032,7 +2032,7 @@ Cambia Relation in Container, Parent, Parts, Groups, Openings o Connections; Rec
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">281bc907-7b12-4e0e-be33-d955af8c5636</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3d26501d-4f84-434e-80cd-ec4ce0fd954d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Custom Preview</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>

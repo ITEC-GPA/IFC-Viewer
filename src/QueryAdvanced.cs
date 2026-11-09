@@ -81,7 +81,7 @@ namespace IfcViewer
 
     public sealed class ValidateIdsComponent : IfcComponent
     {
-        public ValidateIdsComponent() : base("IFC Validate IDS", "IFC IDS", "Verifica requisiti informativi IDS con IfcTester. Passed/Failed contengono i prodotti applicabili; il report include anche errori globali e oggetti non geometrici.", "3 Check", "IDS") { }
+        public ValidateIdsComponent() : base("IFC Validate IDS", "IFC IDS", "Verifica requisiti informativi IDS con IfcTester. Passed/Failed contengono i prodotti applicabili; il report include anche errori globali e oggetti non geometrici.", "4 Check", "IDS") { }
         public override Guid ComponentGuid { get { return new Guid("A33C7151-8190-4A00-A001-100000000006"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         {

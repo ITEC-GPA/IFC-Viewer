@@ -13,7 +13,7 @@ namespace IfcViewer
 {
     public sealed class ClashComponent : ElementTool
     {
-        public ClashComponent() : base("IFC Clash / Clearance", "IFC Clash", "Interferenze, contatti e distanze insufficienti fra due insiemi anche federati. Usa coordinate IFC comuni e geometria tessellata.", "3 Check", "CLH") { }
+        public ClashComponent() : base("IFC Clash / Clearance", "IFC Clash", "Interferenze, contatti e distanze insufficienti fra due insiemi anche federati. Usa coordinate IFC comuni e geometria tessellata.", "4 Check", "CLH") { }
         public override Guid ComponentGuid { get { return new Guid("A33C7151-8190-4A00-A001-100000000010"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         {
@@ -71,7 +71,7 @@ namespace IfcViewer
 
     public sealed class StructuralModelComponent : IfcComponent
     {
-        public StructuralModelComponent() : base("IFC Structural Model", "IFC Structural", "Legge membri, connessioni, vincoli e carichi analitici esistenti. Visualizza topologie lineari; conserva il grafo originale. Non genera un modello FEM dalle mesh.", "6 Structural", "STR") { }
+        public StructuralModelComponent() : base("IFC Structural Model", "IFC Structural", "Legge membri, connessioni, vincoli e carichi analitici esistenti. Visualizza topologie lineari; conserva il grafo originale. Non genera un modello FEM dalle mesh.", "8 Structural", "STR") { }
         public override Guid ComponentGuid { get { return new Guid("A33C7151-8190-4A00-A001-100000000011"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         { ModelInput(p); p.AddVectorParameter("Offset", "O", "Offset visualizzazione in metri.", GH_ParamAccess.item, Vector3d.Zero); }

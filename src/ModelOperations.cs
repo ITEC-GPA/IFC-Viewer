@@ -78,7 +78,7 @@ namespace IfcViewer
     {
         private bool _lastWrite;
         private string _signature = "", _file = "", _report = "";
-        public ExtractModelComponent() : base("IFC Extract Model", "IFC Extract", "Esporta la selezione e le dipendenze in un nuovo IFC: antenati, host/aperture, tipi, materiali. Valida e riapre prima della pubblicazione.", "4 Export", "EXT") { }
+        public ExtractModelComponent() : base("IFC Extract Model", "IFC Extract", "Esporta la selezione e le dipendenze in un nuovo IFC: antenati, host/aperture, tipi, materiali. Valida e riapre prima della pubblicazione.", "6 Export", "EXT") { }
         public override Guid ComponentGuid { get { return new Guid("A33C7151-8190-4A00-A001-100000000009"); } }
         protected override void RegisterInputParams(GH_InputParamManager p)
         {

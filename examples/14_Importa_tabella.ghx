@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">db9a2a3b-ff58-40ba-872a-e0b494d999e8</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">a0612723-7e39-4e0a-bbd1-cb69f620828c</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280913778311846</item>
+            <item name="Date" type_name="gh_date" type_code="8">639298608561126427</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>12</X>
-                  <Y>12</Y>
+                  <X>10</X>
+                  <Y>10</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -77,17 +77,17 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.1.1.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
-                <item name="Version" type_name="gh_string" type_code="10"></item>
+                <item name="Version" type_name="gh_string" type_code="10">0.1.1</item>
               </items>
             </chunk>
           </chunks>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa3bc45f-2217-47f6-82f0-a3f330117532</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">973f3039-453d-40d3-a3e2-2205896bf28b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">14 | IMPORTAZIONE CSV</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">641b8a76-ce4d-4567-bfcb-79bdcc8ed405</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">505b417b-acaa-47cb-a390-3cd757ec5c1c</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c2e4da4c-48e6-4f87-861e-2197d6be8156</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">382fbd6d-4089-420b-804b-d40c8806fcab</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">fea89953-84eb-4246-ab0f-c6f5296fece9</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bdb3fb59-4ed4-436e-b1f7-8bc059ae4357</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ba34835a-6627-4fa9-b531-1841bc5b8eb8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">00043657-bb46-43a1-a5fe-9e9e8901a41c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1bff6892-99c3-46be-b0b9-2010a6cffb7d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3b68b107-8192-4b84-befb-5494129bcffe</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8cbb5ac7-b305-4b73-910e-e87611068568</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">77d56e01-ae66-4515-9f38-ab85ad2c0daa</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fa0fb91e-a159-427c-805c-79209e804a22</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8ba2971-6540-43be-be5a-c5c210a2312a</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">76af8e59-489f-4f42-a77a-ca0390802d03</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ebb375e7-c5e5-4624-a722-1147f2d24516</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">968c4e4d-d905-4425-84e5-7f7457994c94</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3a39c886-8ef0-4e77-aaf9-442ee0b845df</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fea89953-84eb-4246-ab0f-c6f5296fece9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bdb3fb59-4ed4-436e-b1f7-8bc059ae4357</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1bff6892-99c3-46be-b0b9-2010a6cffb7d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b68b107-8192-4b84-befb-5494129bcffe</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Prepara modifiche da CSV con IFC.GlobalId e colonne Meerkat scelte esplicitamente. Un errore blocca tutto il batch; non scrive l'IFC.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c6499bf4-e064-498d-9a3a-b4659aa07e51</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">586c6050-c55f-45a0-9aa1-08f81fb36645</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Import Table</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Table</item>
                   </items>
@@ -488,12 +488,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo Model da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f8c89710-f925-4201-b28c-be3fea5440e9</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3adf7d59-72e4-4cda-883f-6fe48706b4d9</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8cbb5ac7-b305-4b73-910e-e87611068568</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">77d56e01-ae66-4515-9f38-ab85ad2c0daa</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -512,11 +512,11 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Percorso CSV UTF-8 oppure testo CSV multilinea. Header IFC.GlobalId obbligatorio.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d1259886-5329-4e99-8bb9-1690a3460061</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">09256500-6bb2-4d23-a81c-de2b18288d3e</item>
                         <item name="Name" type_name="gh_string" type_code="10">CSV</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4fbe1a02-d718-42b0-b98c-ba6ba3532d80</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4557c83c-768c-4a21-bd2d-07d278505204</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -536,7 +536,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Colonne modificabili da importare: IFC.Attribute.Name/Description/Tag, IFC.Property.Pset.Property, IFC.TypeProperty.Pset.Property.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c1401c66-1817-42b7-908b-0d9d59b182a6</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f03295b-04d9-4075-b21b-88c48f069bde</item>
                         <item name="Name" type_name="gh_string" type_code="10">Columns</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -585,7 +585,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Separatore CSV.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cc018b77-1b49-427e-84cb-0ebee8e07815</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">14a83d9c-ba3d-4ce2-a678-b13462096d67</item>
                         <item name="Name" type_name="gh_string" type_code="10">Separator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -628,7 +628,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">True legge e valida la tabella. Ricalcolare dopo modifiche al file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e9666562-c012-403a-8e84-fb46f707de0d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b33ed088-c683-4886-bad9-cf4cb433e244</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -671,7 +671,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Solo differenze valide; vuoto se esistono errori.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5a1ee27a-ce47-4e5e-92a0-77d77dfe0274</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ba392393-f909-4d4a-8493-9293887a5231</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -693,7 +693,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Intera tabella valida.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8979edcb-9fbc-42dd-b2b6-4361b9e9d4d1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5376ff9f-8bee-43f6-8053-6459a98ffd23</item>
                         <item name="Name" type_name="gh_string" type_code="10">Valid</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OK</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -715,7 +715,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_output" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Esito riga per riga e conflitti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a18321a9-0819-4190-8053-1a52309d832c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ee8efe4-cbeb-4e3c-99a6-9a46500648bc</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -747,7 +747,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3f85cd9-ac4a-4a26-bbb1-d12e83ca19c7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">efb8b87e-2ba3-4849-9ac9-38c477456a40</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Import Table</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -795,7 +795,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4fbe1a02-d718-42b0-b98c-ba6ba3532d80</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4557c83c-768c-4a21-bd2d-07d278505204</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">CSV | testo multilinea modificabile</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -847,12 +847,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">00e036ca-294a-414d-b549-1ad2c3f3d7ec</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b10498dc-dd5d-4ac7-90c6-a5300d0107e8</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">VALIDAZIONE RIGHE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">a18321a9-0819-4190-8053-1a52309d832c</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">6ee8efe4-cbeb-4e3c-99a6-9a46500648bc</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -898,7 +898,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Applica Changes a una copia temporanea, valida e rilegge l'IFC. Nessun file destinazione pubblicato. Il modello risultante puo essere analizzato e incorporato in un nuovo Read IFC.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f60e684-3c45-41f4-8f21-ad8f200857f9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">161f25bc-fb9a-4091-8215-ccf4bd365ac1</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Preview Changes</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Preview</item>
                   </items>
@@ -921,12 +921,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo Model da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">96d2f340-a573-47c0-b40b-a93c24f9735c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3348b78d-c15b-43f0-8478-a51dc87ab6dd</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8cbb5ac7-b305-4b73-910e-e87611068568</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">77d56e01-ae66-4515-9f38-ab85ad2c0daa</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -946,12 +946,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste da applicare alla copia.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a3e5604-4343-4dd5-aab3-807bd742be0e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e44c9d1b-0d16-46c1-a1bd-35ffa39e6f6b</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5a1ee27a-ce47-4e5e-92a0-77d77dfe0274</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ba392393-f909-4d4a-8493-9293887a5231</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -970,7 +970,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">True calcola anteprima; puo richiedere tempo su file grandi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">26f8c973-c04b-4a61-80cd-70215b598feb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c38d9a28-8132-4f05-9d4e-3986c29cc9f6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Run</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1012,7 +1012,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Modello temporaneo modificato.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">01415f5b-8430-4f7c-9d5f-7358dbf942ff</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d659d0cb-f296-437c-bc0b-af17f5560672</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1035,7 +1035,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli elementi della copia.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a95e4646-80a1-4a2c-80f4-1cd07f184353</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">55bee2f6-094d-49c3-9e29-2ce1ef6984ca</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1058,7 +1058,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Istanze richieste e istanze dei tipi modificati, prima.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">234e3d8d-9cc3-418e-b0d9-3ad3aeaa8748</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">08204f73-e757-4f9d-a10e-d1b30d7ab722</item>
                         <item name="Name" type_name="gh_string" type_code="10">Affected before</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1081,7 +1081,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Stesse istanze, dopo. Include istanze con override locali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca228d19-819c-4f14-a8cf-aaef3a38a27c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">422fa45a-5668-4143-9cf8-8fc8019bcd41</item>
                         <item name="Name" type_name="gh_string" type_code="10">Affected after</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1103,7 +1103,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_output" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Modifiche applicate e valori prima/dopo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">47e05921-4431-4457-86a9-a5e06cef9377</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d814b64a-fa05-4b70-b1eb-0a7730a82553</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1135,7 +1135,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d4a02808-c2c5-4e14-b248-b7bb24f337a3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">dc2674ec-f776-4d0e-8495-be66c9ea36ff</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Preview Changes</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1183,12 +1183,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">314178b9-6e71-416b-85ac-521a70811cee</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a6b0dbec-1f9e-4df2-b5a4-2ea958a5969d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">DIFFERENZE EFFETTIVE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">47e05921-4431-4457-86a9-a5e06cef9377</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">d814b64a-fa05-4b70-b1eb-0a7730a82553</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1234,7 +1234,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Applica Changes al sorgente incorporato ed esporta un nuovo .ifc. Originale protetto; valida schema e riapertura prima della pubblicazione. Il modello in ingresso resta invariato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">908edd39-be40-436d-a877-978eede4a135</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ae94dae-99bc-401e-b041-d5ffc5360716</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write</item>
                   </items>
@@ -1257,12 +1257,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo modello da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eee9fb07-a64a-4f23-8a7d-c215daef2b2a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e69fb16d-a134-4329-b629-3bcef1fa4714</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8cbb5ac7-b305-4b73-910e-e87611068568</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">77d56e01-ae66-4515-9f38-ab85ad2c0daa</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1282,12 +1282,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Unire richieste Set Attribute/Set Property. Conflitti sullo stesso campo bloccano l'intero export.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3bbe2d7f-3937-4233-ba98-61a75cfb08fc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f7c677e2-78c9-4530-a06f-cd9527288aed</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5a1ee27a-ce47-4e5e-92a0-77d77dfe0274</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ba392393-f909-4d4a-8493-9293887a5231</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1306,11 +1306,11 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Nuovo percorso .ifc, diverso dall'originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ff491203-4469-45d2-8b24-d12272ade15c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a4176a07-1a42-4e17-8228-b14d63c5f4c2</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d9f10120-8daa-43fb-9776-9b5e95ac7bd6</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ab722e61-d282-443a-9070-92c82d9da606</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1329,11 +1329,11 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button; scrive solo sul fronte False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5207ba9b-86bf-47aa-827d-6cc58053fda4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">edc88a88-7179-40c2-a0ee-c37117e3cef8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">36f06281-3c11-473b-bd9c-f7aa4535f5e8</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">549d2ee7-085b-4a82-9afc-f6b7c37e1fb5</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1372,7 +1372,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Sostituisce la destinazione, mai il sorgente originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0f9660a8-f3f3-4b04-bcfa-7229929c3e9e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cc96293a-aa55-464f-a4e8-13dcc5b64434</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1414,7 +1414,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ultimo percorso scritto per gli input correnti. Collegare a Read IFC e premere READ per ricaricarlo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">349837ae-0016-4bae-acca-cde0c90dabb5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ab490ac-311d-4f3b-9dfa-eb4b93c94ec0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1436,7 +1436,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Report JSON della scrittura: prima/dopo, hash, schema, istanze del tipo interessate. Si azzera cambiando gli input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">df6fd174-0b0f-4dfe-aceb-572cbcec45eb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">caac6992-8f7e-490a-a047-c252bb2d0737</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1459,7 +1459,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste correnti, anche prima del Write. Non equivale a validazione completa dello schema.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1058c4b9-3a0b-4818-97c2-958ab1285a6a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0f34d338-a7b0-48cc-b258-4a473351a6d2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1491,7 +1491,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">94c092c8-5656-4dbd-acf4-3cf553bc6c21</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a6617f7b-5fcb-4f55-aed4-4d37c9115f69</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1539,7 +1539,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d9f10120-8daa-43fb-9776-9b5e95ac7bd6</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ab722e61-d282-443a-9070-92c82d9da606</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUOVO IFC | percorso modificabile</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1589,7 +1589,7 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">36f06281-3c11-473b-bd9c-f7aa4535f5e8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">549d2ee7-085b-4a82-9afc-f6b7c37e1fb5</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1623,12 +1623,12 @@ Puoi sostituire CSV con il percorso 14_aggiornamento.csv. Preview mostra la copi
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">252744d9-0a3e-466d-b18d-47d783502a25</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">59fd69a6-3252-41d8-aa6c-587f9593911e</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT EXPORT | nessun file finche non premi WRITE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">df6fd174-0b0f-4dfe-aceb-572cbcec45eb</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">caac6992-8f7e-490a-a047-c252bb2d0737</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

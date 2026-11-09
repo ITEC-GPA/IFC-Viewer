@@ -2,9 +2,11 @@
 
 ![Meerkat](Assets/Brand/logo.png)
 
-**Versione:** 0.1.0, scritta solo in `src/AssemblyVersion.cs`. A ogni rilascio una correzione alza l'ultimo numero, ogni altra modifica il secondo.
+**Versione:** 0.1.1, scritta solo in `src/AssemblyVersion.cs`. A ogni rilascio una correzione alza l'ultimo numero, ogni altra modifica il secondo.
 
-Progetto per **Rhino 8 / Grasshopper 1, Windows x64**, con **35 componenti**, definizione `.gh` gia collegata e un modello IFC di esempio incorporato. Compilato e verificato con Rhino 8.35. Non richiede Geometry Gym, VisualARQ o altri plugin BIM. Il motore di lettura e IfcOpenShell 0.8.3, installato in un ambiente Python locale al progetto.
+Progetto per **Rhino 8 / Grasshopper 1, Windows x64**, con **35 componenti**, definizione `.gh` gia collegata e un modello IFC di esempio incorporato. Compilato e verificato con Rhino 8.36. Non richiede Geometry Gym, VisualARQ o altri plugin BIM. Il motore di lettura e IfcOpenShell 0.8.3, installato in un ambiente Python locale al progetto.
+
+Correzioni e compatibilita del rilascio: [CHANGELOG.md](CHANGELOG.md).
 
 ## Avvio
 
@@ -18,7 +20,7 @@ Progetto per **Rhino 8 / Grasshopper 1, Windows x64**, con **35 componenti**, de
 
 Meerkat e il nuovo nome di IFC Viewer. Il file e ora `bin/Meerkat.gha`, la scheda Grasshopper e **Meerkat**. I GUID del plugin e dei 19 componenti preesistenti restano invariati, cosi le vecchie definizioni sono compatibili. Il setup migra il vecchio `IFCViewer.ghlink` diretto al `dist` dello stesso progetto; non caricare le due assembly contemporaneamente. I marcatori interni `IFCViewer.Key`/`IFCViewer.Root` e il namespace tecnico sono conservati per la compatibilita dei dati esistenti.
 
-Sul computer su cui e stato creato il progetto il runtime Python e gia preparato. `Setup.cmd` puo essere rieseguito: controlla le dipendenze e registra il plugin. Su un altro computer serve Python x64; lo script seleziona Python 3.9 tramite il launcher `py`. Per scegliere un altro interprete compatibile con la wheel IfcOpenShell: `powershell -ExecutionPolicy Bypass -File Setup.ps1 -Python "C:\percorso\python.exe"`. La versione verificata qui e Python 3.9.13 x64.
+Sul computer su cui e stato creato il progetto il runtime Python e gia preparato. `Setup.cmd` puo essere rieseguito: controlla le dipendenze e registra il plugin. Su un altro computer serve Python x64; lo script cerca Python 3.12, poi 3.11, tramite il launcher `py`. Per scegliere un altro interprete compatibile con la wheel IfcOpenShell: `powershell -ExecutionPolicy Bypass -File Setup.ps1 -Python "C:\percorso\python.exe"`. Il runtime legacy Python 3.9.13 x64 viene mantenuto se gia presente; per migrare usare una nuova cartella di distribuzione con Python 3.12 x64. Python 3.13 non e compatibile con il vincolo IfcOpenShell 0.8.3.
 
 ## Componenti
 
@@ -106,7 +108,7 @@ Con **Update=True**, il bake riconosce gli oggetti tramite percorso della sorgen
 
 Ogni archivio contiene `original/source.ifc` oppure `original/source.ifczip`, `entities.jsonl`, `model.json`, `geometry/<STEP-ID>.json`. Le entita senza geometria restano nella definizione e nell'archivio: non vengono inventati oggetti Rhino vuoti. Il file IFC originale conserva anche intestazione, relazioni inverse ricostruibili e dati non esposti nei pannelli.
 
-Gli archivi temporanei di lettura si trovano in `%TEMP%\Meerkat`. Non eliminarli mentre il documento Grasshopper e aperto: servono al salvataggio. Dopo aver salvato/chiuso le definizioni possono essere eliminati. Gli archivi esportati sono scritti tramite file temporaneo e sostituzione atomica per singolo file; `Overwrite` e disattivato inizialmente.
+Ogni modello conserva in memoria una copia compressa del proprio archivio, indipendente dal file esterno. Il salvataggio GH e degli archivi usa questa copia. I file di lavoro in `%TEMP%\Meerkat` vengono ricreati se mancanti e rimossi quando il modello viene raccolto dal garbage collector; dopo una chiusura anomala possono restare residui. La memoria aggiuntiva richiesta corrisponde agli archivi compressi caricati. Un READ fallito conserva i modelli precedenti e segnala l'errore. Gli archivi esportati sono scritti tramite file temporaneo e sostituzione atomica per singolo file; `Overwrite` e disattivato inizialmente.
 
 ## Geometria, coordinate e limiti
 
@@ -123,7 +125,7 @@ Gli archivi temporanei di lettura si trovano in `%TEMP%\Meerkat`. Non eliminarli
 
 Con Rhino aperto il plugin puo essere bloccato. Per preparare una versione separata usa `Build.ps1 -DistributionDirectory "<root>\build\pending\bin"` e `Package.ps1 -DistributionDirectory "<root>\build\pending\bin"`. La build normale continua a usare la bin principale. Non registrare entrambe le versioni: dopo aver chiuso Rhino, ricompila normalmente oppure aggiorna il percorso di installazione.
 
-`Build.ps1` compila `bin/Meerkat.gha` con il compilatore .NET Framework di Windows e le librerie Rhino locali. Incorpora logo e 35 icone e raccoglie in **bin** worker, installer, documentazione, diciotto esempi e asset. Il progetto IDE/.NET SDK e `src/Meerkat.csproj`: `Directory.Build.props/targets` centralizzano anche questa compilazione nella stessa bin; i file intermedi sono in `build/obj/<progetto>`. Per usare un'altra installazione: `Build.ps1 -RhinoDir "C:\Program Files\Rhino 8"`.
+`Build.ps1` compila `bin/Meerkat.gha` con il compilatore .NET Framework di Windows e le librerie Rhino locali. Incorpora logo e 35 icone e raccoglie in **bin** worker, installer, documentazione, diciotto esempi e asset. Il progetto IDE/.NET SDK e `src/Meerkat.csproj`: `Directory.Build.props/targets` centralizzano anche questa compilazione nella stessa bin; i file intermedi sono in `build/obj/<progetto>`. Per usare un'altra installazione: `Build.ps1 -RhinoDir "C:\Program Files\Rhino 8"`; lo stesso parametro e disponibile in `Test-Rhino.ps1`.
 
 Prima della compilazione vengono eliminate le `bin` residue dei moduli sotto la root. Sono esclusi la bin principale, runtime/dipendenze (`.venv`, `node_modules`, `packages`), `.git`, `build`, dati di test/esportazione e repository annidati. Non vengono attraversati collegamenti o junction; un collegamento dentro una bin da cancellare blocca la pulizia. La procedura controlla i percorsi assoluti prima della cancellazione.
 
@@ -145,6 +147,6 @@ I test Python creano IFC2x3, IFC4 e IFC4x3 e verificano IFCZIP, integrita origin
 
 `-All` esegue in processi separati la suite principale, gli esempi 01–08 e ciascun esempio 09–18. I nuovi test verificano anche Qto/unita, CSV, IDS, tipi, estrazione, interferenze federate e dati strutturali. Su questa installazione la sequenza completa in un unico processo senza interfaccia puo interrompersi durante la rilettura; ogni processo deve emettere il marcatore di completamento, altrimenti il test fallisce anche con exit code zero. Sono verificati nomi/categorie, icone e apertura di un `.gh` originale IFC Viewer. Per una prova mirata: `Test-Rhino.ps1 -ExamplesOnly -ExampleStart 11 -ExampleEnd 11`.
 
-I test di scrittura verificano IFC2x3/IFC4/IFC4x3, sorgente protetto, rollback su richieste invalide, Pset condivisi, override, tipi/unita, modifiche da User Text, mesh con placement ruotato e coordinate grandi, conservazione delle altre istanze e rifiuto di mesh/aperture non supportate. `Test-BuildLayout.ps1` esercita la pulizia in una copia di prova, comprese junction e dipendenze da preservare. `Test-Distribution.ps1` copia i soli file distribuibili in una cartella separata, installa li Python/IfcOpenShell/IfcTester e verifica lettura, unita, IDS, modifica e rilettura IFC con il plugin spostato; richiede accesso ai pacchetti Python. Accetta `-DistributionDirectory` per testare una build separata. Gli output restano in `test-output`.
+I test di scrittura verificano IFC2x3/IFC4/IFC4x3, sorgente protetto, rollback su richieste invalide, Pset condivisi, override, tipi/unita, modifiche da User Text, mesh con placement ruotato e coordinate grandi, conservazione delle altre istanze e rifiuto di mesh/aperture non supportate. `Test-BuildLayout.ps1` esercita la pulizia in una copia di prova, comprese junction e dipendenze da preservare. `Test-Distribution.ps1` copia i soli file distribuibili in una cartella separata, installa li Python/IfcOpenShell/IfcTester e verifica lettura, unita, IDS, modifica e rilettura IFC con il plugin spostato; richiede accesso ai pacchetti Python. Accetta `-DistributionDirectory` per testare una build separata, `-Python` per scegliere l'interprete del nuovo runtime e `-RhinoDir` per una diversa installazione Rhino. La suite e verificata anche con Python 3.12.10 x64. Gli output restano in `test-output`.
 
 Riferimenti tecnici: [geometria IfcOpenShell](https://docs.ifcopenshell.org/ifcopenshell-python/geometry_processing.html), [proprieta e tipi IFC](https://docs.ifcopenshell.org/ifcopenshell-python/code_examples.html), [Grasshopper SDK](https://developer.rhino3d.com/api/grasshopper/), [documenti Rhino senza interfaccia](https://developer.rhino3d.com/guides/rhinocommon/code-driven-file-io/).

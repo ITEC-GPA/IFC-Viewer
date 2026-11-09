@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
@@ -19,7 +18,45 @@ namespace IfcViewer
 {
     public sealed class IfcModel
     {
-        public string ArchivePath;
+        private byte[] _archiveBytes;
+        private string _archivePath;
+        private readonly object _archiveLock = new object();
+        // A model owns its snapshot, never the user's source archive. The compressed
+        // bytes also survive external cleanup of TEMP while a GH document is open.
+        public string ArchivePath
+        {
+            get
+            {
+                lock (_archiveLock)
+                {
+                    if (_archiveBytes == null) throw new InvalidOperationException("Modello privo di archivio IFC.");
+                    if (_archivePath == null)
+                        _archivePath = Path.Combine(Path.GetTempPath(), "Meerkat", Guid.NewGuid().ToString("N") + ".ifcdata.zip");
+                    if (!File.Exists(_archivePath))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(_archivePath));
+                        File.WriteAllBytes(_archivePath, _archiveBytes);
+                    }
+                    return _archivePath;
+                }
+            }
+        }
+        public byte[] ArchiveBytes()
+        {
+            lock (_archiveLock)
+            {
+                if (_archiveBytes == null) throw new InvalidOperationException("Modello privo di archivio IFC.");
+                return (byte[])_archiveBytes.Clone();
+            }
+        }
+        internal void RefreshArchiveSnapshot() { lock (_archiveLock) _archiveBytes = File.ReadAllBytes(ArchivePath); }
+        ~IfcModel()
+        {
+            // No recursive deletion: only the exact file owned by this model.
+            try { if (_archivePath != null) File.Delete(_archivePath); }
+            catch (IOException) { }
+            catch (UnauthorizedAccessException) { }
+        }
         public JObject Metadata;
         public List<IfcElement> Elements = new List<IfcElement>();
         public string SourceKey { get { return Hash(((string)Metadata["source_path"]).ToUpperInvariant()).Substring(0, 16); } }
@@ -30,8 +67,13 @@ namespace IfcViewer
         }
         public static IfcModel Load(string archivePath)
         {
-            var model = new IfcModel { ArchivePath = Path.GetFullPath(archivePath) };
-            using (var zip = ZipFile.OpenRead(archivePath))
+            return Load(File.ReadAllBytes(archivePath));
+        }
+        public static IfcModel Load(byte[] archiveBytes)
+        {
+            var model = new IfcModel { _archiveBytes = (byte[])archiveBytes.Clone() };
+            using (var stream = new MemoryStream(model._archiveBytes, false))
+            using (var zip = new ZipArchive(stream, ZipArchiveMode.Read))
             {
                 var entry = zip.GetEntry("model.json");
                 if (entry == null) throw new InvalidDataException("Archivio privo di model.json");
@@ -183,26 +225,26 @@ namespace IfcViewer
             input = Path.GetFullPath(input.Trim().Trim('"'));
             if (!File.Exists(input)) throw new FileNotFoundException("File IFC non trovato", input);
             if (input.EndsWith(".ifcdata.zip", StringComparison.OrdinalIgnoreCase)) return IfcModel.Load(input);
-            string python = PythonPath();
-            if (!File.Exists(python)) throw new FileNotFoundException("Runtime IFC mancante. Eseguire Setup.cmd nella cartella di Meerkat.", python);
             string cache = Path.Combine(Path.GetTempPath(), "Meerkat", Guid.NewGuid().ToString("N"));
             Directory.CreateDirectory(cache);
             string archive = Path.Combine(cache, "model.ifcdata.zip");
-            var start = new ProcessStartInfo(python, Quote(Path.Combine(PluginDirectory, "ifc_reader.py")) + " " + Quote(input) + " " + Quote(archive))
-            { UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true, StandardOutputEncoding = Encoding.UTF8, StandardErrorEncoding = Encoding.UTF8 };
-            start.EnvironmentVariables["PYTHONUTF8"] = "1";
-            using (var process = Process.Start(start))
+            try
             {
-                var stdout = process.StandardOutput.ReadToEndAsync();
-                var stderr = process.StandardError.ReadToEndAsync();
-                if (!process.WaitForExit(30 * 60 * 1000))
-                {
-                    process.Kill(); throw new TimeoutException("Lettura IFC interrotta dopo 30 minuti.");
-                }
-                if (process.ExitCode != 0) throw new InvalidOperationException(stderr.Result);
-                var ignored = stdout.Result;
+                WorkerProcess.Run(PythonPath(), Path.Combine(PluginDirectory, "ifc_reader.py"), new[] { input, archive });
+                return IfcModel.Load(archive);
             }
-            return IfcModel.Load(archive);
+            finally
+            {
+                // A killed worker can leave a staging file. Cleanup must not mask
+                // its timeout/diagnostic or turn a successful read into a failure.
+                try
+                {
+                    if (File.Exists(archive)) File.Delete(archive);
+                    Directory.Delete(cache);
+                }
+                catch (IOException) { }
+                catch (UnauthorizedAccessException) { }
+            }
         }
     }
 

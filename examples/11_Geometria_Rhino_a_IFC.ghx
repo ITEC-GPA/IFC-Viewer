@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">460bc56d-0059-47a3-87b2-d1cd52106f3d</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">e62ef8c5-1078-40e2-ba9d-72044fc2a966</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280230477063734</item>
+            <item name="Date" type_name="gh_date" type_code="8">639298607167706394</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>12</X>
-                  <Y>12</Y>
+                  <X>10</X>
+                  <Y>10</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -77,17 +77,17 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="1">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.1.1.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
-                <item name="Version" type_name="gh_string" type_code="10"></item>
+                <item name="Version" type_name="gh_string" type_code="10">0.1.1</item>
               </items>
             </chunk>
           </chunks>
@@ -106,7 +106,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">902c04a8-75de-45bf-adb6-1bc33d41bcaa</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1dc84c71-0144-47d3-878a-d9ea65544617</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">11 | GEOMETRIA RHINO A IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -161,7 +161,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">983a7467-6f9e-4549-8465-02be479d1e23</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a24ad3e2-cd97-4b17-a6b0-01c51f9e0c5c</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -185,12 +185,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ad160304-c9d8-4338-aaa3-8e1172a5cb57</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1c120adc-49c8-4fec-be14-7e6169de5046</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">afe7b04b-bab9-44d6-99be-b4343fa36f68</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e84c25b1-57c3-4a8c-a7ab-1e8cf927c694</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -209,11 +209,11 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca74d270-9a9f-4512-b6f0-f2833d83627a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb679561-4ca5-4ce5-9276-af3830b41c8c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">3f653ab2-cc04-4f6f-8bce-3060a8d10060</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">95ff3e70-3584-4f64-af6e-10145001643f</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -253,7 +253,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c90cd9f4-b9b0-419a-8a7e-c3de4829526d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e349ac3f-4a21-46b8-9ecd-82459feb105d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -276,7 +276,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f4691f00-2696-425a-8d3d-0b746420aad0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">48a9bd48-f7b0-4ccc-963d-a7447bbad131</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -299,7 +299,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">38631c83-7fb6-4250-b8d7-d542aa64d5b5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">46369985-b1ab-4649-91a7-6e02f871b2e6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -331,7 +331,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b5cf527f-9e76-40d6-9037-bea762e78292</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9a8cf341-4221-4f9d-aa75-96d9f049cbfe</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -379,7 +379,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">afe7b04b-bab9-44d6-99be-b4343fa36f68</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e84c25b1-57c3-4a8c-a7ab-1e8cf927c694</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -429,7 +429,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f653ab2-cc04-4f6f-8bce-3060a8d10060</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">95ff3e70-3584-4f64-af6e-10145001643f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -465,7 +465,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">59e4412e-af3f-4acb-8131-5651565a77c9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b88d7ae-323f-4d6a-aec1-2b68680e7fdc</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IfcWall</item>
                   </items>
@@ -488,11 +488,11 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8695f623-deca-4ce2-b86d-2ece0b1bcae5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">da72cb1e-1198-4ded-a8d5-3746bf8f9fb8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f4691f00-2696-425a-8d3d-0b746420aad0</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">48a9bd48-f7b0-4ccc-963d-a7447bbad131</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -511,7 +511,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e5b0cef3-bbfc-4bb6-b22a-834d4d45b844</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5743478b-8662-4536-83e4-41592023a4ab</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -554,7 +554,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e196387-fff4-48a9-9fc0-e93ed1e53e33</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">59278c9a-ec01-4c86-a460-eec34753d634</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -597,7 +597,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b5552a0-df23-4ab8-887c-1df9bbdd3a6b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">97db40ac-7516-487d-b0f6-7670a6a1b13f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -640,7 +640,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c3d57ebc-4478-44a9-a744-8df8eb3ad6e3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b1762e6f-1cfc-4bd0-8505-1b6d94dcf5c2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -683,7 +683,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9134e617-f0c1-4436-8d1e-bb583b3b6f8d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">08bc48e8-39d2-4af7-aeed-b2da754a3f2c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -706,7 +706,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f68e2e1-7197-4290-8050-28f5b76fc38a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">38dbf339-4cdf-47b0-9824-48599db06eb9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -729,7 +729,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">67105dea-7b0f-4ad6-9f84-f71777a52a47</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e14743d2-3e8e-4d19-844e-16cf41fd7803</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -761,7 +761,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c8cbf07e-ccd5-4ce8-979e-915569984819</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c56744a8-ef2b-4906-b6d6-5b06ebbb5746</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -811,7 +811,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Calcola un offset comune in metri per avvicinare un modello/federazione all'origine. Collegarlo sia alla preview sia al bake/export.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0f4161f0-d057-4e90-a7e5-00b0ed84c23a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a5a92fb1-d64b-40ea-a2f4-b73cc5948bd9</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Local Origin</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Origin</item>
                   </items>
@@ -834,11 +834,11 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f47d9fb2-ac0f-4867-9d96-af9b72439864</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c0785564-07e7-45f0-ac52-28c2a99ca561</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9134e617-f0c1-4436-8d1e-bb583b3b6f8d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">08bc48e8-39d2-4af7-aeed-b2da754a3f2c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -857,7 +857,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">XY center (mantiene quote Z), center, min.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2f3a8387-e66c-4545-862b-2fd4d2c9ca7b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">450f3b8f-c0b2-4009-8576-c95d1c312d9c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mode</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -900,7 +900,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Traslazione da applicare a IFC Elements/Color By/Bake/Export 3DM.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8905a52f-d759-49b6-9d0f-919946dd92ab</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">34a515d9-c2a2-4757-95c6-1932823e67c1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -922,7 +922,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Punto originale che diventa l'origine, in metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">064adea6-543a-44e5-af3b-000e9357a187</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2ce649ee-7767-4c03-aac8-4efb4666ff70</item>
                         <item name="Name" type_name="gh_string" type_code="10">Original origin metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -954,7 +954,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c80dda16-a9d2-47f9-b7bb-95780284c829</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9926a6eb-bd0e-43f2-8412-e23b3b28d4fd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Local Origin</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1004,7 +1004,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Bake su layer Radice::Modello::ClasseIFC e tutti i parametri negli User Text. Un record Undo per operazione.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f173b8b3-f594-41f2-9ec2-8669b00b14a5</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c1e86154-e21e-425e-9d7c-bad319618fc0</item>
                     <item name="Name" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Bake</item>
                   </items>
@@ -1027,12 +1027,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Oggetti da IFC Elements o Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4228878a-bfe6-4656-8df8-3541364cd101</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f2c5b322-3d3e-400d-96b9-2d77d104d3e5</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9134e617-f0c1-4436-8d1e-bb583b3b6f8d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">08bc48e8-39d2-4af7-aeed-b2da754a3f2c</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1051,11 +1051,11 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button: agisce solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f426d948-62cf-449c-a6cb-981ae87eba7a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f7af0df2-3a80-4487-bb25-e317a4f7ede5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Bake</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6ae73268-bd23-48d0-b4f1-d804a97e8b2c</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">83623c05-3946-4898-bb5c-a0ae9ef2723d</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1094,7 +1094,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Layer radice.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">da4b90b0-3f95-4cc8-a451-adf487cdef0b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ffb419a8-baed-4b2e-83b9-43d2022eda13</item>
                         <item name="Name" type_name="gh_string" type_code="10">Root layer</item>
                         <item name="NickName" type_name="gh_string" type_code="10">L</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1137,7 +1137,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">True aggiorna gli oggetti precedentemente creati da questo componente, stessa sorgente e GlobalId. False crea copie.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aeea5700-6db1-4e6e-b91e-2ce285e8307b</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">40bf5d0e-99a3-40b9-854c-fb08d5a08ce6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Update</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1179,11 +1179,11 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="4">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Stesso offset usato nella visualizzazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c0f21f47-381b-4741-95a0-1b7a97afa5ed</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">41d5da67-77bc-4f0b-999b-9b6c1e551551</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8905a52f-d759-49b6-9d0f-919946dd92ab</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">34a515d9-c2a2-4757-95c6-1932823e67c1</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1227,7 +1227,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID Rhino dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e75f5a03-2ecd-40a0-9e84-ee97f8d5755a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">24d79722-cbc6-44cd-b1e6-4406f7580766</item>
                         <item name="Name" type_name="gh_string" type_code="10">Object IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1249,7 +1249,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Risultato dell'ultima operazione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">51c57bb0-b170-46b6-a620-5aaea4c5eefc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e4ed44e4-6c40-4ccd-a141-612c97cd08a8</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1281,7 +1281,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">350ebf6d-73b5-4944-b4f8-f4c6c18afd2b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">71771558-8153-4cad-9893-b56b7044e350</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Bake IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1331,7 +1331,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ae73268-bd23-48d0-b4f1-d804a97e8b2c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">83623c05-3946-4898-bb5c-a0ae9ef2723d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">BAKE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1367,7 +1367,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Prepara la sostituzione Body delle mesh del bake modificate in Rhino. Coordinate convertite in metri e offset annullato. Nuova geometria tessellata, Qto non ricalcolate; solo mesh chiuse connesse senza aperture IFC.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e97447de-a149-4a59-b6b4-318a6e4a8930</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">681301a5-c04f-46d9-9882-0466f430c329</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Geometry From Rhino</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Rhino Mesh</item>
                   </items>
@@ -1390,12 +1390,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo modello originale, stessa versione del bake.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">975e5230-90e7-4d1c-903b-1fa00a3ae68d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">057e227e-b5d7-4571-8293-270e9c05012d</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c90cd9f4-b9b0-419a-8a7e-c3de4829526d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e349ac3f-4a21-46b8-9ecd-82459feb105d</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1415,12 +1415,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">GUID delle mesh del bake da confrontare. Non trasferisce cancellazioni o nuovi oggetti senza identita IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">340c3680-e4e3-40e3-8a57-358547568c3d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">389f3321-6312-441d-a9cd-f1d16ee93d23</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rhino IDs</item>
                         <item name="NickName" type_name="gh_string" type_code="10">ID</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e75f5a03-2ecd-40a0-9e84-ee97f8d5755a</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">24d79722-cbc6-44cd-b1e6-4406f7580766</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1439,11 +1439,11 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button dopo modifiche di forma/posizione in Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1158f0d9-1f9a-465e-97ab-8f946198b8a0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6b3bbc56-1b20-4047-978f-1be8b6ff3f43</item>
                         <item name="Name" type_name="gh_string" type_code="10">Refresh</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">20759813-cdfe-45b2-8905-fa5604437f39</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">8c6f6ae6-a7e2-4d04-a6a0-843b9a1722a6</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1482,7 +1482,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Soglia di confronto dei vertici in metri (default 1e-6). Non e una tolleranza di verifica strutturale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0144ab87-412f-4086-9a66-4d5ad879ce9c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">69ea2606-0a5f-4837-9eaf-05298768a6f3</item>
                         <item name="Name" type_name="gh_string" type_code="10">Tolerance metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">T</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1525,7 +1525,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste geometriche da combinare con modifiche dati e inviare a IFC Write File.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a21dee1d-d80b-4bc6-9212-826980e8ac25</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6d303d69-0a91-4945-86af-a991b40d7b0b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1548,7 +1548,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi interessati, vertici/facce e limiti della conversione.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ad7f278c-b95b-4df3-9da3-2b58fe98deaf</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f399786-5b5c-4dc2-93df-d92061687ea5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1570,7 +1570,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_output" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Sintesi del confronto. Nuova geometria non parametrica; quantita e modello analitico restano invariati.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">47ce31f7-8f7e-478c-9c3a-930ff61f0090</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4c2dccd-a04a-414f-bd2f-75c502187030</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1602,7 +1602,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a7927ee3-65c7-4526-a6c3-41827e9e7876</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf6eadf1-afc2-47af-909b-0a9c0f2ed527</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Geometry From Rhino</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1652,7 +1652,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">20759813-cdfe-45b2-8905-fa5604437f39</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8c6f6ae6-a7e2-4d04-a6a0-843b9a1722a6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REFRESH</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1686,12 +1686,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a92e7fc5-8af8-4059-98d1-87491b4c4312</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ab0ac7b8-da3d-4451-890a-a263f2639f93</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">GEOMETRIE DA SOSTITUIRE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">ad7f278c-b95b-4df3-9da3-2b58fe98deaf</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">4f399786-5b5c-4dc2-93df-d92061687ea5</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1735,12 +1735,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d269b0a4-e5a7-4b72-96a2-9ab1a84118f8</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">23598414-895c-400c-8e17-6a8ac078adb2</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">LIMITI DELLA CONVERSIONE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">47ce31f7-8f7e-478c-9c3a-930ff61f0090</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">b4c2dccd-a04a-414f-bd2f-75c502187030</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1786,7 +1786,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Applica Changes al sorgente incorporato ed esporta un nuovo .ifc. Originale protetto; valida schema e riapertura prima della pubblicazione. Il modello in ingresso resta invariato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7584a9b9-41fb-426c-a179-bb8ab86b5cee</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">32ae2b75-7b21-427a-aae0-fa572a7f7e2d</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write</item>
                   </items>
@@ -1809,12 +1809,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo modello da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3dcb1b7b-6c71-49fb-96c7-46cbd9b1e9aa</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c9f77dd2-2921-4670-b492-f31d4a44aaef</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c90cd9f4-b9b0-419a-8a7e-c3de4829526d</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">e349ac3f-4a21-46b8-9ecd-82459feb105d</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1834,12 +1834,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Unire richieste Set Attribute/Set Property. Conflitti sullo stesso campo bloccano l'intero export.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2d6dde78-093f-4896-88b6-a618e040f89a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b1515f62-91ae-4a45-a5c9-8e74f43bb6d1</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">a21dee1d-d80b-4bc6-9212-826980e8ac25</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">6d303d69-0a91-4945-86af-a991b40d7b0b</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1858,11 +1858,11 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Nuovo percorso .ifc, diverso dall'originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0935e8a0-9770-4c3d-9c47-bdba03969788</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5dfb11e9-41a9-4058-b7a3-f5eeae08b620</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">4ce15226-6bb2-4584-8562-73d2d13ec24f</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">1386280b-7c35-4c5f-b9d8-8a9f670b36d8</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1881,11 +1881,11 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button; scrive solo sul fronte False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">13afab63-e7d4-4d84-9f9a-a261784123d3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8dfd7345-9391-417b-9407-2090ceb361df</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">5f74ba52-ae0f-4b3e-955f-1235f10c66c9</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d1a68623-2ada-4e20-be8b-8d9d2c629648</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -1924,7 +1924,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Sostituisce la destinazione, mai il sorgente originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">505b0cca-4bdb-4a49-865d-c3d3e84f14a1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bc3d64be-4e0e-4db0-b2cd-da0b116e159f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1966,7 +1966,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ultimo percorso scritto per gli input correnti. Collegare a Read IFC e premere READ per ricaricarlo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7804926e-e956-404c-ad4a-47c6aa838b9c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bb84bb9a-bfbc-4355-9f23-b4d09ac3cefe</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1988,7 +1988,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Report JSON della scrittura: prima/dopo, hash, schema, istanze del tipo interessate. Si azzera cambiando gli input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">84dfdaa1-1718-44cd-be99-58eaa301d881</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">88121df9-2d08-479c-b212-93ccce19a37f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2011,7 +2011,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste correnti, anche prima del Write. Non equivale a validazione completa dello schema.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0fc22b19-0730-4681-b704-c4fdada77f8f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">be7cecf6-3017-4f65-9387-0383e0a61685</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2043,7 +2043,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c979855-66c0-4139-ae5f-d9f4fd10d830</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e78b3953-bac3-403a-9909-8d3248178bba</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2091,7 +2091,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4ce15226-6bb2-4584-8562-73d2d13ec24f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1386280b-7c35-4c5f-b9d8-8a9f670b36d8</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUOVO IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2141,7 +2141,7 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f74ba52-ae0f-4b3e-955f-1235f10c66c9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d1a68623-2ada-4e20-be8b-8d9d2c629648</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2175,12 +2175,12 @@ Il Body diventa una mesh non parametrica. Qto, proprieta dimensionali, assi e mo
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7016df53-5c9c-46bd-9d2e-88a47b78847a</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e3495637-d33a-4796-81d5-ff63ddcd41c7</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">84dfdaa1-1718-44cd-be99-58eaa301d881</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">88121df9-2d08-479c-b212-93ccce19a37f</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>

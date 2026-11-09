@@ -22,7 +22,7 @@
       <chunks count="5">
         <chunk name="DocumentHeader">
           <items count="5">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">a4f32ad4-f813-415a-bb8e-395d2cc704f9</item>
+            <item name="DocumentID" type_name="gh_guid" type_code="9">c65221b5-12e2-4c99-afe8-73e5b2c4803b</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
             <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
@@ -35,7 +35,7 @@
         </chunk>
         <chunk name="DefinitionProperties">
           <items count="4">
-            <item name="Date" type_name="gh_date" type_code="8">639280913005105175</item>
+            <item name="Date" type_name="gh_date" type_code="8">639298607646624158</item>
             <item name="Description" type_name="gh_string" type_code="10"></item>
             <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
             <item name="Name" type_name="gh_string" type_code="10"></item>
@@ -49,10 +49,10 @@
             <chunk name="Projection">
               <items count="2">
                 <item name="Target" type_name="gh_drawing_point" type_code="30">
-                  <X>12</X>
-                  <Y>12</Y>
+                  <X>10</X>
+                  <Y>10</Y>
                 </item>
-                <item name="Zoom" type_name="gh_single" type_code="5">1.25</item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1</item>
               </items>
             </chunk>
             <chunk name="Views">
@@ -77,7 +77,7 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="1">
@@ -85,17 +85,17 @@
                 <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
                 <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
                 <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
-                <item name="Version" type_name="gh_string" type_code="10">8.35.26251.13001</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.36.26296.17001</item>
               </items>
             </chunk>
             <chunk name="Library" index="2">
               <items count="6">
-                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</item>
-                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.0.0.0</item>
+                <item name="AssemblyFullName" type_name="gh_string" type_code="10">Meerkat, Version=0.1.1.0, Culture=neutral, PublicKeyToken=null</item>
+                <item name="AssemblyVersion" type_name="gh_string" type_code="10">0.1.1.0</item>
                 <item name="Author" type_name="gh_string" type_code="10">Meerkat</item>
                 <item name="Id" type_name="gh_guid" type_code="9">d1313d48-9b86-4f54-886c-b19e419e9fd2</item>
                 <item name="Name" type_name="gh_string" type_code="10">Meerkat</item>
-                <item name="Version" type_name="gh_string" type_code="10"></item>
+                <item name="Version" type_name="gh_string" type_code="10">0.1.1</item>
               </items>
             </chunk>
           </chunks>
@@ -114,7 +114,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fa2c58ca-7bb4-46e1-af84-59a55015f2b1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8fb8238-d880-4ae8-88a4-4f4abe0ef806</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">12 | QUANTITA, UNITA E ANTEPRIMA</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -169,7 +169,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">Legge IFC/IFCZIP o archivi .ifcdata.zip. Dati e geometrie vengono incorporati nel file Grasshopper salvato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">df754da9-e583-474c-9ff9-7668ff712056</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">beec257c-bf18-412d-ad32-27062f9f0eb9</item>
                     <item name="ModelCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MODELLO A</item>
@@ -193,12 +193,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Percorsi IFC/IFCZIP o .ifcdata.zip. Uno o piu file.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d450783f-70c2-47ca-bc25-8dc5c1164921</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">59286ee7-416d-42b4-aecc-be6142537548</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Files</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">ccabc508-2efc-457d-9b3f-4b5602235197</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">cfab72f0-00e6-459c-ad07-abe08c8945a9</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -217,11 +217,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="1">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Collegare un Button. Rilegge solo sul passaggio False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fecb8a1e-0618-4cb4-8332-73a8ba57dc3e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf072697-b8b0-450c-93e0-6aebf0528636</item>
                         <item name="Name" type_name="gh_string" type_code="10">Read</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">d95a9c8a-edfd-4deb-a562-762905bbe0f0</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c687f277-04a0-42da-90e0-82dfc25b80ad</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -261,7 +261,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Modelli completi, da collegare a Save IFC Archive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f0e1fe8a-be85-4092-b851-b4836de45e1e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">281be064-0bdb-466c-9abe-b6da2eaa1ce0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Models</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -284,7 +284,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli IfcProduct, anche senza geometria.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9377c0e2-ecff-448f-bc38-b45548c608d5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4967a71-0929-4f67-89ca-9194ba119cb5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -307,7 +307,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Sorgenti, schema, conteggi e avvisi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3e099cde-db65-43db-924d-93e87e544570</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">167d3cf7-fa1d-4b2c-baa8-de553c4b7b4f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -339,7 +339,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c846c5ef-0fb8-4677-aef4-3cc0f6892970</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">efd86146-dd0c-4157-aeeb-e727198f8c5b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Read IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -387,7 +387,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ccabc508-2efc-457d-9b3f-4b5602235197</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cfab72f0-00e6-459c-ad07-abe08c8945a9</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FILE IFC | cambia percorso, poi premi READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -437,7 +437,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d95a9c8a-edfd-4deb-a562-762905bbe0f0</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c687f277-04a0-42da-90e0-82dfc25b80ad</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">READ</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -473,7 +473,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Separa gli oggetti in base a un parametro. Collegare piu filtri in serie per combinare condizioni AND.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a34e5a5e-19f8-45cc-ba36-b7ad1326de97</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">80f8a905-499d-476a-ab0c-d0204af4d60a</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IfcWall</item>
                   </items>
@@ -496,11 +496,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">96aeeb71-0c73-4012-974d-87e7828c1e55</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a8517148-9b3b-4edc-9c42-123ecd4e4714</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">9377c0e2-ecff-448f-bc38-b45548c608d5</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">c4967a71-0929-4f67-89ca-9194ba119cb5</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -519,7 +519,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Chiave esatta da IFC Property Keys, es. IFC.Property.Pset_WallCommon.FireRating.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cd7be571-609e-4d51-8f17-3f96568af643</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5bf5076a-8355-4527-9467-3326ef40f23b</item>
                         <item name="Name" type_name="gh_string" type_code="10">Key</item>
                         <item name="NickName" type_name="gh_string" type_code="10">K</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -562,7 +562,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">exists, missing, =, !=, contains, starts with, &gt;, &gt;=, &lt;, &lt;=. Gli operatori numerici usano valori nelle unita IFC originali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">db2f107e-581a-44b6-a222-594141e20ab4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">73e7589a-0221-4b60-aca0-45b9d0bd9f17</item>
                         <item name="Name" type_name="gh_string" type_code="10">Operator</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OP</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -605,7 +605,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Valore atteso; per i numeri usare il punto decimale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">47f665a0-1917-41e4-b98a-8dcaec6457ed</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e4d5f984-66ab-460d-82a0-5ad3777185d6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Value</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -648,7 +648,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Distingue maiuscole/minuscole nei valori testuali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">30814c1f-a53b-4db8-9f1c-3d65600a1029</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">286303dc-ebc6-4179-b5c6-48a4fb55824d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Case sensitive</item>
                         <item name="NickName" type_name="gh_string" type_code="10">CS</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -691,7 +691,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Elementi che soddisfano il filtro.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">30ccc414-c15f-4879-bceb-82faa5874a5f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">38c838a5-7184-4542-83bc-24a927c868b5</item>
                         <item name="Name" type_name="gh_string" type_code="10">Matched</item>
                         <item name="NickName" type_name="gh_string" type_code="10">YES</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -714,7 +714,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Altri elementi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2a2bd8d6-228d-454d-bc13-7d75afbacd21</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e678db66-6810-44a5-a0ef-a8e9cf912cf0</item>
                         <item name="Name" type_name="gh_string" type_code="10">Rejected</item>
                         <item name="NickName" type_name="gh_string" type_code="10">NO</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -737,7 +737,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Maschera allineata all'input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a937c524-4832-43db-9ed7-42426f57d251</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">300696d6-5bef-45fa-9884-712ce48cc702</item>
                         <item name="Name" type_name="gh_string" type_code="10">Mask</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -769,7 +769,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a0664f3-15e7-46f7-8d0a-463a362255cc</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">62600873-1a17-48cd-9d31-bb11e2a27dcb</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Filter Property</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -819,7 +819,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Area e volume delle mesh in SI; non sostituiscono i Quantity Set IFC. Volume NaN per mesh non chiuse/orientate.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aab98050-becf-4bb3-8950-ac34e1d16a34</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">95b58c0e-d28c-45aa-a9fa-f404de8dfb2d</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Metrics</item>
                   </items>
@@ -842,11 +842,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">7872f18c-91ce-4d69-8791-bbdf57486c4a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1aaa162-216a-4826-9c6b-ee3aa4b852c1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">30ccc414-c15f-4879-bceb-82faa5874a5f</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">38c838a5-7184-4542-83bc-24a927c868b5</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -865,7 +865,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Offset per box/centri visualizzati in Rhino; non modifica le misure.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c0e10370-0bd4-4312-a4cf-4c2850133cd4</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">af8d1ec5-5cc4-477a-988f-5f5c45e6f20e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Offset metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -912,7 +912,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Superficie totale della mesh in metri quadrati; NaN senza mesh.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">74e3ecd7-e9ed-46e8-8614-bbf4e5c7de8e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f197929-16cd-4b52-812e-dbc528281026</item>
                         <item name="Name" type_name="gh_string" type_code="10">Area m2</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -935,7 +935,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Volume assoluto in metri cubi per mesh chiusa/orientata; altrimenti NaN.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b66e01c7-dbda-4439-beb0-b740a8410380</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">028d995c-8a27-4270-bf9e-5a32e6bb91b6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Volume m3</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -958,7 +958,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">True se e stato calcolato un volume.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e463116c-6bde-430c-9fc7-3f3c05f57cb5</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">12c1cc1f-ff56-43b4-be9e-3aea380096c4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Has volume</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OK</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -981,7 +981,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Dimensioni XYZ del bounding box nelle coordinate originali, metri.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ac726dde-c5b0-4df3-96aa-675595e38b5e</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7727122-e409-4b02-b56a-c69e731dabd9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Dimensions metres</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1004,7 +1004,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">06adc04f-5665-481e-88bb-95d11d9b7f36</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b71a4ae-8f04-4c27-a258-745e959b2491</item>
                         <item name="Name" type_name="gh_string" type_code="10">Boxes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1027,7 +1027,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">2</item>
                         <item name="Description" type_name="gh_string" type_code="10">Centri dei box nelle unita del documento Rhino.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">1cd49b55-dade-4ac4-a8d4-e3506256b39a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">684904e0-37de-4547-b700-35b327669fd6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Centers</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1059,7 +1059,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">51e3924c-6cdc-43d3-b53d-35166013cd13</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">418f4264-dcd7-44d9-b291-4251463cc41d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Geometry Metrics</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1109,7 +1109,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Prepara quantita con tipo, unita e metodo espliciti. Non deduce superfici nette/lorde dalla mesh.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">69908c4a-3770-4126-a1de-a2c715ca962e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">bd72deba-48c9-45d0-b178-7f4aab9dee3a</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Set Quantity</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Qto</item>
                   </items>
@@ -1132,11 +1132,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b7ee8c3-ef29-4422-9eb3-1276a22f68fb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ed412220-8969-418b-b68b-f85b29bc41d9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">30ccc414-c15f-4879-bceb-82faa5874a5f</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">38c838a5-7184-4542-83bc-24a927c868b5</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1155,7 +1155,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Nome Qto standard o set custom.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e59f885-16df-4396-a462-de88c78af044</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">12a49163-3f16-41ff-b805-8986f3e39df4</item>
                         <item name="Name" type_name="gh_string" type_code="10">Quantity Set</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1198,7 +1198,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Nome quantita.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7c99d64-d627-4f78-b0c9-39b238131cf8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a5a2de50-aa07-4cb0-b0d3-e3792fa36d28</item>
                         <item name="Name" type_name="gh_string" type_code="10">Quantity</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Q</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1242,11 +1242,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un valore per tutti o uno per elemento.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b89c94e0-842a-41d5-b9a9-364a1ba69c1c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">094fc788-a8ab-43ac-bb1a-dca265778091</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">b66e01c7-dbda-4439-beb0-b740a8410380</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">028d995c-8a27-4270-bf9e-5a32e6bb91b6</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1265,7 +1265,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Length, Area, Volume, Mass, Time, Count.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d2169ad8-8a5f-4e85-8a76-0f53f990b2db</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">175c99f7-1301-4189-b931-f1299601c364</item>
                         <item name="Name" type_name="gh_string" type_code="10">Quantity type</item>
                         <item name="NickName" type_name="gh_string" type_code="10">T</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1308,7 +1308,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="5">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Unita dei Values: SI, m3, m2, mm... oppure IFC per l'unita effettiva originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">502ca9a0-a9e1-456e-a520-975e818be5ec</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a6dedcff-5f95-4e05-9d8d-737256cc13fa</item>
                         <item name="Name" type_name="gh_string" type_code="10">Input unit</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1351,11 +1351,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="6">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Metodo di misura applicabile all'intero Quantity Set. Obbligatorio.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">92a9c2d8-ed55-46f0-93eb-8b31b2443f55</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">459db842-29d4-4f2d-be21-c5243dffde60</item>
                         <item name="Name" type_name="gh_string" type_code="10">Measurement method</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">15e37142-9c9b-4a31-b41a-a8dd7c4290bd</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">532ac6ae-4d36-4723-aba6-67b3f28d3d72</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1375,7 +1375,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste per Preview Changes / Write File.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">89170c88-df37-43d0-a462-19027c08b707</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">79d8c7f2-b518-45f9-a2e9-389244e342e6</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1398,7 +1398,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste correnti.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0c1f4065-bbac-4855-9c60-94e5ebbc2be0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e14f348f-352d-458b-91a2-bd6cc4111740</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1430,7 +1430,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">80531f4c-528d-4076-814a-57e4100b5137</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">250e6210-1195-4675-a171-0129fb93c748</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Set Quantity</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1478,7 +1478,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">15e37142-9c9b-4a31-b41a-a8dd7c4290bd</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">532ac6ae-4d36-4723-aba6-67b3f28d3d72</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">METODO DI MISURA</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1528,7 +1528,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Applica Changes a una copia temporanea, valida e rilegge l'IFC. Nessun file destinazione pubblicato. Il modello risultante puo essere analizzato e incorporato in un nuovo Read IFC.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e21d4bfd-8a72-4aa3-9abb-3df6017128b4</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f911765b-b112-4eb3-8ed9-0cdd37f61fe7</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Preview Changes</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Preview</item>
                   </items>
@@ -1551,12 +1551,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo Model da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">79ea6254-2d11-4233-b9e3-e7d1f6b3814a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8c9bdfb8-1e18-4a80-aa14-f9861d166de2</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f0e1fe8a-be85-4092-b851-b4836de45e1e</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">281be064-0bdb-466c-9abe-b6da2eaa1ce0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1576,12 +1576,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste da applicare alla copia.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4eab3136-7cb4-4ac2-8662-524636ee9300</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">01969d7e-8441-41f7-a5d7-3c117931974e</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">89170c88-df37-43d0-a462-19027c08b707</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">79d8c7f2-b518-45f9-a2e9-389244e342e6</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1600,7 +1600,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">True calcola anteprima; puo richiedere tempo su file grandi.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3d951a8-3039-454a-8b4b-32835946fb60</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ce23bc81-25a1-4553-91a6-6162e5f56f4d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Run</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1642,7 +1642,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Modello temporaneo modificato.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">02f1cfdf-06c7-4d9a-92ba-1e087c4baf46</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9388deea-5646-4144-ac1d-f76f17fa7714</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1665,7 +1665,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Tutti gli elementi della copia.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ef5be60e-0e39-4f7f-913d-bfdd08f4a3b1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4bc77b2e-6203-4910-93b4-20a17a75c90e</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1688,7 +1688,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Istanze richieste e istanze dei tipi modificati, prima.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">425752df-708c-4f52-9037-82d9d0970a37</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">52d83297-3b9a-406c-96fb-e40587a741a9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Affected before</item>
                         <item name="NickName" type_name="gh_string" type_code="10">B</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1711,7 +1711,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Stesse istanze, dopo. Include istanze con override locali.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bc73151e-1f2d-4f33-b26b-261aa0cd04bb</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f902548c-1881-4baf-9daa-fa7a392e0529</item>
                         <item name="Name" type_name="gh_string" type_code="10">Affected after</item>
                         <item name="NickName" type_name="gh_string" type_code="10">A</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1733,7 +1733,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_output" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Modifiche applicate e valori prima/dopo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c5bbcb52-2f6d-438d-a4a8-50152b1d43a3</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f3c6ec55-723b-451a-a980-a8dc58a59c5d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1765,7 +1765,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">160e09bb-b9ef-43ea-ac50-aa4afc5d6467</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7e0ba089-853f-41cf-a990-50172ec156b3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Preview Changes</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1813,12 +1813,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f6efc6de-8f20-452c-859e-60348bba5c9c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e890d072-8589-4083-a183-57730446acae</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">PRIMA / DOPO | richieste realmente applicate alla copia</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">c5bbcb52-2f6d-438d-a4a8-50152b1d43a3</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">f3c6ec55-723b-451a-a980-a8dc58a59c5d</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -1864,7 +1864,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Unita effettive, conversione SI o in unita esplicite e controllo dimensionale. Un ramo/valore per elemento; errori indicati da Valid.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fd08b848-a52d-490e-a96f-c21ad06ec558</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9ea120e7-cbdf-44cf-af99-13f0e8c1c78c</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Property Units</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Units</item>
                   </items>
@@ -1887,11 +1887,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Lista di elementi IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3070257-dd0b-4741-a164-3de929bcc170</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f779dc2-4ed4-4916-b25a-30e41daef355</item>
                         <item name="Name" type_name="gh_string" type_code="10">Elements</item>
                         <item name="NickName" type_name="gh_string" type_code="10">E</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">bc73151e-1f2d-4f33-b26b-261aa0cd04bb</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f902548c-1881-4baf-9daa-fa7a392e0529</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -1910,7 +1910,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Pset o Qto esatto.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ebb4c8ce-746f-4257-9adb-13cb9e1f12cd</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8365e473-77ab-42da-8dff-31a66582995d</item>
                         <item name="Name" type_name="gh_string" type_code="10">Property Set</item>
                         <item name="NickName" type_name="gh_string" type_code="10">S</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1953,7 +1953,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="2">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Nome proprieta o quantita.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b16277e5-7ea3-4f19-a5b3-487ba68b2dca</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a472ccc8-0b07-4ff6-bb7f-25901066c34c</item>
                         <item name="Name" type_name="gh_string" type_code="10">Property</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1996,7 +1996,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="3">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">SI, m, mm, cm, ft, in, m2, mm2, cm2, m3, mm3, L, kg, g, t, s, min, h, K, degC, N, kN, Pa, kPa, MPa, 1.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">177e682a-5978-4d28-9af7-017054d65f4f</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">674f7f9e-4dd3-4e8a-849c-45a79daf13b9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Target unit</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2040,7 +2040,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valori convertiti; NaN se non convertibili.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">32fde7b2-6d87-426a-9f91-f93be1d1c6d1</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">067506d9-7bf3-4849-baf8-268782989b38</item>
                         <item name="Name" type_name="gh_string" type_code="10">Values</item>
                         <item name="NickName" type_name="gh_string" type_code="10">V</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2063,7 +2063,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Unita IFC effettive.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">cc23c8a4-079b-487c-9f73-98bbbff71e76</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">43b6a67c-d357-4ef8-9415-7a10035c3525</item>
                         <item name="Name" type_name="gh_string" type_code="10">Source units</item>
                         <item name="NickName" type_name="gh_string" type_code="10">U</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2086,7 +2086,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">True per conversioni valide.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">377d9039-af2d-4745-887a-dc8d3d9fdf52</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">39826ccd-8eec-438d-9d11-1c71a9a16d05</item>
                         <item name="Name" type_name="gh_string" type_code="10">Valid</item>
                         <item name="NickName" type_name="gh_string" type_code="10">OK</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2109,7 +2109,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Valore originale, dimensioni o motivo di errore.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dd72aedf-e22b-4b86-bb2f-ac1abaa986b0</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">29fb1a4e-e2f1-4e12-937f-eb6bf293e3ad</item>
                         <item name="Name" type_name="gh_string" type_code="10">Details</item>
                         <item name="NickName" type_name="gh_string" type_code="10">D</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2141,7 +2141,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a7277831-2690-427d-860a-0031e4533265</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">53c59006-afcd-4ded-94a4-4005ed603104</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Property Units</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2189,12 +2189,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0c4a8372-0685-4f61-9298-f9b972b2007d</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">43db30f0-5cfd-47cf-9677-de0a51daed7c</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">QUANTITA RILETTE | 4.5, 4.5, 3 m3</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">32fde7b2-6d87-426a-9f91-f93be1d1c6d1</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">067506d9-7bf3-4849-baf8-268782989b38</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2239,7 +2239,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Perform mass addition of a list of items</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">559ead16-4737-4cc5-80fa-d080b4bd041e</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7e1073c8-17fb-4560-bc73-169735d0020d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Mass Addition</item>
                     <item name="NickName" type_name="gh_string" type_code="10">MA</item>
                   </items>
@@ -2262,11 +2262,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="8">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Input values for mass addition.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bc9e9407-eccf-4d2b-bffd-267be0a144d8</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c6a416b7-3b1b-4108-9ad6-cce5f1168400</item>
                         <item name="Name" type_name="gh_string" type_code="10">Input</item>
                         <item name="NickName" type_name="gh_string" type_code="10">I</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">32fde7b2-6d87-426a-9f91-f93be1d1c6d1</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">067506d9-7bf3-4849-baf8-268782989b38</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2285,7 +2285,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Result of mass addition</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">189f4b40-f99f-46d0-b113-386f7111e1f7</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">20ec084a-cf2d-4771-b2b0-b0673f37b971</item>
                         <item name="Name" type_name="gh_string" type_code="10">Result</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2308,7 +2308,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">List of partial results</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">04a9f621-cc25-430c-90ec-1a23646e1603</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e3b183b2-10b2-451b-8f12-92b972ec76b9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Partial Results</item>
                         <item name="NickName" type_name="gh_string" type_code="10">Pr</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2340,7 +2340,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ea4990cd-eded-4d76-93ff-b4b5af1eff67</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6ccf14e7-a52f-4369-9f87-9b0c661f6947</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Mass Addition</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2388,12 +2388,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa41e952-90c3-4a38-9a08-26081640301c</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4e6a8b9a-75b4-42fb-9acd-19022867dbea</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">TOTALE ATTESO | 12 m3</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">189f4b40-f99f-46d0-b113-386f7111e1f7</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">20ec084a-cf2d-4771-b2b0-b0673f37b971</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
@@ -2439,7 +2439,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                   <items count="5">
                     <item name="Description" type_name="gh_string" type_code="10">Applica Changes al sorgente incorporato ed esporta un nuovo .ifc. Originale protetto; valida schema e riapertura prima della pubblicazione. Il modello in ingresso resta invariato.</item>
                     <item name="Hidden" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">783ced0e-2c36-43ee-bd76-2490a714a959</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">97750728-efdc-456b-8859-8deedd46c033</item>
                     <item name="Name" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write</item>
                   </items>
@@ -2462,12 +2462,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Un solo modello da Read IFC.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c381059f-555f-46a7-8fc6-95782dfd8c3d</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fddefa0d-f88f-4ea2-9d16-c5455e9c7c77</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Model</item>
                         <item name="NickName" type_name="gh_string" type_code="10">M</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">f0e1fe8a-be85-4092-b851-b4836de45e1e</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">281be064-0bdb-466c-9abe-b6da2eaa1ce0</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2487,12 +2487,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="9">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Unire richieste Set Attribute/Set Property. Conflitti sullo stesso campo bloccano l'intero export.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f685e1c3-6310-4e97-9fbf-3a09bb082a3a</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2571aa3c-b95a-4bae-95be-931c28cf7810</item>
                         <item name="Mapping" type_name="gh_int32" type_code="3">1</item>
                         <item name="Name" type_name="gh_string" type_code="10">Changes</item>
                         <item name="NickName" type_name="gh_string" type_code="10">C</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">true</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">89170c88-df37-43d0-a462-19027c08b707</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">79d8c7f2-b518-45f9-a2e9-389244e342e6</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2511,11 +2511,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="2">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Nuovo percorso .ifc, diverso dall'originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8fef00b6-aca7-4a8e-ae90-1f0e788fce66</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">e5860325-075a-415c-92a3-315645d1b00b</item>
                         <item name="Name" type_name="gh_string" type_code="10">File</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">cd6c49ae-4c8c-4eb8-b922-2843c7926bca</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">804fa1a6-0cc4-405e-b5d8-6eafa3842f00</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="1">
@@ -2534,11 +2534,11 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="3">
                       <items count="7">
                         <item name="Description" type_name="gh_string" type_code="10">Button; scrive solo sul fronte False -&gt; True.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb21e99f-fa16-463a-a804-ecbd5c6e5b2c</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">30b8e700-d155-4488-bca1-9ee7790ce4b2</item>
                         <item name="Name" type_name="gh_string" type_code="10">Write</item>
                         <item name="NickName" type_name="gh_string" type_code="10">W</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
-                        <item name="Source" index="0" type_name="gh_guid" type_code="9">0e1f6ea5-53a4-4214-8374-9e132ec096f9</item>
+                        <item name="Source" index="0" type_name="gh_guid" type_code="9">deac040b-dbdc-4abb-a7ed-1e69f5e606e3</item>
                         <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                       </items>
                       <chunks count="2">
@@ -2577,7 +2577,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_input" index="4">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Sostituisce la destinazione, mai il sorgente originale.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9f584b39-4274-4cad-aee9-cb0663ceb3db</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">33487680-9134-4e3f-863b-9ef5de11aa56</item>
                         <item name="Name" type_name="gh_string" type_code="10">Overwrite</item>
                         <item name="NickName" type_name="gh_string" type_code="10">O</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2619,7 +2619,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_output" index="0">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Ultimo percorso scritto per gli input correnti. Collegare a Read IFC e premere READ per ricaricarlo.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0213d264-5598-4025-be65-2738f5674653</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">71112903-6a3b-4273-a91b-34e3e5df6a6f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Saved file</item>
                         <item name="NickName" type_name="gh_string" type_code="10">F</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2641,7 +2641,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <chunk name="param_output" index="1">
                       <items count="6">
                         <item name="Description" type_name="gh_string" type_code="10">Report JSON della scrittura: prima/dopo, hash, schema, istanze del tipo interessate. Si azzera cambiando gli input.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">6d4972f0-c94b-477a-a00e-4fe4612124cc</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">55a5c0fb-4be2-4eae-b95e-dfd17138917f</item>
                         <item name="Name" type_name="gh_string" type_code="10">Report</item>
                         <item name="NickName" type_name="gh_string" type_code="10">R</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2664,7 +2664,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                       <items count="7">
                         <item name="Access" type_name="gh_int32" type_code="3">1</item>
                         <item name="Description" type_name="gh_string" type_code="10">Richieste correnti, anche prima del Write. Non equivale a validazione completa dello schema.</item>
-                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4e69fe7-adab-461e-b64c-da9f34d5dcc2</item>
+                        <item name="InstanceGuid" type_name="gh_guid" type_code="9">49a542c9-0a2b-4979-916a-b976d5c302a9</item>
                         <item name="Name" type_name="gh_string" type_code="10">Preview</item>
                         <item name="NickName" type_name="gh_string" type_code="10">P</item>
                         <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2696,7 +2696,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3a820bb0-cbd1-4961-a303-ef46f9419947</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">db4846f0-4d4d-4fc2-8629-4a41cc5f6aff</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">IFC Write File</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2744,7 +2744,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cd6c49ae-4c8c-4eb8-b922-2843c7926bca</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">804fa1a6-0cc4-405e-b5d8-6eafa3842f00</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">NUOVO IFC | percorso modificabile</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2794,7 +2794,7 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                     <item name="Description" type_name="gh_string" type_code="10">Button object with two values</item>
                     <item name="ExpressionNormal" type_name="gh_string" type_code="10">False</item>
                     <item name="ExpressionPressed" type_name="gh_string" type_code="10">True</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e1f6ea5-53a4-4214-8374-9e132ec096f9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">deac040b-dbdc-4abb-a7ed-1e69f5e606e3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Button</item>
                     <item name="NickName" type_name="gh_string" type_code="10">WRITE IFC</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2828,12 +2828,12 @@ Preview lavora su una copia temporanea; il modello originale resta invariato. WR
                 <chunk name="Container">
                   <items count="9">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for custom notes and text values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7432658d-a96c-41d2-9ca3-c279792f0a8f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fad0daff-036e-4558-923b-043af6537ab3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">REPORT EXPORT | nessun file finche non premi WRITE</item>
                     <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="ScrollRatio" type_name="gh_double" type_code="6">0</item>
-                    <item name="Source" index="0" type_name="gh_guid" type_code="9">6d4972f0-c94b-477a-a00e-4fe4612124cc</item>
+                    <item name="Source" index="0" type_name="gh_guid" type_code="9">55a5c0fb-4be2-4eae-b95e-dfd17138917f</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
                     <item name="UserText" type_name="gh_string" type_code="10"></item>
                   </items>
