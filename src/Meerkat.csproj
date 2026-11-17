@@ -8,8 +8,15 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <AssemblyName>Meerkat</AssemblyName>
     <TargetExt>.gha</TargetExt>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <GenerateTargetFrameworkAttribute>true</GenerateTargetFrameworkAttribute>
+    <!-- src/AssemblyVersion.cs writes the version; the SDK adds only the framework and Windows platform attributes. -->
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateRepositoryUrlAttribute>false</GenerateRepositoryUrlAttribute>
     <!-- bin keeps one .gha: no deps.json, symbols or satellite folders next to it. -->
     <GenerateDependencyFile>false</GenerateDependencyFile>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>

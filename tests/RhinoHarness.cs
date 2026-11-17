@@ -83,12 +83,32 @@ internal static class RhinoHarness
         if (!condition) throw new Exception("FAIL: " + name);
         Console.WriteLine("PASS: " + name);
     }
+    /// <summary>
+    /// On .NET 8 one load context cannot hold two assemblies named Meerkat, and the copy registered for the user's Rhino
+    /// (Meerkat.ghlink) is not the one under test in a clone, a worktree or a relocated distribution. Before the component
+    /// server starts, Grasshopper is told to keep, of the folders it scans, only its own components, and to load the plug-in
+    /// under test (MEERKAT_PLUGIN_DIR or bin) through GRASSHOPPER_PLUGINS; the other user libraries stay out of the host.
+    /// </summary>
+    private static void IsolateGrasshopperLibraries()
+    {
+        string rhinoRoot = System.Environment.GetEnvironmentVariable("MEERKAT_RHINO_DIR") ?? @"C:\Program Files\Rhino 8";
+        string pluginDirectory = System.Environment.GetEnvironmentVariable("MEERKAT_PLUGIN_DIR") ?? Path.Combine(Root, "bin");
+        string plugin = Path.GetFullPath(Path.Combine(pluginDirectory, "Meerkat.gha"));
+        if (!File.Exists(plugin)) throw new FileNotFoundException("Plugin in prova mancante", plugin);
+        var stock = Directory.GetFiles(Path.Combine(rhinoRoot, "Plug-ins", "Grasshopper"), "*.gha", SearchOption.AllDirectories)
+            .Select(file => "\\" + Path.GetFileName(file)).ToList();
+        var filter = typeof(GH_ComponentServer).GetMethod("SetExternalGHAs", BindingFlags.Static | BindingFlags.NonPublic);
+        if (filter == null) throw new Exception("GH_ComponentServer.SetExternalGHAs non disponibile: il plugin in prova non puo essere isolato.");
+        filter.Invoke(null, new object[] { stock });
+        System.Environment.SetEnvironmentVariable("GRASSHOPPER_PLUGINS", plugin);
+    }
     [MethodImpl(MethodImplOptions.NoInlining)]
     internal static void Run(string root, string mode)
     {
         Root = root;
         using (var core = new Rhino.Runtime.InProcess.RhinoCore(new[] { "/nosplash" }, Rhino.Runtime.InProcess.WindowStyle.NoWindow))
         {
+            IsolateGrasshopperLibraries();
             Directory.CreateDirectory(Path.Combine(Root, "test-output"));
             string archivePath = Path.Combine(Root, "examples", "demo.ifcdata.zip");
             var model = IfcModel.Load(archivePath);
