@@ -4,11 +4,13 @@
 
 Lettura IFC, geometrie, attributi BIM, controlli e bake su layer per tipologia.
 
-Questa cartella e la distribuzione completa di **Meerkat** per Rhino 8 / Grasshopper 1 su Windows x64. Mantieni insieme i suoi file; puoi rinominare o spostare la cartella prima dell'installazione. Non servono i sorgenti del repository.
+Questa cartella e la distribuzione completa di **Meerkat** per Rhino 8 su .NET 8 / Grasshopper 1, Windows x64. Mantieni insieme i suoi file; puoi rinominare o spostare la cartella prima dell'installazione. Non servono i sorgenti del repository.
+
+Dalla versione 0.2.0 il plugin e compilato per .NET 8: Rhino 8 deve usare il runtime .NET Core, quello predefinito su Windows. Con Rhino impostato su .NET Framework (comando `SetDotNetRuntime`, opzione NETFramework) Grasshopper non carica Meerkat: scegliere NETCore e riavviare Rhino. Rhino 7 non e supportato.
 
 1. Estrai tutti i file in una cartella locale e chiudi Rhino.
 2. Esegui `Setup.cmd`: crea il runtime Python `.venv` qui accanto e registra la cartella in Grasshopper tramite `Meerkat.ghlink`. Servono Python x64 e accesso a Internet per installare IfcOpenShell 0.8.3. Il setup cerca Python 3.12, poi 3.11; per un altro interprete x64 compatibile (3.9-3.12) usa `Setup.ps1 -Python "C:\percorso\python.exe"`.
-3. Avvia Rhino 8, imposta le unita del documento e apri Grasshopper: cerca la scheda **Meerkat**.
+3. Avvia Rhino 8 (runtime .NET Core), imposta le unita del documento e apri Grasshopper: cerca la scheda **Meerkat**.
 4. Apri `Meerkat.gh` oppure uno degli [diciotto esempi guidati](examples/ESEMPI.md). I modelli incorporati funzionano anche senza Python; per leggere o scrivere nuovi IFC serve il runtime.
 5. Cambia i percorsi degli input/output prima di usare READ, WRITE o SAVE. Premi BAKE per creare mesh con layer e tutti gli attributi. Gli esempi 09, 10 e 11 esportano un nuovo IFC dopo modifiche ai dati, agli User Text o alle mesh. Il Body geometrico esportato e non parametrico; Qto e modello analitico non sono ricalcolati. Salva il `.gh` e il documento Rhino `.3dm` per conservare il lavoro.
 
@@ -18,7 +20,7 @@ Gli esempi **12–18** aggiungono quantita/unita/anteprima, relazioni/materiali,
 
 ## Contenuto
 
-- `Meerkat.gha`: plugin con icone incorporate; `ifc_reader.py` / `ifc_writer.py`: lettura e scrittura IFC.
+- `Meerkat.gha`: plugin .NET 8 con icone incorporate; `ifc_reader.py` / `ifc_writer.py`: lettura e scrittura IFC.
 - `Setup.cmd`, `Setup.ps1`, `requirements.txt`: installazione runtime e registrazione.
 - `Meerkat.gh`, `Meerkat.ghx`, `examples/`: definizioni e modelli dimostrativi.
 - `Assets/`: logo vettoriale, PNG, ICO e icone dei componenti.

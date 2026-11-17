@@ -2,11 +2,13 @@
 
 ![Meerkat](Assets/Brand/logo.png)
 
-**Versione:** 0.1.1, scritta solo in `src/AssemblyVersion.cs`. A ogni rilascio una correzione alza l'ultimo numero, ogni altra modifica il secondo.
+**Versione:** 0.2.0, scritta solo in `src/AssemblyVersion.cs`. A ogni rilascio una correzione alza l'ultimo numero, ogni altra modifica il secondo.
 
-Progetto per **Rhino 8 / Grasshopper 1, Windows x64**, con **35 componenti**, definizione `.gh` gia collegata e un modello IFC di esempio incorporato. Compilato e verificato con Rhino 8.36. Non richiede Geometry Gym, VisualARQ o altri plugin BIM. Il motore di lettura e IfcOpenShell 0.8.3, installato in un ambiente Python locale al progetto.
+Progetto per **Rhino 8 su .NET 8 / Grasshopper 1, Windows x64**, con **35 componenti**, definizione `.gh` gia collegata e un modello IFC di esempio incorporato. Compilato per .NET 8 (`net8.0-windows`) e verificato con Rhino 8.37 su .NET 8. Non richiede Geometry Gym, VisualARQ o altri plugin BIM. Il motore di lettura e IfcOpenShell 0.8.3, installato in un ambiente Python locale al progetto.
 
 Correzioni e compatibilita del rilascio: [CHANGELOG.md](CHANGELOG.md).
+
+**Runtime:** dalla 0.2.0 Meerkat richiede Rhino 8 in esecuzione su .NET 8, il runtime .NET Core predefinito di Rhino 8 su Windows. Se Rhino e impostato su .NET Framework (comando `SetDotNetRuntime`, opzione NETFramework), Grasshopper non carica `Meerkat.gha`: riportare il runtime su NETCore e riavviare Rhino. Le versioni fino alla 0.1.1 erano compilate per .NET Framework 4.8.
 
 ## Avvio
 
@@ -119,13 +121,13 @@ Ogni modello conserva in memoria una copia compressa del proprio archivio, indip
 - Le geometrie non supportate o mancanti vengono segnalate nel report, mantenendo gli attributi. Rappresentazioni solo 2D/curve senza facce non vengono sottoposte a bake.
 - Sono mostrati colori per classe; non vengono ricostruiti texture, shader o materiali render IFC. I relativi dati originali rimangono conservati.
 - **IFC Write File** esporta un nuovo IFC con dati e/o geometrie modificate. **IFC Geometry From Rhino** sostituisce il Body delle mesh del bake modificate, come geometria tessellata. Non ricostruisce profili/estrusioni parametriche e non ricalcola Qto o modello analitico. Save IFC Archive conserva il sorgente caricato.
-- Build destinata a Rhino 8 su Windows. Non verificata con Rhino 7 o macOS.
+- Build destinata a Rhino 8 su .NET 8, Windows. Non si carica in Rhino 7 ne in Rhino 8 impostato su .NET Framework; non verificata su macOS.
 
 ## Sviluppo e verifiche
 
 Con Rhino aperto il plugin puo essere bloccato. Per preparare una versione separata usa `Build.ps1 -DistributionDirectory "<root>\build\pending\bin"` e `Package.ps1 -DistributionDirectory "<root>\build\pending\bin"`. La build normale continua a usare la bin principale. Non registrare entrambe le versioni: dopo aver chiuso Rhino, ricompila normalmente oppure aggiorna il percorso di installazione.
 
-`Build.ps1` compila `bin/Meerkat.gha` con il compilatore .NET Framework di Windows e le librerie Rhino locali. Incorpora logo e 35 icone e raccoglie in **bin** worker, installer, documentazione, diciotto esempi e asset. Il progetto IDE/.NET SDK e `src/Meerkat.csproj`: `Directory.Build.props/targets` centralizzano anche questa compilazione nella stessa bin; i file intermedi sono in `build/obj/<progetto>`. Per usare un'altra installazione: `Build.ps1 -RhinoDir "C:\Program Files\Rhino 8"`; lo stesso parametro e disponibile in `Test-Rhino.ps1`.
+`Build.ps1` compila `bin/Meerkat.gha` per .NET 8: esegue `dotnet build` del progetto SDK `src/Meerkat.csproj` (`net8.0-windows`, Release) con le librerie .NET del Rhino locale (`System\netcore\RhinoCommon.dll` e `Newtonsoft.Json.dll`, `Plug-ins\Grasshopper\Grasshopper.dll` e `GH_IO.dll`, non copiate in bin). Serve l'SDK .NET 8 o successivo (comando `dotnet`). Il plugin viene compilato in `build/compiler`, poi copiato in **bin** con logo e 35 icone incorporati, worker, installer, documentazione, diciotto esempi e asset. Il commit del checkout viene scritto nell'assembly (`BuildCommit`), come prima. Lo stesso progetto si apre nell'IDE: `Directory.Build.props/targets` portano la sua compilazione diretta nella stessa bin; i file intermedi sono in `build/obj/<progetto>`. Per usare un'altra installazione: `Build.ps1 -RhinoDir "C:\Program Files\Rhino 8"`; lo stesso parametro e disponibile in `Test-Rhino.ps1`.
 
 Prima della compilazione vengono eliminate le `bin` residue dei moduli sotto la root. Sono esclusi la bin principale, runtime/dipendenze (`.venv`, `node_modules`, `packages`), `.git`, `build`, dati di test/esportazione e repository annidati. Non vengono attraversati collegamenti o junction; un collegamento dentro una bin da cancellare blocca la pulizia. La procedura controlla i percorsi assoluti prima della cancellazione.
 
@@ -143,7 +145,7 @@ Prima della compilazione vengono eliminate le `bin` residue dei moduli sotto la 
 .\Package.ps1
 ```
 
-I test Python creano IFC2x3, IFC4 e IFC4x3 e verificano IFCZIP, integrita originale, tutte le entita, unita/placement, precedenza delle proprieta, unita esplicite e input invalido. Il test Rhino avvia un processo separato senza interfaccia, verifica bake/update/federazione e riapertura `.3dm`, quindi genera e riapre la definizione `.gh` con i 19 componenti di lettura, analisi e bake. Verifica anche filtri, raggruppamenti, ordinamento numerico, metriche SI, mesh aperte, esportazioni CSV/3DM, prevenzione delle riscritture e confronto revisioni con STEP-ID rinumerati. Usa una licenza Rhino disponibile. Le prove sono su modelli di test creati nel progetto; manca ancora una prova su un tuo IFC reale.
+I test Python creano IFC2x3, IFC4 e IFC4x3 e verificano IFCZIP, integrita originale, tutte le entita, unita/placement, precedenza delle proprieta, unita esplicite e input invalido. Il test Rhino avvia un processo separato senza interfaccia: `Test-Rhino.ps1` compila `tests/RhinoHarness.csproj`, un host Rhino.Inside per .NET 8 (pacchetto NuGet Rhino.Inside 8.0.7-beta, in `build/harness`), e lo esegue con `dotnet`. Prima di inizializzare Rhino l'host carica il `System.Management.dll` Windows di Rhino (`System\netcore\runtimes\win\lib\net7.0`), per non invalidare la licenza Cloud Zoo del Rhino interattivo. Il test verifica bake/update/federazione e riapertura `.3dm`, quindi genera e riapre la definizione `.gh` con i 19 componenti di lettura, analisi e bake. Verifica anche filtri, raggruppamenti, ordinamento numerico, metriche SI, mesh aperte, esportazioni CSV/3DM, prevenzione delle riscritture e confronto revisioni con STEP-ID rinumerati. Usa una licenza Rhino disponibile. Le prove sono su modelli di test creati nel progetto; manca ancora una prova su un tuo IFC reale.
 
 `-All` esegue in processi separati la suite principale, gli esempi 01–08 e ciascun esempio 09–18. I nuovi test verificano anche Qto/unita, CSV, IDS, tipi, estrazione, interferenze federate e dati strutturali. Su questa installazione la sequenza completa in un unico processo senza interfaccia puo interrompersi durante la rilettura; ogni processo deve emettere il marcatore di completamento, altrimenti il test fallisce anche con exit code zero. Sono verificati nomi/categorie, icone e apertura di un `.gh` originale IFC Viewer. Per una prova mirata: `Test-Rhino.ps1 -ExamplesOnly -ExampleStart 11 -ExampleEnd 11`.
 

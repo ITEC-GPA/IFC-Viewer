@@ -1,5 +1,23 @@
 # Meerkat — modifiche
 
+## 0.2.0 — 2026-11-17
+
+- Meerkat e compilato per .NET 8 (`net8.0-windows`) e richiede Rhino 8 su .NET 8, il runtime
+  .NET Core predefinito su Windows. Rhino 8 impostato su .NET Framework (`SetDotNetRuntime`)
+  e Rhino 7 non caricano piu il plugin.
+- `Build.ps1` esegue `dotnet build` di `src/Meerkat.csproj` (Release) al posto del compilatore
+  C# 5 di .NET Framework. Riferimenti: le librerie .NET del Rhino locale (`System\netcore`
+  per RhinoCommon e Newtonsoft.Json, Grasshopper e GH_IO dalla cartella del plugin), non
+  copiate in bin. Serve l'SDK .NET 8 o successivo.
+- Bin e distribuzione invariate nella struttura: un solo `Meerkat.gha` con gli stessi file
+  accanto, manifest `distribution.json` e pacchetto ZIP come prima. Il commit di build
+  (`BuildCommit`) letto dal controllo della bin resta scritto nell'assembly.
+- Test Rhino: l'host Rhino.Inside per .NET 8 (`tests/RhinoHarness.csproj`) sostituisce
+  l'eseguibile .NET Framework compilato con csc e viene avviato con `dotnet`. Prima di Rhino
+  carica il `System.Management.dll` Windows di Rhino, per non invalidare la licenza Cloud Zoo
+  del Rhino interattivo.
+- Nessuna modifica a componenti, GUID, parametri, worker Python ed esempi.
+
 ## 0.1.1 — 2026-11-09
 
 - Avvio dei worker Python centralizzato: verifica dell'interprete e dello script,

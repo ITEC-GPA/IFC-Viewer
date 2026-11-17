@@ -1,6 +1,6 @@
 # Diciotto esempi Grasshopper IFC — tutti i 35 componenti
 
-Apri i file `.gh` in **Rhino 8 / Grasshopper su Windows**, dopo aver eseguito `Setup.cmd` dalla cartella principale e riavviato Rhino. Il plugin Meerkat deve essere caricato. I modelli sono gia incorporati: per provare gli esempi non occorre premere READ, ne avere Python in esecuzione per consultarli; la scrittura di nuovi IFC richiede il runtime Python. Sono disponibili anche le copie `.ghx` leggibili come XML.
+Apri i file `.gh` in **Rhino 8 su .NET 8 / Grasshopper su Windows**, dopo aver eseguito `Setup.cmd` dalla cartella principale e riavviato Rhino. Il plugin Meerkat deve essere caricato. I modelli sono gia incorporati: per provare gli esempi non occorre premere READ, ne avere Python in esecuzione per consultarli; la scrittura di nuovi IFC richiede il runtime Python. Sono disponibili anche le copie `.ghx` leggibili come XML.
 
 Apri un esempio alla volta e usa Zoom Extents nella viewport Rhino. I pannelli azzurri spiegano il flusso o contengono input modificabili; quelli verdi mostrano i risultati. I componenti Custom Preview gestiscono i colori; gli altri componenti geometrici hanno la preview disattivata per evitare sovrapposizioni.
 

@@ -27,12 +27,20 @@ internal static class Bootstrap
         Root = Path.GetFullPath(args[0]);
         string rhinoRoot = System.Environment.GetEnvironmentVariable("MEERKAT_RHINO_DIR") ?? @"C:\Program Files\Rhino 8";
         string rhino = Path.Combine(rhinoRoot, "System");
+        // Rhino 8 uses this Windows implementation. The netcore root DLL is a throwing stub; loading it changes
+        // HostUtils.DeviceId and can invalidate the Cloud Zoo lease of the interactive Rhino session. It must be
+        // loaded before RhinoInside.Resolver.Initialize (same preload as the BridGHe smoke host).
+        string management = Path.Combine(rhino, "netcore", "runtimes", "win", "lib", "net7.0", "System.Management.dll");
+        if (!File.Exists(management)) { Console.Error.WriteLine("System.Management di Rhino mancante: " + management); return 1; }
+        System.Runtime.Loader.AssemblyLoadContext.Default.LoadFromAssemblyPath(management);
+        RhinoInside.Resolver.Initialize(rhino);
         SetDllDirectory(rhino);
+        // Rhino.Inside resolves RhinoCommon and the System folder; the plug-in under test and Grasshopper are resolved here.
         AppDomain.CurrentDomain.AssemblyResolve += delegate(object sender, ResolveEventArgs e)
         {
             string name = new AssemblyName(e.Name).Name;
             string pluginDirectory = System.Environment.GetEnvironmentVariable("MEERKAT_PLUGIN_DIR") ?? Path.Combine(Root, "bin");
-            foreach (string dir in new[] { pluginDirectory, rhino, Path.Combine(rhinoRoot, "Plug-ins", "Grasshopper") })
+            foreach (string dir in new[] { pluginDirectory, Path.Combine(rhinoRoot, "Plug-ins", "Grasshopper") })
                 foreach (string extension in new[] { ".dll", ".gha" })
                 {
                     string file = Path.Combine(dir, name + extension);
@@ -47,6 +55,23 @@ internal static class Bootstrap
             return 0;
         }
         catch (Exception ex) { Console.Error.WriteLine(ex); return 1; }
+        finally { ShutdownDispatcher(); }
+    }
+    /// <summary>
+    /// Exit hang of the .NET 8 Rhino hosts (BridGHe smoke host, 4/11): at process exit SystemEvents.Shutdown joins its window
+    /// thread, which may be raising an event through the WPF dispatcher of this thread, created by the Rhino host and no longer
+    /// pumping. Shutting the dispatcher down before leaving Main makes such a call return at once. Test host only.
+    /// </summary>
+    private static void ShutdownDispatcher()
+    {
+        try
+        {
+            var type = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(a => a.GetName().Name == "WindowsBase")?.GetType("System.Windows.Threading.Dispatcher");
+            var dispatcher = type?.GetMethod("FromThread", new[] { typeof(System.Threading.Thread) })?.Invoke(null, new object[] { System.Threading.Thread.CurrentThread });
+            if (dispatcher != null) type.GetMethod("InvokeShutdown", Type.EmptyTypes)?.Invoke(dispatcher, null);
+        }
+        catch (Exception ex) { Console.Error.WriteLine("Dispatcher shutdown: " + ex.Message); }
+        Console.Out.Flush();
     }
 }
 

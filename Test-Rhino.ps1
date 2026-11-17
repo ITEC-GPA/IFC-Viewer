@@ -1,26 +1,18 @@
 param([string]$RhinoDir = 'C:\Program Files\Rhino 8', [switch]$ExamplesOnly, [switch]$All, [switch]$DistributionOnly, [int]$ExampleStart = 1, [int]$ExampleEnd = 18)
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
-$compiler = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
-$outputPath = Join-Path $projectRoot 'build'
+$outputPath = Join-Path $projectRoot 'build\harness'
 $pluginDirectory = if ($env:MEERKAT_PLUGIN_DIR) { $env:MEERKAT_PLUGIN_DIR } else { Join-Path $projectRoot 'bin' }
-New-Item -ItemType Directory -Path $outputPath -Force | Out-Null
-$refs = @(
-    "$pluginDirectory\Meerkat.gha", "$rhinoDir\System\RhinoCommon.dll",
-    "$rhinoDir\System\Newtonsoft.Json.dll", "$rhinoDir\Plug-ins\Grasshopper\Grasshopper.dll",
-    "$rhinoDir\Plug-ins\Grasshopper\GH_IO.dll", 'System.Drawing.dll', 'System.Windows.Forms.dll'
-)
-$arguments = @('/nologo', '/platform:x64', '/target:exe', '/debug+', "/out:$outputPath\RhinoHarness.exe")
-$arguments += $refs | ForEach-Object { "/reference:$_" }
-$arguments += Get-ChildItem -LiteralPath (Join-Path $projectRoot 'tests') -Filter '*.cs' | ForEach-Object { $_.FullName }
-& $compiler $arguments
+# Rhino.Inside host on .NET 8, the runtime of Meerkat, compiled against the plug-in under test (tests\RhinoHarness.csproj).
+& dotnet build (Join-Path $projectRoot 'tests\RhinoHarness.csproj') -c Release --nologo -v:minimal "-p:RhinoDir=$RhinoDir" ('-p:MeerkatPluginDir=' + $pluginDirectory.TrimEnd('\')) "-p:OutDir=$outputPath"
 if ($LASTEXITCODE -ne 0) { throw 'Compilazione test fallita.' }
 function Invoke-Harness([string]$Mode) {
     $completed = $false
     $savedRhinoDirectory = $env:MEERKAT_RHINO_DIR
     try {
         $env:MEERKAT_RHINO_DIR = $RhinoDir
-        & "$outputPath\RhinoHarness.exe" $projectRoot $Mode | ForEach-Object { if ($_ -eq 'HARNESS_COMPLETED') { $completed = $true }; Write-Output $_ }
+        # Started through dotnet: a freshly built apphost can be refused by the antivirus.
+        & dotnet (Join-Path $outputPath 'RhinoHarness.dll') $projectRoot $Mode | ForEach-Object { if ($_ -eq 'HARNESS_COMPLETED') { $completed = $true }; Write-Output $_ }
     } finally { $env:MEERKAT_RHINO_DIR = $savedRhinoDirectory }
     if ($LASTEXITCODE -ne 0 -or -not $completed) { throw "Test Rhino incompleto o fallito: $Mode" }
 }

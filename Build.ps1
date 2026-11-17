@@ -2,26 +2,18 @@ param([string]$RhinoDir = 'C:\Program Files\Rhino 8', [string]$DistributionDirec
 $ErrorActionPreference = 'Stop'
 $projectRoot = $PSScriptRoot
 $outputPath = Join-Path $projectRoot 'build\compiler'
-$compiler = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
+$project = Join-Path $projectRoot 'src\Meerkat.csproj'
+# Meerkat targets .NET 8 (net8.0-windows): the SDK project is built with dotnet, the Rhino references are those of the local Rhino 8.
+if (-not (Get-Command dotnet -ErrorAction SilentlyContinue)) { throw 'Comando dotnet non trovato: installare SDK .NET 8 o successivo.' }
 $refs = @(
-    "$RhinoDir\System\RhinoCommon.dll",
-    "$RhinoDir\System\Newtonsoft.Json.dll",
+    "$RhinoDir\System\netcore\RhinoCommon.dll",
+    "$RhinoDir\System\netcore\Newtonsoft.Json.dll",
     "$RhinoDir\Plug-ins\Grasshopper\Grasshopper.dll",
-    "$RhinoDir\Plug-ins\Grasshopper\GH_IO.dll",
-    'System.Drawing.dll', 'System.Windows.Forms.dll',
-    'System.IO.Compression.dll', 'System.IO.Compression.FileSystem.dll'
+    "$RhinoDir\Plug-ins\Grasshopper\GH_IO.dll"
 )
-if (-not (Test-Path -LiteralPath $compiler)) { throw "Compilatore non trovato: $compiler" }
-foreach ($reference in $refs | Where-Object { [IO.Path]::IsPathRooted($_) }) {
+foreach ($reference in $refs) {
     if (-not (Test-Path -LiteralPath $reference)) { throw "Riferimento Rhino mancante: $reference" }
 }
-& (Join-Path $projectRoot 'tools\Build-Layout.ps1') -CleanModules
-New-Item -ItemType Directory -Path $outputPath -Force | Out-Null
-$arguments = @('/nologo', '/target:library', '/optimize+', "/out:$outputPath\Meerkat.gha")
-$arguments += $refs | ForEach-Object { "/reference:$_" }
-$arguments += Get-ChildItem -LiteralPath (Join-Path $projectRoot 'Assets\Icons\png') -Filter '*.png' | ForEach-Object { '/resource:' + $_.FullName + ',Meerkat.Icons.' + $_.Name }
-$arguments += '/resource:' + (Join-Path $projectRoot 'Assets\Brand\icon-24.png') + ',Meerkat.Icons.Meerkat.png'
-$arguments += Get-ChildItem -LiteralPath (Join-Path $projectRoot 'src') -Filter '*.cs' | ForEach-Object { $_.FullName }
 
 # The commit of the build, read at load by src/PluginBuildCheck.cs: HEAD of this checkout, worktree or submodule.
 function Get-HeadCommit([string]$Root) {
@@ -50,12 +42,12 @@ function Get-HeadCommit([string]$Root) {
     return $null
 }
 $commit = Get-HeadCommit $projectRoot
-if ($commit -match '^[0-9a-fA-F]{40}$') {
-    $commitSource = Join-Path $outputPath 'BuildCommit.g.cs'
-    [IO.File]::WriteAllText($commitSource, '[assembly: System.Reflection.AssemblyMetadata("BuildCommit", "' + $commit + '")]')
-    $arguments += $commitSource
-}
+# Directory.Build.targets writes the BuildCommit attribute from SourceRevisionId; an empty value writes none.
+$sourceRevision = ''
+if ($commit -match '^[0-9a-fA-F]{40}$') { $sourceRevision = $commit }
 else { Write-Warning 'Commit del checkout non trovato: il plugin non potra verificare la propria bin.' }
-& $compiler $arguments
+# The .gha is built in build\compiler, then Sync-Distribution copies it with the other files into bin (or -DistributionDirectory).
+# Directory.Build.targets also removes the module bins before the build (tools\Build-Layout.ps1 -CleanModules).
+& dotnet build $project -c Release --nologo -v:minimal "-p:RhinoDir=$RhinoDir" "-p:OutDir=$outputPath" '-p:MeerkatSyncDistribution=false' "-p:SourceRevisionId=$sourceRevision"
 if ($LASTEXITCODE -ne 0) { throw 'Compilazione fallita.' }
 & (Join-Path $projectRoot 'tools\Sync-Distribution.ps1') -PluginPath (Join-Path $outputPath 'Meerkat.gha') -DistributionDirectory $DistributionDirectory

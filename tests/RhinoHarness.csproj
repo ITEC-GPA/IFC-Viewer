@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Rhino.Inside host of Test-Rhino.ps1 on .NET 8, the runtime of Meerkat. Its output stays in build\harness, never in bin. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>RhinoHarness</AssemblyName>
+    <UseAppHost>false</UseAppHost>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <NuGetAudit>false</NuGetAudit>
+    <OutputPath>$(MeerkatRoot)build\harness\</OutputPath>
+    <RhinoDir Condition="'$(RhinoDir)' == ''">C:\Program Files\Rhino 8</RhinoDir>
+    <MeerkatPluginDir Condition="'$(MeerkatPluginDir)' == ''">$(MeerkatRoot)bin</MeerkatPluginDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Rhino.Inside" Version="8.0.7-beta" />
+    <!-- Rhino.Inside brings RhinoCommon/Grasshopper 8.0 as compile references; the host compiles against the Rhino of the plug-in. -->
+    <PackageReference Include="RhinoCommon" Version="8.0.23304.9001" ExcludeAssets="all" />
+    <PackageReference Include="Grasshopper" Version="8.0.23304.9001" ExcludeAssets="all" />
+    <!-- Not copied: at run time the host loads Meerkat from MEERKAT_PLUGIN_DIR (or bin) and Rhino from MEERKAT_RHINO_DIR. -->
+    <Reference Include="Meerkat"><HintPath>$(MeerkatPluginDir)\Meerkat.gha</HintPath><Private>false</Private></Reference>
+    <Reference Include="RhinoCommon"><HintPath>$(RhinoDir)\System\netcore\RhinoCommon.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>$(RhinoDir)\System\netcore\Newtonsoft.Json.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Grasshopper"><HintPath>$(RhinoDir)\Plug-ins\Grasshopper\Grasshopper.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="GH_IO"><HintPath>$(RhinoDir)\Plug-ins\Grasshopper\GH_IO.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
