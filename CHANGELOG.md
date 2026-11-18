@@ -15,8 +15,15 @@
 - Test Rhino: l'host Rhino.Inside per .NET 8 (`tests/RhinoHarness.csproj`) sostituisce
   l'eseguibile .NET Framework compilato con csc e viene avviato con `dotnet`. Prima di Rhino
   carica il `System.Management.dll` Windows di Rhino, per non invalidare la licenza Cloud Zoo
-  del Rhino interattivo.
+  del Rhino interattivo. In Grasshopper carica solo i componenti di Grasshopper e il plugin
+  in prova, non la copia registrata con `Meerkat.ghlink` ne le altre librerie dell'utente.
 - Nessuna modifica a componenti, GUID, parametri, worker Python ed esempi.
+
+Verifiche eseguite con Rhino 8.37 su .NET 8: 33 test Python; suite Rhino completa
+(`Test-Rhino.ps1 -All`, 12 processi completati, 927 controlli) con i 18 esempi e la
+definizione legacy; `Test-BuildLayout.ps1`; pacchetto ZIP con gli stessi 164 file del
+manifest. La distribuzione isolata (`Test-Distribution.ps1`) non e stata ripetuta: richiede
+l'installazione di IfcOpenShell da Internet.
 
 ## 0.1.1 — 2026-11-09
 

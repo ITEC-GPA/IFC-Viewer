@@ -12,6 +12,8 @@
     <UseAppHost>false</UseAppHost>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
     <NuGetAudit>false</NuGetAudit>
+    <!-- NU1701: the RhinoCommon/Grasshopper 8.0 packages below are restored only to exclude them. -->
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
     <OutputPath>$(MeerkatRoot)build\harness\</OutputPath>
     <RhinoDir Condition="'$(RhinoDir)' == ''">C:\Program Files\Rhino 8</RhinoDir>
     <MeerkatPluginDir Condition="'$(MeerkatPluginDir)' == ''">$(MeerkatRoot)bin</MeerkatPluginDir>
